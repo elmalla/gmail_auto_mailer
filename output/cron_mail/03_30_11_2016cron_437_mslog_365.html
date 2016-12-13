@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>
+<html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>
+<html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>
+<html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Linked Emails Project</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width">
+
+  <link href="http://localhost/CI_306_linked_em_Production/assets/css/admin/global.css" rel="stylesheet" type="text/css">
+  
+   <!--<link rel="stylesheet" href="/assets/css/bootstrap-responsive.min.css">-->
+
+  <script src="http://localhost/CI_306_linked_em_Production/assets/js/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+  <!--<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script> -->
+ 
+  
+  <script src="http://localhost/CI_306_linked_em_Production//assets/js/jquery-1.7.1.min.js"></script>)
+  <script src="http://localhost/CI_306_linked_em_Production//assets/js/bootstrap.min.js"></script>
+  
+  <!--<script src="http://localhost/CI_306_linked_em_Production//node_modules/socket.io/node_modules/socket.io-client/socket.io.js"></script>-->
+  
+  <!--<script src="http://localhost/CI_306_linked_em_Production//assets/js/socket.js"></script> -->
+  <!--<script src="http://localhost/CI_306_linked_em_Production//assets/js/main.js"></script> -->
+  
+    <style>
+    body {
+      padding-top: 60px;
+      padding-bottom: 40px;
+    }
+    </style>
+</head>
+<body>
+	<div class="navbar navbar-fixed-top">
+	  <div class="navbar-inner">
+	    <div class="container">
+	      <a class="brand">Linked Emails Project</a>
+	      <ul class="nav">
+	        <li >
+	          <a href="http://localhost/CI_306_linked_em_Production/index.php/admin/main">DashBoard</a>
+	        </li>
+                <li >
+	          <a href="http://localhost/CI_306_linked_em_Production/index.php/admin/products">Products</a>
+	        </li>
+	        <li >
+	          <a href="http://localhost/CI_306_linked_em_Production/index.php/admin/manufacturers/">Manufacturers</a>
+	        </li>
+                <li class="dropdown">
+	          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Emails <b class="caret"></b></a>
+	          <ul class="dropdown-menu">
+	            <li>
+	              <a href="http://localhost/CI_306_linked_em_Production/index.php/admin/Emails">Email Add,Edit,Delete</a>
+	            </li>
+                    <li>
+	              <a href="http://localhost/CI_306_linked_em_Production/index.php/admin/Owner">Owner Add,Edit,Delete</a>
+	            </li>
+                    <li>
+	              <a href="http://localhost/CI_306_linked_em_Production/index.php/admin/Source">Source Add,Edit,Delete</a>
+	            </li>
+	          </ul>
+	        </li>
+                <li class="dropdown">
+	          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Companies <b class="caret"></b></a>
+	          <ul class="dropdown-menu">
+	            <li>
+	              <a href="http://localhost/CI_306_linked_em_Production/index.php/admin/Companies">Company Add,Edit,Delete</a>
+	            </li>
+                    <li>
+	              <a href="http://localhost/CI_306_linked_em_Production/index.php/admin/Category">Category Add,Edit,Delete</a>
+	            </li>
+                    <li>
+	              <a href="http://localhost/CI_306_linked_em_Production/index.php/admin/Source">... Add,Edit,Delete</a>
+	            </li>
+	          </ul>
+	        </li>
+	        <li class="dropdown">
+	          <a href="#" class="dropdown-toggle" data-toggle="dropdown">System <b class="caret"></b></a>
+	          <ul class="dropdown-menu">
+	            <li>
+	              <a href="http://localhost/CI_306_linked_em_Production/admin/logout">Logout</a>
+	            </li>
+	          </ul>
+	        </li>
+	      </ul>
+	    </div>
+	  </div>
+	</div>	
+    
+    
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-3 col-md-2 sidebar">
+          <ul class="nav nav-sidebar">
+            <li class="active"><a href="http://localhost/CI_306_linked_em_Production/index.php/admin/main">Overview <span class="sr-only">(current)</span></a></li>
+            <li><a href="#">Reports</a></li>
+            <li><a href="http://localhost/CI_306_linked_em_Production/index.php/admin/Mailer/show">Mailer</a></li>
+            <li><a href="http://localhost/CI_306_linked_em_Production/index.php/admin/Mailer/mailfixedjob">Scheduled Mail Jobs</a></li>
+            <li><a href="http://localhost/CI_306_linked_em_Production/index.php/admin/Mailer/cronm/1/mailer/2/gmail/UI">Cron Scheduler</a></li>
+            <li><a href="http://localhost/CI_306_linked_em_Production/index.php/admin/Emails/cron_backup/false">Cron Backup</a></li>
+            <li><a href="http://localhost/CI_306_linked_em_Production/index.php/admin/export/show">Exports</a></li>
+          </ul>
+          <ul class="nav nav-sidebar">
+            <li><a href="">Nav item</a></li>
+            <li><a href="">Nav item again</a></li>
+            <li><a href="">One more nav</a></li>
+            <li><a href="http://localhost/CI_306_linked_em_Production/index.php/admin/Statistics/">Statistics</a></li>
+            <li><a href="http://localhost/CI_306_linked_em_Production/index.php/admin/Owner/">Owners</a></li>
+          </ul>
+          <ul class="nav nav-sidebar">
+            <li><a href="http://localhost/CI_306_linked_em_Production/index.php/admin/Emails/">Emails</a></li>
+            <li><a href="http://localhost/CI_306_linked_em_Production/index.php/admin/upload/show">Uploads</a></li>
+            <li><a href="http://localhost/CI_306_linked_em_Production/index.php/admin/upload/">Upload Files</a></li>
+          </ul>
+        </div>
+       
+        </div>  
+       </div>
+
+    <div class="container top">
+
+      <ul class="breadcrumb">
+        <li>
+          <a href="http://localhost/CI_306_linked_em_Production/index.php/admin">
+            Admin_mailer          </a> 
+          <span class="divider">/</span>
+        </li>
+        <li class="active">
+          Cron_mail          
+        </li>
+        
+      </ul>
+
+      <div class="page-header users-header">
+        <h2>
+          Cron_mail              <br/>
+             
+              <a  href="http://localhost/CI_306_linked_em_Production/index.php/admin/Mailer/sendmail" class="btn btn-success">Send Email</a>
+              <div class="divider"/>
+              <a  href="http://localhost/CI_306_linked_em_Production/index.php/admin/Mailer/sendmailattach" class="btn btn-success">Send Email with Attachment</a>
+              <br/>
+          
+        </h2>
+      </div>
+      
+      <div class="row">
+        <div class="span12 columns">
+          <div class="well">
+          
+          </div>
+             <table class="table table-striped table-bordered table-condensed">
+            <thead>
+              <tr>
+                <th class="header">email_v_count</th>
+                <th class="yellow header headerSortDown">email_nv_count</th>
+                <th class="green header">email_merged_count</th>
+                <th class="red header">email_to_mailer_count</th>
+                <th class="red header">email_sent_count</th>
+                <th class="red header">emails_sent_earlier</th>
+                <th class="red header">emails_scheduled_next_run</th>
+                <th class="red header">N/A</th>
+      
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>50</td><td>0</td><td>50</td><td>58</td><td>130</td><td>0</td><td>3956</td><td>N/A</td></tr>      
+            </tbody>
+           </table> 
+            
+            <table class="table table-striped table-bordered table-condensed">
+             <thead>
+              <tr>
+                <th class="header">Debugging Info</th>
+              </tr>
+              <tr>
+                <th class="header">Email ID</th>
+                <th class="header">Debug Info</th>   
+              </tr>
+            </thead>
+            <tbody>
+               <tr><td>145377</td><td><pre>
+
+</pre></td></tr><tr><td>145378</td><td><pre>
+
+</pre></td></tr><tr><td>145379</td><td><pre>
+
+</pre></td></tr><tr><td>145380</td><td><pre>
+
+</pre></td></tr><tr><td>145381</td><td><pre>
+
+</pre></td></tr><tr><td>145382</td><td><pre>
+
+</pre></td></tr><tr><td>145383</td><td><pre>
+
+</pre></td></tr><tr><td>145384</td><td><pre>
+
+</pre></td></tr><tr><td>145385</td><td><pre>
+
+</pre></td></tr><tr><td>145386</td><td><pre>
+
+</pre></td></tr><tr><td>145387</td><td><pre>
+
+</pre></td></tr><tr><td>145388</td><td><pre>
+
+</pre></td></tr><tr><td>145389</td><td><pre>
+
+</pre></td></tr>   
+            </tbody>
+          </table>
+    
+          
+          <table class="table table-striped table-bordered table-condensed">
+          <thead>
+              <tr>
+                <th class="header">Email ID</th>
+                <th class="header">Email sent</th>   
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>145377</td><td>bo.bengtsson@compass.se</td></tr><tr><td>143237</td><td>elektra@idealis.nl</td></tr><tr><td>143238</td><td>elsie.schoorel@hetnet.nl</td></tr><tr><td>143239</td><td>emmanuel@naaijkens.nl</td></tr><tr><td>143240</td><td>enid.van.der.eerden@rabobank.nl</td></tr><tr><td>143241</td><td>enith@hetnet.nl</td></tr><tr><td>143242</td><td>enn@credible.nl</td></tr><tr><td>143243</td><td>enroute@enbloc.nl</td></tr><tr><td>143244</td><td>enwr.kastelein@kbs.netlaw.nl</td></tr><tr><td>143245</td><td>eoffshore@boskalis.nl</td></tr><tr><td>145378</td><td>booking@bandwagon.se</td></tr><tr><td>143246</td><td>eos@a1.nl</td></tr><tr><td>143247</td><td>eric.hovestreydt@bruker-axs.nl</td></tr><tr><td>143248</td><td>eric.luteijn@sellair.nl</td></tr><tr><td>143249</td><td>eric@advicemakelaardij.nl</td></tr><tr><td>143250</td><td>erik.doortjes.almeloo@rabobank.nl</td></tr><tr><td>143251</td><td>erik.hendriks@rabobank.nl</td></tr><tr><td>143252</td><td>erik.tilanus@planet.nl</td></tr><tr><td>143253</td><td>erikveen@dds.nl</td></tr><tr><td>143254</td><td>eroyal@boskalis.nl</td></tr><tr><td>145379</td><td>boom@aftonbladet.se</td></tr><tr><td>143255</td><td>eugenevk@wanadoo.nl</td></tr><tr><td>143256</td><td>europeana-tech@list.ecompass.nl</td></tr><tr><td>143257</td><td>eventco@planet.nl</td></tr><tr><td>143258</td><td>evert.fekkes@rabobank.nl</td></tr><tr><td>143259</td><td>evert@efekkes.nl</td></tr><tr><td>143260</td><td>evertardesch@planet.nl</td></tr><tr><td>143261</td><td>ewine@strw.leidenuniv.nl</td></tr><tr><td>143262</td><td>example@rgoc.nl</td></tr><tr><td>143263</td><td>expotrading@planet.nl</td></tr><tr><td>145380</td><td>box@rodeo.se</td></tr><tr><td>143264</td><td>f.a.engelen@law.leidenuniv.nl</td></tr><tr><td>143265</td><td>f.a.j.m.mathijssen@boskalis.nl</td></tr><tr><td>143266</td><td>f.b.brokken@rug.nl</td></tr><tr><td>143267</td><td>f.dom@flexgen.nl</td></tr><tr><td>143268</td><td>f.inoue@hr.nl</td></tr><tr><td>143269</td><td>f.p.m.dignum@uu.nl</td></tr><tr><td>143270</td><td>f.w.geels@tm.tue.nl</td></tr><tr><td>143271</td><td>f.waldram-geilman@hr.nl</td></tr><tr><td>143272</td><td>f@planet.nl</td></tr><tr><td>145381</td><td>boyko.iliev@tech.oru.se</td></tr><tr><td>145382</td><td>brand@brand.lth.se</td></tr><tr><td>145383</td><td>brecevic@tii.se</td></tr><tr><td>145384</td><td>butiken@kakelshopen.se</td></tr><tr><td>145385</td><td>bygdeband@hembygdsforbundet.se</td></tr><tr><td>145386</td><td>bygg.miljo@amal.se</td></tr><tr><td>145387</td><td>calle.olebro@baluba.se</td></tr><tr><td>145388</td><td>calle.wallin@uppsalastadsteater.se</td></tr><tr><td>145389</td><td>camilla.ekelund@lr-revision.se</td></tr>      
+            </tbody>
+          </table>
+            
+          <table class="table table-striped table-bordered table-condensed">
+          <thead>
+              <tr>
+                <th class="header">Email ID</th>
+                <th class="header">Email Failed</th>   
+              </tr>
+            </thead>
+            <tbody>
+                    
+            </tbody>
+          </table>  
+            
+          <table class="table table-striped table-bordered table-condensed">
+          <thead>
+              <tr>
+                <th class="header">Email ID</th>
+                <th class="header">Email sent earlier</th>   
+              </tr>
+            </thead>
+            <tbody>
+                    
+            </tbody>
+          </table>     
+            
+      </div>
+    </div>
+	<div id="footer">
+		<hr>
+		<div class="inner">
+			<div class="container">
+				<p class="right"><a href="#">Back to top</a></p>
+				<p>
+				</p>
+			</div>
+		</div>
+	</div>
+	
+</body>
+</html>

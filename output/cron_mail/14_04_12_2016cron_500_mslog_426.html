@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>
+<html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>
+<html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>
+<html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Linked Emails Project</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width">
+
+  <link href="http://localhost/CI_306_linked_em_Production/assets/css/admin/global.css" rel="stylesheet" type="text/css">
+  
+   <!--<link rel="stylesheet" href="/assets/css/bootstrap-responsive.min.css">-->
+
+  <script src="http://localhost/CI_306_linked_em_Production/assets/js/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+  <!--<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script> -->
+ 
+  
+  <script src="http://localhost/CI_306_linked_em_Production//assets/js/jquery-1.7.1.min.js"></script>)
+  <script src="http://localhost/CI_306_linked_em_Production//assets/js/bootstrap.min.js"></script>
+  
+  <!--<script src="http://localhost/CI_306_linked_em_Production//node_modules/socket.io/node_modules/socket.io-client/socket.io.js"></script>-->
+  
+  <!--<script src="http://localhost/CI_306_linked_em_Production//assets/js/socket.js"></script> -->
+  <!--<script src="http://localhost/CI_306_linked_em_Production//assets/js/main.js"></script> -->
+  
+    <style>
+    body {
+      padding-top: 60px;
+      padding-bottom: 40px;
+    }
+    </style>
+</head>
+<body>
+	<div class="navbar navbar-fixed-top">
+	  <div class="navbar-inner">
+	    <div class="container">
+	      <a class="brand">Linked Emails Project</a>
+	      <ul class="nav">
+	        <li >
+	          <a href="http://localhost/CI_306_linked_em_Production/index.php/admin/main">DashBoard</a>
+	        </li>
+                <li >
+	          <a href="http://localhost/CI_306_linked_em_Production/index.php/admin/products">Products</a>
+	        </li>
+	        <li >
+	          <a href="http://localhost/CI_306_linked_em_Production/index.php/admin/manufacturers/">Manufacturers</a>
+	        </li>
+                <li class="dropdown">
+	          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Emails <b class="caret"></b></a>
+	          <ul class="dropdown-menu">
+	            <li>
+	              <a href="http://localhost/CI_306_linked_em_Production/index.php/admin/Emails">Email Add,Edit,Delete</a>
+	            </li>
+                    <li>
+	              <a href="http://localhost/CI_306_linked_em_Production/index.php/admin/Owner">Owner Add,Edit,Delete</a>
+	            </li>
+                    <li>
+	              <a href="http://localhost/CI_306_linked_em_Production/index.php/admin/Source">Source Add,Edit,Delete</a>
+	            </li>
+	          </ul>
+	        </li>
+                <li class="dropdown">
+	          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Companies <b class="caret"></b></a>
+	          <ul class="dropdown-menu">
+	            <li>
+	              <a href="http://localhost/CI_306_linked_em_Production/index.php/admin/Companies">Company Add,Edit,Delete</a>
+	            </li>
+                    <li>
+	              <a href="http://localhost/CI_306_linked_em_Production/index.php/admin/Category">Category Add,Edit,Delete</a>
+	            </li>
+                    <li>
+	              <a href="http://localhost/CI_306_linked_em_Production/index.php/admin/Source">... Add,Edit,Delete</a>
+	            </li>
+	          </ul>
+	        </li>
+	        <li class="dropdown">
+	          <a href="#" class="dropdown-toggle" data-toggle="dropdown">System <b class="caret"></b></a>
+	          <ul class="dropdown-menu">
+	            <li>
+	              <a href="http://localhost/CI_306_linked_em_Production/admin/logout">Logout</a>
+	            </li>
+	          </ul>
+	        </li>
+	      </ul>
+	    </div>
+	  </div>
+	</div>	
+    
+    
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-3 col-md-2 sidebar">
+          <ul class="nav nav-sidebar">
+            <li class="active"><a href="http://localhost/CI_306_linked_em_Production/index.php/admin/main">Overview <span class="sr-only">(current)</span></a></li>
+            <li><a href="#">Reports</a></li>
+            <li><a href="http://localhost/CI_306_linked_em_Production/index.php/admin/Mailer/show">Mailer</a></li>
+            <li><a href="http://localhost/CI_306_linked_em_Production/index.php/admin/Mailer/mailfixedjob">Scheduled Mail Jobs</a></li>
+            <li><a href="http://localhost/CI_306_linked_em_Production/index.php/admin/Mailer/cronm/1/mailer/8/gmail/UI">Cron Scheduler</a></li>
+            <li><a href="http://localhost/CI_306_linked_em_Production/index.php/admin/Emails/cron_backup/false">Cron Backup</a></li>
+            <li><a href="http://localhost/CI_306_linked_em_Production/index.php/admin/export/show">Exports</a></li>
+          </ul>
+          <ul class="nav nav-sidebar">
+            <li><a href="">Nav item</a></li>
+            <li><a href="">Nav item again</a></li>
+            <li><a href="">One more nav</a></li>
+            <li><a href="http://localhost/CI_306_linked_em_Production/index.php/admin/Statistics/">Statistics</a></li>
+            <li><a href="http://localhost/CI_306_linked_em_Production/index.php/admin/Owner/">Owners</a></li>
+          </ul>
+          <ul class="nav nav-sidebar">
+            <li><a href="http://localhost/CI_306_linked_em_Production/index.php/admin/Emails/">Emails</a></li>
+            <li><a href="http://localhost/CI_306_linked_em_Production/index.php/admin/upload/show">Uploads</a></li>
+            <li><a href="http://localhost/CI_306_linked_em_Production/index.php/admin/upload/">Upload Files</a></li>
+          </ul>
+        </div>
+       
+        </div>  
+       </div>
+
+    <div class="container top">
+
+      <ul class="breadcrumb">
+        <li>
+          <a href="http://localhost/CI_306_linked_em_Production/admin">
+            Admin_mailer          </a> 
+          <span class="divider">/</span>
+        </li>
+        <li class="active">
+          Cron_mail          
+        </li>
+        
+      </ul>
+
+      <div class="page-header users-header">
+        <h2>
+          Cron_mail              <br/>
+             
+              <a  href="http://localhost/CI_306_linked_em_Production/admin/Mailer/sendmail" class="btn btn-success">Send Email</a>
+              <div class="divider"/>
+              <a  href="http://localhost/CI_306_linked_em_Production/admin/Mailer/sendmailattach" class="btn btn-success">Send Email with Attachment</a>
+              <br/>
+          
+        </h2>
+      </div>
+      
+      <div class="row">
+        <div class="span12 columns">
+          <div class="well">
+          
+          </div>
+             <table class="table table-striped table-bordered table-condensed">
+            <thead>
+              <tr>
+                <th class="header">email_v_count</th>
+                <th class="yellow header headerSortDown">email_nv_count</th>
+                <th class="green header">email_merged_count</th>
+                <th class="red header">email_to_mailer_count</th>
+                <th class="red header">email_sent_count</th>
+                <th class="red header">emails_sent_earlier</th>
+                <th class="red header">emails_scheduled_next_run</th>
+                <th class="red header">N/A</th>
+      
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>50</td><td>0</td><td>50</td><td>60</td><td>60</td><td>0</td><td>15210</td><td>N/A</td></tr>      
+            </tbody>
+           </table> 
+            
+            <table class="table table-striped table-bordered table-condensed">
+             <thead>
+              <tr>
+                <th class="header">Debugging Info</th>
+              </tr>
+              <tr>
+                <th class="header">Email ID</th>
+                <th class="header">Debug Info</th>   
+              </tr>
+            </thead>
+            <tbody>
+               <tr><td>137628</td><td><pre>
+
+</pre></td></tr><tr><td>137629</td><td><pre>
+
+</pre></td></tr><tr><td>137630</td><td><pre>
+
+</pre></td></tr><tr><td>137631</td><td><pre>
+
+</pre></td></tr><tr><td>137632</td><td><pre>
+
+</pre></td></tr><tr><td>137633</td><td><pre>
+
+</pre></td></tr>   
+            </tbody>
+          </table>
+    
+          
+          <table class="table table-striped table-bordered table-condensed">
+          <thead>
+              <tr>
+                <th class="header">Email ID</th>
+                <th class="header">Email sent</th>   
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>137628</td><td>info@manpower.ie</td></tr><tr><td>13562</td><td>rpretorius@deat.gov.za</td></tr><tr><td>13538</td><td>Wfourie@deat.gov.za</td></tr><tr><td>13059</td><td>maphumulors@elec.durban.gov.za</td></tr><tr><td>12657</td><td>bridget.ntuli@fic.gov.za</td></tr><tr><td>12642</td><td>neil.croucher@capetown.gov.za</td></tr><tr><td>4040</td><td>likganyanem@elec.durban.gov.za</td></tr><tr><td>28151</td><td>colin.govender@petrosa.co.za</td></tr><tr><td>30137</td><td>govender@eskom.co.za</td></tr><tr><td>30191</td><td>troy.govender@eskom.co.za</td></tr><tr><td>137629</td><td>info@mcgrorys.ie</td></tr><tr><td>146823</td><td>accounts@capetown.gov.za</td></tr><tr><td>146895</td><td>amalia.sc@saps.gov.za</td></tr><tr><td>146899</td><td>amodise@deat.gov.za</td></tr><tr><td>146933</td><td>art.museum@tshwane.gov.za</td></tr><tr><td>146940</td><td>assen.sc@saps.gov.za</td></tr><tr><td>146945</td><td>atrinfo@sars.gov.za</td></tr><tr><td>146954</td><td>avisser@overstrand.gov.za</td></tr><tr><td>146977</td><td>batohivb@elec.durban.gov.za</td></tr><tr><td>146978</td><td>battlescenes@worldonline.co.za</td></tr><tr><td>137630</td><td>info@mdtravel.ie</td></tr><tr><td>146979</td><td>bbotha@xstrata.co.za</td></tr><tr><td>146980</td><td>bcooper@mobileemail.vodafonesa.co.za</td></tr><tr><td>146981</td><td>beanswave@webmail.co.za</td></tr><tr><td>146982</td><td>bedfordview@thelaserbeautique.co.za</td></tr><tr><td>146983</td><td>beescartage@worldonline.co.za</td></tr><tr><td>146984</td><td>bellmeadow@absamail.co.za</td></tr><tr><td>146985</td><td>bellscycling@mwebbiz.co.za</td></tr><tr><td>146986</td><td>belvedere@worldonline.co.za</td></tr><tr><td>146987</td><td>ben@bolanddm.co.za</td></tr><tr><td>137631</td><td>info@mediabrokers.ie</td></tr><tr><td>146988</td><td>benoni.info@westpacklifstyle.co.za</td></tr><tr><td>146989</td><td>berndj@prism.co.za</td></tr><tr><td>146990</td><td>bert@onetouchcoffee.co.za</td></tr><tr><td>146991</td><td>bessy@timberlandsa.co.za</td></tr><tr><td>146992</td><td>besterk@dwaf.gov.za</td></tr><tr><td>146993</td><td>beukes@icon.co.za</td></tr><tr><td>146994</td><td>beverley@maxflexcables.co.za</td></tr><tr><td>146995</td><td>bevic@worldonline.co.za</td></tr><tr><td>146996</td><td>bezuid_j@mtn.co.za</td></tr><tr><td>137632</td><td>info@mobilephoneservice.ie</td></tr><tr><td>146997</td><td>bgscrap@mweb.co.za</td></tr><tr><td>146998</td><td>bheki@cosatu.org.za</td></tr><tr><td>146999</td><td>bianca@centurycity.co.za</td></tr><tr><td>147000</td><td>bigfive@new.co.za</td></tr><tr><td>147001</td><td>billing@webafrica.co.za</td></tr><tr><td>147002</td><td>binafairdeal@worldonline.co.za</td></tr><tr><td>147003</td><td>bio@worldonline.co.za</td></tr><tr><td>147004</td><td>bisramcris@elec.durban.gov.za</td></tr><tr><td>147005</td><td>bits@eskom.co.za</td></tr><tr><td>137633</td><td>info@moneycoach.ie</td></tr><tr><td>147006</td><td>blackcoffee@icon.co.za</td></tr><tr><td>147007</td><td>blairgowrie@westpackexpress.co.za</td></tr><tr><td>147008</td><td>blikkie.dewaal@bme.co.za</td></tr><tr><td>147009</td><td>blnderbuss@xsinet.co.za</td></tr><tr><td>147010</td><td>bluediamond@worldonline.co.za</td></tr><tr><td>147011</td><td>blueginger@worldonline.co.za</td></tr><tr><td>147012</td><td>bluemoon@soft.co.za</td></tr><tr><td>147013</td><td>bmasupe@deloitte.co.za</td></tr><tr><td>147014</td><td>bmc@live.co.za</td></tr>      
+            </tbody>
+          </table>
+            
+          <table class="table table-striped table-bordered table-condensed">
+          <thead>
+              <tr>
+                <th class="header">Email ID</th>
+                <th class="header">Email Failed</th>   
+              </tr>
+            </thead>
+            <tbody>
+                    
+            </tbody>
+          </table>  
+            
+          <table class="table table-striped table-bordered table-condensed">
+          <thead>
+              <tr>
+                <th class="header">Email ID</th>
+                <th class="header">Email sent earlier</th>   
+              </tr>
+            </thead>
+            <tbody>
+                    
+            </tbody>
+          </table>
+            
+          <table class="table table-striped table-bordered table-condensed">
+          <thead>
+              <tr>
+                <th class="header">Debug</th>
+                
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>137628</td></tr><tr><td>info@manpower.ie</td></tr><tr><td>0</td></tr><tr><td>0</td></tr><tr><td>rpretorius@deat.gov.za, Wfourie@deat.gov.za, maphumulors@elec.durban.gov.za, bridget.ntuli@fic.gov.za, neil.croucher@capetown.gov.za, likganyanem@elec.durban.gov.za, colin.govender@petrosa.co.za, govender@eskom.co.za, troy.govender@eskom.co.za</td></tr><tr><td>1</td></tr><tr><td>0</td><td>info@manpower.ie</td><td>1</td><td>rpretorius@deat.gov.za</td><td>2</td><td> Wfourie@deat.gov.za</td><td>3</td><td> maphumulors@elec.durban.gov.za</td><td>4</td><td> bridget.ntuli@fic.gov.za</td><td>5</td><td> neil.croucher@capetown.gov.za</td><td>6</td><td> likganyanem@elec.durban.gov.za</td><td>7</td><td> colin.govender@petrosa.co.za</td><td>8</td><td> govender@eskom.co.za</td><td>9</td><td> troy.govender@eskom.co.za</td></tr><tr></tr><tr><td>10</td></tr><tr><td><pre>
+
+</pre></td></tr><tr><td>137629</td></tr><tr><td>info@mcgrorys.ie</td></tr><tr><td>1</td></tr><tr><td>9</td></tr><tr><td>accounts@capetown.gov.za, amalia.sc@saps.gov.za, amodise@deat.gov.za, art.museum@tshwane.gov.za, assen.sc@saps.gov.za, atrinfo@sars.gov.za, avisser@overstrand.gov.za, batohivb@elec.durban.gov.za, battlescenes@worldonline.co.za</td></tr><tr><td>1</td></tr><tr><td>0</td><td>info@mcgrorys.ie</td><td>1</td><td>accounts@capetown.gov.za</td><td>2</td><td> amalia.sc@saps.gov.za</td><td>3</td><td> amodise@deat.gov.za</td><td>4</td><td> art.museum@tshwane.gov.za</td><td>5</td><td> assen.sc@saps.gov.za</td><td>6</td><td> atrinfo@sars.gov.za</td><td>7</td><td> avisser@overstrand.gov.za</td><td>8</td><td> batohivb@elec.durban.gov.za</td><td>9</td><td> battlescenes@worldonline.co.za</td></tr><tr></tr><tr><td>10</td></tr><tr><td><pre>
+
+</pre></td></tr><tr><td>137630</td></tr><tr><td>info@mdtravel.ie</td></tr><tr><td>2</td></tr><tr><td>18</td></tr><tr><td>bbotha@xstrata.co.za, bcooper@mobileemail.vodafonesa.co.za, beanswave@webmail.co.za, bedfordview@thelaserbeautique.co.za, beescartage@worldonline.co.za, bellmeadow@absamail.co.za, bellscycling@mwebbiz.co.za, belvedere@worldonline.co.za, ben@bolanddm.co.za</td></tr><tr><td>1</td></tr><tr><td>0</td><td>info@mdtravel.ie</td><td>1</td><td>bbotha@xstrata.co.za</td><td>2</td><td> bcooper@mobileemail.vodafonesa.co.za</td><td>3</td><td> beanswave@webmail.co.za</td><td>4</td><td> bedfordview@thelaserbeautique.co.za</td><td>5</td><td> beescartage@worldonline.co.za</td><td>6</td><td> bellmeadow@absamail.co.za</td><td>7</td><td> bellscycling@mwebbiz.co.za</td><td>8</td><td> belvedere@worldonline.co.za</td><td>9</td><td> ben@bolanddm.co.za</td></tr><tr></tr><tr><td>10</td></tr><tr><td><pre>
+
+</pre></td></tr><tr><td>137631</td></tr><tr><td>info@mediabrokers.ie</td></tr><tr><td>3</td></tr><tr><td>27</td></tr><tr><td>benoni.info@westpacklifstyle.co.za, berndj@prism.co.za, bert@onetouchcoffee.co.za, bessy@timberlandsa.co.za, besterk@dwaf.gov.za, beukes@icon.co.za, beverley@maxflexcables.co.za, bevic@worldonline.co.za, bezuid_j@mtn.co.za</td></tr><tr><td>1</td></tr><tr><td>0</td><td>info@mediabrokers.ie</td><td>1</td><td>benoni.info@westpacklifstyle.co.za</td><td>2</td><td> berndj@prism.co.za</td><td>3</td><td> bert@onetouchcoffee.co.za</td><td>4</td><td> bessy@timberlandsa.co.za</td><td>5</td><td> besterk@dwaf.gov.za</td><td>6</td><td> beukes@icon.co.za</td><td>7</td><td> beverley@maxflexcables.co.za</td><td>8</td><td> bevic@worldonline.co.za</td><td>9</td><td> bezuid_j@mtn.co.za</td></tr><tr></tr><tr><td>10</td></tr><tr><td><pre>
+
+</pre></td></tr><tr><td>137632</td></tr><tr><td>info@mobilephoneservice.ie</td></tr><tr><td>4</td></tr><tr><td>36</td></tr><tr><td>bgscrap@mweb.co.za, bheki@cosatu.org.za, bianca@centurycity.co.za, bigfive@new.co.za, billing@webafrica.co.za, binafairdeal@worldonline.co.za, bio@worldonline.co.za, bisramcris@elec.durban.gov.za, bits@eskom.co.za</td></tr><tr><td>1</td></tr><tr><td>0</td><td>info@mobilephoneservice.ie</td><td>1</td><td>bgscrap@mweb.co.za</td><td>2</td><td> bheki@cosatu.org.za</td><td>3</td><td> bianca@centurycity.co.za</td><td>4</td><td> bigfive@new.co.za</td><td>5</td><td> billing@webafrica.co.za</td><td>6</td><td> binafairdeal@worldonline.co.za</td><td>7</td><td> bio@worldonline.co.za</td><td>8</td><td> bisramcris@elec.durban.gov.za</td><td>9</td><td> bits@eskom.co.za</td></tr><tr></tr><tr><td>10</td></tr><tr><td><pre>
+
+</pre></td></tr><tr><td>137633</td></tr><tr><td>info@moneycoach.ie</td></tr><tr><td>5</td></tr><tr><td>45</td></tr><tr><td>blackcoffee@icon.co.za, blairgowrie@westpackexpress.co.za, blikkie.dewaal@bme.co.za, blnderbuss@xsinet.co.za, bluediamond@worldonline.co.za, blueginger@worldonline.co.za, bluemoon@soft.co.za, bmasupe@deloitte.co.za, bmc@live.co.za</td></tr><tr><td>1</td></tr><tr><td>0</td><td>info@moneycoach.ie</td><td>1</td><td>blackcoffee@icon.co.za</td><td>2</td><td> blairgowrie@westpackexpress.co.za</td><td>3</td><td> blikkie.dewaal@bme.co.za</td><td>4</td><td> blnderbuss@xsinet.co.za</td><td>5</td><td> bluediamond@worldonline.co.za</td><td>6</td><td> blueginger@worldonline.co.za</td><td>7</td><td> bluemoon@soft.co.za</td><td>8</td><td> bmasupe@deloitte.co.za</td><td>9</td><td> bmc@live.co.za</td></tr><tr></tr><tr><td>10</td></tr><tr><td><pre>
+
+</pre></td></tr>      
+            </tbody>
+          </table>        
+            
+      </div>
+    </div>
+	<div id="footer">
+		<hr>
+		<div class="inner">
+			<div class="container">
+				<p class="right"><a href="#">Back to top</a></p>
+				<p>
+				</p>
+			</div>
+		</div>
+	</div>
+	
+</body>
+</html>

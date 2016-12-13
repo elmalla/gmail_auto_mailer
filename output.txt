@@ -1,0 +1,876 @@
+2016-11-12 18:50:57	CLIENT -> SERVER: EHLO HP6460b
+2016-11-12 18:50:58	CLIENT -> SERVER: AUTH LOGIN
+2016-11-12 18:50:58	CLIENT -> SERVER: YWtlbG1hbGxhNzdAZ21haWwuY29t
+2016-11-12 18:50:58	CLIENT -> SERVER: YWhtMDIwM2hhbSEh
+2016-11-12 18:50:58	CLIENT -> SERVER: MAIL FROM:<akelmalla77@gmail.com>
+2016-11-12 18:50:59	CLIENT -> SERVER: RCPT TO:<ahmed.elmalla@linkedemails.com>
+2016-11-12 18:50:59	CLIENT -> SERVER: DATA
+2016-11-12 18:50:59	CLIENT -> SERVER: Date: Sat, 12 Nov 2016 19:50:55 +0100
+2016-11-12 18:50:59	CLIENT -> SERVER: To: ahmed.elmalla@linkedemails.com
+2016-11-12 18:50:59	CLIENT -> SERVER: From: Ahmed Elmalla <akelmalla77@gmail.com>
+2016-11-12 18:50:59	CLIENT -> SERVER: Subject: Technical Engineer Reume -If you didn't like it, I pay you SAR 5
+2016-11-12 18:50:59	CLIENT -> SERVER: Message-ID: <8ef3e3bfc17d8a02f5b01c242fd2e330@HP6460b>
+2016-11-12 18:50:59	CLIENT -> SERVER: X-Priority: 3
+2016-11-12 18:50:59	CLIENT -> SERVER: X-Mailer: PHPMailer 5.2.16 (https://github.com/PHPMailer/PHPMailer)
+2016-11-12 18:50:59	CLIENT -> SERVER: Reply-To: "Ahmed Elmalla" <akelmalla77@gmail.com>
+2016-11-12 18:50:59	CLIENT -> SERVER: MIME-Version: 1.0
+2016-11-12 18:50:59	CLIENT -> SERVER: Content-Type: multipart/alternative;
+2016-11-12 18:50:59	CLIENT -> SERVER: 	boundary="b1_8ef3e3bfc17d8a02f5b01c242fd2e330"
+2016-11-12 18:50:59	CLIENT -> SERVER: Content-Transfer-Encoding: 8bit
+2016-11-12 18:50:59	CLIENT -> SERVER:
+2016-11-12 18:50:59	CLIENT -> SERVER: This is a multi-part message in MIME format.
+2016-11-12 18:50:59	CLIENT -> SERVER:
+2016-11-12 18:50:59	CLIENT -> SERVER: --b1_8ef3e3bfc17d8a02f5b01c242fd2e330
+2016-11-12 18:50:59	CLIENT -> SERVER: Content-Type: text/plain; charset=us-ascii
+2016-11-12 18:50:59	CLIENT -> SERVER:
+2016-11-12 18:50:59	CLIENT -> SERVER: ../uploads/users/AE/Technical/Technical_cover_letter_alt.txt
+2016-11-12 18:50:59	CLIENT -> SERVER:
+2016-11-12 18:50:59	CLIENT -> SERVER:
+2016-11-12 18:50:59	CLIENT -> SERVER: --b1_8ef3e3bfc17d8a02f5b01c242fd2e330
+2016-11-12 18:50:59	CLIENT -> SERVER: Content-Type: text/html; charset=us-ascii
+2016-11-12 18:50:59	CLIENT -> SERVER: Content-Transfer-Encoding: quoted-printable
+2016-11-12 18:50:59	CLIENT -> SERVER:
+2016-11-12 18:50:59	CLIENT -> SERVER: <!DOCTYPE html>
+2016-11-12 18:50:59	CLIENT -> SERVER: <!--
+2016-11-12 18:50:59	CLIENT -> SERVER: To change this license header, choose License Headers in Project Properties=
+2016-11-12 18:50:59	CLIENT -> SERVER: ..
+2016-11-12 18:50:59	CLIENT -> SERVER: To change this template file, choose Tools | Templates
+2016-11-12 18:50:59	CLIENT -> SERVER: and open the template in the editor.
+2016-11-12 18:50:59	CLIENT -> SERVER: -->
+2016-11-12 18:50:59	CLIENT -> SERVER:
+2016-11-12 18:50:59	CLIENT -> SERVER: <html>
+2016-11-12 18:50:59	CLIENT -> SERVER: <head>
+2016-11-12 18:50:59	CLIENT -> SERVER: <meta charset=3D"UTF-8">
+2016-11-12 18:50:59	CLIENT -> SERVER: <title>Cover Letter</title>
+2016-11-12 18:50:59	CLIENT -> SERVER:
+2016-11-12 18:50:59	CLIENT -> SERVER:   <style>
+2016-11-12 18:50:59	CLIENT -> SERVER:     table td {border-collapse: collapse;}
+2016-11-12 18:50:59	CLIENT -> SERVER:     hr {
+2016-11-12 18:50:59	CLIENT -> SERVER:       height: 1px!important;
+2016-11-12 18:50:59	CLIENT -> SERVER:       color: #eeeeee!important;
+2016-11-12 18:50:59	CLIENT -> SERVER:       background-color: #eeeeee!important;
+2016-11-12 18:50:59	CLIENT -> SERVER:       border: 0px!important;
+2016-11-12 18:50:59	CLIENT -> SERVER:     }
+2016-11-12 18:50:59	CLIENT -> SERVER:     img {border:0!important; border-radius: 50%; vertical-align: middle;}
+2016-11-12 18:50:59	CLIENT -> SERVER:   </style>
+2016-11-12 18:50:59	CLIENT -> SERVER: </head>
+2016-11-12 18:50:59	CLIENT -> SERVER:
+2016-11-12 18:50:59	CLIENT -> SERVER: <body style=3D"margin: 0;padding: 20px 0 20px 0;">
+2016-11-12 18:50:59	CLIENT -> SERVER: <table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" styl=
+2016-11-12 18:50:59	CLIENT -> SERVER: e=3D"font-family: Helvetica, Arial, Verdana, sans-serif; color: #55555; fon=
+2016-11-12 18:50:59	CLIENT -> SERVER: t-size: 14px; line-height: 21px;" align=3D"center">
+2016-11-12 18:50:59	CLIENT -> SERVER:   <tr>
+2016-11-12 18:50:59	CLIENT -> SERVER:     <td align=3D"center" style=3D"padding: 20px 0 20px 0;">
+2016-11-12 18:50:59	CLIENT -> SERVER:       <table width=3D"640" border=3D"0" cellspacing=3D"0" cellpadding=3D"0"=
+2016-11-12 18:50:59	CLIENT -> SERVER: >
+2016-11-12 18:50:59	CLIENT -> SERVER:         <tr>
+2016-11-12 18:50:59	CLIENT -> SERVER:           <td>
+2016-11-12 18:50:59	CLIENT -> SERVER:             <table>
+2016-11-12 18:50:59	CLIENT -> SERVER:               <tr>
+2016-11-12 18:50:59	CLIENT -> SERVER:                 <td style=3D"border-bottom: 1px solid #eeeeee;font-size: 1p=
+2016-11-12 18:50:59	CLIENT -> SERVER: x;color: #008000;" align=3D"right">
+2016-11-12 18:50:59	CLIENT -> SERVER:                   <h2> 2016-11-12</h2>
+2016-11-12 18:50:59	CLIENT -> SERVER:                 </td>
+2016-11-12 18:50:59	CLIENT -> SERVER:               </tr>
+2016-11-12 18:50:59	CLIENT -> SERVER:               <tr>
+2016-11-12 18:50:59	CLIENT -> SERVER:                 <td style=3D"padding: 20px 0 20px 0;" align=3D"left" valign=
+2016-11-12 18:50:59	CLIENT -> SERVER: =3D"top">
+2016-11-12 18:50:59	CLIENT -> SERVER:                   <table width=3D"640" border=3D"0" cellspacing=3D"0" cellp=
+2016-11-12 18:50:59	CLIENT -> SERVER: adding=3D"0" style=3D"border-bottom: 1px solid #eee; padding: 0 0 20px 0; m=
+2016-11-12 18:50:59	CLIENT -> SERVER: argin: 0 0 20px 0;">
+2016-11-12 18:50:59	CLIENT -> SERVER:                     <tr>
+2016-11-12 18:50:59	CLIENT -> SERVER:                       <td width=3D"430" valign=3D"top" align=3D"left" style=
+2016-11-12 18:50:59	CLIENT -> SERVER: =3D"padding: 5px 0 0 0">
+2016-11-12 18:50:59	CLIENT -> SERVER:                         <p style=3D"font-size: 20px; color: #0000A0; line-h=
+2016-11-12 18:50:59	CLIENT -> SERVER: eight: 42px; letter-spacing: 1; margin: 0; padding: 0;">Dear Sir:</p>
+2016-11-12 18:50:59	CLIENT -> SERVER:                       </td>
+2016-11-12 18:50:59	CLIENT -> SERVER:                     </tr>
+2016-11-12 18:50:59	CLIENT -> SERVER:                     <tr>
+2016-11-12 18:50:59	CLIENT -> SERVER:                       <td>
+2016-11-12 18:50:59	CLIENT -> SERVER:                         <p style=3D"margin-bottom:0;padding:0;font-size: 19=
+2016-11-12 18:50:59	CLIENT -> SERVER: px ;color: #888888;">
+2016-11-12 18:50:59	CLIENT -> SERVER:                           <br/><br/>My 15+ years of experience in projects =
+2016-11-12 18:50:59	CLIENT -> SERVER: support in (Saudi Arabia, Germany, Finland, Sweden, Malaysia) should of int=
+2016-11-12 18:50:59	CLIENT -> SERVER: erest to a rapidly growing company like yours, having worked in various cap=
+2016-11-12 18:50:59	CLIENT -> SERVER: acities of Automated Systems installations, Machinery building and even tur=
+2016-11-12 18:50:59	CLIENT -> SERVER: n key construction projects leading to my present assignment as Technical M=
+2016-11-12 18:50:59	CLIENT -> SERVER: anager in KSA, made my skillset unique, not only this, but is a proof of my=
+2016-11-12 18:50:59	CLIENT -> SERVER:  fast learning and my resilience.<br/><br/>I have acquired skills in all ph=
+2016-11-12 18:50:59	CLIENT -> SERVER: ases of technical projects in Mechanical,Electrical and SCADA fields, from =
+2016-11-12 18:50:59	CLIENT -> SERVER: design to FAT & SAT and more I worked with more than 10 different nationali=
+2016-11-12 18:50:59	CLIENT -> SERVER: ties, and I know the importance of communication and personal relations for=
+2016-11-12 18:50:59	CLIENT -> SERVER:  every project success .<br/><br/>I am sure I can contribute to your gross =
+2016-11-12 18:50:59	CLIENT -> SERVER: and profit. And I appreciate the opportunity to show how your company can m=
+2016-11-12 18:50:59	CLIENT -> SERVER: eet its goals.<br/><br/>Thank you for your time and consideration and I loo=
+2016-11-12 18:50:59	CLIENT -> SERVER: k forward to hearing from you.<br/><br/>Yours sincerely,<br/><br/>
+2016-11-12 18:50:59	CLIENT -> SERVER:                         </p>
+2016-11-12 18:50:59	CLIENT -> SERVER:
+2016-11-12 18:50:59	CLIENT -> SERVER:                         <hr style=3D"background: #eeeeee; margin: 0px 0px 1=
+2016-11-12 18:50:59	CLIENT -> SERVER: 8px; padding: 0px; border-style: none; height: 1px;">
+2016-11-12 18:50:59	CLIENT -> SERVER:
+2016-11-12 18:50:59	CLIENT -> SERVER:                         <p style=3D"color: #0000A0; font-size: 17px;letter-=
+2016-11-12 18:50:59	CLIENT -> SERVER: spacing: 2;margin:0;padding:0;">
+2016-11-12 18:50:59	CLIENT -> SERVER:                             Ahmed Elmalla
+2016-11-12 18:50:59	CLIENT -> SERVER:                         </p>
+2016-11-12 18:50:59	CLIENT -> SERVER:                         <p style=3D"color: #0000A0; font-size: 16px;letter-=
+2016-11-12 18:50:59	CLIENT -> SERVER: spacing: 2;margin:0;padding:0;">
+2016-11-12 18:50:59	CLIENT -> SERVER:                             H/P KSA   :(+966)531597142
+2016-11-12 18:50:59	CLIENT -> SERVER:                         </p>
+2016-11-12 18:50:59	CLIENT -> SERVER:                        =20
+2016-11-12 18:50:59	CLIENT -> SERVER:                       </td>
+2016-11-12 18:50:59	CLIENT -> SERVER:                     </tr>
+2016-11-12 18:50:59	CLIENT -> SERVER:                   </table>
+2016-11-12 18:50:59	CLIENT -> SERVER:                 </td>
+2016-11-12 18:50:59	CLIENT -> SERVER:               </tr>
+2016-11-12 18:50:59	CLIENT -> SERVER:             </table>
+2016-11-12 18:50:59	CLIENT -> SERVER:           </td>
+2016-11-12 18:50:59	CLIENT -> SERVER:         </tr>
+2016-11-12 18:50:59	CLIENT -> SERVER:       </table>
+2016-11-12 18:51:00	CLIENT -> SERVER:     </td>
+2016-11-12 18:51:00	CLIENT -> SERVER:   </tr>
+2016-11-12 18:51:00	CLIENT -> SERVER: </table>
+2016-11-12 18:51:00	CLIENT -> SERVER: </body>
+2016-11-12 18:51:00	CLIENT -> SERVER: </html>
+2016-11-12 18:51:00	CLIENT -> SERVER:
+2016-11-12 18:51:00	CLIENT -> SERVER:
+2016-11-12 18:51:00	CLIENT -> SERVER:
+2016-11-12 18:51:00	CLIENT -> SERVER:
+2016-11-12 18:51:00	CLIENT -> SERVER: --b1_8ef3e3bfc17d8a02f5b01c242fd2e330--
+2016-11-12 18:51:00	CLIENT -> SERVER:
+2016-11-12 18:51:00	CLIENT -> SERVER: .
+2016-11-12 18:51:00	CLIENT -> SERVER: QUIT
+2016-11-12 18:51:02	CLIENT -> SERVER: EHLO HP6460b
+2016-11-12 18:51:02	CLIENT -> SERVER: AUTH LOGIN
+2016-11-12 18:51:02	CLIENT -> SERVER: YWtlbG1hbGxhNzdAZ21haWwuY29t
+2016-11-12 18:51:02	CLIENT -> SERVER: YWhtMDIwM2hhbSEh
+2016-11-12 18:51:03	CLIENT -> SERVER: MAIL FROM:<akelmalla77@gmail.com>
+2016-11-12 18:51:03	CLIENT -> SERVER: RCPT TO:<ahmed.elmalla@linkedemails.com>
+2016-11-12 18:51:03	CLIENT -> SERVER: DATA
+2016-11-12 18:51:04	CLIENT -> SERVER: Date: Sat, 12 Nov 2016 19:50:55 +0100
+2016-11-12 18:51:04	CLIENT -> SERVER: To: ahmed.elmalla@linkedemails.com
+2016-11-12 18:51:04	CLIENT -> SERVER: From: Ahmed Elmalla <akelmalla77@gmail.com>
+2016-11-12 18:51:04	CLIENT -> SERVER: Subject: Technical Engineer Reume -If you didn't like it, I pay you SAR 5
+2016-11-12 18:51:04	CLIENT -> SERVER: Message-ID: <f577cf73cdaaa93fdc3da58dbee3749e@HP6460b>
+2016-11-12 18:51:04	CLIENT -> SERVER: X-Priority: 3
+2016-11-12 18:51:04	CLIENT -> SERVER: X-Mailer: PHPMailer 5.2.16 (https://github.com/PHPMailer/PHPMailer)
+2016-11-12 18:51:04	CLIENT -> SERVER: Reply-To: "Ahmed Elmalla" <akelmalla77@gmail.com>
+2016-11-12 18:51:04	CLIENT -> SERVER: MIME-Version: 1.0
+2016-11-12 18:51:04	CLIENT -> SERVER: Content-Type: multipart/alternative;
+2016-11-12 18:51:04	CLIENT -> SERVER: 	boundary="b1_f577cf73cdaaa93fdc3da58dbee3749e"
+2016-11-12 18:51:04	CLIENT -> SERVER: Content-Transfer-Encoding: 8bit
+2016-11-12 18:51:04	CLIENT -> SERVER:
+2016-11-12 18:51:04	CLIENT -> SERVER: This is a multi-part message in MIME format.
+2016-11-12 18:51:04	CLIENT -> SERVER:
+2016-11-12 18:51:04	CLIENT -> SERVER: --b1_f577cf73cdaaa93fdc3da58dbee3749e
+2016-11-12 18:51:04	CLIENT -> SERVER: Content-Type: text/plain; charset=us-ascii
+2016-11-12 18:51:04	CLIENT -> SERVER:
+2016-11-12 18:51:04	CLIENT -> SERVER: ../uploads/users/AE/Technical/Technical_cover_letter_alt.txt
+2016-11-12 18:51:04	CLIENT -> SERVER:
+2016-11-12 18:51:04	CLIENT -> SERVER:
+2016-11-12 18:51:04	CLIENT -> SERVER: --b1_f577cf73cdaaa93fdc3da58dbee3749e
+2016-11-12 18:51:04	CLIENT -> SERVER: Content-Type: text/html; charset=us-ascii
+2016-11-12 18:51:04	CLIENT -> SERVER: Content-Transfer-Encoding: quoted-printable
+2016-11-12 18:51:04	CLIENT -> SERVER:
+2016-11-12 18:51:04	CLIENT -> SERVER: <!DOCTYPE html>
+2016-11-12 18:51:04	CLIENT -> SERVER: <!--
+2016-11-12 18:51:04	CLIENT -> SERVER: To change this license header, choose License Headers in Project Properties=
+2016-11-12 18:51:04	CLIENT -> SERVER: ..
+2016-11-12 18:51:04	CLIENT -> SERVER: To change this template file, choose Tools | Templates
+2016-11-12 18:51:04	CLIENT -> SERVER: and open the template in the editor.
+2016-11-12 18:51:04	CLIENT -> SERVER: -->
+2016-11-12 18:51:04	CLIENT -> SERVER:
+2016-11-12 18:51:04	CLIENT -> SERVER: <html>
+2016-11-12 18:51:04	CLIENT -> SERVER: <head>
+2016-11-12 18:51:04	CLIENT -> SERVER: <meta charset=3D"UTF-8">
+2016-11-12 18:51:04	CLIENT -> SERVER: <title>Cover Letter</title>
+2016-11-12 18:51:04	CLIENT -> SERVER:
+2016-11-12 18:51:04	CLIENT -> SERVER:   <style>
+2016-11-12 18:51:04	CLIENT -> SERVER:     table td {border-collapse: collapse;}
+2016-11-12 18:51:04	CLIENT -> SERVER:     hr {
+2016-11-12 18:51:04	CLIENT -> SERVER:       height: 1px!important;
+2016-11-12 18:51:04	CLIENT -> SERVER:       color: #eeeeee!important;
+2016-11-12 18:51:04	CLIENT -> SERVER:       background-color: #eeeeee!important;
+2016-11-12 18:51:04	CLIENT -> SERVER:       border: 0px!important;
+2016-11-12 18:51:04	CLIENT -> SERVER:     }
+2016-11-12 18:51:04	CLIENT -> SERVER:     img {border:0!important; border-radius: 50%; vertical-align: middle;}
+2016-11-12 18:51:04	CLIENT -> SERVER:   </style>
+2016-11-12 18:51:04	CLIENT -> SERVER: </head>
+2016-11-12 18:51:04	CLIENT -> SERVER:
+2016-11-12 18:51:04	CLIENT -> SERVER: <body style=3D"margin: 0;padding: 20px 0 20px 0;">
+2016-11-12 18:51:04	CLIENT -> SERVER: <table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" styl=
+2016-11-12 18:51:04	CLIENT -> SERVER: e=3D"font-family: Helvetica, Arial, Verdana, sans-serif; color: #55555; fon=
+2016-11-12 18:51:04	CLIENT -> SERVER: t-size: 14px; line-height: 21px;" align=3D"center">
+2016-11-12 18:51:04	CLIENT -> SERVER:   <tr>
+2016-11-12 18:51:04	CLIENT -> SERVER:     <td align=3D"center" style=3D"padding: 20px 0 20px 0;">
+2016-11-12 18:51:04	CLIENT -> SERVER:       <table width=3D"640" border=3D"0" cellspacing=3D"0" cellpadding=3D"0"=
+2016-11-12 18:51:04	CLIENT -> SERVER: >
+2016-11-12 18:51:04	CLIENT -> SERVER:         <tr>
+2016-11-12 18:51:04	CLIENT -> SERVER:           <td>
+2016-11-12 18:51:04	CLIENT -> SERVER:             <table>
+2016-11-12 18:51:04	CLIENT -> SERVER:               <tr>
+2016-11-12 18:51:04	CLIENT -> SERVER:                 <td style=3D"border-bottom: 1px solid #eeeeee;font-size: 1p=
+2016-11-12 18:51:04	CLIENT -> SERVER: x;color: #008000;" align=3D"right">
+2016-11-12 18:51:04	CLIENT -> SERVER:                   <h2> 2016-11-12</h2>
+2016-11-12 18:51:04	CLIENT -> SERVER:                 </td>
+2016-11-12 18:51:04	CLIENT -> SERVER:               </tr>
+2016-11-12 18:51:04	CLIENT -> SERVER:               <tr>
+2016-11-12 18:51:04	CLIENT -> SERVER:                 <td style=3D"padding: 20px 0 20px 0;" align=3D"left" valign=
+2016-11-12 18:51:04	CLIENT -> SERVER: =3D"top">
+2016-11-12 18:51:04	CLIENT -> SERVER:                   <table width=3D"640" border=3D"0" cellspacing=3D"0" cellp=
+2016-11-12 18:51:04	CLIENT -> SERVER: adding=3D"0" style=3D"border-bottom: 1px solid #eee; padding: 0 0 20px 0; m=
+2016-11-12 18:51:04	CLIENT -> SERVER: argin: 0 0 20px 0;">
+2016-11-12 18:51:04	CLIENT -> SERVER:                     <tr>
+2016-11-12 18:51:04	CLIENT -> SERVER:                       <td width=3D"430" valign=3D"top" align=3D"left" style=
+2016-11-12 18:51:04	CLIENT -> SERVER: =3D"padding: 5px 0 0 0">
+2016-11-12 18:51:04	CLIENT -> SERVER:                         <p style=3D"font-size: 20px; color: #0000A0; line-h=
+2016-11-12 18:51:04	CLIENT -> SERVER: eight: 42px; letter-spacing: 1; margin: 0; padding: 0;">Dear Sir:</p>
+2016-11-12 18:51:04	CLIENT -> SERVER:                       </td>
+2016-11-12 18:51:04	CLIENT -> SERVER:                     </tr>
+2016-11-12 18:51:04	CLIENT -> SERVER:                     <tr>
+2016-11-12 18:51:04	CLIENT -> SERVER:                       <td>
+2016-11-12 18:51:04	CLIENT -> SERVER:                         <p style=3D"margin-bottom:0;padding:0;font-size: 19=
+2016-11-12 18:51:04	CLIENT -> SERVER: px ;color: #888888;">
+2016-11-12 18:51:04	CLIENT -> SERVER:                           <br/><br/>My 15+ years of experience in projects =
+2016-11-12 18:51:04	CLIENT -> SERVER: support in (Saudi Arabia, Germany, Finland, Sweden, Malaysia) should of int=
+2016-11-12 18:51:04	CLIENT -> SERVER: erest to a rapidly growing company like yours, having worked in various cap=
+2016-11-12 18:51:04	CLIENT -> SERVER: acities of Automated Systems installations, Machinery building and even tur=
+2016-11-12 18:51:04	CLIENT -> SERVER: n key construction projects leading to my present assignment as Technical M=
+2016-11-12 18:51:04	CLIENT -> SERVER: anager in KSA, made my skillset unique, not only this, but is a proof of my=
+2016-11-12 18:51:04	CLIENT -> SERVER:  fast learning and my resilience.<br/><br/>I have acquired skills in all ph=
+2016-11-12 18:51:04	CLIENT -> SERVER: ases of technical projects in Mechanical,Electrical and SCADA fields, from =
+2016-11-12 18:51:04	CLIENT -> SERVER: design to FAT & SAT and more I worked with more than 10 different nationali=
+2016-11-12 18:51:04	CLIENT -> SERVER: ties, and I know the importance of communication and personal relations for=
+2016-11-12 18:51:04	CLIENT -> SERVER:  every project success .<br/><br/>I am sure I can contribute to your gross =
+2016-11-12 18:51:04	CLIENT -> SERVER: and profit. And I appreciate the opportunity to show how your company can m=
+2016-11-12 18:51:04	CLIENT -> SERVER: eet its goals.<br/><br/>Thank you for your time and consideration and I loo=
+2016-11-12 18:51:04	CLIENT -> SERVER: k forward to hearing from you.<br/><br/>Yours sincerely,<br/><br/>
+2016-11-12 18:51:04	CLIENT -> SERVER:                         </p>
+2016-11-12 18:51:04	CLIENT -> SERVER:
+2016-11-12 18:51:04	CLIENT -> SERVER:                         <hr style=3D"background: #eeeeee; margin: 0px 0px 1=
+2016-11-12 18:51:04	CLIENT -> SERVER: 8px; padding: 0px; border-style: none; height: 1px;">
+2016-11-12 18:51:04	CLIENT -> SERVER:
+2016-11-12 18:51:04	CLIENT -> SERVER:                         <p style=3D"color: #0000A0; font-size: 17px;letter-=
+2016-11-12 18:51:04	CLIENT -> SERVER: spacing: 2;margin:0;padding:0;">
+2016-11-12 18:51:04	CLIENT -> SERVER:                             Ahmed Elmalla
+2016-11-12 18:51:04	CLIENT -> SERVER:                         </p>
+2016-11-12 18:51:04	CLIENT -> SERVER:                         <p style=3D"color: #0000A0; font-size: 16px;letter-=
+2016-11-12 18:51:04	CLIENT -> SERVER: spacing: 2;margin:0;padding:0;">
+2016-11-12 18:51:04	CLIENT -> SERVER:                             H/P KSA   :(+966)531597142
+2016-11-12 18:51:04	CLIENT -> SERVER:                         </p>
+2016-11-12 18:51:04	CLIENT -> SERVER:                        =20
+2016-11-12 18:51:04	CLIENT -> SERVER:                       </td>
+2016-11-12 18:51:04	CLIENT -> SERVER:                     </tr>
+2016-11-12 18:51:04	CLIENT -> SERVER:                   </table>
+2016-11-12 18:51:04	CLIENT -> SERVER:                 </td>
+2016-11-12 18:51:04	CLIENT -> SERVER:               </tr>
+2016-11-12 18:51:04	CLIENT -> SERVER:             </table>
+2016-11-12 18:51:04	CLIENT -> SERVER:           </td>
+2016-11-12 18:51:04	CLIENT -> SERVER:         </tr>
+2016-11-12 18:51:04	CLIENT -> SERVER:       </table>
+2016-11-12 18:51:04	CLIENT -> SERVER:     </td>
+2016-11-12 18:51:04	CLIENT -> SERVER:   </tr>
+2016-11-12 18:51:04	CLIENT -> SERVER: </table>
+2016-11-12 18:51:04	CLIENT -> SERVER: </body>
+2016-11-12 18:51:04	CLIENT -> SERVER: </html>
+2016-11-12 18:51:04	CLIENT -> SERVER:
+2016-11-12 18:51:04	CLIENT -> SERVER:
+2016-11-12 18:51:04	CLIENT -> SERVER:
+2016-11-12 18:51:04	CLIENT -> SERVER:
+2016-11-12 18:51:04	CLIENT -> SERVER: --b1_f577cf73cdaaa93fdc3da58dbee3749e--
+2016-11-12 18:51:04	CLIENT -> SERVER:
+2016-11-12 18:51:04	CLIENT -> SERVER: .
+2016-11-12 18:51:05	CLIENT -> SERVER: QUIT
+2016-11-12 18:51:06	CLIENT -> SERVER: EHLO HP6460b
+2016-11-12 18:51:06	CLIENT -> SERVER: AUTH LOGIN
+2016-11-12 18:51:06	CLIENT -> SERVER: YWtlbG1hbGxhNzdAZ21haWwuY29t
+2016-11-12 18:51:07	CLIENT -> SERVER: YWhtMDIwM2hhbSEh
+2016-11-12 18:51:07	CLIENT -> SERVER: MAIL FROM:<akelmalla77@gmail.com>
+2016-11-12 18:51:07	CLIENT -> SERVER: RCPT TO:<ahmed.elmalla@linkedemails.com>
+2016-11-12 18:51:08	CLIENT -> SERVER: DATA
+2016-11-12 18:51:08	CLIENT -> SERVER: Date: Sat, 12 Nov 2016 19:50:55 +0100
+2016-11-12 18:51:08	CLIENT -> SERVER: To: ahmed.elmalla@linkedemails.com
+2016-11-12 18:51:08	CLIENT -> SERVER: From: Ahmed Elmalla <akelmalla77@gmail.com>
+2016-11-12 18:51:08	CLIENT -> SERVER: Subject: Technical Engineer Reume -If you didn't like it, I pay you SAR 5
+2016-11-12 18:51:08	CLIENT -> SERVER: Message-ID: <3d453b23ab31b7cfa866eb6a63786173@HP6460b>
+2016-11-12 18:51:08	CLIENT -> SERVER: X-Priority: 3
+2016-11-12 18:51:08	CLIENT -> SERVER: X-Mailer: PHPMailer 5.2.16 (https://github.com/PHPMailer/PHPMailer)
+2016-11-12 18:51:08	CLIENT -> SERVER: Reply-To: "Ahmed Elmalla" <akelmalla77@gmail.com>
+2016-11-12 18:51:08	CLIENT -> SERVER: MIME-Version: 1.0
+2016-11-12 18:51:08	CLIENT -> SERVER: Content-Type: multipart/alternative;
+2016-11-12 18:51:08	CLIENT -> SERVER: 	boundary="b1_3d453b23ab31b7cfa866eb6a63786173"
+2016-11-12 18:51:08	CLIENT -> SERVER: Content-Transfer-Encoding: 8bit
+2016-11-12 18:51:08	CLIENT -> SERVER:
+2016-11-12 18:51:08	CLIENT -> SERVER: This is a multi-part message in MIME format.
+2016-11-12 18:51:08	CLIENT -> SERVER:
+2016-11-12 18:51:08	CLIENT -> SERVER: --b1_3d453b23ab31b7cfa866eb6a63786173
+2016-11-12 18:51:08	CLIENT -> SERVER: Content-Type: text/plain; charset=us-ascii
+2016-11-12 18:51:08	CLIENT -> SERVER:
+2016-11-12 18:51:08	CLIENT -> SERVER: ../uploads/users/AE/Technical/Technical_cover_letter_alt.txt
+2016-11-12 18:51:08	CLIENT -> SERVER:
+2016-11-12 18:51:08	CLIENT -> SERVER:
+2016-11-12 18:51:08	CLIENT -> SERVER: --b1_3d453b23ab31b7cfa866eb6a63786173
+2016-11-12 18:51:08	CLIENT -> SERVER: Content-Type: text/html; charset=us-ascii
+2016-11-12 18:51:08	CLIENT -> SERVER: Content-Transfer-Encoding: quoted-printable
+2016-11-12 18:51:08	CLIENT -> SERVER:
+2016-11-12 18:51:08	CLIENT -> SERVER: <!DOCTYPE html>
+2016-11-12 18:51:08	CLIENT -> SERVER: <!--
+2016-11-12 18:51:08	CLIENT -> SERVER: To change this license header, choose License Headers in Project Properties=
+2016-11-12 18:51:08	CLIENT -> SERVER: ..
+2016-11-12 18:51:08	CLIENT -> SERVER: To change this template file, choose Tools | Templates
+2016-11-12 18:51:08	CLIENT -> SERVER: and open the template in the editor.
+2016-11-12 18:51:08	CLIENT -> SERVER: -->
+2016-11-12 18:51:08	CLIENT -> SERVER:
+2016-11-12 18:51:08	CLIENT -> SERVER: <html>
+2016-11-12 18:51:08	CLIENT -> SERVER: <head>
+2016-11-12 18:51:08	CLIENT -> SERVER: <meta charset=3D"UTF-8">
+2016-11-12 18:51:08	CLIENT -> SERVER: <title>Cover Letter</title>
+2016-11-12 18:51:08	CLIENT -> SERVER:
+2016-11-12 18:51:08	CLIENT -> SERVER:   <style>
+2016-11-12 18:51:08	CLIENT -> SERVER:     table td {border-collapse: collapse;}
+2016-11-12 18:51:08	CLIENT -> SERVER:     hr {
+2016-11-12 18:51:08	CLIENT -> SERVER:       height: 1px!important;
+2016-11-12 18:51:08	CLIENT -> SERVER:       color: #eeeeee!important;
+2016-11-12 18:51:08	CLIENT -> SERVER:       background-color: #eeeeee!important;
+2016-11-12 18:51:08	CLIENT -> SERVER:       border: 0px!important;
+2016-11-12 18:51:08	CLIENT -> SERVER:     }
+2016-11-12 18:51:08	CLIENT -> SERVER:     img {border:0!important; border-radius: 50%; vertical-align: middle;}
+2016-11-12 18:51:08	CLIENT -> SERVER:   </style>
+2016-11-12 18:51:08	CLIENT -> SERVER: </head>
+2016-11-12 18:51:08	CLIENT -> SERVER:
+2016-11-12 18:51:08	CLIENT -> SERVER: <body style=3D"margin: 0;padding: 20px 0 20px 0;">
+2016-11-12 18:51:08	CLIENT -> SERVER: <table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" styl=
+2016-11-12 18:51:08	CLIENT -> SERVER: e=3D"font-family: Helvetica, Arial, Verdana, sans-serif; color: #55555; fon=
+2016-11-12 18:51:08	CLIENT -> SERVER: t-size: 14px; line-height: 21px;" align=3D"center">
+2016-11-12 18:51:08	CLIENT -> SERVER:   <tr>
+2016-11-12 18:51:08	CLIENT -> SERVER:     <td align=3D"center" style=3D"padding: 20px 0 20px 0;">
+2016-11-12 18:51:08	CLIENT -> SERVER:       <table width=3D"640" border=3D"0" cellspacing=3D"0" cellpadding=3D"0"=
+2016-11-12 18:51:08	CLIENT -> SERVER: >
+2016-11-12 18:51:08	CLIENT -> SERVER:         <tr>
+2016-11-12 18:51:08	CLIENT -> SERVER:           <td>
+2016-11-12 18:51:08	CLIENT -> SERVER:             <table>
+2016-11-12 18:51:08	CLIENT -> SERVER:               <tr>
+2016-11-12 18:51:08	CLIENT -> SERVER:                 <td style=3D"border-bottom: 1px solid #eeeeee;font-size: 1p=
+2016-11-12 18:51:08	CLIENT -> SERVER: x;color: #008000;" align=3D"right">
+2016-11-12 18:51:08	CLIENT -> SERVER:                   <h2> 2016-11-12</h2>
+2016-11-12 18:51:08	CLIENT -> SERVER:                 </td>
+2016-11-12 18:51:08	CLIENT -> SERVER:               </tr>
+2016-11-12 18:51:08	CLIENT -> SERVER:               <tr>
+2016-11-12 18:51:08	CLIENT -> SERVER:                 <td style=3D"padding: 20px 0 20px 0;" align=3D"left" valign=
+2016-11-12 18:51:08	CLIENT -> SERVER: =3D"top">
+2016-11-12 18:51:08	CLIENT -> SERVER:                   <table width=3D"640" border=3D"0" cellspacing=3D"0" cellp=
+2016-11-12 18:51:08	CLIENT -> SERVER: adding=3D"0" style=3D"border-bottom: 1px solid #eee; padding: 0 0 20px 0; m=
+2016-11-12 18:51:08	CLIENT -> SERVER: argin: 0 0 20px 0;">
+2016-11-12 18:51:08	CLIENT -> SERVER:                     <tr>
+2016-11-12 18:51:08	CLIENT -> SERVER:                       <td width=3D"430" valign=3D"top" align=3D"left" style=
+2016-11-12 18:51:08	CLIENT -> SERVER: =3D"padding: 5px 0 0 0">
+2016-11-12 18:51:08	CLIENT -> SERVER:                         <p style=3D"font-size: 20px; color: #0000A0; line-h=
+2016-11-12 18:51:08	CLIENT -> SERVER: eight: 42px; letter-spacing: 1; margin: 0; padding: 0;">Dear Sir:</p>
+2016-11-12 18:51:08	CLIENT -> SERVER:                       </td>
+2016-11-12 18:51:08	CLIENT -> SERVER:                     </tr>
+2016-11-12 18:51:08	CLIENT -> SERVER:                     <tr>
+2016-11-12 18:51:08	CLIENT -> SERVER:                       <td>
+2016-11-12 18:51:08	CLIENT -> SERVER:                         <p style=3D"margin-bottom:0;padding:0;font-size: 19=
+2016-11-12 18:51:08	CLIENT -> SERVER: px ;color: #888888;">
+2016-11-12 18:51:08	CLIENT -> SERVER:                           <br/><br/>My 15+ years of experience in projects =
+2016-11-12 18:51:08	CLIENT -> SERVER: support in (Saudi Arabia, Germany, Finland, Sweden, Malaysia) should of int=
+2016-11-12 18:51:08	CLIENT -> SERVER: erest to a rapidly growing company like yours, having worked in various cap=
+2016-11-12 18:51:08	CLIENT -> SERVER: acities of Automated Systems installations, Machinery building and even tur=
+2016-11-12 18:51:08	CLIENT -> SERVER: n key construction projects leading to my present assignment as Technical M=
+2016-11-12 18:51:08	CLIENT -> SERVER: anager in KSA, made my skillset unique, not only this, but is a proof of my=
+2016-11-12 18:51:08	CLIENT -> SERVER:  fast learning and my resilience.<br/><br/>I have acquired skills in all ph=
+2016-11-12 18:51:08	CLIENT -> SERVER: ases of technical projects in Mechanical,Electrical and SCADA fields, from =
+2016-11-12 18:51:08	CLIENT -> SERVER: design to FAT & SAT and more I worked with more than 10 different nationali=
+2016-11-12 18:51:08	CLIENT -> SERVER: ties, and I know the importance of communication and personal relations for=
+2016-11-12 18:51:08	CLIENT -> SERVER:  every project success .<br/><br/>I am sure I can contribute to your gross =
+2016-11-12 18:51:08	CLIENT -> SERVER: and profit. And I appreciate the opportunity to show how your company can m=
+2016-11-12 18:51:08	CLIENT -> SERVER: eet its goals.<br/><br/>Thank you for your time and consideration and I loo=
+2016-11-12 18:51:08	CLIENT -> SERVER: k forward to hearing from you.<br/><br/>Yours sincerely,<br/><br/>
+2016-11-12 18:51:08	CLIENT -> SERVER:                         </p>
+2016-11-12 18:51:08	CLIENT -> SERVER:
+2016-11-12 18:51:08	CLIENT -> SERVER:                         <hr style=3D"background: #eeeeee; margin: 0px 0px 1=
+2016-11-12 18:51:08	CLIENT -> SERVER: 8px; padding: 0px; border-style: none; height: 1px;">
+2016-11-12 18:51:08	CLIENT -> SERVER:
+2016-11-12 18:51:08	CLIENT -> SERVER:                         <p style=3D"color: #0000A0; font-size: 17px;letter-=
+2016-11-12 18:51:08	CLIENT -> SERVER: spacing: 2;margin:0;padding:0;">
+2016-11-12 18:51:08	CLIENT -> SERVER:                             Ahmed Elmalla
+2016-11-12 18:51:08	CLIENT -> SERVER:                         </p>
+2016-11-12 18:51:08	CLIENT -> SERVER:                         <p style=3D"color: #0000A0; font-size: 16px;letter-=
+2016-11-12 18:51:08	CLIENT -> SERVER: spacing: 2;margin:0;padding:0;">
+2016-11-12 18:51:08	CLIENT -> SERVER:                             H/P KSA   :(+966)531597142
+2016-11-12 18:51:08	CLIENT -> SERVER:                         </p>
+2016-11-12 18:51:08	CLIENT -> SERVER:                        =20
+2016-11-12 18:51:08	CLIENT -> SERVER:                       </td>
+2016-11-12 18:51:08	CLIENT -> SERVER:                     </tr>
+2016-11-12 18:51:08	CLIENT -> SERVER:                   </table>
+2016-11-12 18:51:08	CLIENT -> SERVER:                 </td>
+2016-11-12 18:51:08	CLIENT -> SERVER:               </tr>
+2016-11-12 18:51:08	CLIENT -> SERVER:             </table>
+2016-11-12 18:51:08	CLIENT -> SERVER:           </td>
+2016-11-12 18:51:08	CLIENT -> SERVER:         </tr>
+2016-11-12 18:51:08	CLIENT -> SERVER:       </table>
+2016-11-12 18:51:08	CLIENT -> SERVER:     </td>
+2016-11-12 18:51:08	CLIENT -> SERVER:   </tr>
+2016-11-12 18:51:08	CLIENT -> SERVER: </table>
+2016-11-12 18:51:08	CLIENT -> SERVER: </body>
+2016-11-12 18:51:08	CLIENT -> SERVER: </html>
+2016-11-12 18:51:08	CLIENT -> SERVER:
+2016-11-12 18:51:08	CLIENT -> SERVER:
+2016-11-12 18:51:08	CLIENT -> SERVER:
+2016-11-12 18:51:08	CLIENT -> SERVER:
+2016-11-12 18:51:08	CLIENT -> SERVER: --b1_3d453b23ab31b7cfa866eb6a63786173--
+2016-11-12 18:51:08	CLIENT -> SERVER:
+2016-11-12 18:51:08	CLIENT -> SERVER: .
+2016-11-12 18:51:09	CLIENT -> SERVER: QUIT
+
+A PHP Error was encountered
+
+Severity:    Notice
+Message:     Undefined index: emails_scheduled_next_run
+Filename:    C:\xampp\htdocs\CI_306_Linked_Em\application\controllers\admin_mailer.php
+Line Number: 162
+
+Backtrace:
+	File: C:\xampp\htdocs\CI_306_Linked_Em\application\controllers\admin_mailer.php
+	Line: 162
+	Function: _error_handler
+
+	File: C:\xampp\htdocs\CI_306_Linked_Em\index.php
+	Line: 315
+	Function: require_once
+
+
+<!DOCTYPE html>
+<!--[if lt IE 7]>
+<html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>
+<html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>
+<html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Linked Emails Project</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width">
+
+  <link href="http://localhost/CI_306_linked_em/assets/css/admin/global.css" rel="stylesheet" type="text/css">
+  
+   <!--<link rel="stylesheet" href="/assets/css/bootstrap-responsive.min.css">-->
+
+  <script src="http://localhost/CI_306_linked_em/assets/js/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+  <!--<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script> -->
+ 
+  <script>window.jQuery || document.write('<script src="http://localhost/CI_306_linked_em//assets/js/jquery-1.7.1.min.js"><\/script>')</script>
+
+  <script src="http://localhost/CI_306_linked_em//assets/js/bootstrap.min.js"></script>
+  <!--<script src="http://localhost/CI_306_linked_em//node_modules/socket.io/node_modules/socket.io-client/socket.io.js"></script>-->
+  
+  <!--<script src="http://localhost/CI_306_linked_em//assets/js/socket.js"></script> -->
+  <script src="http://localhost/CI_306_linked_em//assets/js/main.js"></script>
+  
+    <style>
+    body {
+      padding-top: 60px;
+      padding-bottom: 40px;
+    }
+    </style>
+</head>
+<body>
+	<div class="navbar navbar-fixed-top">
+	  <div class="navbar-inner">
+	    <div class="container">
+	      <a class="brand">Linked Emails Project</a>
+	      <ul class="nav">
+	        <li >
+	          <a href="http://localhost/CI_306_linked_em/index.php/admin/main">DashBoard</a>
+	        </li>
+                <li >
+	          <a href="http://localhost/CI_306_linked_em/index.php/admin/products">Products</a>
+	        </li>
+	        <li >
+	          <a href="http://localhost/CI_306_linked_em/index.php/admin/manufacturers/">Manufacturers</a>
+	        </li>
+                <li class="dropdown">
+	          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Emails <b class="caret"></b></a>
+	          <ul class="dropdown-menu">
+	            <li>
+	              <a href="http://localhost/CI_306_linked_em/index.php/admin/Emails">Email Add,Edit,Delete</a>
+	            </li>
+                    <li>
+	              <a href="http://localhost/CI_306_linked_em/index.php/admin/Owner">Owner Add,Edit,Delete</a>
+	            </li>
+                    <li>
+	              <a href="http://localhost/CI_306_linked_em/index.php/admin/Source">Source Add,Edit,Delete</a>
+	            </li>
+	          </ul>
+	        </li>
+                <li class="dropdown">
+	          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Companies <b class="caret"></b></a>
+	          <ul class="dropdown-menu">
+	            <li>
+	              <a href="http://localhost/CI_306_linked_em/index.php/admin/Companies">Company Add,Edit,Delete</a>
+	            </li>
+                    <li>
+	              <a href="http://localhost/CI_306_linked_em/index.php/admin/Category">Category Add,Edit,Delete</a>
+	            </li>
+                    <li>
+	              <a href="http://localhost/CI_306_linked_em/index.php/admin/Source">... Add,Edit,Delete</a>
+	            </li>
+	          </ul>
+	        </li>
+	        <li class="dropdown">
+	          <a href="#" class="dropdown-toggle" data-toggle="dropdown">System <b class="caret"></b></a>
+	          <ul class="dropdown-menu">
+	            <li>
+	              <a href="http://localhost/CI_306_linked_em/admin/logout">Logout</a>
+	            </li>
+	          </ul>
+	        </li>
+	      </ul>
+	    </div>
+	  </div>
+	</div>	
+    
+    
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-3 col-md-2 sidebar">
+          <ul class="nav nav-sidebar">
+            <li class="active"><a href="#">Overview <span class="sr-only">(current)</span></a></li>
+            <li><a href="#">Reports</a></li>
+            <li><a href="http://localhost/CI_306_linked_em/index.php/admin/Mailer/show">Mailer</a></li>
+            <li><a href="http://localhost/CI_306_linked_em/index.php/admin/Mailer/mailfixedjob">Scheduled Mail Jobs</a></li>
+            <li><a href="http://localhost/CI_306_linked_em/index.php/admin/Mailer/cronm/1/mailer/3/gmail/UI">Cron Scheduler</a></li>
+            <li><a href="http://localhost/CI_306_linked_em/index.php/admin/export/show">Exports</a></li>
+          </ul>
+          <ul class="nav nav-sidebar">
+            <li><a href="">Nav item</a></li>
+            <li><a href="">Nav item again</a></li>
+            <li><a href="">One more nav</a></li>
+            <li><a href="http://localhost/CI_306_linked_em/index.php/admin/Statistics/">Statistics</a></li>
+            <li><a href="http://localhost/CI_306_linked_em/index.php/admin/Owner/">Owners</a></li>
+          </ul>
+          <ul class="nav nav-sidebar">
+            <li><a href="http://localhost/CI_306_linked_em/index.php/admin/Emails/">Emails</a></li>
+            <li><a href="http://localhost/CI_306_linked_em/index.php/admin/upload/show">Uploads</a></li>
+            <li><a href="http://localhost/CI_306_linked_em/index.php/admin/upload/">Upload Files</a></li>
+          </ul>
+        </div>
+       
+        </div>  
+       </div>
+
+    <div class="container top">
+
+      <ul class="breadcrumb">
+        <li>
+          <a href="http://localhost/CI_306_linked_em/index.php/admin">
+            Admin_mailer          </a> 
+          <span class="divider">/</span>
+        </li>
+        <li class="active">
+          Cron_mail          
+        </li>
+        
+      </ul>
+
+      <div class="page-header users-header">
+        <h2>
+          Cron_mail              <br/>
+             
+              <a  href="http://localhost/CI_306_linked_em/index.php/admin/Mailer/sendmail" class="btn btn-success">Send Email</a>
+              <div class="divider"/>
+              <a  href="http://localhost/CI_306_linked_em/index.php/admin/Mailer/sendmailattach" class="btn btn-success">Send Email with Attachment</a>
+              <br/>
+          
+        </h2>
+      </div>
+      
+      <div class="row">
+        <div class="span12 columns">
+          <div class="well">
+          
+          </div>
+             <table class="table table-striped table-bordered table-condensed">
+            <thead>
+              <tr>
+                <th class="header">email_v_count</th>
+                <th class="yellow header headerSortDown">email_nv_count</th>
+                <th class="green header">email_merged_count</th>
+                <th class="red header">email_to_mailer_count</th>
+                <th class="red header">email_sent_count</th>
+                <th class="red header">emails_sent_earlier</th>
+                <th class="red header">emails_scheduled_next_run</th>
+                <th class="red header">N/A</th>
+      
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>260</td><td>16</td><td>276</td><td>3</td><td>3</td><td>0</td><td>273</td><td>N/A</td></tr>      
+            </tbody>
+           </table> 
+            
+            <table class="table table-striped table-bordered table-condensed">
+             <thead>
+              <tr>
+                <th class="header">Debugging Info</th>
+              </tr>
+              <tr>
+                <th class="header">Email ID</th>
+                <th class="header">Debug Info</th>   
+              </tr>
+            </thead>
+            <tbody>
+               <tr><td>36007</td><td><pre>
+
+</pre></td></tr><tr><td>36008</td><td><pre>
+
+</pre></td></tr><tr><td>36009</td><td><pre>
+
+</pre></td></tr>   
+            </tbody>
+          </table>
+    
+          
+          <table class="table table-striped table-bordered table-condensed">
+          <thead>
+              <tr>
+                <th class="header">Email ID</th>
+                <th class="header">Email sent</th>   
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>36007</td><td>ahmed.elmalla@linkedemails.com</td></tr><tr><td>36008</td><td>ahmed.elmalla@linkedemails.com</td></tr><tr><td>36009</td><td>ahmed.elmalla@linkedemails.com</td></tr>      
+            </tbody>
+          </table>
+            
+          <table class="table table-striped table-bordered table-condensed">
+          <thead>
+              <tr>
+                <th class="header">Email ID</th>
+                <th class="header">Email Failed</th>   
+              </tr>
+            </thead>
+            <tbody>
+                    
+            </tbody>
+          </table>  
+            
+          <table class="table table-striped table-bordered table-condensed">
+          <thead>
+              <tr>
+                <th class="header">Email ID</th>
+                <th class="header">Email sent earlier</th>   
+              </tr>
+            </thead>
+            <tbody>
+                    
+            </tbody>
+          </table>     
+            
+      </div>
+    </div>
+	<div id="footer">
+		<hr>
+		<div class="inner">
+			<div class="container">
+				<p class="right"><a href="#">Back to top</a></p>
+				<p>
+				</p>
+			</div>
+		</div>
+	</div>
+	
+<div id="codeigniter_profiler" style="clear:both;background-color:#fff;padding:10px;">
+
+<fieldset id="ci_profiler_benchmarks" style="border:1px solid #900;padding:6px 10px 10px 10px;margin:20px 0 20px 0;background-color:#eee;">
+<legend style="color:#900;">&nbsp;&nbsp;BENCHMARKS&nbsp;&nbsp;</legend>
+
+
+<table style="width:100%;">
+<tr><td style="padding:5px;width:50%;color:#000;font-weight:bold;background-color:#ddd;">Loading Time: Base Classes&nbsp;&nbsp;</td><td style="padding:5px;width:50%;color:#900;font-weight:normal;background-color:#ddd;">0.0430</td></tr>
+<tr><td style="padding:5px;width:50%;color:#000;font-weight:bold;background-color:#ddd;">Controller Execution Time ( Admin Mailer / Cron Mail )&nbsp;&nbsp;</td><td style="padding:5px;width:50%;color:#900;font-weight:normal;background-color:#ddd;">14.9139</td></tr>
+<tr><td style="padding:5px;width:50%;color:#000;font-weight:bold;background-color:#ddd;">Total Execution Time&nbsp;&nbsp;</td><td style="padding:5px;width:50%;color:#900;font-weight:normal;background-color:#ddd;">14.9589</td></tr>
+</table>
+</fieldset>
+
+<fieldset id="ci_profiler_get" style="border:1px solid #cd6e00;padding:6px 10px 10px 10px;margin:20px 0 20px 0;background-color:#eee;">
+<legend style="color:#cd6e00;">&nbsp;&nbsp;GET DATA&nbsp;&nbsp;</legend>
+<div style="color:#cd6e00;font-weight:normal;padding:4px 0 4px 0;">No GET data exists</div></fieldset>
+
+<fieldset id="ci_profiler_memory_usage" style="border:1px solid #5a0099;padding:6px 10px 10px 10px;margin:20px 0 20px 0;background-color:#eee;">
+<legend style="color:#5a0099;">&nbsp;&nbsp;MEMORY USAGE&nbsp;&nbsp;</legend>
+<div style="color:#5a0099;font-weight:normal;padding:4px 0 4px 0;">4,255,864 bytes</div></fieldset>
+
+<fieldset id="ci_profiler_post" style="border:1px solid #009900;padding:6px 10px 10px 10px;margin:20px 0 20px 0;background-color:#eee;">
+<legend style="color:#009900;">&nbsp;&nbsp;POST DATA&nbsp;&nbsp;</legend>
+<div style="color:#009900;font-weight:normal;padding:4px 0 4px 0;">No POST data exists</div></fieldset>
+
+<fieldset id="ci_profiler_uri_string" style="border:1px solid #000;padding:6px 10px 10px 10px;margin:20px 0 20px 0;background-color:#eee;">
+<legend style="color:#000;">&nbsp;&nbsp;URI STRING&nbsp;&nbsp;</legend>
+<div style="color:#000;font-weight:normal;padding:4px 0 4px 0;">admin_mailer/cron_mail/1/mailer/3/gmail/bat</div></fieldset>
+
+<fieldset id="ci_profiler_controller_info" style="border:1px solid #995300;padding:6px 10px 10px 10px;margin:20px 0 20px 0;background-color:#eee;">
+<legend style="color:#995300;">&nbsp;&nbsp;CLASS/METHOD&nbsp;&nbsp;</legend>
+<div style="color:#995300;font-weight:normal;padding:4px 0 4px 0;">admin_mailer/cron_mail</div></fieldset>
+
+<fieldset style="border:1px solid #0000FF;padding:6px 10px 10px 10px;margin:20px 0 20px 0;background-color:#eee;">
+<legend style="color:#0000FF;">&nbsp;&nbsp;DATABASE:&nbsp; ci_linked_e_m (Admin_mailer:$db)&nbsp;&nbsp;&nbsp;QUERIES: 15 (0.0220 seconds)&nbsp;&nbsp;(<span style="cursor: pointer;" onclick="var s=document.getElementById('ci_profiler_queries_db_0').style;s.display=s.display=='none'?'':'none';this.innerHTML=this.innerHTML=='Hide'?'Show':'Hide';">Hide</span>)</legend>
+
+
+<table style="width:100%;" id="ci_profiler_queries_db_0">
+<tr><td style="padding:5px;vertical-align:top;width:1%;color:#900;font-weight:normal;background-color:#ddd;">0.0030&nbsp;&nbsp;</td><td style="padding:5px;color:#000;font-weight:normal;background-color:#ddd;"><code><span style="color: #000000">
+<span style="color: #0000BB">SHOW&nbsp;COLUMNS&nbsp;<strong>FROM</strong>&nbsp;</span><span style="color: #007700">`</span><span style="color: #DD0000">cron_log</span><span style="color: #007700">`&nbsp;</span>
+</span>
+</code></td></tr>
+<tr><td style="padding:5px;vertical-align:top;width:1%;color:#900;font-weight:normal;background-color:#ddd;">0.0000&nbsp;&nbsp;</td><td style="padding:5px;color:#000;font-weight:normal;background-color:#ddd;"><code><span style="color: #000000">
+<span style="color: #0000BB"><strong><strong>IN</strong>SERT</strong>&nbsp;<strong><strong>IN</strong>TO</strong>&nbsp;</span><span style="color: #007700">`</span><span style="color: #DD0000">cron_log</span><span style="color: #007700">`&nbsp;<strong>(</strong>`</span><span style="color: #DD0000">user_id</span><span style="color: #007700">`,&nbsp;`</span><span style="color: #DD0000">job_category</span><span style="color: #007700">`,&nbsp;`</span><span style="color: #DD0000">tiggered_by</span><span style="color: #007700">`,&nbsp;`</span><span style="color: #DD0000">unit_count</span><span style="color: #007700">`,&nbsp;`</span><span style="color: #DD0000">job_started</span><span style="color: #007700">`,&nbsp;`</span><span style="color: #DD0000">created_at</span><span style="color: #007700">`<strong>)</strong>&nbsp;</span><span style="color: #0000BB"><strong>VALUES</strong>&nbsp;</span><span style="color: #007700"><strong>(</strong></span><span style="color: #DD0000">'1'</span><span style="color: #007700">,&nbsp;</span><span style="color: #DD0000">'mailer'</span><span style="color: #007700">,&nbsp;</span><span style="color: #DD0000">'bat'</span><span style="color: #007700">,&nbsp;</span><span style="color: #DD0000">'3'</span><span style="color: #007700">,&nbsp;</span><span style="color: #DD0000">'2016-11-12&nbsp;19:50:55'</span><span style="color: #007700">,&nbsp;</span><span style="color: #DD0000">'2016-11-12&nbsp;19:50:55'</span><span style="color: #007700"><strong>)</strong>&nbsp;</span>
+</span>
+</code></td></tr>
+<tr><td style="padding:5px;vertical-align:top;width:1%;color:#900;font-weight:normal;background-color:#ddd;">0.0120&nbsp;&nbsp;</td><td style="padding:5px;color:#000;font-weight:normal;background-color:#ddd;"><code><span style="color: #000000">
+<span style="color: #0000BB"><strong>SELECT</strong>&nbsp;</span><span style="color: #007700">`</span><span style="color: #DD0000">emails_master</span><span style="color: #007700">`.`</span><span style="color: #DD0000">email</span><span style="color: #007700">`,&nbsp;`</span><span style="color: #DD0000">emails_master</span><span style="color: #007700">`.`</span><span style="color: #DD0000">email_id</span><span style="color: #007700">`<br /></span><span style="color: #0000BB"><strong>FROM</strong>&nbsp;</span><span style="color: #007700">`</span><span style="color: #DD0000">emails_master</span><span style="color: #007700">`<br /></span><span style="color: #0000BB"><strong>WHERE</strong>&nbsp;</span><span style="color: #007700">`</span><span style="color: #DD0000">owner_id</span><span style="color: #007700">`&nbsp;=&nbsp;</span><span style="color: #0000BB">2&nbsp;</span>
+</span>
+</code></td></tr>
+<tr><td style="padding:5px;vertical-align:top;width:1%;color:#900;font-weight:normal;background-color:#ddd;">0.0020&nbsp;&nbsp;</td><td style="padding:5px;color:#000;font-weight:normal;background-color:#ddd;"><code><span style="color: #000000">
+<span style="color: #0000BB"><strong>SELECT</strong>&nbsp;</span><span style="color: #007700">`</span><span style="color: #DD0000">emails_ntvalidated</span><span style="color: #007700">`.`</span><span style="color: #DD0000">email</span><span style="color: #007700">`,&nbsp;`</span><span style="color: #DD0000">emails_ntvalidated</span><span style="color: #007700">`.`</span><span style="color: #DD0000">email_id</span><span style="color: #007700">`<br /></span><span style="color: #0000BB"><strong>FROM</strong>&nbsp;</span><span style="color: #007700">`</span><span style="color: #DD0000">emails_ntvalidated</span><span style="color: #007700">`<br /></span><span style="color: #0000BB"><strong>WHERE</strong>&nbsp;</span><span style="color: #007700">`</span><span style="color: #DD0000">owner_id</span><span style="color: #007700">`&nbsp;=&nbsp;</span><span style="color: #0000BB">2&nbsp;</span>
+</span>
+</code></td></tr>
+<tr><td style="padding:5px;vertical-align:top;width:1%;color:#900;font-weight:normal;background-color:#ddd;">0.0010&nbsp;&nbsp;</td><td style="padding:5px;color:#000;font-weight:normal;background-color:#ddd;"><code><span style="color: #000000">
+<span style="color: #0000BB"><strong>SELECT</strong>&nbsp;</span><span style="color: #007700">`</span><span style="color: #DD0000">mailer_log</span><span style="color: #007700">`.`</span><span style="color: #DD0000">id</span><span style="color: #007700">`,&nbsp;`</span><span style="color: #DD0000">mailer_log</span><span style="color: #007700">`.`</span><span style="color: #DD0000">email_id</span><span style="color: #007700">`<br /></span><span style="color: #0000BB"><strong>FROM</strong>&nbsp;</span><span style="color: #007700">`</span><span style="color: #DD0000">mailer_log</span><span style="color: #007700">`&nbsp;</span>
+</span>
+</code></td></tr>
+<tr><td style="padding:5px;vertical-align:top;width:1%;color:#900;font-weight:normal;background-color:#ddd;">0.0020&nbsp;&nbsp;</td><td style="padding:5px;color:#000;font-weight:normal;background-color:#ddd;"><code><span style="color: #000000">
+<span style="color: #0000BB">SHOW&nbsp;COLUMNS&nbsp;<strong>FROM</strong>&nbsp;</span><span style="color: #007700">`</span><span style="color: #DD0000">mailer_log</span><span style="color: #007700">`&nbsp;</span>
+</span>
+</code></td></tr>
+<tr><td style="padding:5px;vertical-align:top;width:1%;color:#900;font-weight:normal;background-color:#ddd;">0.0000&nbsp;&nbsp;</td><td style="padding:5px;color:#000;font-weight:normal;background-color:#ddd;"><code><span style="color: #000000">
+<span style="color: #0000BB"><strong><strong>IN</strong>SERT</strong>&nbsp;<strong><strong>IN</strong>TO</strong>&nbsp;</span><span style="color: #007700">`</span><span style="color: #DD0000">mailer_log</span><span style="color: #007700">`&nbsp;<strong>(</strong>`</span><span style="color: #DD0000">email_id</span><span style="color: #007700">`,&nbsp;`</span><span style="color: #DD0000">scheduler_id</span><span style="color: #007700">`,&nbsp;`</span><span style="color: #DD0000">letter</span><span style="color: #007700">`,&nbsp;`</span><span style="color: #DD0000">attachment</span><span style="color: #007700">`,&nbsp;`</span><span style="color: #DD0000">created_at</span><span style="color: #007700">`<strong>)</strong>&nbsp;</span><span style="color: #0000BB"><strong>VALUES</strong>&nbsp;</span><span style="color: #007700"><strong>(</strong></span><span style="color: #0000BB">36007</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">1</span><span style="color: #007700">,&nbsp;</span><span style="color: #DD0000">'Technical_cover_letter.txt'</span><span style="color: #007700">,&nbsp;</span><span style="color: #DD0000">'A_K_Elmalla_Technical_SAC_KSA_R1_0.pdf'</span><span style="color: #007700">,&nbsp;</span><span style="color: #DD0000">'2016-11-12&nbsp;19:51:01'</span><span style="color: #007700"><strong>)</strong>&nbsp;</span>
+</span>
+</code></td></tr>
+<tr><td style="padding:5px;vertical-align:top;width:1%;color:#900;font-weight:normal;background-color:#ddd;">0.0000&nbsp;&nbsp;</td><td style="padding:5px;color:#000;font-weight:normal;background-color:#ddd;"><code><span style="color: #000000">
+<span style="color: #0000BB"><strong><strong>IN</strong>SERT</strong>&nbsp;<strong><strong>IN</strong>TO</strong>&nbsp;</span><span style="color: #007700">`</span><span style="color: #DD0000">mailer_log</span><span style="color: #007700">`&nbsp;<strong>(</strong>`</span><span style="color: #DD0000">email_id</span><span style="color: #007700">`,&nbsp;`</span><span style="color: #DD0000">scheduler_id</span><span style="color: #007700">`,&nbsp;`</span><span style="color: #DD0000">letter</span><span style="color: #007700">`,&nbsp;`</span><span style="color: #DD0000">attachment</span><span style="color: #007700">`,&nbsp;`</span><span style="color: #DD0000">created_at</span><span style="color: #007700">`<strong>)</strong>&nbsp;</span><span style="color: #0000BB"><strong>VALUES</strong>&nbsp;</span><span style="color: #007700"><strong>(</strong></span><span style="color: #0000BB">36008</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">1</span><span style="color: #007700">,&nbsp;</span><span style="color: #DD0000">'Technical_cover_letter.txt'</span><span style="color: #007700">,&nbsp;</span><span style="color: #DD0000">'A_K_Elmalla_Technical_SAC_KSA_R1_0.pdf'</span><span style="color: #007700">,&nbsp;</span><span style="color: #DD0000">'2016-11-12&nbsp;19:51:05'</span><span style="color: #007700"><strong>)</strong>&nbsp;</span>
+</span>
+</code></td></tr>
+<tr><td style="padding:5px;vertical-align:top;width:1%;color:#900;font-weight:normal;background-color:#ddd;">0.0000&nbsp;&nbsp;</td><td style="padding:5px;color:#000;font-weight:normal;background-color:#ddd;"><code><span style="color: #000000">
+<span style="color: #0000BB"><strong><strong>IN</strong>SERT</strong>&nbsp;<strong><strong>IN</strong>TO</strong>&nbsp;</span><span style="color: #007700">`</span><span style="color: #DD0000">mailer_log</span><span style="color: #007700">`&nbsp;<strong>(</strong>`</span><span style="color: #DD0000">email_id</span><span style="color: #007700">`,&nbsp;`</span><span style="color: #DD0000">scheduler_id</span><span style="color: #007700">`,&nbsp;`</span><span style="color: #DD0000">letter</span><span style="color: #007700">`,&nbsp;`</span><span style="color: #DD0000">attachment</span><span style="color: #007700">`,&nbsp;`</span><span style="color: #DD0000">created_at</span><span style="color: #007700">`<strong>)</strong>&nbsp;</span><span style="color: #0000BB"><strong>VALUES</strong>&nbsp;</span><span style="color: #007700"><strong>(</strong></span><span style="color: #0000BB">36009</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">1</span><span style="color: #007700">,&nbsp;</span><span style="color: #DD0000">'Technical_cover_letter.txt'</span><span style="color: #007700">,&nbsp;</span><span style="color: #DD0000">'A_K_Elmalla_Technical_SAC_KSA_R1_0.pdf'</span><span style="color: #007700">,&nbsp;</span><span style="color: #DD0000">'2016-11-12&nbsp;19:51:10'</span><span style="color: #007700"><strong>)</strong>&nbsp;</span>
+</span>
+</code></td></tr>
+<tr><td style="padding:5px;vertical-align:top;width:1%;color:#900;font-weight:normal;background-color:#ddd;">0.0020&nbsp;&nbsp;</td><td style="padding:5px;color:#000;font-weight:normal;background-color:#ddd;"><code><span style="color: #000000">
+<span style="color: #0000BB">SHOW&nbsp;COLUMNS&nbsp;<strong>FROM</strong>&nbsp;</span><span style="color: #007700">`</span><span style="color: #DD0000">mailer_schedule_log</span><span style="color: #007700">`&nbsp;</span>
+</span>
+</code></td></tr>
+<tr><td style="padding:5px;vertical-align:top;width:1%;color:#900;font-weight:normal;background-color:#ddd;">0.0000&nbsp;&nbsp;</td><td style="padding:5px;color:#000;font-weight:normal;background-color:#ddd;"><code><span style="color: #000000">
+<span style="color: #0000BB"><strong><strong>IN</strong>SERT</strong>&nbsp;<strong><strong>IN</strong>TO</strong>&nbsp;</span><span style="color: #007700">`</span><span style="color: #DD0000">mailer_schedule_log</span><span style="color: #007700">`&nbsp;<strong>(</strong>`</span><span style="color: #DD0000">cron_scheduler_id</span><span style="color: #007700">`,&nbsp;`</span><span style="color: #DD0000">total_scheduled_emails</span><span style="color: #007700">`,&nbsp;`</span><span style="color: #DD0000">emails_sent</span><span style="color: #007700">`,&nbsp;`</span><span style="color: #DD0000">emails_nt_sent</span><span style="color: #007700">`,&nbsp;`</span><span style="color: #DD0000">emails_sent_earlier</span><span style="color: #007700">`,&nbsp;`</span><span style="color: #DD0000">emails_scheduled_next_run</span><span style="color: #007700">`,&nbsp;`</span><span style="color: #DD0000">smtp_host</span><span style="color: #007700">`,&nbsp;`</span><span style="color: #DD0000">created_at</span><span style="color: #007700">`<strong>)</strong>&nbsp;</span><span style="color: #0000BB"><strong>VALUES</strong>&nbsp;</span><span style="color: #007700"><strong>(</strong></span><span style="color: #0000BB">12</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">276</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">3</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">0</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">0</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">273</span><span style="color: #007700">,&nbsp;</span><span style="color: #DD0000">'gmail'</span><span style="color: #007700">,&nbsp;</span><span style="color: #DD0000">'2016-11-12&nbsp;19:51:10'</span><span style="color: #007700"><strong>)</strong>&nbsp;</span>
+</span>
+</code></td></tr>
+<tr><td style="padding:5px;vertical-align:top;width:1%;color:#900;font-weight:normal;background-color:#ddd;">0.0000&nbsp;&nbsp;</td><td style="padding:5px;color:#000;font-weight:normal;background-color:#ddd;"><code><span style="color: #000000">
+<span style="color: #0000BB"><strong>UPDATE</strong>&nbsp;</span><span style="color: #007700">`</span><span style="color: #DD0000">mailer_log</span><span style="color: #007700">`&nbsp;</span><span style="color: #0000BB">SET&nbsp;</span><span style="color: #007700">`</span><span style="color: #DD0000">scheduler_id</span><span style="color: #007700">`&nbsp;=&nbsp;</span><span style="color: #0000BB">25</span><span style="color: #007700">,&nbsp;`</span><span style="color: #DD0000">updated_at</span><span style="color: #007700">`&nbsp;=&nbsp;</span><span style="color: #DD0000">'2016-11-12&nbsp;19:51:10'<br /></span><span style="color: #0000BB"><strong>WHERE</strong>&nbsp;</span><span style="color: #007700">`</span><span style="color: #DD0000">id</span><span style="color: #007700">`&nbsp;=&nbsp;</span><span style="color: #0000BB">319&nbsp;</span>
+</span>
+</code></td></tr>
+<tr><td style="padding:5px;vertical-align:top;width:1%;color:#900;font-weight:normal;background-color:#ddd;">0.0000&nbsp;&nbsp;</td><td style="padding:5px;color:#000;font-weight:normal;background-color:#ddd;"><code><span style="color: #000000">
+<span style="color: #0000BB"><strong>UPDATE</strong>&nbsp;</span><span style="color: #007700">`</span><span style="color: #DD0000">mailer_log</span><span style="color: #007700">`&nbsp;</span><span style="color: #0000BB">SET&nbsp;</span><span style="color: #007700">`</span><span style="color: #DD0000">scheduler_id</span><span style="color: #007700">`&nbsp;=&nbsp;</span><span style="color: #0000BB">25</span><span style="color: #007700">,&nbsp;`</span><span style="color: #DD0000">updated_at</span><span style="color: #007700">`&nbsp;=&nbsp;</span><span style="color: #DD0000">'2016-11-12&nbsp;19:51:10'<br /></span><span style="color: #0000BB"><strong>WHERE</strong>&nbsp;</span><span style="color: #007700">`</span><span style="color: #DD0000">id</span><span style="color: #007700">`&nbsp;=&nbsp;</span><span style="color: #0000BB">320&nbsp;</span>
+</span>
+</code></td></tr>
+<tr><td style="padding:5px;vertical-align:top;width:1%;color:#900;font-weight:normal;background-color:#ddd;">0.0000&nbsp;&nbsp;</td><td style="padding:5px;color:#000;font-weight:normal;background-color:#ddd;"><code><span style="color: #000000">
+<span style="color: #0000BB"><strong>UPDATE</strong>&nbsp;</span><span style="color: #007700">`</span><span style="color: #DD0000">mailer_log</span><span style="color: #007700">`&nbsp;</span><span style="color: #0000BB">SET&nbsp;</span><span style="color: #007700">`</span><span style="color: #DD0000">scheduler_id</span><span style="color: #007700">`&nbsp;=&nbsp;</span><span style="color: #0000BB">25</span><span style="color: #007700">,&nbsp;`</span><span style="color: #DD0000">updated_at</span><span style="color: #007700">`&nbsp;=&nbsp;</span><span style="color: #DD0000">'2016-11-12&nbsp;19:51:10'<br /></span><span style="color: #0000BB"><strong>WHERE</strong>&nbsp;</span><span style="color: #007700">`</span><span style="color: #DD0000">id</span><span style="color: #007700">`&nbsp;=&nbsp;</span><span style="color: #0000BB">321&nbsp;</span>
+</span>
+</code></td></tr>
+<tr><td style="padding:5px;vertical-align:top;width:1%;color:#900;font-weight:normal;background-color:#ddd;">0.0000&nbsp;&nbsp;</td><td style="padding:5px;color:#000;font-weight:normal;background-color:#ddd;"><code><span style="color: #000000">
+<span style="color: #0000BB"><strong>UPDATE</strong>&nbsp;</span><span style="color: #007700">`</span><span style="color: #DD0000">cron_log</span><span style="color: #007700">`&nbsp;</span><span style="color: #0000BB">SET&nbsp;</span><span style="color: #007700">`</span><span style="color: #DD0000">job_finished</span><span style="color: #007700">`&nbsp;=&nbsp;</span><span style="color: #DD0000">'2016-11-12&nbsp;19:51:10'</span><span style="color: #007700">,&nbsp;`</span><span style="color: #DD0000">mailer_scheduler_log_id</span><span style="color: #007700">`&nbsp;=&nbsp;</span><span style="color: #0000BB">25</span><span style="color: #007700">,&nbsp;`</span><span style="color: #DD0000">updated_at</span><span style="color: #007700">`&nbsp;=&nbsp;</span><span style="color: #DD0000">'2016-11-12&nbsp;19:51:10'<br /></span><span style="color: #0000BB"><strong>WHERE</strong>&nbsp;</span><span style="color: #007700">`</span><span style="color: #DD0000">id</span><span style="color: #007700">`&nbsp;=&nbsp;</span><span style="color: #0000BB">12&nbsp;</span>
+</span>
+</code></td></tr>
+</table>
+</fieldset>
+
+<fieldset id="ci_profiler_http_headers" style="border:1px solid #000;padding:6px 10px 10px 10px;margin:20px 0 20px 0;background-color:#eee;">
+<legend style="color:#000;">&nbsp;&nbsp;HTTP HEADERS&nbsp;&nbsp;(<span style="cursor: pointer;" onclick="var s=document.getElementById('ci_profiler_httpheaders_table').style;s.display=s.display=='none'?'':'none';this.innerHTML=this.innerHTML=='Show'?'Hide':'Show';">Show</span>)</legend>
+
+
+<table style="width:100%;display:none;" id="ci_profiler_httpheaders_table">
+<tr><td style="vertical-align:top;width:50%;padding:5px;color:#900;background-color:#ddd;">HTTP_ACCEPT&nbsp;&nbsp;</td><td style="width:50%;padding:5px;color:#000;background-color:#ddd;"></td></tr>
+<tr><td style="vertical-align:top;width:50%;padding:5px;color:#900;background-color:#ddd;">HTTP_USER_AGENT&nbsp;&nbsp;</td><td style="width:50%;padding:5px;color:#000;background-color:#ddd;"></td></tr>
+<tr><td style="vertical-align:top;width:50%;padding:5px;color:#900;background-color:#ddd;">HTTP_CONNECTION&nbsp;&nbsp;</td><td style="width:50%;padding:5px;color:#000;background-color:#ddd;"></td></tr>
+<tr><td style="vertical-align:top;width:50%;padding:5px;color:#900;background-color:#ddd;">SERVER_PORT&nbsp;&nbsp;</td><td style="width:50%;padding:5px;color:#000;background-color:#ddd;"></td></tr>
+<tr><td style="vertical-align:top;width:50%;padding:5px;color:#900;background-color:#ddd;">SERVER_NAME&nbsp;&nbsp;</td><td style="width:50%;padding:5px;color:#000;background-color:#ddd;"></td></tr>
+<tr><td style="vertical-align:top;width:50%;padding:5px;color:#900;background-color:#ddd;">REMOTE_ADDR&nbsp;&nbsp;</td><td style="width:50%;padding:5px;color:#000;background-color:#ddd;"></td></tr>
+<tr><td style="vertical-align:top;width:50%;padding:5px;color:#900;background-color:#ddd;">SERVER_SOFTWARE&nbsp;&nbsp;</td><td style="width:50%;padding:5px;color:#000;background-color:#ddd;"></td></tr>
+<tr><td style="vertical-align:top;width:50%;padding:5px;color:#900;background-color:#ddd;">HTTP_ACCEPT_LANGUAGE&nbsp;&nbsp;</td><td style="width:50%;padding:5px;color:#000;background-color:#ddd;"></td></tr>
+<tr><td style="vertical-align:top;width:50%;padding:5px;color:#900;background-color:#ddd;">SCRIPT_NAME&nbsp;&nbsp;</td><td style="width:50%;padding:5px;color:#000;background-color:#ddd;">index.php</td></tr>
+<tr><td style="vertical-align:top;width:50%;padding:5px;color:#900;background-color:#ddd;">REQUEST_METHOD&nbsp;&nbsp;</td><td style="width:50%;padding:5px;color:#000;background-color:#ddd;"></td></tr>
+<tr><td style="vertical-align:top;width:50%;padding:5px;color:#900;background-color:#ddd;"> HTTP_HOST&nbsp;&nbsp;</td><td style="width:50%;padding:5px;color:#000;background-color:#ddd;"></td></tr>
+<tr><td style="vertical-align:top;width:50%;padding:5px;color:#900;background-color:#ddd;">REMOTE_HOST&nbsp;&nbsp;</td><td style="width:50%;padding:5px;color:#000;background-color:#ddd;"></td></tr>
+<tr><td style="vertical-align:top;width:50%;padding:5px;color:#900;background-color:#ddd;">CONTENT_TYPE&nbsp;&nbsp;</td><td style="width:50%;padding:5px;color:#000;background-color:#ddd;"></td></tr>
+<tr><td style="vertical-align:top;width:50%;padding:5px;color:#900;background-color:#ddd;">SERVER_PROTOCOL&nbsp;&nbsp;</td><td style="width:50%;padding:5px;color:#000;background-color:#ddd;"></td></tr>
+<tr><td style="vertical-align:top;width:50%;padding:5px;color:#900;background-color:#ddd;">QUERY_STRING&nbsp;&nbsp;</td><td style="width:50%;padding:5px;color:#000;background-color:#ddd;"></td></tr>
+<tr><td style="vertical-align:top;width:50%;padding:5px;color:#900;background-color:#ddd;">HTTP_ACCEPT_ENCODING&nbsp;&nbsp;</td><td style="width:50%;padding:5px;color:#000;background-color:#ddd;"></td></tr>
+<tr><td style="vertical-align:top;width:50%;padding:5px;color:#900;background-color:#ddd;">HTTP_X_FORWARDED_FOR&nbsp;&nbsp;</td><td style="width:50%;padding:5px;color:#000;background-color:#ddd;"></td></tr>
+<tr><td style="vertical-align:top;width:50%;padding:5px;color:#900;background-color:#ddd;">HTTP_DNT&nbsp;&nbsp;</td><td style="width:50%;padding:5px;color:#000;background-color:#ddd;"></td></tr>
+</table>
+</fieldset><fieldset id="ci_profiler_csession" style="border:1px solid #000;padding:6px 10px 10px 10px;margin:20px 0 20px 0;background-color:#eee;"><legend style="color:#000;">&nbsp;&nbsp;SESSION DATA&nbsp;&nbsp;(<span style="cursor: pointer;" onclick="var s=document.getElementById('ci_profiler_session_data').style;s.display=s.display=='none'?'':'none';this.innerHTML=this.innerHTML=='Show'?'Hide':'Show';">Show</span>)</legend><table style="width:100%;display:none;" id="ci_profiler_session_data"></table>
+</fieldset>
+
+<fieldset id="ci_profiler_config" style="border:1px solid #000;padding:6px 10px 10px 10px;margin:20px 0 20px 0;background-color:#eee;">
+<legend style="color:#000;">&nbsp;&nbsp;CONFIG VARIABLES&nbsp;&nbsp;(<span style="cursor: pointer;" onclick="var s=document.getElementById('ci_profiler_config_table').style;s.display=s.display=='none'?'':'none';this.innerHTML=this.innerHTML=='Show'?'Hide':'Show';">Show</span>)</legend>
+
+
+<table style="width:100%;display:none;" id="ci_profiler_config_table">
+<tr><td style="padding:5px;vertical-align:top;color:#900;background-color:#ddd;">base_url&nbsp;&nbsp;</td><td style="padding:5px;color:#000;background-color:#ddd;">http://localhost/CI_306_linked_em/</td></tr>
+<tr><td style="padding:5px;vertical-align:top;color:#900;background-color:#ddd;">index_page&nbsp;&nbsp;</td><td style="padding:5px;color:#000;background-color:#ddd;">index.php</td></tr>
+<tr><td style="padding:5px;vertical-align:top;color:#900;background-color:#ddd;">uri_protocol&nbsp;&nbsp;</td><td style="padding:5px;color:#000;background-color:#ddd;">REQUEST_URI</td></tr>
+<tr><td style="padding:5px;vertical-align:top;color:#900;background-color:#ddd;">url_suffix&nbsp;&nbsp;</td><td style="padding:5px;color:#000;background-color:#ddd;"></td></tr>
+<tr><td style="padding:5px;vertical-align:top;color:#900;background-color:#ddd;">language&nbsp;&nbsp;</td><td style="padding:5px;color:#000;background-color:#ddd;">english</td></tr>
+<tr><td style="padding:5px;vertical-align:top;color:#900;background-color:#ddd;">charset&nbsp;&nbsp;</td><td style="padding:5px;color:#000;background-color:#ddd;">UTF-8</td></tr>
+<tr><td style="padding:5px;vertical-align:top;color:#900;background-color:#ddd;">enable_hooks&nbsp;&nbsp;</td><td style="padding:5px;color:#000;background-color:#ddd;"></td></tr>
+<tr><td style="padding:5px;vertical-align:top;color:#900;background-color:#ddd;">subclass_prefix&nbsp;&nbsp;</td><td style="padding:5px;color:#000;background-color:#ddd;">MY_</td></tr>
+<tr><td style="padding:5px;vertical-align:top;color:#900;background-color:#ddd;">composer_autoload&nbsp;&nbsp;</td><td style="padding:5px;color:#000;background-color:#ddd;"></td></tr>
+<tr><td style="padding:5px;vertical-align:top;color:#900;background-color:#ddd;">permitted_uri_chars&nbsp;&nbsp;</td><td style="padding:5px;color:#000;background-color:#ddd;">a-z 0-9~%.:_\-</td></tr>
+<tr><td style="padding:5px;vertical-align:top;color:#900;background-color:#ddd;">allow_get_array&nbsp;&nbsp;</td><td style="padding:5px;color:#000;background-color:#ddd;">1</td></tr>
+<tr><td style="padding:5px;vertical-align:top;color:#900;background-color:#ddd;">enable_query_strings&nbsp;&nbsp;</td><td style="padding:5px;color:#000;background-color:#ddd;"></td></tr>
+<tr><td style="padding:5px;vertical-align:top;color:#900;background-color:#ddd;">controller_trigger&nbsp;&nbsp;</td><td style="padding:5px;color:#000;background-color:#ddd;">c</td></tr>
+<tr><td style="padding:5px;vertical-align:top;color:#900;background-color:#ddd;">function_trigger&nbsp;&nbsp;</td><td style="padding:5px;color:#000;background-color:#ddd;">m</td></tr>
+<tr><td style="padding:5px;vertical-align:top;color:#900;background-color:#ddd;">directory_trigger&nbsp;&nbsp;</td><td style="padding:5px;color:#000;background-color:#ddd;">d</td></tr>
+<tr><td style="padding:5px;vertical-align:top;color:#900;background-color:#ddd;">log_threshold&nbsp;&nbsp;</td><td style="padding:5px;color:#000;background-color:#ddd;">2</td></tr>
+<tr><td style="padding:5px;vertical-align:top;color:#900;background-color:#ddd;">log_path&nbsp;&nbsp;</td><td style="padding:5px;color:#000;background-color:#ddd;"></td></tr>
+<tr><td style="padding:5px;vertical-align:top;color:#900;background-color:#ddd;">log_file_extension&nbsp;&nbsp;</td><td style="padding:5px;color:#000;background-color:#ddd;"></td></tr>
+<tr><td style="padding:5px;vertical-align:top;color:#900;background-color:#ddd;">log_file_permissions&nbsp;&nbsp;</td><td style="padding:5px;color:#000;background-color:#ddd;">420</td></tr>
+<tr><td style="padding:5px;vertical-align:top;color:#900;background-color:#ddd;">log_date_format&nbsp;&nbsp;</td><td style="padding:5px;color:#000;background-color:#ddd;">Y-m-d H:i:s</td></tr>
+<tr><td style="padding:5px;vertical-align:top;color:#900;background-color:#ddd;">error_views_path&nbsp;&nbsp;</td><td style="padding:5px;color:#000;background-color:#ddd;"></td></tr>
+<tr><td style="padding:5px;vertical-align:top;color:#900;background-color:#ddd;">cache_path&nbsp;&nbsp;</td><td style="padding:5px;color:#000;background-color:#ddd;"></td></tr>
+<tr><td style="padding:5px;vertical-align:top;color:#900;background-color:#ddd;">cache_query_string&nbsp;&nbsp;</td><td style="padding:5px;color:#000;background-color:#ddd;"></td></tr>
+<tr><td style="padding:5px;vertical-align:top;color:#900;background-color:#ddd;">encryption_key&nbsp;&nbsp;</td><td style="padding:5px;color:#000;background-color:#ddd;">xyz1234567ahm</td></tr>
+<tr><td style="padding:5px;vertical-align:top;color:#900;background-color:#ddd;">sess_driver&nbsp;&nbsp;</td><td style="padding:5px;color:#000;background-color:#ddd;">redis</td></tr>
+<tr><td style="padding:5px;vertical-align:top;color:#900;background-color:#ddd;">sess_cookie_name&nbsp;&nbsp;</td><td style="padding:5px;color:#000;background-color:#ddd;">ci_linked_c</td></tr>
+<tr><td style="padding:5px;vertical-align:top;color:#900;background-color:#ddd;">sess_expiration&nbsp;&nbsp;</td><td style="padding:5px;color:#000;background-color:#ddd;">7200</td></tr>
+<tr><td style="padding:5px;vertical-align:top;color:#900;background-color:#ddd;">sess_save_path&nbsp;&nbsp;</td><td style="padding:5px;color:#000;background-color:#ddd;">tcp://localhost:6379</td></tr>
+<tr><td style="padding:5px;vertical-align:top;color:#900;background-color:#ddd;">sess_match_ip&nbsp;&nbsp;</td><td style="padding:5px;color:#000;background-color:#ddd;"></td></tr>
+<tr><td style="padding:5px;vertical-align:top;color:#900;background-color:#ddd;">sess_time_to_update&nbsp;&nbsp;</td><td style="padding:5px;color:#000;background-color:#ddd;">300</td></tr>
+<tr><td style="padding:5px;vertical-align:top;color:#900;background-color:#ddd;">sess_regenerate_destroy&nbsp;&nbsp;</td><td style="padding:5px;color:#000;background-color:#ddd;"></td></tr>
+<tr><td style="padding:5px;vertical-align:top;color:#900;background-color:#ddd;">redis_host&nbsp;&nbsp;</td><td style="padding:5px;color:#000;background-color:#ddd;">localhost</td></tr>
+<tr><td style="padding:5px;vertical-align:top;color:#900;background-color:#ddd;">redis_port&nbsp;&nbsp;</td><td style="padding:5px;color:#000;background-color:#ddd;">6379</td></tr>
+<tr><td style="padding:5px;vertical-align:top;color:#900;background-color:#ddd;">cookie_prefix&nbsp;&nbsp;</td><td style="padding:5px;color:#000;background-color:#ddd;"></td></tr>
+<tr><td style="padding:5px;vertical-align:top;color:#900;background-color:#ddd;">cookie_domain&nbsp;&nbsp;</td><td style="padding:5px;color:#000;background-color:#ddd;"></td></tr>
+<tr><td style="padding:5px;vertical-align:top;color:#900;background-color:#ddd;">cookie_path&nbsp;&nbsp;</td><td style="padding:5px;color:#000;background-color:#ddd;">/</td></tr>
+<tr><td style="padding:5px;vertical-align:top;color:#900;background-color:#ddd;">cookie_secure&nbsp;&nbsp;</td><td style="padding:5px;color:#000;background-color:#ddd;"></td></tr>
+<tr><td style="padding:5px;vertical-align:top;color:#900;background-color:#ddd;">cookie_httponly&nbsp;&nbsp;</td><td style="padding:5px;color:#000;background-color:#ddd;"></td></tr>
+<tr><td style="padding:5px;vertical-align:top;color:#900;background-color:#ddd;">standardize_newlines&nbsp;&nbsp;</td><td style="padding:5px;color:#000;background-color:#ddd;"></td></tr>
+<tr><td style="padding:5px;vertical-align:top;color:#900;background-color:#ddd;">global_xss_filtering&nbsp;&nbsp;</td><td style="padding:5px;color:#000;background-color:#ddd;"></td></tr>
+<tr><td style="padding:5px;vertical-align:top;color:#900;background-color:#ddd;">csrf_protection&nbsp;&nbsp;</td><td style="padding:5px;color:#000;background-color:#ddd;"></td></tr>
+<tr><td style="padding:5px;vertical-align:top;color:#900;background-color:#ddd;">csrf_token_name&nbsp;&nbsp;</td><td style="padding:5px;color:#000;background-color:#ddd;">csrf_test_name</td></tr>
+<tr><td style="padding:5px;vertical-align:top;color:#900;background-color:#ddd;">csrf_cookie_name&nbsp;&nbsp;</td><td style="padding:5px;color:#000;background-color:#ddd;">csrf_cookie_name</td></tr>
+<tr><td style="padding:5px;vertical-align:top;color:#900;background-color:#ddd;">csrf_expire&nbsp;&nbsp;</td><td style="padding:5px;color:#000;background-color:#ddd;">7200</td></tr>
+<tr><td style="padding:5px;vertical-align:top;color:#900;background-color:#ddd;">csrf_regenerate&nbsp;&nbsp;</td><td style="padding:5px;color:#000;background-color:#ddd;">1</td></tr>
+<tr><td style="padding:5px;vertical-align:top;color:#900;background-color:#ddd;">csrf_exclude_uris&nbsp;&nbsp;</td><td style="padding:5px;color:#000;background-color:#ddd;">Array
+(
+)
+</td></tr>
+<tr><td style="padding:5px;vertical-align:top;color:#900;background-color:#ddd;">compress_output&nbsp;&nbsp;</td><td style="padding:5px;color:#000;background-color:#ddd;"></td></tr>
+<tr><td style="padding:5px;vertical-align:top;color:#900;background-color:#ddd;">time_reference&nbsp;&nbsp;</td><td style="padding:5px;color:#000;background-color:#ddd;">local</td></tr>
+<tr><td style="padding:5px;vertical-align:top;color:#900;background-color:#ddd;">rewrite_short_tags&nbsp;&nbsp;</td><td style="padding:5px;color:#000;background-color:#ddd;"></td></tr>
+<tr><td style="padding:5px;vertical-align:top;color:#900;background-color:#ddd;">proxy_ips&nbsp;&nbsp;</td><td style="padding:5px;color:#000;background-color:#ddd;"></td></tr>
+<tr><td style="padding:5px;vertical-align:top;color:#900;background-color:#ddd;">test_platform&nbsp;&nbsp;</td><td style="padding:5px;color:#000;background-color:#ddd;">win</td></tr>
+<tr><td style="padding:5px;vertical-align:top;color:#900;background-color:#ddd;">live_platform&nbsp;&nbsp;</td><td style="padding:5px;color:#000;background-color:#ddd;">linux</td></tr>
+<tr><td style="padding:5px;vertical-align:top;color:#900;background-color:#ddd;">current_platform&nbsp;&nbsp;</td><td style="padding:5px;color:#000;background-color:#ddd;">win</td></tr>
+</table>
+</fieldset></div></body></html>

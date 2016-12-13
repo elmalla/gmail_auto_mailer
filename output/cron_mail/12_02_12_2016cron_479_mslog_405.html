@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>
+<html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>
+<html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>
+<html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Linked Emails Project</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width">
+
+  <link href="http://localhost/CI_306_linked_em_Production/assets/css/admin/global.css" rel="stylesheet" type="text/css">
+  
+   <!--<link rel="stylesheet" href="/assets/css/bootstrap-responsive.min.css">-->
+
+  <script src="http://localhost/CI_306_linked_em_Production/assets/js/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+  <!--<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script> -->
+ 
+  
+  <script src="http://localhost/CI_306_linked_em_Production//assets/js/jquery-1.7.1.min.js"></script>)
+  <script src="http://localhost/CI_306_linked_em_Production//assets/js/bootstrap.min.js"></script>
+  
+  <!--<script src="http://localhost/CI_306_linked_em_Production//node_modules/socket.io/node_modules/socket.io-client/socket.io.js"></script>-->
+  
+  <!--<script src="http://localhost/CI_306_linked_em_Production//assets/js/socket.js"></script> -->
+  <!--<script src="http://localhost/CI_306_linked_em_Production//assets/js/main.js"></script> -->
+  
+    <style>
+    body {
+      padding-top: 60px;
+      padding-bottom: 40px;
+    }
+    </style>
+</head>
+<body>
+	<div class="navbar navbar-fixed-top">
+	  <div class="navbar-inner">
+	    <div class="container">
+	      <a class="brand">Linked Emails Project</a>
+	      <ul class="nav">
+	        <li >
+	          <a href="http://localhost/CI_306_linked_em_Production/index.php/admin/main">DashBoard</a>
+	        </li>
+                <li >
+	          <a href="http://localhost/CI_306_linked_em_Production/index.php/admin/products">Products</a>
+	        </li>
+	        <li >
+	          <a href="http://localhost/CI_306_linked_em_Production/index.php/admin/manufacturers/">Manufacturers</a>
+	        </li>
+                <li class="dropdown">
+	          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Emails <b class="caret"></b></a>
+	          <ul class="dropdown-menu">
+	            <li>
+	              <a href="http://localhost/CI_306_linked_em_Production/index.php/admin/Emails">Email Add,Edit,Delete</a>
+	            </li>
+                    <li>
+	              <a href="http://localhost/CI_306_linked_em_Production/index.php/admin/Owner">Owner Add,Edit,Delete</a>
+	            </li>
+                    <li>
+	              <a href="http://localhost/CI_306_linked_em_Production/index.php/admin/Source">Source Add,Edit,Delete</a>
+	            </li>
+	          </ul>
+	        </li>
+                <li class="dropdown">
+	          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Companies <b class="caret"></b></a>
+	          <ul class="dropdown-menu">
+	            <li>
+	              <a href="http://localhost/CI_306_linked_em_Production/index.php/admin/Companies">Company Add,Edit,Delete</a>
+	            </li>
+                    <li>
+	              <a href="http://localhost/CI_306_linked_em_Production/index.php/admin/Category">Category Add,Edit,Delete</a>
+	            </li>
+                    <li>
+	              <a href="http://localhost/CI_306_linked_em_Production/index.php/admin/Source">... Add,Edit,Delete</a>
+	            </li>
+	          </ul>
+	        </li>
+	        <li class="dropdown">
+	          <a href="#" class="dropdown-toggle" data-toggle="dropdown">System <b class="caret"></b></a>
+	          <ul class="dropdown-menu">
+	            <li>
+	              <a href="http://localhost/CI_306_linked_em_Production/admin/logout">Logout</a>
+	            </li>
+	          </ul>
+	        </li>
+	      </ul>
+	    </div>
+	  </div>
+	</div>	
+    
+    
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-3 col-md-2 sidebar">
+          <ul class="nav nav-sidebar">
+            <li class="active"><a href="http://localhost/CI_306_linked_em_Production/index.php/admin/main">Overview <span class="sr-only">(current)</span></a></li>
+            <li><a href="#">Reports</a></li>
+            <li><a href="http://localhost/CI_306_linked_em_Production/index.php/admin/Mailer/show">Mailer</a></li>
+            <li><a href="http://localhost/CI_306_linked_em_Production/index.php/admin/Mailer/mailfixedjob">Scheduled Mail Jobs</a></li>
+            <li><a href="http://localhost/CI_306_linked_em_Production/index.php/admin/Mailer/cronm/1/mailer/8/gmail/UI">Cron Scheduler</a></li>
+            <li><a href="http://localhost/CI_306_linked_em_Production/index.php/admin/Emails/cron_backup/false">Cron Backup</a></li>
+            <li><a href="http://localhost/CI_306_linked_em_Production/index.php/admin/export/show">Exports</a></li>
+          </ul>
+          <ul class="nav nav-sidebar">
+            <li><a href="">Nav item</a></li>
+            <li><a href="">Nav item again</a></li>
+            <li><a href="">One more nav</a></li>
+            <li><a href="http://localhost/CI_306_linked_em_Production/index.php/admin/Statistics/">Statistics</a></li>
+            <li><a href="http://localhost/CI_306_linked_em_Production/index.php/admin/Owner/">Owners</a></li>
+          </ul>
+          <ul class="nav nav-sidebar">
+            <li><a href="http://localhost/CI_306_linked_em_Production/index.php/admin/Emails/">Emails</a></li>
+            <li><a href="http://localhost/CI_306_linked_em_Production/index.php/admin/upload/show">Uploads</a></li>
+            <li><a href="http://localhost/CI_306_linked_em_Production/index.php/admin/upload/">Upload Files</a></li>
+          </ul>
+        </div>
+       
+        </div>  
+       </div>
+
+    <div class="container top">
+
+      <ul class="breadcrumb">
+        <li>
+          <a href="http://localhost/CI_306_linked_em_Production/admin">
+            Admin_mailer          </a> 
+          <span class="divider">/</span>
+        </li>
+        <li class="active">
+          Cron_mail          
+        </li>
+        
+      </ul>
+
+      <div class="page-header users-header">
+        <h2>
+          Cron_mail              <br/>
+             
+              <a  href="http://localhost/CI_306_linked_em_Production/admin/Mailer/sendmail" class="btn btn-success">Send Email</a>
+              <div class="divider"/>
+              <a  href="http://localhost/CI_306_linked_em_Production/admin/Mailer/sendmailattach" class="btn btn-success">Send Email with Attachment</a>
+              <br/>
+          
+        </h2>
+      </div>
+      
+      <div class="row">
+        <div class="span12 columns">
+          <div class="well">
+          
+          </div>
+             <table class="table table-striped table-bordered table-condensed">
+            <thead>
+              <tr>
+                <th class="header">email_v_count</th>
+                <th class="yellow header headerSortDown">email_nv_count</th>
+                <th class="green header">email_merged_count</th>
+                <th class="red header">email_to_mailer_count</th>
+                <th class="red header">email_sent_count</th>
+                <th class="red header">emails_sent_earlier</th>
+                <th class="red header">emails_scheduled_next_run</th>
+                <th class="red header">N/A</th>
+      
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>50</td><td>0</td><td>50</td><td>130</td><td>130</td><td>3</td><td>11056</td><td>N/A</td></tr>      
+            </tbody>
+           </table> 
+            
+            <table class="table table-striped table-bordered table-condensed">
+             <thead>
+              <tr>
+                <th class="header">Debugging Info</th>
+              </tr>
+              <tr>
+                <th class="header">Email ID</th>
+                <th class="header">Debug Info</th>   
+              </tr>
+            </thead>
+            <tbody>
+               <tr><td>10901</td><td><pre>
+
+</pre></td></tr><tr><td>10875</td><td><pre>
+
+</pre></td></tr><tr><td>10631</td><td><pre>
+
+</pre></td></tr><tr><td>10247</td><td><pre>
+
+</pre></td></tr><tr><td>9781</td><td><pre>
+
+</pre></td></tr><tr><td>9504</td><td><pre>
+
+</pre></td></tr><tr><td>9497</td><td><pre>
+
+</pre></td></tr><tr><td>9083</td><td><pre>
+
+</pre></td></tr><tr><td>9082</td><td><pre>
+
+</pre></td></tr><tr><td>8459</td><td><pre>
+
+</pre></td></tr><tr><td>8322</td><td><pre>
+
+</pre></td></tr><tr><td>2713</td><td><pre>
+
+</pre></td></tr><tr><td>2635</td><td><pre>
+
+</pre></td></tr>   
+            </tbody>
+          </table>
+    
+          
+          <table class="table table-striped table-bordered table-condensed">
+          <thead>
+              <tr>
+                <th class="header">Email ID</th>
+                <th class="header">Email sent</th>   
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>10901</td><td>abd_alfarsi@mog.gov.om</td></tr><tr><td>18950</td><td>zmuhideen@swcc.gov.sa</td></tr><tr><td>18949</td><td>to@swcc.gov.sa</td></tr><tr><td>18948</td><td>sbali@swcc.gov.sa</td></tr><tr><td>18947</td><td>rkabli2@swcc.gov.sa</td></tr><tr><td>18946</td><td>rdc@swcc.gov.sa</td></tr><tr><td>18945</td><td>ohamed@swcc.gov.sa</td></tr><tr><td>18944</td><td>mshaikh@swcc.gov.sa</td></tr><tr><td>18943</td><td>info@swcc.gov.sa</td></tr><tr><td>18942</td><td>furaih@swcc.gov.sa</td></tr><tr><td>10875</td><td>sulhilali@mog.gov.om</td></tr><tr><td>18941</td><td>eh@swcc.gov.sa</td></tr><tr><td>18940</td><td>aalhusein@swcc.gov.sa</td></tr><tr><td>18939</td><td>aalmoudi@swcc.gov.sa</td></tr><tr><td>18938</td><td>amahdli@swcc.gov.sa</td></tr><tr><td>12785</td><td>webmaster@rcjubail.gov.sa</td></tr><tr><td>12578</td><td>ail@swcc.gov.sa</td></tr><tr><td>12477</td><td>almansour@swcc1.gov.sa</td></tr><tr><td>12394</td><td>nps@mof.gov.sa</td></tr><tr><td>12382</td><td>aalqahtani5@swcc.gov.sa</td></tr><tr><td>10631</td><td>abdullah@tra.gov.om</td></tr><tr><td>12229</td><td>HAbuTalib@swcc.gov.sa</td></tr><tr><td>12089</td><td>luhibi@swcc.gov.sa</td></tr><tr><td>12088</td><td>ealazzaz@swcc.gov.sa</td></tr><tr><td>11952</td><td>malmutairi5@swcc.gov.sa</td></tr><tr><td>11073</td><td>atairan@swcc.gov.sa</td></tr><tr><td>11072</td><td>talluhibia@swcc.gov.sa</td></tr><tr><td>10577</td><td>i@swcc.gov.sa</td></tr><tr><td>10576</td><td>AALHinti@swcc1.gov.sa</td></tr><tr><td>10245</td><td>salharthi@swcc.gov.sa</td></tr><tr><td>10247</td><td>trintdep@sai.gov.om</td></tr><tr><td>10244</td><td>lah@swcc.gov.sa</td></tr><tr><td>10243</td><td>oalghamdi@swcc.gov.sa</td></tr><tr><td>10182</td><td>qatifia@rcjubail.gov.sa</td></tr><tr><td>9511</td><td>falmotairi@mowe.gov.sa</td></tr><tr><td>9498</td><td>khalid.abuleif@mopm.gov.sa</td></tr><tr><td>9494</td><td>plan_budget@momra.gov.sa</td></tr><tr><td>9483</td><td>engineering@momra.gov.sa</td></tr><tr><td>9477</td><td>aemam@planning.gov.sa</td></tr><tr><td>9476</td><td>aomary@planning.gov.sa</td></tr><tr><td>9781</td><td>trng.sbo@modus.gov.om</td></tr><tr><td>8335</td><td>train@nic.gov.sa</td></tr><tr><td>8334</td><td>ashareef@citc.gov.sa</td></tr><tr><td>7124</td><td>Hinti@swcc1.gov.sa</td></tr><tr><td>6938</td><td>kalmzel@kfia.pca.gov.sa</td></tr><tr><td>6901</td><td>sh@swcc.gov.sa</td></tr><tr><td>6207</td><td>nkhan@swcc.gov.sa</td></tr><tr><td>2739</td><td>AIHinti@swcc1.gov.sa</td></tr><tr><td>2564</td><td>yash@swcc.gov.sa</td></tr><tr><td>2396</td><td>falsuwayeh@swcc.gov.sa</td></tr><tr><td>9504</td><td>munira@dgcam.gov.om</td></tr><tr><td>2389</td><td>dgom@swcc.gov.sa</td></tr><tr><td>2232</td><td>twelsh2@swcc.gov.sa</td></tr><tr><td>2231</td><td>tomwelsh@swcc.gov.sa</td></tr><tr><td>1574</td><td>s.khokhar@sidf.gov.sa</td></tr><tr><td>1566</td><td>twelsh@swcc.gov.sa</td></tr><tr><td>1061</td><td>ialsughaiyer@swcc.gov.sa</td></tr><tr><td>999</td><td>AAIHinti@swcc1.gov.sa</td></tr><tr><td>931</td><td>a.abalkhail@sidf.gov.sa</td></tr><tr><td>839</td><td>AAlmozini@swcc.gov.sa</td></tr><tr><td>9497</td><td>moza@mog.gov.om</td></tr><tr><td>781</td><td>training@swcc.gov.sa</td></tr><tr><td>780</td><td>MAlmozini@swcc.gov.sa</td></tr><tr><td>735</td><td>malfaadhel@mowe.gov.sa</td></tr><tr><td>710</td><td>nalathel@sagia.gov.sa</td></tr><tr><td>664</td><td>suhail@mowe.gov.sa</td></tr><tr><td>569</td><td>yayyash@swcc.gov.sa</td></tr><tr><td>26414</td><td>mi.gov.egseteinfo@setejed.com.sa</td></tr><tr><td>33688</td><td>info@ports.gov.sa</td></tr><tr><td>33689</td><td>kfia@pca.gov.sa</td></tr><tr><td>9083</td><td>allawatia@dgcam.gov.om</td></tr><tr><td>35948</td><td>iothaim@planning.gov.sa</td></tr><tr><td>35834</td><td>salzahrani@swcc.gov.sa</td></tr><tr><td>46649</td><td>procurement@swcc.gov.sa</td></tr><tr><td>48460</td><td>aabdo@momra.gov.sa</td></tr><tr><td>48489</td><td>abdullah.sarhan@mopm.gov.sa</td></tr><tr><td>48504</td><td>adarrab@citc.gov.sa</td></tr><tr><td>48524</td><td>aghadir@citc.gov.sa</td></tr><tr><td>48528</td><td>agorganic@moa.gov.sa</td></tr><tr><td>48575</td><td>alhamdan@nic.gov.sa</td></tr><tr><td>9082</td><td>alkindy@dgcam.gov.om</td></tr><tr><td>48665</td><td>arizuddinarizudding@rcjubail.gov.sa</td></tr><tr><td>48693</td><td>asindi@citc.gov.sa</td></tr><tr><td>48795</td><td>contact@mohe.gov.sa</td></tr><tr><td>48841</td><td>dg-ats@pca.gov.sa</td></tr><tr><td>48843</td><td>dinicg@rcjubail.gov.sa</td></tr><tr><td>48844</td><td>dir-jubail@ports.gov.sa</td></tr><tr><td>48871</td><td>emedia@moci.gov.sa</td></tr><tr><td>48896</td><td>farinasr@rcjubail.gov.sa</td></tr><tr><td>48903</td><td>feedback@pca.gov.sa</td></tr><tr><td>8459</td><td>r@dgcam.gov.om</td></tr><tr><td>48905</td><td>fgiabri@ecra.gov.sa</td></tr><tr><td>48963</td><td>hajcc@haj.gov.sa</td></tr><tr><td>49026</td><td>hr_recruitment@gaca.gov.sa</td></tr><tr><td>49031</td><td>hrjubail@rcjubail.gov.sa</td></tr><tr><td>49037</td><td>humaaa@mopm-ta.gov.sa</td></tr><tr><td>49064</td><td>info@199099.gov.sa</td></tr><tr><td>49073</td><td>info@ajt.com.sa</td></tr><tr><td>49074</td><td>info@akel.com.sa</td></tr><tr><td>49075</td><td>info@al-faris.com.sa</td></tr><tr><td>8322</td><td>raiz@dgcam.gov.om</td></tr><tr><td>49076</td><td>info@alamal.com.sa</td></tr><tr><td>49077</td><td>info@alamiah.edu.sa</td></tr><tr><td>49078</td><td>info@alansari.com.sa</td></tr><tr><td>49079</td><td>info@albadr.sa</td></tr><tr><td>49080</td><td>info@alessa.com.sa</td></tr><tr><td>49081</td><td>info@algosaibi.com.sa</td></tr><tr><td>49082</td><td>info@alhajri.com.sa</td></tr><tr><td>49083</td><td>info@alireza.sa</td></tr><tr><td>49084</td><td>info@aljazirahdates.com.sa</td></tr><tr><td>2713</td><td>saifalatabi@mog.gov.om</td></tr><tr><td>49085</td><td>info@almiro.com.sa</td></tr><tr><td>49086</td><td>info@alnafie-steel.com.sa</td></tr><tr><td>49087</td><td>info@aloudatravel.com.sa</td></tr><tr><td>49088</td><td>info@alrai.com.sa</td></tr><tr><td>49089</td><td>info@alrajhi.com.sa</td></tr><tr><td>49090</td><td>info@alrajhi.net.sa</td></tr><tr><td>49091</td><td>info@alraya.com.sa</td></tr><tr><td>49092</td><td>info@alzahrani.com.sa</td></tr><tr><td>49093</td><td>info@anb.com.sa</td></tr><tr><td>2635</td><td>khamis@mog.gov.om</td></tr><tr><td>49094</td><td>info@anet.net.sa</td></tr><tr><td>49095</td><td>info@aspco.com.sa</td></tr><tr><td>49096</td><td>info@assaudia.com.sa</td></tr><tr><td>49097</td><td>info@astracom.com.sa</td></tr><tr><td>49098</td><td>info@astrafarms.com.sa</td></tr><tr><td>49099</td><td>info@aswarco.com.sa</td></tr><tr><td>49100</td><td>info@attest.com.sa</td></tr><tr><td>49101</td><td>info@awalnet.net.sa</td></tr><tr><td>49102</td><td>info@bahlas.com.sa</td></tr>      
+            </tbody>
+          </table>
+            
+          <table class="table table-striped table-bordered table-condensed">
+          <thead>
+              <tr>
+                <th class="header">Email ID</th>
+                <th class="header">Email Failed</th>   
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>19971</td><td>recruitment@almaha.com.om</td></tr><tr><td>18282</td><td>recruit@mbpetroleum.co.om</td></tr><tr><td>18280</td><td>mbpsrecruitment@mbpetroleum.co.om</td></tr>      
+            </tbody>
+          </table>  
+            
+          <table class="table table-striped table-bordered table-condensed">
+          <thead>
+              <tr>
+                <th class="header">Email ID</th>
+                <th class="header">Email sent earlier</th>   
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>19971</td><td>recruitment@almaha.com.om</td></tr><tr><td>18282</td><td>recruit@mbpetroleum.co.om</td></tr><tr><td>18280</td><td>mbpsrecruitment@mbpetroleum.co.om</td></tr>      
+            </tbody>
+          </table>
+            
+          <table class="table table-striped table-bordered table-condensed">
+          <thead>
+              <tr>
+                <th class="header">Debug</th>
+                
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>10901</td></tr><tr><td>abd_alfarsi@mog.gov.om</td></tr><tr><td>0</td></tr><tr><td>0</td></tr><tr><td>zmuhideen@swcc.gov.sa, to@swcc.gov.sa, sbali@swcc.gov.sa, rkabli2@swcc.gov.sa, rdc@swcc.gov.sa, ohamed@swcc.gov.sa, mshaikh@swcc.gov.sa, info@swcc.gov.sa, furaih@swcc.gov.sa</td></tr><tr><td>1</td></tr><tr><td>0</td><td>abd_alfarsi@mog.gov.om</td><td>1</td><td>zmuhideen@swcc.gov.sa</td><td>2</td><td> to@swcc.gov.sa</td><td>3</td><td> sbali@swcc.gov.sa</td><td>4</td><td> rkabli2@swcc.gov.sa</td><td>5</td><td> rdc@swcc.gov.sa</td><td>6</td><td> ohamed@swcc.gov.sa</td><td>7</td><td> mshaikh@swcc.gov.sa</td><td>8</td><td> info@swcc.gov.sa</td><td>9</td><td> furaih@swcc.gov.sa</td></tr><tr></tr><tr><td>10</td></tr><tr><td><pre>
+
+</pre></td></tr><tr><td>10875</td></tr><tr><td>sulhilali@mog.gov.om</td></tr><tr><td>1</td></tr><tr><td>9</td></tr><tr><td>eh@swcc.gov.sa, aalhusein@swcc.gov.sa, aalmoudi@swcc.gov.sa, amahdli@swcc.gov.sa, webmaster@rcjubail.gov.sa, ail@swcc.gov.sa, almansour@swcc1.gov.sa, nps@mof.gov.sa, aalqahtani5@swcc.gov.sa</td></tr><tr><td>1</td></tr><tr><td>0</td><td>sulhilali@mog.gov.om</td><td>1</td><td>eh@swcc.gov.sa</td><td>2</td><td> aalhusein@swcc.gov.sa</td><td>3</td><td> aalmoudi@swcc.gov.sa</td><td>4</td><td> amahdli@swcc.gov.sa</td><td>5</td><td> webmaster@rcjubail.gov.sa</td><td>6</td><td> ail@swcc.gov.sa</td><td>7</td><td> almansour@swcc1.gov.sa</td><td>8</td><td> nps@mof.gov.sa</td><td>9</td><td> aalqahtani5@swcc.gov.sa</td></tr><tr></tr><tr><td>10</td></tr><tr><td><pre>
+
+</pre></td></tr><tr><td>10631</td></tr><tr><td>abdullah@tra.gov.om</td></tr><tr><td>2</td></tr><tr><td>18</td></tr><tr><td>HAbuTalib@swcc.gov.sa, luhibi@swcc.gov.sa, ealazzaz@swcc.gov.sa, malmutairi5@swcc.gov.sa, atairan@swcc.gov.sa, talluhibia@swcc.gov.sa, i@swcc.gov.sa, AALHinti@swcc1.gov.sa, salharthi@swcc.gov.sa</td></tr><tr><td>1</td></tr><tr><td>0</td><td>abdullah@tra.gov.om</td><td>1</td><td>HAbuTalib@swcc.gov.sa</td><td>2</td><td> luhibi@swcc.gov.sa</td><td>3</td><td> ealazzaz@swcc.gov.sa</td><td>4</td><td> malmutairi5@swcc.gov.sa</td><td>5</td><td> atairan@swcc.gov.sa</td><td>6</td><td> talluhibia@swcc.gov.sa</td><td>7</td><td> i@swcc.gov.sa</td><td>8</td><td> AALHinti@swcc1.gov.sa</td><td>9</td><td> salharthi@swcc.gov.sa</td></tr><tr></tr><tr><td>10</td></tr><tr><td><pre>
+
+</pre></td></tr><tr><td>10247</td></tr><tr><td>trintdep@sai.gov.om</td></tr><tr><td>3</td></tr><tr><td>27</td></tr><tr><td>lah@swcc.gov.sa, oalghamdi@swcc.gov.sa, qatifia@rcjubail.gov.sa, falmotairi@mowe.gov.sa, khalid.abuleif@mopm.gov.sa, plan_budget@momra.gov.sa, engineering@momra.gov.sa, aemam@planning.gov.sa, aomary@planning.gov.sa</td></tr><tr><td>1</td></tr><tr><td>0</td><td>trintdep@sai.gov.om</td><td>1</td><td>lah@swcc.gov.sa</td><td>2</td><td> oalghamdi@swcc.gov.sa</td><td>3</td><td> qatifia@rcjubail.gov.sa</td><td>4</td><td> falmotairi@mowe.gov.sa</td><td>5</td><td> khalid.abuleif@mopm.gov.sa</td><td>6</td><td> plan_budget@momra.gov.sa</td><td>7</td><td> engineering@momra.gov.sa</td><td>8</td><td> aemam@planning.gov.sa</td><td>9</td><td> aomary@planning.gov.sa</td></tr><tr></tr><tr><td>10</td></tr><tr><td><pre>
+
+</pre></td></tr><tr><td>9781</td></tr><tr><td>trng.sbo@modus.gov.om</td></tr><tr><td>4</td></tr><tr><td>36</td></tr><tr><td>train@nic.gov.sa, ashareef@citc.gov.sa, Hinti@swcc1.gov.sa, kalmzel@kfia.pca.gov.sa, sh@swcc.gov.sa, nkhan@swcc.gov.sa, AIHinti@swcc1.gov.sa, yash@swcc.gov.sa, falsuwayeh@swcc.gov.sa</td></tr><tr><td>1</td></tr><tr><td>0</td><td>trng.sbo@modus.gov.om</td><td>1</td><td>train@nic.gov.sa</td><td>2</td><td> ashareef@citc.gov.sa</td><td>3</td><td> Hinti@swcc1.gov.sa</td><td>4</td><td> kalmzel@kfia.pca.gov.sa</td><td>5</td><td> sh@swcc.gov.sa</td><td>6</td><td> nkhan@swcc.gov.sa</td><td>7</td><td> AIHinti@swcc1.gov.sa</td><td>8</td><td> yash@swcc.gov.sa</td><td>9</td><td> falsuwayeh@swcc.gov.sa</td></tr><tr></tr><tr><td>10</td></tr><tr><td><pre>
+
+</pre></td></tr><tr><td>9504</td></tr><tr><td>munira@dgcam.gov.om</td></tr><tr><td>5</td></tr><tr><td>45</td></tr><tr><td>dgom@swcc.gov.sa, twelsh2@swcc.gov.sa, tomwelsh@swcc.gov.sa, s.khokhar@sidf.gov.sa, twelsh@swcc.gov.sa, ialsughaiyer@swcc.gov.sa, AAIHinti@swcc1.gov.sa, a.abalkhail@sidf.gov.sa, AAlmozini@swcc.gov.sa</td></tr><tr><td>1</td></tr><tr><td>0</td><td>munira@dgcam.gov.om</td><td>1</td><td>dgom@swcc.gov.sa</td><td>2</td><td> twelsh2@swcc.gov.sa</td><td>3</td><td> tomwelsh@swcc.gov.sa</td><td>4</td><td> s.khokhar@sidf.gov.sa</td><td>5</td><td> twelsh@swcc.gov.sa</td><td>6</td><td> ialsughaiyer@swcc.gov.sa</td><td>7</td><td> AAIHinti@swcc1.gov.sa</td><td>8</td><td> a.abalkhail@sidf.gov.sa</td><td>9</td><td> AAlmozini@swcc.gov.sa</td></tr><tr></tr><tr><td>10</td></tr><tr><td><pre>
+
+</pre></td></tr><tr><td>9497</td></tr><tr><td>moza@mog.gov.om</td></tr><tr><td>6</td></tr><tr><td>54</td></tr><tr><td>training@swcc.gov.sa, MAlmozini@swcc.gov.sa, malfaadhel@mowe.gov.sa, nalathel@sagia.gov.sa, suhail@mowe.gov.sa, yayyash@swcc.gov.sa, mi.gov.egseteinfo@setejed.com.sa, info@ports.gov.sa, kfia@pca.gov.sa</td></tr><tr><td>1</td></tr><tr><td>0</td><td>moza@mog.gov.om</td><td>1</td><td>training@swcc.gov.sa</td><td>2</td><td> MAlmozini@swcc.gov.sa</td><td>3</td><td> malfaadhel@mowe.gov.sa</td><td>4</td><td> nalathel@sagia.gov.sa</td><td>5</td><td> suhail@mowe.gov.sa</td><td>6</td><td> yayyash@swcc.gov.sa</td><td>7</td><td> mi.gov.egseteinfo@setejed.com.sa</td><td>8</td><td> info@ports.gov.sa</td><td>9</td><td> kfia@pca.gov.sa</td></tr><tr></tr><tr><td>10</td></tr><tr><td><pre>
+
+</pre></td></tr><tr><td>9083</td></tr><tr><td>allawatia@dgcam.gov.om</td></tr><tr><td>7</td></tr><tr><td>63</td></tr><tr><td>iothaim@planning.gov.sa, salzahrani@swcc.gov.sa, procurement@swcc.gov.sa, aabdo@momra.gov.sa, abdullah.sarhan@mopm.gov.sa, adarrab@citc.gov.sa, aghadir@citc.gov.sa, agorganic@moa.gov.sa, alhamdan@nic.gov.sa</td></tr><tr><td>1</td></tr><tr><td>0</td><td>allawatia@dgcam.gov.om</td><td>1</td><td>iothaim@planning.gov.sa</td><td>2</td><td> salzahrani@swcc.gov.sa</td><td>3</td><td> procurement@swcc.gov.sa</td><td>4</td><td> aabdo@momra.gov.sa</td><td>5</td><td> abdullah.sarhan@mopm.gov.sa</td><td>6</td><td> adarrab@citc.gov.sa</td><td>7</td><td> aghadir@citc.gov.sa</td><td>8</td><td> agorganic@moa.gov.sa</td><td>9</td><td> alhamdan@nic.gov.sa</td></tr><tr></tr><tr><td>10</td></tr><tr><td><pre>
+
+</pre></td></tr><tr><td>9082</td></tr><tr><td>alkindy@dgcam.gov.om</td></tr><tr><td>8</td></tr><tr><td>72</td></tr><tr><td>arizuddinarizudding@rcjubail.gov.sa, asindi@citc.gov.sa, contact@mohe.gov.sa, dg-ats@pca.gov.sa, dinicg@rcjubail.gov.sa, dir-jubail@ports.gov.sa, emedia@moci.gov.sa, farinasr@rcjubail.gov.sa, feedback@pca.gov.sa</td></tr><tr><td>1</td></tr><tr><td>0</td><td>alkindy@dgcam.gov.om</td><td>1</td><td>arizuddinarizudding@rcjubail.gov.sa</td><td>2</td><td> asindi@citc.gov.sa</td><td>3</td><td> contact@mohe.gov.sa</td><td>4</td><td> dg-ats@pca.gov.sa</td><td>5</td><td> dinicg@rcjubail.gov.sa</td><td>6</td><td> dir-jubail@ports.gov.sa</td><td>7</td><td> emedia@moci.gov.sa</td><td>8</td><td> farinasr@rcjubail.gov.sa</td><td>9</td><td> feedback@pca.gov.sa</td></tr><tr></tr><tr><td>10</td></tr><tr><td><pre>
+
+</pre></td></tr><tr><td>8459</td></tr><tr><td>r@dgcam.gov.om</td></tr><tr><td>9</td></tr><tr><td>81</td></tr><tr><td>fgiabri@ecra.gov.sa, hajcc@haj.gov.sa, hr_recruitment@gaca.gov.sa, hrjubail@rcjubail.gov.sa, humaaa@mopm-ta.gov.sa, info@199099.gov.sa, info@ajt.com.sa, info@akel.com.sa, info@al-faris.com.sa</td></tr><tr><td>1</td></tr><tr><td>0</td><td>r@dgcam.gov.om</td><td>1</td><td>fgiabri@ecra.gov.sa</td><td>2</td><td> hajcc@haj.gov.sa</td><td>3</td><td> hr_recruitment@gaca.gov.sa</td><td>4</td><td> hrjubail@rcjubail.gov.sa</td><td>5</td><td> humaaa@mopm-ta.gov.sa</td><td>6</td><td> info@199099.gov.sa</td><td>7</td><td> info@ajt.com.sa</td><td>8</td><td> info@akel.com.sa</td><td>9</td><td> info@al-faris.com.sa</td></tr><tr></tr><tr><td>10</td></tr><tr><td><pre>
+
+</pre></td></tr><tr><td>8322</td></tr><tr><td>raiz@dgcam.gov.om</td></tr><tr><td>10</td></tr><tr><td>90</td></tr><tr><td>info@alamal.com.sa, info@alamiah.edu.sa, info@alansari.com.sa, info@albadr.sa, info@alessa.com.sa, info@algosaibi.com.sa, info@alhajri.com.sa, info@alireza.sa, info@aljazirahdates.com.sa</td></tr><tr><td>1</td></tr><tr><td>0</td><td>raiz@dgcam.gov.om</td><td>1</td><td>info@alamal.com.sa</td><td>2</td><td> info@alamiah.edu.sa</td><td>3</td><td> info@alansari.com.sa</td><td>4</td><td> info@albadr.sa</td><td>5</td><td> info@alessa.com.sa</td><td>6</td><td> info@algosaibi.com.sa</td><td>7</td><td> info@alhajri.com.sa</td><td>8</td><td> info@alireza.sa</td><td>9</td><td> info@aljazirahdates.com.sa</td></tr><tr></tr><tr><td>10</td></tr><tr><td><pre>
+
+</pre></td></tr><tr><td>2713</td></tr><tr><td>saifalatabi@mog.gov.om</td></tr><tr><td>11</td></tr><tr><td>99</td></tr><tr><td>info@almiro.com.sa, info@alnafie-steel.com.sa, info@aloudatravel.com.sa, info@alrai.com.sa, info@alrajhi.com.sa, info@alrajhi.net.sa, info@alraya.com.sa, info@alzahrani.com.sa, info@anb.com.sa</td></tr><tr><td>1</td></tr><tr><td>0</td><td>saifalatabi@mog.gov.om</td><td>1</td><td>info@almiro.com.sa</td><td>2</td><td> info@alnafie-steel.com.sa</td><td>3</td><td> info@aloudatravel.com.sa</td><td>4</td><td> info@alrai.com.sa</td><td>5</td><td> info@alrajhi.com.sa</td><td>6</td><td> info@alrajhi.net.sa</td><td>7</td><td> info@alraya.com.sa</td><td>8</td><td> info@alzahrani.com.sa</td><td>9</td><td> info@anb.com.sa</td></tr><tr></tr><tr><td>10</td></tr><tr><td><pre>
+
+</pre></td></tr><tr><td>2635</td></tr><tr><td>khamis@mog.gov.om</td></tr><tr><td>12</td></tr><tr><td>108</td></tr><tr><td>info@anet.net.sa, info@aspco.com.sa, info@assaudia.com.sa, info@astracom.com.sa, info@astrafarms.com.sa, info@aswarco.com.sa, info@attest.com.sa, info@awalnet.net.sa, info@bahlas.com.sa</td></tr><tr><td>1</td></tr><tr><td>0</td><td>khamis@mog.gov.om</td><td>1</td><td>info@anet.net.sa</td><td>2</td><td> info@aspco.com.sa</td><td>3</td><td> info@assaudia.com.sa</td><td>4</td><td> info@astracom.com.sa</td><td>5</td><td> info@astrafarms.com.sa</td><td>6</td><td> info@aswarco.com.sa</td><td>7</td><td> info@attest.com.sa</td><td>8</td><td> info@awalnet.net.sa</td><td>9</td><td> info@bahlas.com.sa</td></tr><tr></tr><tr><td>10</td></tr><tr><td><pre>
+
+</pre></td></tr>      
+            </tbody>
+          </table>        
+            
+      </div>
+    </div>
+	<div id="footer">
+		<hr>
+		<div class="inner">
+			<div class="container">
+				<p class="right"><a href="#">Back to top</a></p>
+				<p>
+				</p>
+			</div>
+		</div>
+	</div>
+	
+</body>
+</html>

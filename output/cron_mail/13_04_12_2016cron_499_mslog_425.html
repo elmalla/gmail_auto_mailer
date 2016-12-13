@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>
+<html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>
+<html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>
+<html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Linked Emails Project</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width">
+
+  <link href="http://localhost/CI_306_linked_em_Production/assets/css/admin/global.css" rel="stylesheet" type="text/css">
+  
+   <!--<link rel="stylesheet" href="/assets/css/bootstrap-responsive.min.css">-->
+
+  <script src="http://localhost/CI_306_linked_em_Production/assets/js/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+  <!--<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script> -->
+ 
+  
+  <script src="http://localhost/CI_306_linked_em_Production//assets/js/jquery-1.7.1.min.js"></script>)
+  <script src="http://localhost/CI_306_linked_em_Production//assets/js/bootstrap.min.js"></script>
+  
+  <!--<script src="http://localhost/CI_306_linked_em_Production//node_modules/socket.io/node_modules/socket.io-client/socket.io.js"></script>-->
+  
+  <!--<script src="http://localhost/CI_306_linked_em_Production//assets/js/socket.js"></script> -->
+  <!--<script src="http://localhost/CI_306_linked_em_Production//assets/js/main.js"></script> -->
+  
+    <style>
+    body {
+      padding-top: 60px;
+      padding-bottom: 40px;
+    }
+    </style>
+</head>
+<body>
+	<div class="navbar navbar-fixed-top">
+	  <div class="navbar-inner">
+	    <div class="container">
+	      <a class="brand">Linked Emails Project</a>
+	      <ul class="nav">
+	        <li >
+	          <a href="http://localhost/CI_306_linked_em_Production/index.php/admin/main">DashBoard</a>
+	        </li>
+                <li >
+	          <a href="http://localhost/CI_306_linked_em_Production/index.php/admin/products">Products</a>
+	        </li>
+	        <li >
+	          <a href="http://localhost/CI_306_linked_em_Production/index.php/admin/manufacturers/">Manufacturers</a>
+	        </li>
+                <li class="dropdown">
+	          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Emails <b class="caret"></b></a>
+	          <ul class="dropdown-menu">
+	            <li>
+	              <a href="http://localhost/CI_306_linked_em_Production/index.php/admin/Emails">Email Add,Edit,Delete</a>
+	            </li>
+                    <li>
+	              <a href="http://localhost/CI_306_linked_em_Production/index.php/admin/Owner">Owner Add,Edit,Delete</a>
+	            </li>
+                    <li>
+	              <a href="http://localhost/CI_306_linked_em_Production/index.php/admin/Source">Source Add,Edit,Delete</a>
+	            </li>
+	          </ul>
+	        </li>
+                <li class="dropdown">
+	          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Companies <b class="caret"></b></a>
+	          <ul class="dropdown-menu">
+	            <li>
+	              <a href="http://localhost/CI_306_linked_em_Production/index.php/admin/Companies">Company Add,Edit,Delete</a>
+	            </li>
+                    <li>
+	              <a href="http://localhost/CI_306_linked_em_Production/index.php/admin/Category">Category Add,Edit,Delete</a>
+	            </li>
+                    <li>
+	              <a href="http://localhost/CI_306_linked_em_Production/index.php/admin/Source">... Add,Edit,Delete</a>
+	            </li>
+	          </ul>
+	        </li>
+	        <li class="dropdown">
+	          <a href="#" class="dropdown-toggle" data-toggle="dropdown">System <b class="caret"></b></a>
+	          <ul class="dropdown-menu">
+	            <li>
+	              <a href="http://localhost/CI_306_linked_em_Production/admin/logout">Logout</a>
+	            </li>
+	          </ul>
+	        </li>
+	      </ul>
+	    </div>
+	  </div>
+	</div>	
+    
+    
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-3 col-md-2 sidebar">
+          <ul class="nav nav-sidebar">
+            <li class="active"><a href="http://localhost/CI_306_linked_em_Production/index.php/admin/main">Overview <span class="sr-only">(current)</span></a></li>
+            <li><a href="#">Reports</a></li>
+            <li><a href="http://localhost/CI_306_linked_em_Production/index.php/admin/Mailer/show">Mailer</a></li>
+            <li><a href="http://localhost/CI_306_linked_em_Production/index.php/admin/Mailer/mailfixedjob">Scheduled Mail Jobs</a></li>
+            <li><a href="http://localhost/CI_306_linked_em_Production/index.php/admin/Mailer/cronm/1/mailer/8/gmail/UI">Cron Scheduler</a></li>
+            <li><a href="http://localhost/CI_306_linked_em_Production/index.php/admin/Emails/cron_backup/false">Cron Backup</a></li>
+            <li><a href="http://localhost/CI_306_linked_em_Production/index.php/admin/export/show">Exports</a></li>
+          </ul>
+          <ul class="nav nav-sidebar">
+            <li><a href="">Nav item</a></li>
+            <li><a href="">Nav item again</a></li>
+            <li><a href="">One more nav</a></li>
+            <li><a href="http://localhost/CI_306_linked_em_Production/index.php/admin/Statistics/">Statistics</a></li>
+            <li><a href="http://localhost/CI_306_linked_em_Production/index.php/admin/Owner/">Owners</a></li>
+          </ul>
+          <ul class="nav nav-sidebar">
+            <li><a href="http://localhost/CI_306_linked_em_Production/index.php/admin/Emails/">Emails</a></li>
+            <li><a href="http://localhost/CI_306_linked_em_Production/index.php/admin/upload/show">Uploads</a></li>
+            <li><a href="http://localhost/CI_306_linked_em_Production/index.php/admin/upload/">Upload Files</a></li>
+          </ul>
+        </div>
+       
+        </div>  
+       </div>
+
+    <div class="container top">
+
+      <ul class="breadcrumb">
+        <li>
+          <a href="http://localhost/CI_306_linked_em_Production/admin">
+            Admin_mailer          </a> 
+          <span class="divider">/</span>
+        </li>
+        <li class="active">
+          Cron_mail          
+        </li>
+        
+      </ul>
+
+      <div class="page-header users-header">
+        <h2>
+          Cron_mail              <br/>
+             
+              <a  href="http://localhost/CI_306_linked_em_Production/admin/Mailer/sendmail" class="btn btn-success">Send Email</a>
+              <div class="divider"/>
+              <a  href="http://localhost/CI_306_linked_em_Production/admin/Mailer/sendmailattach" class="btn btn-success">Send Email with Attachment</a>
+              <br/>
+          
+        </h2>
+      </div>
+      
+      <div class="row">
+        <div class="span12 columns">
+          <div class="well">
+          
+          </div>
+             <table class="table table-striped table-bordered table-condensed">
+            <thead>
+              <tr>
+                <th class="header">email_v_count</th>
+                <th class="yellow header headerSortDown">email_nv_count</th>
+                <th class="green header">email_merged_count</th>
+                <th class="red header">email_to_mailer_count</th>
+                <th class="red header">email_sent_count</th>
+                <th class="red header">emails_sent_earlier</th>
+                <th class="red header">emails_scheduled_next_run</th>
+                <th class="red header">N/A</th>
+      
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>50</td><td>0</td><td>50</td><td>60</td><td>60</td><td>0</td><td>60918</td><td>N/A</td></tr>      
+            </tbody>
+           </table> 
+            
+            <table class="table table-striped table-bordered table-condensed">
+             <thead>
+              <tr>
+                <th class="header">Debugging Info</th>
+              </tr>
+              <tr>
+                <th class="header">Email ID</th>
+                <th class="header">Debug Info</th>   
+              </tr>
+            </thead>
+            <tbody>
+               <tr><td>12882</td><td><pre>
+
+</pre></td></tr><tr><td>9258</td><td><pre>
+
+</pre></td></tr><tr><td>42700</td><td><pre>
+
+</pre></td></tr><tr><td>44369</td><td><pre>
+
+</pre></td></tr><tr><td>81689</td><td><pre>
+
+</pre></td></tr><tr><td>81693</td><td><pre>
+
+</pre></td></tr>   
+            </tbody>
+          </table>
+    
+          
+          <table class="table table-striped table-bordered table-condensed">
+          <thead>
+              <tr>
+                <th class="header">Email ID</th>
+                <th class="header">Email sent</th>   
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>12882</td><td>aljasem@moo.gov.kw</td></tr><tr><td>9841</td><td>shj@emirates.net.ae</td></tr><tr><td>9840</td><td>otgulf@emirates.net.ae</td></tr><tr><td>9766</td><td>Rohitashva@tameen.ae</td></tr><tr><td>9765</td><td>man@tameen.ae</td></tr><tr><td>9732</td><td>nsfsudan@emirates.net.ae</td></tr><tr><td>9728</td><td>dharank@npcc.ae</td></tr><tr><td>9669</td><td>procmail@npcc.ae</td></tr><tr><td>9668</td><td>kesavanb@npcc.ae</td></tr><tr><td>9667</td><td>michell@npcc.ae</td></tr><tr><td>9258</td><td>musaed@paci.gov.kw</td></tr><tr><td>9638</td><td>h@ndc.ae</td></tr><tr><td>9637</td><td>hdeh@ndc.ae</td></tr><tr><td>9628</td><td>cement@eim.ae</td></tr><tr><td>9627</td><td>cement@emirates.net.ae</td></tr><tr><td>9617</td><td>aseej@emirates.net.ae</td></tr><tr><td>9616</td><td>knarayan@emirates.net.ae</td></tr><tr><td>9603</td><td>mohamed.habbal@nakheel.ae</td></tr><tr><td>9601</td><td>salim.iskandarani@nakheel.ae</td></tr><tr><td>9591</td><td>fatima.guennovni@nakheel.ae</td></tr><tr><td>42700</td><td>ahmedo@kia.gov.kw</td></tr><tr><td>9590</td><td>Bruce.Schlaitzer@nakheel.ae</td></tr><tr><td>9589</td><td>alexander.javier@nakheel.ae</td></tr><tr><td>9586</td><td>Marwan.AlQamzi@nakheel.ae</td></tr><tr><td>9585</td><td>marwa@nakheel.ae</td></tr><tr><td>9584</td><td>marwan.a@dpa.ae</td></tr><tr><td>9583</td><td>rula@nakheel.ae</td></tr><tr><td>9578</td><td>mahilwa@naffco.ae</td></tr><tr><td>9577</td><td>girish@naffco.ae</td></tr><tr><td>9566</td><td>akaradsheh@mubadala.ae</td></tr><tr><td>44369</td><td>hadeelb@kia.gov.kw</td></tr><tr><td>9565</td><td>iajami@mubadala.ae</td></tr><tr><td>9540</td><td>sudhir@albahar.ae</td></tr><tr><td>9539</td><td>Sodhi@albahar.ae</td></tr><tr><td>9537</td><td>ninang@albahar.ae</td></tr><tr><td>9536</td><td>rmaged@albahar.ae</td></tr><tr><td>9535</td><td>C_Dhar@albahar.ae</td></tr><tr><td>9534</td><td>hsrirsan@albahar.ae</td></tr><tr><td>9532</td><td>mpiuae@emirates.net.ae</td></tr><tr><td>9481</td><td>raharraz@adwea.gov.ae</td></tr><tr><td>81689</td><td>alnaft@moo.gov.kw</td></tr><tr><td>9463</td><td>m_abdulla.maf@uae.gov.ae</td></tr><tr><td>9461</td><td>Fahd_Mujeeb@mindware.ae</td></tr><tr><td>9452</td><td>scaffold@emirates.net.ae</td></tr><tr><td>9451</td><td>merm@emirates.net.ae</td></tr><tr><td>9421</td><td>matrixme@eim.ae</td></tr><tr><td>9419</td><td>sh@masafi.ae</td></tr><tr><td>9413</td><td>id@masafi.ae</td></tr><tr><td>9399</td><td>mapcoad@emirates.net.ae</td></tr><tr><td>9396</td><td>riydh@mammut.ae</td></tr><tr><td>81693</td><td>awatef@moo.gov.kw</td></tr><tr><td>9395</td><td>rezafaleh@mammut.ae</td></tr><tr><td>9393</td><td>ren@agsg.ae</td></tr><tr><td>9391</td><td>mahykadh@emirates.net.ae</td></tr><tr><td>9386</td><td>osama@mag.ae</td></tr><tr><td>9385</td><td>ueiredo@dalkia.ae</td></tr><tr><td>9364</td><td>tom.cassidy@lloydstsb.ae</td></tr><tr><td>9361</td><td>mayuresh@emirates.net.ae</td></tr><tr><td>9360</td><td>sreedesh@emirates.net.ae</td></tr><tr><td>9335</td><td>srao@lamnalco.ae</td></tr>      
+            </tbody>
+          </table>
+            
+          <table class="table table-striped table-bordered table-condensed">
+          <thead>
+              <tr>
+                <th class="header">Email ID</th>
+                <th class="header">Email Failed</th>   
+              </tr>
+            </thead>
+            <tbody>
+                    
+            </tbody>
+          </table>  
+            
+          <table class="table table-striped table-bordered table-condensed">
+          <thead>
+              <tr>
+                <th class="header">Email ID</th>
+                <th class="header">Email sent earlier</th>   
+              </tr>
+            </thead>
+            <tbody>
+                    
+            </tbody>
+          </table>
+            
+          <table class="table table-striped table-bordered table-condensed">
+          <thead>
+              <tr>
+                <th class="header">Debug</th>
+                
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>12882</td></tr><tr><td>aljasem@moo.gov.kw</td></tr><tr><td>0</td></tr><tr><td>0</td></tr><tr><td>shj@emirates.net.ae, otgulf@emirates.net.ae, Rohitashva@tameen.ae, man@tameen.ae, nsfsudan@emirates.net.ae, dharank@npcc.ae, procmail@npcc.ae, kesavanb@npcc.ae, michell@npcc.ae</td></tr><tr><td>1</td></tr><tr><td>0</td><td>aljasem@moo.gov.kw</td><td>1</td><td>shj@emirates.net.ae</td><td>2</td><td> otgulf@emirates.net.ae</td><td>3</td><td> Rohitashva@tameen.ae</td><td>4</td><td> man@tameen.ae</td><td>5</td><td> nsfsudan@emirates.net.ae</td><td>6</td><td> dharank@npcc.ae</td><td>7</td><td> procmail@npcc.ae</td><td>8</td><td> kesavanb@npcc.ae</td><td>9</td><td> michell@npcc.ae</td></tr><tr></tr><tr><td>10</td></tr><tr><td><pre>
+
+</pre></td></tr><tr><td>9258</td></tr><tr><td>musaed@paci.gov.kw</td></tr><tr><td>1</td></tr><tr><td>9</td></tr><tr><td>h@ndc.ae, hdeh@ndc.ae, cement@eim.ae, cement@emirates.net.ae, aseej@emirates.net.ae, knarayan@emirates.net.ae, mohamed.habbal@nakheel.ae, salim.iskandarani@nakheel.ae, fatima.guennovni@nakheel.ae</td></tr><tr><td>1</td></tr><tr><td>0</td><td>musaed@paci.gov.kw</td><td>1</td><td>h@ndc.ae</td><td>2</td><td> hdeh@ndc.ae</td><td>3</td><td> cement@eim.ae</td><td>4</td><td> cement@emirates.net.ae</td><td>5</td><td> aseej@emirates.net.ae</td><td>6</td><td> knarayan@emirates.net.ae</td><td>7</td><td> mohamed.habbal@nakheel.ae</td><td>8</td><td> salim.iskandarani@nakheel.ae</td><td>9</td><td> fatima.guennovni@nakheel.ae</td></tr><tr></tr><tr><td>10</td></tr><tr><td><pre>
+
+</pre></td></tr><tr><td>42700</td></tr><tr><td>ahmedo@kia.gov.kw</td></tr><tr><td>2</td></tr><tr><td>18</td></tr><tr><td>Bruce.Schlaitzer@nakheel.ae, alexander.javier@nakheel.ae, Marwan.AlQamzi@nakheel.ae, marwa@nakheel.ae, marwan.a@dpa.ae, rula@nakheel.ae, mahilwa@naffco.ae, girish@naffco.ae, akaradsheh@mubadala.ae</td></tr><tr><td>1</td></tr><tr><td>0</td><td>ahmedo@kia.gov.kw</td><td>1</td><td>Bruce.Schlaitzer@nakheel.ae</td><td>2</td><td> alexander.javier@nakheel.ae</td><td>3</td><td> Marwan.AlQamzi@nakheel.ae</td><td>4</td><td> marwa@nakheel.ae</td><td>5</td><td> marwan.a@dpa.ae</td><td>6</td><td> rula@nakheel.ae</td><td>7</td><td> mahilwa@naffco.ae</td><td>8</td><td> girish@naffco.ae</td><td>9</td><td> akaradsheh@mubadala.ae</td></tr><tr></tr><tr><td>10</td></tr><tr><td><pre>
+
+</pre></td></tr><tr><td>44369</td></tr><tr><td>hadeelb@kia.gov.kw</td></tr><tr><td>3</td></tr><tr><td>27</td></tr><tr><td>iajami@mubadala.ae, sudhir@albahar.ae, Sodhi@albahar.ae, ninang@albahar.ae, rmaged@albahar.ae, C_Dhar@albahar.ae, hsrirsan@albahar.ae, mpiuae@emirates.net.ae, raharraz@adwea.gov.ae</td></tr><tr><td>1</td></tr><tr><td>0</td><td>hadeelb@kia.gov.kw</td><td>1</td><td>iajami@mubadala.ae</td><td>2</td><td> sudhir@albahar.ae</td><td>3</td><td> Sodhi@albahar.ae</td><td>4</td><td> ninang@albahar.ae</td><td>5</td><td> rmaged@albahar.ae</td><td>6</td><td> C_Dhar@albahar.ae</td><td>7</td><td> hsrirsan@albahar.ae</td><td>8</td><td> mpiuae@emirates.net.ae</td><td>9</td><td> raharraz@adwea.gov.ae</td></tr><tr></tr><tr><td>10</td></tr><tr><td><pre>
+
+</pre></td></tr><tr><td>81689</td></tr><tr><td>alnaft@moo.gov.kw</td></tr><tr><td>4</td></tr><tr><td>36</td></tr><tr><td>m_abdulla.maf@uae.gov.ae, Fahd_Mujeeb@mindware.ae, scaffold@emirates.net.ae, merm@emirates.net.ae, matrixme@eim.ae, sh@masafi.ae, id@masafi.ae, mapcoad@emirates.net.ae, riydh@mammut.ae</td></tr><tr><td>1</td></tr><tr><td>0</td><td>alnaft@moo.gov.kw</td><td>1</td><td>m_abdulla.maf@uae.gov.ae</td><td>2</td><td> Fahd_Mujeeb@mindware.ae</td><td>3</td><td> scaffold@emirates.net.ae</td><td>4</td><td> merm@emirates.net.ae</td><td>5</td><td> matrixme@eim.ae</td><td>6</td><td> sh@masafi.ae</td><td>7</td><td> id@masafi.ae</td><td>8</td><td> mapcoad@emirates.net.ae</td><td>9</td><td> riydh@mammut.ae</td></tr><tr></tr><tr><td>10</td></tr><tr><td><pre>
+
+</pre></td></tr><tr><td>81693</td></tr><tr><td>awatef@moo.gov.kw</td></tr><tr><td>5</td></tr><tr><td>45</td></tr><tr><td>rezafaleh@mammut.ae, ren@agsg.ae, mahykadh@emirates.net.ae, osama@mag.ae, ueiredo@dalkia.ae, tom.cassidy@lloydstsb.ae, mayuresh@emirates.net.ae, sreedesh@emirates.net.ae, srao@lamnalco.ae</td></tr><tr><td>1</td></tr><tr><td>0</td><td>awatef@moo.gov.kw</td><td>1</td><td>rezafaleh@mammut.ae</td><td>2</td><td> ren@agsg.ae</td><td>3</td><td> mahykadh@emirates.net.ae</td><td>4</td><td> osama@mag.ae</td><td>5</td><td> ueiredo@dalkia.ae</td><td>6</td><td> tom.cassidy@lloydstsb.ae</td><td>7</td><td> mayuresh@emirates.net.ae</td><td>8</td><td> sreedesh@emirates.net.ae</td><td>9</td><td> srao@lamnalco.ae</td></tr><tr></tr><tr><td>10</td></tr><tr><td><pre>
+
+</pre></td></tr>      
+            </tbody>
+          </table>        
+            
+      </div>
+    </div>
+	<div id="footer">
+		<hr>
+		<div class="inner">
+			<div class="container">
+				<p class="right"><a href="#">Back to top</a></p>
+				<p>
+				</p>
+			</div>
+		</div>
+	</div>
+	
+</body>
+</html>

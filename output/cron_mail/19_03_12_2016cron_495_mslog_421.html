@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>
+<html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>
+<html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>
+<html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Linked Emails Project</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width">
+
+  <link href="http://localhost/CI_306_linked_em_Production/assets/css/admin/global.css" rel="stylesheet" type="text/css">
+  
+   <!--<link rel="stylesheet" href="/assets/css/bootstrap-responsive.min.css">-->
+
+  <script src="http://localhost/CI_306_linked_em_Production/assets/js/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+  <!--<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script> -->
+ 
+  
+  <script src="http://localhost/CI_306_linked_em_Production//assets/js/jquery-1.7.1.min.js"></script>)
+  <script src="http://localhost/CI_306_linked_em_Production//assets/js/bootstrap.min.js"></script>
+  
+  <!--<script src="http://localhost/CI_306_linked_em_Production//node_modules/socket.io/node_modules/socket.io-client/socket.io.js"></script>-->
+  
+  <!--<script src="http://localhost/CI_306_linked_em_Production//assets/js/socket.js"></script> -->
+  <!--<script src="http://localhost/CI_306_linked_em_Production//assets/js/main.js"></script> -->
+  
+    <style>
+    body {
+      padding-top: 60px;
+      padding-bottom: 40px;
+    }
+    </style>
+</head>
+<body>
+	<div class="navbar navbar-fixed-top">
+	  <div class="navbar-inner">
+	    <div class="container">
+	      <a class="brand">Linked Emails Project</a>
+	      <ul class="nav">
+	        <li >
+	          <a href="http://localhost/CI_306_linked_em_Production/index.php/admin/main">DashBoard</a>
+	        </li>
+                <li >
+	          <a href="http://localhost/CI_306_linked_em_Production/index.php/admin/products">Products</a>
+	        </li>
+	        <li >
+	          <a href="http://localhost/CI_306_linked_em_Production/index.php/admin/manufacturers/">Manufacturers</a>
+	        </li>
+                <li class="dropdown">
+	          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Emails <b class="caret"></b></a>
+	          <ul class="dropdown-menu">
+	            <li>
+	              <a href="http://localhost/CI_306_linked_em_Production/index.php/admin/Emails">Email Add,Edit,Delete</a>
+	            </li>
+                    <li>
+	              <a href="http://localhost/CI_306_linked_em_Production/index.php/admin/Owner">Owner Add,Edit,Delete</a>
+	            </li>
+                    <li>
+	              <a href="http://localhost/CI_306_linked_em_Production/index.php/admin/Source">Source Add,Edit,Delete</a>
+	            </li>
+	          </ul>
+	        </li>
+                <li class="dropdown">
+	          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Companies <b class="caret"></b></a>
+	          <ul class="dropdown-menu">
+	            <li>
+	              <a href="http://localhost/CI_306_linked_em_Production/index.php/admin/Companies">Company Add,Edit,Delete</a>
+	            </li>
+                    <li>
+	              <a href="http://localhost/CI_306_linked_em_Production/index.php/admin/Category">Category Add,Edit,Delete</a>
+	            </li>
+                    <li>
+	              <a href="http://localhost/CI_306_linked_em_Production/index.php/admin/Source">... Add,Edit,Delete</a>
+	            </li>
+	          </ul>
+	        </li>
+	        <li class="dropdown">
+	          <a href="#" class="dropdown-toggle" data-toggle="dropdown">System <b class="caret"></b></a>
+	          <ul class="dropdown-menu">
+	            <li>
+	              <a href="http://localhost/CI_306_linked_em_Production/admin/logout">Logout</a>
+	            </li>
+	          </ul>
+	        </li>
+	      </ul>
+	    </div>
+	  </div>
+	</div>	
+    
+    
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-3 col-md-2 sidebar">
+          <ul class="nav nav-sidebar">
+            <li class="active"><a href="http://localhost/CI_306_linked_em_Production/index.php/admin/main">Overview <span class="sr-only">(current)</span></a></li>
+            <li><a href="#">Reports</a></li>
+            <li><a href="http://localhost/CI_306_linked_em_Production/index.php/admin/Mailer/show">Mailer</a></li>
+            <li><a href="http://localhost/CI_306_linked_em_Production/index.php/admin/Mailer/mailfixedjob">Scheduled Mail Jobs</a></li>
+            <li><a href="http://localhost/CI_306_linked_em_Production/index.php/admin/Mailer/cronm/1/mailer/8/gmail/UI">Cron Scheduler</a></li>
+            <li><a href="http://localhost/CI_306_linked_em_Production/index.php/admin/Emails/cron_backup/false">Cron Backup</a></li>
+            <li><a href="http://localhost/CI_306_linked_em_Production/index.php/admin/export/show">Exports</a></li>
+          </ul>
+          <ul class="nav nav-sidebar">
+            <li><a href="">Nav item</a></li>
+            <li><a href="">Nav item again</a></li>
+            <li><a href="">One more nav</a></li>
+            <li><a href="http://localhost/CI_306_linked_em_Production/index.php/admin/Statistics/">Statistics</a></li>
+            <li><a href="http://localhost/CI_306_linked_em_Production/index.php/admin/Owner/">Owners</a></li>
+          </ul>
+          <ul class="nav nav-sidebar">
+            <li><a href="http://localhost/CI_306_linked_em_Production/index.php/admin/Emails/">Emails</a></li>
+            <li><a href="http://localhost/CI_306_linked_em_Production/index.php/admin/upload/show">Uploads</a></li>
+            <li><a href="http://localhost/CI_306_linked_em_Production/index.php/admin/upload/">Upload Files</a></li>
+          </ul>
+        </div>
+       
+        </div>  
+       </div>
+
+    <div class="container top">
+
+      <ul class="breadcrumb">
+        <li>
+          <a href="http://localhost/CI_306_linked_em_Production/admin">
+            Admin_mailer          </a> 
+          <span class="divider">/</span>
+        </li>
+        <li class="active">
+          Cron_mail          
+        </li>
+        
+      </ul>
+
+      <div class="page-header users-header">
+        <h2>
+          Cron_mail              <br/>
+             
+              <a  href="http://localhost/CI_306_linked_em_Production/admin/Mailer/sendmail" class="btn btn-success">Send Email</a>
+              <div class="divider"/>
+              <a  href="http://localhost/CI_306_linked_em_Production/admin/Mailer/sendmailattach" class="btn btn-success">Send Email with Attachment</a>
+              <br/>
+          
+        </h2>
+      </div>
+      
+      <div class="row">
+        <div class="span12 columns">
+          <div class="well">
+          
+          </div>
+             <table class="table table-striped table-bordered table-condensed">
+            <thead>
+              <tr>
+                <th class="header">email_v_count</th>
+                <th class="yellow header headerSortDown">email_nv_count</th>
+                <th class="green header">email_merged_count</th>
+                <th class="red header">email_to_mailer_count</th>
+                <th class="red header">email_sent_count</th>
+                <th class="red header">emails_sent_earlier</th>
+                <th class="red header">emails_scheduled_next_run</th>
+                <th class="red header">N/A</th>
+      
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>50</td><td>0</td><td>50</td><td>100</td><td>100</td><td>0</td><td>19612</td><td>N/A</td></tr>      
+            </tbody>
+           </table> 
+            
+            <table class="table table-striped table-bordered table-condensed">
+             <thead>
+              <tr>
+                <th class="header">Debugging Info</th>
+              </tr>
+              <tr>
+                <th class="header">Email ID</th>
+                <th class="header">Debug Info</th>   
+              </tr>
+            </thead>
+            <tbody>
+               <tr><td>141307</td><td><pre>
+
+</pre></td></tr><tr><td>141308</td><td><pre>
+
+</pre></td></tr><tr><td>141309</td><td><pre>
+
+</pre></td></tr><tr><td>141310</td><td><pre>
+
+</pre></td></tr><tr><td>141311</td><td><pre>
+
+</pre></td></tr><tr><td>141312</td><td><pre>
+
+</pre></td></tr><tr><td>141313</td><td><pre>
+
+</pre></td></tr><tr><td>141314</td><td><pre>
+
+</pre></td></tr><tr><td>141315</td><td><pre>
+
+</pre></td></tr><tr><td>141316</td><td><pre>
+
+</pre></td></tr><tr><td>141317</td><td>SMTP Error: data not accepted.SMTP server error: DATA command failed Detail: Daily user sending quota exceeded. l67sm8863626wmf.20 - gsmtp
+ SMTP code: 550 Additional SMTP info: 5.4.5<br /><pre>
+
+</pre></td></tr>   
+            </tbody>
+          </table>
+    
+          
+          <table class="table table-striped table-bordered table-condensed">
+          <thead>
+              <tr>
+                <th class="header">Email ID</th>
+                <th class="header">Email sent</th>   
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>141307</td><td>contact@partnerscard.ch</td></tr><tr><td>169420</td><td>alterna@ppp.bekkoame.ne.jp</td></tr><tr><td>169421</td><td>am00101@jcom.home.ne.jp</td></tr><tr><td>169422</td><td>amac2979@yahoo.co.jp</td></tr><tr><td>169423</td><td>amanabe@mail.ecc.u-tokyo.ac.jp</td></tr><tr><td>169424</td><td>amano@cc.kyushu-u.ac.jp</td></tr><tr><td>169425</td><td>amat@mail.ecc.u-tokyo.ac.jp</td></tr><tr><td>169426</td><td>amatsu@md.okayama-u.ac.jp</td></tr><tr><td>169427</td><td>amimoto@rc.kyushu-u.ac.jp</td></tr><tr><td>169428</td><td>amiura@mech.cst.nihon-u.ac.jp</td></tr><tr><td>141308</td><td>contract@alumetal.ch</td></tr><tr><td>169429</td><td>amlo@itochu.co.jp</td></tr><tr><td>169430</td><td>ammazza@infoseek.jp</td></tr><tr><td>169431</td><td>amy_7013@yahoo.co.jp</td></tr><tr><td>169432</td><td>an-arc@infoseek.jp</td></tr><tr><td>169433</td><td>anai@iias.flab.fujitsu.co.jp</td></tr><tr><td>169434</td><td>anami@sic.shibaura-it.ac.jp</td></tr><tr><td>169435</td><td>anany1975@yahoo.co.jp</td></tr><tr><td>169436</td><td>anato114@md.okayama-u.ac.jp</td></tr><tr><td>169437</td><td>anazawa@hic-soft.co.jp</td></tr><tr><td>141309</td><td>copycenter@zehnder.ch</td></tr><tr><td>169438</td><td>andjela@www2.px.tsukuba.ac.jp</td></tr><tr><td>169439</td><td>ando@avkk.yamaha.co.jp</td></tr><tr><td>169440</td><td>andok@mail.saitama-u.ac.jp</td></tr><tr><td>169441</td><td>andrew-ka@kanda.kuis.ac.jp</td></tr><tr><td>169442</td><td>andy-y-toyama@sanrio.co.jp</td></tr><tr><td>169443</td><td>anicharaya_2@shop.rakuten.co.jp</td></tr><tr><td>169444</td><td>annakids@hachinohe-u.ac.jp</td></tr><tr><td>169445</td><td>annalkatou_22@ocn.co.jp</td></tr><tr><td>169446</td><td>annou@sic.shibaura-it.ac.jp</td></tr><tr><td>141310</td><td>corinne.alpiger@axawinterthur.ch</td></tr><tr><td>169447</td><td>anoda@isc.chubu.ac.jp</td></tr><tr><td>169448</td><td>anri@anri.co.jp</td></tr><tr><td>169449</td><td>ans-kyomu@office.kobe-u.ac.jp</td></tr><tr><td>169450</td><td>anshin55@crux.ocn.ne.jp</td></tr><tr><td>169451</td><td>anusha@fdk.co.jp</td></tr><tr><td>169452</td><td>anzen@k-anshin.pref.kyoto.jp</td></tr><tr><td>169453</td><td>ao@ueno.daiichi-koudai.ac.jp</td></tr><tr><td>169454</td><td>aogaki@uitec.ac.jp</td></tr><tr><td>169455</td><td>aoisai@tku.ac.jp</td></tr><tr><td>141311</td><td>corinne.tschanz@ne.ch</td></tr><tr><td>169456</td><td>aoishohgakukai@0101.co.jp</td></tr><tr><td>169457</td><td>aokada@po.iijnet.or.jp</td></tr><tr><td>169458</td><td>aoki@kumst.kyoto-u.ac.jp</td></tr><tr><td>169459</td><td>aoki@sda.nagoya-cu.ac.jp</td></tr><tr><td>169460</td><td>aotaku-33@coffee.ocn.ne.jp</td></tr><tr><td>169461</td><td>aotani@graco.c.u-tokyo.ac.jp</td></tr><tr><td>169462</td><td>aoyama@robo.mein.nagoya-u.ac.jp</td></tr><tr><td>169463</td><td>aozora@song.ocn.ne.jp</td></tr><tr><td>169464</td><td>apantree-kulareemi@gr.sei.co.jp</td></tr><tr><td>141312</td><td>cornel.buesser@axa-winterthur.ch</td></tr><tr><td>169465</td><td>apdw2016@convention.co.jp</td></tr><tr><td>169466</td><td>aplimgr@vcci.jp</td></tr><tr><td>169467</td><td>aporterrp@shop-pro.jp</td></tr><tr><td>169468</td><td>app-spp@lohaco.jp</td></tr><tr><td>169469</td><td>app@trance-media.jp</td></tr><tr><td>169470</td><td>apple@1cs.jp</td></tr><tr><td>169471</td><td>appointmentyoshitsugu@cc.okayama-u.ac.jp</td></tr><tr><td>169472</td><td>apu@energy.ocn.ne.jp</td></tr><tr><td>169473</td><td>aquabonito@infoseek.jp</td></tr><tr><td>141313</td><td>corrado.corradi@unige.ch</td></tr><tr><td>169474</td><td>arai@mech.nagoya-u.ac.jp</td></tr><tr><td>169475</td><td>arai@mein.nagoya-u.ac.jp</td></tr><tr><td>169476</td><td>arai@nuae.nagoya-u.ac.jp</td></tr><tr><td>169477</td><td>araigoro@uitec.ac.jp</td></tr><tr><td>169478</td><td>araiy@sanken.osaka-u.ac.jp</td></tr><tr><td>169479</td><td>arakawa@al.t.u-tokyo.ac.jp</td></tr><tr><td>169480</td><td>arakawa@robo.mein.nagoya-u.ac.jp</td></tr><tr><td>169481</td><td>araki@mech.saitama-u.ac.jp</td></tr><tr><td>169482</td><td>arayama@soec.nagoya-u.ac.jp</td></tr><tr><td>141314</td><td>courses@lists.isb-sib.ch</td></tr><tr><td>169483</td><td>arch@1cs.jp</td></tr><tr><td>169484</td><td>arctic@onyx.dti.ne.jp</td></tr><tr><td>169485</td><td>ari@fluid.mech.okayama-u.ac.jp</td></tr><tr><td>169486</td><td>ariel0640@ae.auone-net.jp</td></tr><tr><td>169487</td><td>arima@marine.osakafu-u.ac.jp</td></tr><tr><td>169488</td><td>arisa@1cs.jp</td></tr><tr><td>169489</td><td>ark7shiina@pro.odn.ne.jp</td></tr><tr><td>169490</td><td>aro2015@convex.co.jp</td></tr><tr><td>169491</td><td>aromage@shop.rakuten.co.jp</td></tr><tr><td>141315</td><td>coutellerie.naoual@bluewin.ch</td></tr><tr><td>169492</td><td>art_aroma_kt@yahoo.co.jp</td></tr><tr><td>169493</td><td>artb@1cs.jp</td></tr><tr><td>169494</td><td>arte@ksn.biglobe.ne.jp</td></tr><tr><td>169495</td><td>as-garo@lemon.plala.or.jp</td></tr><tr><td>169496</td><td>as-japan@d4.dion.ne.jp</td></tr><tr><td>169497</td><td>as1@1cs.jp</td></tr><tr><td>169498</td><td>asada@mech.eng.osaka-u.ac.jp</td></tr><tr><td>169499</td><td>asada@phys.hirosaki-u.ac.jp</td></tr><tr><td>169500</td><td>asada@silicon.u-tokyo.ac.jp</td></tr><tr><td>141316</td><td>cp@career-advisors.ch</td></tr><tr><td>169501</td><td>asahi-x@asahi-xray.co.jp</td></tr><tr><td>169502</td><td>asahiya@coffee.ocn.ne.jp</td></tr><tr><td>169503</td><td>asaisan-tky@umin.ac.jp</td></tr><tr><td>169504</td><td>asaito@mech.ce.nihon-u.ac.jp</td></tr><tr><td>169505</td><td>asaito@mech.titech.ac.jp</td></tr><tr><td>169506</td><td>asaito@mindeco.co.jp</td></tr><tr><td>169507</td><td>asakawa@waseda.jp</td></tr><tr><td>169508</td><td>asaki.katsumi@yellow.plala.or.jp</td></tr><tr><td>169509</td><td>asakin@jocr.jp</td></tr>      
+            </tbody>
+          </table>
+            
+          <table class="table table-striped table-bordered table-condensed">
+          <thead>
+              <tr>
+                <th class="header">Email ID</th>
+                <th class="header">Email Failed</th>   
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>141317</td><td>cricketphil@bluemail.ch</td></tr><tr><td>169510</td><td>asakura@daido-it.ac.jp</td></tr><tr><td>169511</td><td>asama-t@tech.or.jp</td></tr><tr><td>169512</td><td>asamag@robot.t.u-tokyo.ac.jp</td></tr><tr><td>169513</td><td>asanishi@solid.mech.kobe-u.ac.jp</td></tr><tr><td>169514</td><td>asano@mech.kobe-u.ac.jp</td></tr><tr><td>169515</td><td>asano@mms.co.jp</td></tr><tr><td>169516</td><td>asano@nis-ele.co.jp</td></tr><tr><td>169517</td><td>asashi@bio.c.u-tokyo.ac.jp</td></tr><tr><td>169518</td><td>asato@gifu-u.ac.jp</td></tr>      
+            </tbody>
+          </table>  
+            
+          <table class="table table-striped table-bordered table-condensed">
+          <thead>
+              <tr>
+                <th class="header">Email ID</th>
+                <th class="header">Email sent earlier</th>   
+              </tr>
+            </thead>
+            <tbody>
+                    
+            </tbody>
+          </table>
+            
+          <table class="table table-striped table-bordered table-condensed">
+          <thead>
+              <tr>
+                <th class="header">Debug</th>
+                
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>141307</td></tr><tr><td>contact@partnerscard.ch</td></tr><tr><td>0</td></tr><tr><td>0</td></tr><tr><td>alterna@ppp.bekkoame.ne.jp, am00101@jcom.home.ne.jp, amac2979@yahoo.co.jp, amanabe@mail.ecc.u-tokyo.ac.jp, amano@cc.kyushu-u.ac.jp, amat@mail.ecc.u-tokyo.ac.jp, amatsu@md.okayama-u.ac.jp, amimoto@rc.kyushu-u.ac.jp, amiura@mech.cst.nihon-u.ac.jp</td></tr><tr><td>1</td></tr><tr><td>0</td><td>contact@partnerscard.ch</td><td>1</td><td>alterna@ppp.bekkoame.ne.jp</td><td>2</td><td> am00101@jcom.home.ne.jp</td><td>3</td><td> amac2979@yahoo.co.jp</td><td>4</td><td> amanabe@mail.ecc.u-tokyo.ac.jp</td><td>5</td><td> amano@cc.kyushu-u.ac.jp</td><td>6</td><td> amat@mail.ecc.u-tokyo.ac.jp</td><td>7</td><td> amatsu@md.okayama-u.ac.jp</td><td>8</td><td> amimoto@rc.kyushu-u.ac.jp</td><td>9</td><td> amiura@mech.cst.nihon-u.ac.jp</td></tr><tr></tr><tr><td>10</td></tr><tr><td><pre>
+
+</pre></td></tr><tr><td>141308</td></tr><tr><td>contract@alumetal.ch</td></tr><tr><td>1</td></tr><tr><td>9</td></tr><tr><td>amlo@itochu.co.jp, ammazza@infoseek.jp, amy_7013@yahoo.co.jp, an-arc@infoseek.jp, anai@iias.flab.fujitsu.co.jp, anami@sic.shibaura-it.ac.jp, anany1975@yahoo.co.jp, anato114@md.okayama-u.ac.jp, anazawa@hic-soft.co.jp</td></tr><tr><td>1</td></tr><tr><td>0</td><td>contract@alumetal.ch</td><td>1</td><td>amlo@itochu.co.jp</td><td>2</td><td> ammazza@infoseek.jp</td><td>3</td><td> amy_7013@yahoo.co.jp</td><td>4</td><td> an-arc@infoseek.jp</td><td>5</td><td> anai@iias.flab.fujitsu.co.jp</td><td>6</td><td> anami@sic.shibaura-it.ac.jp</td><td>7</td><td> anany1975@yahoo.co.jp</td><td>8</td><td> anato114@md.okayama-u.ac.jp</td><td>9</td><td> anazawa@hic-soft.co.jp</td></tr><tr></tr><tr><td>10</td></tr><tr><td><pre>
+
+</pre></td></tr><tr><td>141309</td></tr><tr><td>copycenter@zehnder.ch</td></tr><tr><td>2</td></tr><tr><td>18</td></tr><tr><td>andjela@www2.px.tsukuba.ac.jp, ando@avkk.yamaha.co.jp, andok@mail.saitama-u.ac.jp, andrew-ka@kanda.kuis.ac.jp, andy-y-toyama@sanrio.co.jp, anicharaya_2@shop.rakuten.co.jp, annakids@hachinohe-u.ac.jp, annalkatou_22@ocn.co.jp, annou@sic.shibaura-it.ac.jp</td></tr><tr><td>1</td></tr><tr><td>0</td><td>copycenter@zehnder.ch</td><td>1</td><td>andjela@www2.px.tsukuba.ac.jp</td><td>2</td><td> ando@avkk.yamaha.co.jp</td><td>3</td><td> andok@mail.saitama-u.ac.jp</td><td>4</td><td> andrew-ka@kanda.kuis.ac.jp</td><td>5</td><td> andy-y-toyama@sanrio.co.jp</td><td>6</td><td> anicharaya_2@shop.rakuten.co.jp</td><td>7</td><td> annakids@hachinohe-u.ac.jp</td><td>8</td><td> annalkatou_22@ocn.co.jp</td><td>9</td><td> annou@sic.shibaura-it.ac.jp</td></tr><tr></tr><tr><td>10</td></tr><tr><td><pre>
+
+</pre></td></tr><tr><td>141310</td></tr><tr><td>corinne.alpiger@axawinterthur.ch</td></tr><tr><td>3</td></tr><tr><td>27</td></tr><tr><td>anoda@isc.chubu.ac.jp, anri@anri.co.jp, ans-kyomu@office.kobe-u.ac.jp, anshin55@crux.ocn.ne.jp, anusha@fdk.co.jp, anzen@k-anshin.pref.kyoto.jp, ao@ueno.daiichi-koudai.ac.jp, aogaki@uitec.ac.jp, aoisai@tku.ac.jp</td></tr><tr><td>1</td></tr><tr><td>0</td><td>corinne.alpiger@axawinterthur.ch</td><td>1</td><td>anoda@isc.chubu.ac.jp</td><td>2</td><td> anri@anri.co.jp</td><td>3</td><td> ans-kyomu@office.kobe-u.ac.jp</td><td>4</td><td> anshin55@crux.ocn.ne.jp</td><td>5</td><td> anusha@fdk.co.jp</td><td>6</td><td> anzen@k-anshin.pref.kyoto.jp</td><td>7</td><td> ao@ueno.daiichi-koudai.ac.jp</td><td>8</td><td> aogaki@uitec.ac.jp</td><td>9</td><td> aoisai@tku.ac.jp</td></tr><tr></tr><tr><td>10</td></tr><tr><td><pre>
+
+</pre></td></tr><tr><td>141311</td></tr><tr><td>corinne.tschanz@ne.ch</td></tr><tr><td>4</td></tr><tr><td>36</td></tr><tr><td>aoishohgakukai@0101.co.jp, aokada@po.iijnet.or.jp, aoki@kumst.kyoto-u.ac.jp, aoki@sda.nagoya-cu.ac.jp, aotaku-33@coffee.ocn.ne.jp, aotani@graco.c.u-tokyo.ac.jp, aoyama@robo.mein.nagoya-u.ac.jp, aozora@song.ocn.ne.jp, apantree-kulareemi@gr.sei.co.jp</td></tr><tr><td>1</td></tr><tr><td>0</td><td>corinne.tschanz@ne.ch</td><td>1</td><td>aoishohgakukai@0101.co.jp</td><td>2</td><td> aokada@po.iijnet.or.jp</td><td>3</td><td> aoki@kumst.kyoto-u.ac.jp</td><td>4</td><td> aoki@sda.nagoya-cu.ac.jp</td><td>5</td><td> aotaku-33@coffee.ocn.ne.jp</td><td>6</td><td> aotani@graco.c.u-tokyo.ac.jp</td><td>7</td><td> aoyama@robo.mein.nagoya-u.ac.jp</td><td>8</td><td> aozora@song.ocn.ne.jp</td><td>9</td><td> apantree-kulareemi@gr.sei.co.jp</td></tr><tr></tr><tr><td>10</td></tr><tr><td><pre>
+
+</pre></td></tr><tr><td>141312</td></tr><tr><td>cornel.buesser@axa-winterthur.ch</td></tr><tr><td>5</td></tr><tr><td>45</td></tr><tr><td>apdw2016@convention.co.jp, aplimgr@vcci.jp, aporterrp@shop-pro.jp, app-spp@lohaco.jp, app@trance-media.jp, apple@1cs.jp, appointmentyoshitsugu@cc.okayama-u.ac.jp, apu@energy.ocn.ne.jp, aquabonito@infoseek.jp</td></tr><tr><td>1</td></tr><tr><td>0</td><td>cornel.buesser@axa-winterthur.ch</td><td>1</td><td>apdw2016@convention.co.jp</td><td>2</td><td> aplimgr@vcci.jp</td><td>3</td><td> aporterrp@shop-pro.jp</td><td>4</td><td> app-spp@lohaco.jp</td><td>5</td><td> app@trance-media.jp</td><td>6</td><td> apple@1cs.jp</td><td>7</td><td> appointmentyoshitsugu@cc.okayama-u.ac.jp</td><td>8</td><td> apu@energy.ocn.ne.jp</td><td>9</td><td> aquabonito@infoseek.jp</td></tr><tr></tr><tr><td>10</td></tr><tr><td><pre>
+
+</pre></td></tr><tr><td>141313</td></tr><tr><td>corrado.corradi@unige.ch</td></tr><tr><td>6</td></tr><tr><td>54</td></tr><tr><td>arai@mech.nagoya-u.ac.jp, arai@mein.nagoya-u.ac.jp, arai@nuae.nagoya-u.ac.jp, araigoro@uitec.ac.jp, araiy@sanken.osaka-u.ac.jp, arakawa@al.t.u-tokyo.ac.jp, arakawa@robo.mein.nagoya-u.ac.jp, araki@mech.saitama-u.ac.jp, arayama@soec.nagoya-u.ac.jp</td></tr><tr><td>1</td></tr><tr><td>0</td><td>corrado.corradi@unige.ch</td><td>1</td><td>arai@mech.nagoya-u.ac.jp</td><td>2</td><td> arai@mein.nagoya-u.ac.jp</td><td>3</td><td> arai@nuae.nagoya-u.ac.jp</td><td>4</td><td> araigoro@uitec.ac.jp</td><td>5</td><td> araiy@sanken.osaka-u.ac.jp</td><td>6</td><td> arakawa@al.t.u-tokyo.ac.jp</td><td>7</td><td> arakawa@robo.mein.nagoya-u.ac.jp</td><td>8</td><td> araki@mech.saitama-u.ac.jp</td><td>9</td><td> arayama@soec.nagoya-u.ac.jp</td></tr><tr></tr><tr><td>10</td></tr><tr><td><pre>
+
+</pre></td></tr><tr><td>141314</td></tr><tr><td>courses@lists.isb-sib.ch</td></tr><tr><td>7</td></tr><tr><td>63</td></tr><tr><td>arch@1cs.jp, arctic@onyx.dti.ne.jp, ari@fluid.mech.okayama-u.ac.jp, ariel0640@ae.auone-net.jp, arima@marine.osakafu-u.ac.jp, arisa@1cs.jp, ark7shiina@pro.odn.ne.jp, aro2015@convex.co.jp, aromage@shop.rakuten.co.jp</td></tr><tr><td>1</td></tr><tr><td>0</td><td>courses@lists.isb-sib.ch</td><td>1</td><td>arch@1cs.jp</td><td>2</td><td> arctic@onyx.dti.ne.jp</td><td>3</td><td> ari@fluid.mech.okayama-u.ac.jp</td><td>4</td><td> ariel0640@ae.auone-net.jp</td><td>5</td><td> arima@marine.osakafu-u.ac.jp</td><td>6</td><td> arisa@1cs.jp</td><td>7</td><td> ark7shiina@pro.odn.ne.jp</td><td>8</td><td> aro2015@convex.co.jp</td><td>9</td><td> aromage@shop.rakuten.co.jp</td></tr><tr></tr><tr><td>10</td></tr><tr><td><pre>
+
+</pre></td></tr><tr><td>141315</td></tr><tr><td>coutellerie.naoual@bluewin.ch</td></tr><tr><td>8</td></tr><tr><td>72</td></tr><tr><td>art_aroma_kt@yahoo.co.jp, artb@1cs.jp, arte@ksn.biglobe.ne.jp, as-garo@lemon.plala.or.jp, as-japan@d4.dion.ne.jp, as1@1cs.jp, asada@mech.eng.osaka-u.ac.jp, asada@phys.hirosaki-u.ac.jp, asada@silicon.u-tokyo.ac.jp</td></tr><tr><td>1</td></tr><tr><td>0</td><td>coutellerie.naoual@bluewin.ch</td><td>1</td><td>art_aroma_kt@yahoo.co.jp</td><td>2</td><td> artb@1cs.jp</td><td>3</td><td> arte@ksn.biglobe.ne.jp</td><td>4</td><td> as-garo@lemon.plala.or.jp</td><td>5</td><td> as-japan@d4.dion.ne.jp</td><td>6</td><td> as1@1cs.jp</td><td>7</td><td> asada@mech.eng.osaka-u.ac.jp</td><td>8</td><td> asada@phys.hirosaki-u.ac.jp</td><td>9</td><td> asada@silicon.u-tokyo.ac.jp</td></tr><tr></tr><tr><td>10</td></tr><tr><td><pre>
+
+</pre></td></tr><tr><td>141316</td></tr><tr><td>cp@career-advisors.ch</td></tr><tr><td>9</td></tr><tr><td>81</td></tr><tr><td>asahi-x@asahi-xray.co.jp, asahiya@coffee.ocn.ne.jp, asaisan-tky@umin.ac.jp, asaito@mech.ce.nihon-u.ac.jp, asaito@mech.titech.ac.jp, asaito@mindeco.co.jp, asakawa@waseda.jp, asaki.katsumi@yellow.plala.or.jp, asakin@jocr.jp</td></tr><tr><td>1</td></tr><tr><td>0</td><td>cp@career-advisors.ch</td><td>1</td><td>asahi-x@asahi-xray.co.jp</td><td>2</td><td> asahiya@coffee.ocn.ne.jp</td><td>3</td><td> asaisan-tky@umin.ac.jp</td><td>4</td><td> asaito@mech.ce.nihon-u.ac.jp</td><td>5</td><td> asaito@mech.titech.ac.jp</td><td>6</td><td> asaito@mindeco.co.jp</td><td>7</td><td> asakawa@waseda.jp</td><td>8</td><td> asaki.katsumi@yellow.plala.or.jp</td><td>9</td><td> asakin@jocr.jp</td></tr><tr></tr><tr><td>10</td></tr><tr><td><pre>
+
+</pre></td></tr><tr><td>141317</td></tr><tr><td>cricketphil@bluemail.ch</td></tr><tr><td>10</td></tr><tr><td>90</td></tr><tr><td>asakura@daido-it.ac.jp, asama-t@tech.or.jp, asamag@robot.t.u-tokyo.ac.jp, asanishi@solid.mech.kobe-u.ac.jp, asano@mech.kobe-u.ac.jp, asano@mms.co.jp, asano@nis-ele.co.jp, asashi@bio.c.u-tokyo.ac.jp, asato@gifu-u.ac.jp</td></tr><tr><td></td></tr><tr></tr><tr><td>0</td><td>cricketphil@bluemail.ch</td><td>1</td><td>asakura@daido-it.ac.jp</td><td>2</td><td> asama-t@tech.or.jp</td><td>3</td><td> asamag@robot.t.u-tokyo.ac.jp</td><td>4</td><td> asanishi@solid.mech.kobe-u.ac.jp</td><td>5</td><td> asano@mech.kobe-u.ac.jp</td><td>6</td><td> asano@mms.co.jp</td><td>7</td><td> asano@nis-ele.co.jp</td><td>8</td><td> asashi@bio.c.u-tokyo.ac.jp</td><td>9</td><td> asato@gifu-u.ac.jp</td></tr><tr><td>0</td></tr><tr><td>SMTP Error: data not accepted.SMTP server error: DATA command failed Detail: Daily user sending quota exceeded. l67sm8863626wmf.20 - gsmtp
+ SMTP code: 550 Additional SMTP info: 5.4.5<br /><pre>
+
+</pre></td></tr>      
+            </tbody>
+          </table>        
+            
+      </div>
+    </div>
+	<div id="footer">
+		<hr>
+		<div class="inner">
+			<div class="container">
+				<p class="right"><a href="#">Back to top</a></p>
+				<p>
+				</p>
+			</div>
+		</div>
+	</div>
+	
+</body>
+</html>

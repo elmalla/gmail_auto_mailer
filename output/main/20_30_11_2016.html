@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>
+<html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>
+<html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>
+<html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Linked Emails Project</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width">
+
+  <link href="http://localhost/CI_306_linked_em_Production/assets/css/admin/global.css" rel="stylesheet" type="text/css">
+  
+   <!--<link rel="stylesheet" href="/assets/css/bootstrap-responsive.min.css">-->
+
+  <script src="http://localhost/CI_306_linked_em_Production/assets/js/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+  <!--<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script> -->
+ 
+  
+  <script src="http://localhost/CI_306_linked_em_Production//assets/js/jquery-1.7.1.min.js"></script>)
+  <script src="http://localhost/CI_306_linked_em_Production//assets/js/bootstrap.min.js"></script>
+  
+  <!--<script src="http://localhost/CI_306_linked_em_Production//node_modules/socket.io/node_modules/socket.io-client/socket.io.js"></script>-->
+  
+  <!--<script src="http://localhost/CI_306_linked_em_Production//assets/js/socket.js"></script> -->
+  <!--<script src="http://localhost/CI_306_linked_em_Production//assets/js/main.js"></script> -->
+  
+    <style>
+    body {
+      padding-top: 60px;
+      padding-bottom: 40px;
+    }
+    </style>
+</head>
+<body>
+	<div class="navbar navbar-fixed-top">
+	  <div class="navbar-inner">
+	    <div class="container">
+	      <a class="brand">Linked Emails Project</a>
+	      <ul class="nav">
+	        <li >
+	          <a href="http://localhost/CI_306_linked_em_Production/index.php/admin/main">DashBoard</a>
+	        </li>
+                <li >
+	          <a href="http://localhost/CI_306_linked_em_Production/index.php/admin/products">Products</a>
+	        </li>
+	        <li >
+	          <a href="http://localhost/CI_306_linked_em_Production/index.php/admin/manufacturers/">Manufacturers</a>
+	        </li>
+                <li class="dropdown">
+	          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Emails <b class="caret"></b></a>
+	          <ul class="dropdown-menu">
+	            <li>
+	              <a href="http://localhost/CI_306_linked_em_Production/index.php/admin/Emails">Email Add,Edit,Delete</a>
+	            </li>
+                    <li>
+	              <a href="http://localhost/CI_306_linked_em_Production/index.php/admin/Owner">Owner Add,Edit,Delete</a>
+	            </li>
+                    <li>
+	              <a href="http://localhost/CI_306_linked_em_Production/index.php/admin/Source">Source Add,Edit,Delete</a>
+	            </li>
+	          </ul>
+	        </li>
+                <li class="dropdown">
+	          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Companies <b class="caret"></b></a>
+	          <ul class="dropdown-menu">
+	            <li>
+	              <a href="http://localhost/CI_306_linked_em_Production/index.php/admin/Companies">Company Add,Edit,Delete</a>
+	            </li>
+                    <li>
+	              <a href="http://localhost/CI_306_linked_em_Production/index.php/admin/Category">Category Add,Edit,Delete</a>
+	            </li>
+                    <li>
+	              <a href="http://localhost/CI_306_linked_em_Production/index.php/admin/Source">... Add,Edit,Delete</a>
+	            </li>
+	          </ul>
+	        </li>
+	        <li class="dropdown">
+	          <a href="#" class="dropdown-toggle" data-toggle="dropdown">System <b class="caret"></b></a>
+	          <ul class="dropdown-menu">
+	            <li>
+	              <a href="http://localhost/CI_306_linked_em_Production/admin/logout">Logout</a>
+	            </li>
+	          </ul>
+	        </li>
+	      </ul>
+	    </div>
+	  </div>
+	</div>	
+    
+    
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-3 col-md-2 sidebar">
+          <ul class="nav nav-sidebar">
+            <li class="active"><a href="http://localhost/CI_306_linked_em_Production/index.php/admin/main">Overview <span class="sr-only">(current)</span></a></li>
+            <li><a href="#">Reports</a></li>
+            <li><a href="http://localhost/CI_306_linked_em_Production/index.php/admin/Mailer/show">Mailer</a></li>
+            <li><a href="http://localhost/CI_306_linked_em_Production/index.php/admin/Mailer/mailfixedjob">Scheduled Mail Jobs</a></li>
+            <li><a href="http://localhost/CI_306_linked_em_Production/index.php/admin/Mailer/cronm/1/mailer/2/gmail/UI">Cron Scheduler</a></li>
+            <li><a href="http://localhost/CI_306_linked_em_Production/index.php/admin/Emails/cron_backup/false">Cron Backup</a></li>
+            <li><a href="http://localhost/CI_306_linked_em_Production/index.php/admin/export/show">Exports</a></li>
+          </ul>
+          <ul class="nav nav-sidebar">
+            <li><a href="">Nav item</a></li>
+            <li><a href="">Nav item again</a></li>
+            <li><a href="">One more nav</a></li>
+            <li><a href="http://localhost/CI_306_linked_em_Production/index.php/admin/Statistics/">Statistics</a></li>
+            <li><a href="http://localhost/CI_306_linked_em_Production/index.php/admin/Owner/">Owners</a></li>
+          </ul>
+          <ul class="nav nav-sidebar">
+            <li><a href="http://localhost/CI_306_linked_em_Production/index.php/admin/Emails/">Emails</a></li>
+            <li><a href="http://localhost/CI_306_linked_em_Production/index.php/admin/upload/show">Uploads</a></li>
+            <li><a href="http://localhost/CI_306_linked_em_Production/index.php/admin/upload/">Upload Files</a></li>
+          </ul>
+        </div>
+       
+        </div>  
+       </div>
+
+ 
+<script type="text/javascript">
+$(document).ready(function () {
+  setInterval(auto_refresh_function, 200000);
+});
+        function auto_refresh_function() {
+          $('#ref').load('http://localhost/CI_306_linked_em_Production/index.php/admin/main');
+        }
+</script> 
+
+
+<div id="ref">
+        
+  <div class="container top">
+
+      <ul class="breadcrumb">
+        <li>
+          <a href="http://localhost/CI_306_linked_em_Production/admin">
+            Admin          </a> 
+          <span class="divider">/</span>
+        </li>
+        <li class="active">
+          Main        </li>
+      </ul>
+
+      <div class="page-header users-header">
+        <h2>
+          Main 
+          <a  href="http://localhost/CI_306_linked_em_Production/admin/main/add" class="btn btn-success">Add a new</a>
+        </h2>
+      </div>
+      
+      
+        
+          <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+          <h1 class="page-header">Dashboard</h1>
+
+         </div>
+          
+      <div class="row">
+        <div class="span12 columns">
+            <div class="well"></div>
+          
+              
+              <table class="table table-striped table-bordered table-condensed">
+            <thead>
+              <tr>
+                <th class="header">Ntv Emails Count</th>
+                <th class="yellow header headerSortDown">Companies Count</th>
+                <th class="green header">count sources</th>
+                <th class="red header">V Emails Count</th>
+                <th class="red header">Mailer log Count</th>
+                <th class="red header">count_sent_ae</th>
+                <th class="red header">Mailer schedule log count</th>
+                <th class="red header">email_sent_today</th>
+                
+                
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>31366</td><td>83034</td><td>74</td><td>266125</td><td>25775</td><td>1918</td><td>367</td>
+<div style="border:1px solid #990000;padding-left:20px;margin:0 0 10px 0;">
+
+<h4>A PHP Error was encountered</h4>
+
+<p>Severity: Notice</p>
+<p>Message:  Undefined variable: email_sent_today</p>
+<p>Filename: main/list.php</p>
+<p>Line Number: 73</p>
+
+
+	<p>Backtrace:</p>
+	
+		
+	
+		
+	
+		
+			<p style="margin-left:10px">
+			File: C:\xampp\htdocs\CI_306_Linked_Em_Production\application\views\admin\main\list.php<br />
+			Line: 73<br />
+			Function: _error_handler			</p>
+
+		
+	
+		
+	
+		
+	
+		
+			<p style="margin-left:10px">
+			File: C:\xampp\htdocs\CI_306_Linked_Em_Production\application\views\includes\template.php<br />
+			Line: 3<br />
+			Function: view			</p>
+
+		
+	
+		
+	
+		
+	
+		
+			<p style="margin-left:10px">
+			File: C:\xampp\htdocs\CI_306_Linked_Em_Production\application\controllers\admin_main.php<br />
+			Line: 262<br />
+			Function: view			</p>
+
+		
+	
+		
+			<p style="margin-left:10px">
+			File: C:\xampp\htdocs\CI_306_Linked_Em_Production\application\controllers\admin_main.php<br />
+			Line: 137<br />
+			Function: store_html			</p>
+
+		
+	
+		
+	
+		
+	
+		
+			<p style="margin-left:10px">
+			File: C:\xampp\htdocs\CI_306_Linked_Em_Production\index.php<br />
+			Line: 315<br />
+			Function: require_once			</p>
+
+		
+	
+
+</div><td></td></tr>      
+            </tbody>
+            
+            <thead>
+              <tr>
+                <th class="header">count emails no company</th>
+                <th class="yellow header headerSortDown">count_scheculed_sa</th>
+               
+                <th class="red header">count_sent_sa</th>
+                <th class="red header">count_scheculed_qa</th>
+                <th class="red header">count_sent_qa</th>
+                <th class="red header">count_scheculed_kw</th>
+                <th class="red header">count_sent_kw</th>
+                <th class="red header">count_scheculed_ae</th>
+                
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>58902</td><td>5978</td><td>2074</td><td>1336</td><td>1442</td><td>60</td><td>1014</td><td>30885</td></tr>      
+            </tbody>
+          </table>
+            
+        
+
+           <table class="table table-striped table-bordered table-condensed">
+              
+                    <h2 style="text-align: center">Mailer schedule log Table</h2>
+                   
+              <thead>
+                 <tr>
+                 <th class="red header">id</th><th class="red header">cron_scheduler_id</th><th class="red header">total_scheduled_emails</th><th class="red header">emails_sent</th><th class="red header">emails_nt_sent</th><th class="red header">emails_sent_earlier</th><th class="red header">clauses</th><th class="red header">debug_info</th><th class="red header">emails_scheduled_next_run</th><th class="red header">smtp_host</th><th class="red header">created_at</th><th class="red header">updated_at</th> 
+                 </tr>  
+                </thead>
+                <tbody>
+            
+                  <tr><td>379</td><td>451</td><td>300</td><td>130</td><td>0</td><td>0</td><td>%.be,%.de</td><td></td><td>22844</td><td>gmail</td><td>2016-11-30 17:19:19</td><td></td></tr><tr><td>380</td><td>452</td><td>300</td><td>130</td><td>0</td><td>0</td><td>%.ie,%.za</td><td></td><td>14476</td><td>gmail</td><td>2016-11-30 18:19:14</td><td></td></tr><tr><td>381</td><td>453</td><td>300</td><td>130</td><td>0</td><td>0</td><td>%.se,%.nl</td><td></td><td>3794</td><td>gmail</td><td>2016-11-30 19:19:26</td><td></td></tr><tr><td>382</td><td>454</td><td>300</td><td>130</td><td>0</td><td>0</td><td>%.ch,%.za</td><td></td><td>14404</td><td>gmail</td><td>2016-11-30 20:19:28</td><td></td></tr>                         
+                </tbody>
+              </table>  
+            
+            <span class="divider">/</span>
+  
+            
+            <table class="table table-striped table-bordered table-condensed">
+              
+                    <h2 style="text-align: center">Cron log Table</h2>
+                   
+              <thead>
+                 <tr>
+                 <th class="red header">id</th><th class="red header">user_id</th><th class="red header">job_category</th><th class="red header">mailer_schedule_log_id</th><th class="red header">unit_count</th><th class="red header">tiggered_by</th><th class="red header">job_started</th><th class="red header">elapsed</th><th class="red header">status</th><th class="red header">created_at</th><th class="red header">updated_at</th> 
+                 </tr>  
+                </thead>
+                <tbody>
+                    <tr>
+                  <tr><td>451</td><td>1</td><td>mailer</td><td>379</td><td>13</td><td>bat</td><td>2016-11-30 17:12:32</td><td>407</td><td></td><td>2016-11-30 17:12:32</td><td>2016-11-30 17:19:19</td></tr><tr><td>452</td><td>1</td><td>mailer</td><td>380</td><td>13</td><td>bat</td><td>2016-11-30 18:12:32</td><td>403</td><td></td><td>2016-11-30 18:12:32</td><td>2016-11-30 18:19:14</td></tr><tr><td>453</td><td>1</td><td>mailer</td><td>381</td><td>13</td><td>bat</td><td>2016-11-30 19:12:35</td><td>412</td><td></td><td>2016-11-30 19:12:35</td><td>2016-11-30 19:19:27</td></tr><tr><td>454</td><td>1</td><td>mailer</td><td>382</td><td>13</td><td>bat</td><td>2016-11-30 20:12:37</td><td>411</td><td></td><td>2016-11-30 20:12:37</td><td>2016-11-30 20:19:28</td></tr>                  </tr>       
+                </tbody>
+              </table>  
+       
+            <table class="table table-striped table-bordered table-condensed">
+                    <h2 style="text-align: center">Extraction Table</h2>    
+              <thead>
+                 <tr>
+                 <th class="red header">id</th><th class="red header">source_id</th><th class="red header">company_start_id</th><th class="red header">company_end_id</th><th class="red header">emailv_start_id</th><th class="red header">emailv_end_id</th><th class="red header">emailnv_start_id</th><th class="red header">emailnv_end_id</th><th class="red header">source_lines</th><th class="red header">company_inserts</th><th class="red header">emailv_inserts</th><th class="red header">emailnv_inserts</th><th class="red header">created_at</th><th class="red header">updated_at</th> 
+                 </tr>  
+                </thead>
+                <tbody>
+                    <tr>
+                  <tr><td>122</td><td>73</td><td>96906</td><td>90431</td><td>270906</td><td>270907</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2</td><td>0</td><td>2016-11-30 00:00:52</td><td></td></tr><tr><td>123</td><td>74</td><td>77</td><td>100247</td><td>270908</td><td>273380</td><td>31218</td><td>31330</td><td>0</td><td>724</td><td>2473</td><td>113</td><td>2016-11-30 09:29:13</td><td></td></tr><tr><td>124</td><td>75</td><td>77</td><td>100434</td><td>273381</td><td>273919</td><td>31331</td><td>31368</td><td>0</td><td>188</td><td>539</td><td>38</td><td>2016-11-30 16:34:45</td><td></td></tr><tr><td>125</td><td>76</td><td>68424</td><td>67216</td><td>273920</td><td>274192</td><td>0</td><td>0</td><td>0</td><td>113</td><td>273</td><td>0</td><td>2016-11-30 18:41:42</td><td></td></tr>                  </tr>       
+                </tbody>
+              </table>
+            
+            
+              <table class="table table-striped table-bordered table-condensed">
+              
+                    <h2 style="text-align: center">Mailer Scheduled Table</h2>
+                   
+              <thead>
+                 <tr>
+                 <th class="red header">id</th><th class="red header">email_id</th><th class="red header">email</th><th class="red header">company_id</th><th class="red header">country</th><th class="red header">conflict_flag</th><th class="red header">sending_status</th><th class="red header">review_status</th><th class="red header">owner_id</th><th class="red header">source_id</th><th class="red header">created_at</th><th class="red header">updated_at</th> 
+                 </tr>  
+                </thead>
+                <tbody>
+            
+                  <tr><td>80822</td><td>141229</td><td>benoit.dubuis@epfl.ch</td><td>36276</td><td>Switzerland</td><td>0</td><td>OK</td><td></td><td>1000</td><td>30</td><td></td><td>2016-11-30 20:13:16</td></tr><tr><td>80823</td><td>141230</td><td>bern@spring-moebel.ch</td><td>36278</td><td>Switzerland</td><td>0</td><td>OK</td><td></td><td>1000</td><td>30</td><td></td><td>2016-11-30 20:13:47</td></tr><tr><td>80824</td><td>141231</td><td>bern@unia.ch</td><td>16151</td><td>germany</td><td>0</td><td>OK</td><td></td><td>1000</td><td>30</td><td></td><td>2016-11-30 20:14:18</td></tr><tr><td>80825</td><td>141232</td><td>bernd.gregorius@annabelle.ch</td><td>36219</td><td>Switzerland</td><td>0</td><td>OK</td><td></td><td>1000</td><td>30</td><td></td><td>2016-11-30 20:14:49</td></tr><tr><td>80826</td><td>141233</td><td>berufsbeistandschaft@surselva.ch</td><td>36279</td><td>Switzerland</td><td>0</td><td>OK</td><td></td><td>1000</td><td>30</td><td></td><td>2016-11-30 20:15:17</td></tr><tr><td>80827</td><td>141234</td><td>bettina.zahnd@axa-winterthur.ch</td><td>36215</td><td>Switzerland</td><td>0</td><td>OK</td><td></td><td>1000</td><td>30</td><td></td><td>2016-11-30 20:15:56</td></tr><tr><td>80828</td><td>141235</td><td>bg-2x6-sinistergrin@1channel.ch</td><td>36280</td><td>Switzerland</td><td>0</td><td>OK</td><td></td><td>1000</td><td>30</td><td></td><td>2016-11-30 20:16:26</td></tr><tr><td>80829</td><td>141236</td><td>bgee@isb-sib.ch</td><td>36202</td><td>Switzerland</td><td>0</td><td>OK</td><td></td><td>1000</td><td>30</td><td></td><td>2016-11-30 20:16:57</td></tr><tr><td>80830</td><td>141237</td><td>bienne@journaldujura.ch</td><td>36281</td><td>Switzerland</td><td>0</td><td>OK</td><td></td><td>1000</td><td>30</td><td></td><td>2016-11-30 20:17:28</td></tr><tr><td>80831</td><td>141238</td><td>biland@particle.phys.ethz.ch</td><td>16669</td><td>germany</td><td>0</td><td>OK</td><td></td><td>1000</td><td>30</td><td></td><td>2016-11-30 20:17:59</td></tr><tr><td>80832</td><td>141239</td><td>bill@greement-courant.ch</td><td>36282</td><td>Switzerland</td><td>0</td><td>OK</td><td></td><td>1000</td><td>30</td><td></td><td>2016-11-30 20:18:29</td></tr><tr><td>80833</td><td>141240</td><td>bioconductor@stat.math.ethz.ch</td><td>19899</td><td>germany</td><td>0</td><td>OK</td><td></td><td>1000</td><td>30</td><td></td><td>2016-11-30 20:18:59</td></tr><tr><td>80834</td><td>141241</td><td>bmaerchy@m-p.ch</td><td>36283</td><td>Switzerland</td><td>0</td><td>OK</td><td></td><td>1000</td><td>30</td><td></td><td>2016-11-30 20:19:28</td></tr><tr><td>91122</td><td>146901</td><td>andre@careeravenue.co.za</td><td>39436</td><td>southafrica</td><td>0</td><td>OK</td><td></td><td>1000</td><td>34</td><td></td><td>2016-11-30 20:13:16</td></tr><tr><td>91123</td><td>146902</td><td>andre@joblaw.co.za</td><td>39437</td><td>southafrica</td><td>0</td><td>OK</td><td></td><td>1000</td><td>34</td><td></td><td>2016-11-30 20:13:16</td></tr><tr><td>91124</td><td>146903</td><td>andrelotter@worldonline.co.za</td><td>4091</td><td>UAE</td><td>0</td><td>OK</td><td></td><td>1000</td><td>34</td><td></td><td>2016-11-30 20:13:16</td></tr><tr><td>91125</td><td>146904</td><td>andrev@ffs.co.za</td><td>3835</td><td>UAE</td><td>0</td><td>OK</td><td></td><td>1000</td><td>34</td><td></td><td>2016-11-30 20:13:16</td></tr><tr><td>91126</td><td>146905</td><td>andrew@soft-sol.co.za</td><td>39438</td><td>southafrica</td><td>0</td><td>OK</td><td></td><td>1000</td><td>34</td><td></td><td>2016-11-30 20:13:16</td></tr><tr><td>91127</td><td>146906</td><td>andriedt@icon.co.za</td><td>13923</td><td>uae</td><td>0</td><td>OK</td><td></td><td>1000</td><td>34</td><td></td><td>2016-11-30 20:13:16</td></tr><tr><td>91128</td><td>146907</td><td>andyh@worldonline.co.za</td><td>4091</td><td>UAE</td><td>0</td><td>OK</td><td></td><td>1000</td><td>34</td><td></td><td>2016-11-30 20:13:16</td></tr><tr><td>91129</td><td>146908</td><td>angela@designofthetimes.co.za</td><td>39439</td><td>southafrica</td><td>0</td><td>OK</td><td></td><td>1000</td><td>34</td><td></td><td>2016-11-30 20:13:16</td></tr><tr><td>91130</td><td>146909</td><td>angelpeters@jmail.co.za</td><td>39440</td><td>southafrica</td><td>0</td><td>OK</td><td></td><td>1000</td><td>34</td><td></td><td>2016-11-30 20:13:16</td></tr><tr><td>91131</td><td>146910</td><td>anhlangwana@cmc-corporate.co.za</td><td>39441</td><td>southafrica</td><td>0</td><td>OK</td><td></td><td>1000</td><td>34</td><td></td><td>2016-11-30 20:13:47</td></tr><tr><td>91132</td><td>146911</td><td>anita@bolanddm.co.za</td><td>4077</td><td>UAE</td><td>0</td><td>OK</td><td></td><td>1000</td><td>34</td><td></td><td>2016-11-30 20:13:47</td></tr><tr><td>91133</td><td>146912</td><td>anna.conradie@absamail.co.za</td><td>39442</td><td>southafrica</td><td>0</td><td>OK</td><td></td><td>1000</td><td>34</td><td></td><td>2016-11-30 20:13:47</td></tr><tr><td>91134</td><td>146913</td><td>anne-marie.naude@norplats.co.za</td><td>39385</td><td>southafrica</td><td>0</td><td>OK</td><td></td><td>1000</td><td>34</td><td></td><td>2016-11-30 20:13:47</td></tr><tr><td>91135</td><td>146914</td><td>anne.dreyer@alberto-culver.co.za</td><td>39443</td><td>southafrica</td><td>0</td><td>OK</td><td></td><td>1000</td><td>34</td><td></td><td>2016-11-30 20:13:47</td></tr><tr><td>91136</td><td>146915</td><td>annette@gold-trader.co.za</td><td>39444</td><td>southafrica</td><td>0</td><td>OK</td><td></td><td>1000</td><td>34</td><td></td><td>2016-11-30 20:13:47</td></tr><tr><td>91137</td><td>146916</td><td>anoux@pets.org.za</td><td>39445</td><td>southafrica</td><td>0</td><td>OK</td><td></td><td>1000</td><td>34</td><td></td><td>2016-11-30 20:13:47</td></tr><tr><td>91138</td><td>146917</td><td>anthony.kuzelj@eskom.co.za</td><td>1237</td><td>UAE</td><td>0</td><td>OK</td><td></td><td>1000</td><td>34</td><td></td><td>2016-11-30 20:13:47</td></tr><tr><td>91139</td><td>146918</td><td>anthony@enerchi.co.za</td><td>38736</td><td>sweden</td><td>0</td><td>OK</td><td></td><td>1000</td><td>34</td><td></td><td>2016-11-30 20:13:47</td></tr><tr><td>91140</td><td>146919</td><td>anthony@twobop.co.za</td><td>39446</td><td>southafrica</td><td>0</td><td>OK</td><td></td><td>1000</td><td>34</td><td></td><td>2016-11-30 20:14:18</td></tr><tr><td>91141</td><td>146920</td><td>antoinette.broekman@norplats.co.za</td><td>39385</td><td>southafrica</td><td>0</td><td>OK</td><td></td><td>1000</td><td>34</td><td></td><td>2016-11-30 20:14:18</td></tr><tr><td>91142</td><td>146921</td><td>antoinette@hiveld.co.za</td><td>3526</td><td>UAE</td><td>0</td><td>OK</td><td></td><td>1000</td><td>34</td><td></td><td>2016-11-30 20:14:18</td></tr><tr><td>91143</td><td>146922</td><td>anton@datadot.co.za</td><td>39447</td><td>southafrica</td><td>0</td><td>OK</td><td></td><td>1000</td><td>34</td><td></td><td>2016-11-30 20:14:18</td></tr><tr><td>91144</td><td>146923</td><td>antoniod@acdc.o.za</td><td>39448</td><td>southafrica</td><td>0</td><td>OK</td><td></td><td>1000</td><td>34</td><td></td><td>2016-11-30 20:14:18</td></tr><tr><td>91145</td><td>146924</td><td>apply.hr@tavcor.co.za</td><td>39449</td><td>southafrica</td><td>0</td><td>OK</td><td></td><td>1000</td><td>34</td><td></td><td>2016-11-30 20:14:18</td></tr><tr><td>91146</td><td>146925</td><td>appsupportza@gumtree.co.za</td><td>39398</td><td>southafrica</td><td>0</td><td>OK</td><td></td><td>1000</td><td>34</td><td></td><td>2016-11-30 20:14:18</td></tr><tr><td>91147</td><td>146926</td><td>aqua@ecotao.co.za</td><td>39450</td><td>southafrica</td><td>0</td><td>OK</td><td></td><td>1000</td><td>34</td><td></td><td>2016-11-30 20:14:18</td></tr><tr><td>91148</td><td>146927</td><td>aquaearth@aquaearth.co.za</td><td>39451</td><td>southafrica</td><td>0</td><td>OK</td><td></td><td>1000</td><td>34</td><td></td><td>2016-11-30 20:14:18</td></tr><tr><td>91149</td><td>146928</td><td>arbourlodge@worldonline.co.za</td><td>4091</td><td>UAE</td><td>0</td><td>OK</td><td></td><td>1000</td><td>34</td><td></td><td>2016-11-30 20:19:28</td></tr><tr><td>91150</td><td>146929</td><td>archie.dick@up.ac.za</td><td>1522</td><td>UAE</td><td>0</td><td>OK</td><td></td><td>1000</td><td>34</td><td></td><td>2016-11-30 20:19:28</td></tr><tr><td>91151</td><td>146930</td><td>archwayprojects@inx.co.za</td><td>20309</td><td>germany</td><td>0</td><td>OK</td><td></td><td>1000</td><td>34</td><td></td><td>2016-11-30 20:19:28</td></tr><tr><td>91152</td><td>146931</td><td>arend.keyser@eskom.co.za</td><td>1237</td><td>UAE</td><td>0</td><td>OK</td><td></td><td>1000</td><td>34</td><td></td><td>2016-11-30 20:19:28</td></tr><tr><td>91153</td><td>146932</td><td>array@discotheque.za</td><td>39452</td><td>southafrica</td><td>0</td><td>OK</td><td></td><td>1000</td><td>34</td><td></td><td>2016-11-30 20:19:28</td></tr><tr><td>91155</td><td>146934</td><td>art@butterflies.co.za</td><td>39454</td><td>southafrica</td><td>0</td><td>OK</td><td></td><td>1000</td><td>34</td><td></td><td>2016-11-30 20:19:28</td></tr><tr><td>91156</td><td>146935</td><td>arton11th@wol.co.za</td><td>2110</td><td>UAE</td><td>0</td><td>OK</td><td></td><td>1000</td><td>34</td><td></td><td>2016-11-30 20:19:28</td></tr><tr><td>91157</td><td>146936</td><td>artspace@worldonline.co.za</td><td>4091</td><td>UAE</td><td>0</td><td>OK</td><td></td><td>1000</td><td>34</td><td></td><td>2016-11-30 20:19:28</td></tr><tr><td>91158</td><td>146937</td><td>asharma@unicell.co.za</td><td>4076</td><td>UAE</td><td>0</td><td>OK</td><td></td><td>1000</td><td>34</td><td></td><td>2016-11-30 20:19:28</td></tr>                         
+                </tbody>
+              </table>
+            
+          <div class="row placeholders">
+            <div class="col-xs-6 col-sm-3 placeholder">
+              <img src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="200" height="200" class="img-responsive" alt="Generic placeholder thumbnail">
+              <h4>Label</h4>
+              <span class="text-muted">Something else</span>
+            </div>
+            <div class="col-xs-6 col-sm-3 placeholder">
+              <img src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="200" height="200" class="img-responsive" alt="Generic placeholder thumbnail">
+              <h4>Label</h4>
+              <span class="text-muted">Something else</span>
+            </div>
+            <div class="col-xs-6 col-sm-3 placeholder">
+              <img src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="200" height="200" class="img-responsive" alt="Generic placeholder thumbnail">
+              <h4>Label</h4>
+              <span class="text-muted">Something else</span>
+            </div>
+            <div class="col-xs-6 col-sm-3 placeholder">
+              <img src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="200" height="200" class="img-responsive" alt="Generic placeholder thumbnail">
+              <h4>Label</h4>
+              <span class="text-muted">Something else</span>
+            </div>
+          </div>
+        
+      
+
+      </div>
+    </div>
+  </div>    
+    
+	<div id="footer">
+		<hr>
+		<div class="inner">
+			<div class="container">
+				<p class="right"><a href="#">Back to top</a></p>
+				<p>
+				</p>
+			</div>
+		</div>
+	</div>
+	
+</body>
+</html>

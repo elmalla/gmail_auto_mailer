@@ -1,0 +1,14 @@
+Options -Indexes
+<IfModule mod_rewrite.c>
+    RewriteEngine on
+    RewriteCond $1 !^(index\.php|images|stylesheets|scripts|robots\.txt)
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteRule ^(.*)$ index.php/$1 [L,QSA]
+</IfModule>
+<Files ~ "\.html$">
+  Header set X-Robots-Tag "noindex, nofollow"
+</Files>
+<Files ~ "\.(png|jpe?g|gif|sql|txt)$">
+  Header set X-Robots-Tag "noindex"
+</Files>

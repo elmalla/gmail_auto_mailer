@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>
+<html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>
+<html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>
+<html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Linked Emails Project</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width">
+
+  <link href="http://localhost/CI_306_linked_em_Production/assets/css/admin/global.css" rel="stylesheet" type="text/css">
+  
+   <!--<link rel="stylesheet" href="/assets/css/bootstrap-responsive.min.css">-->
+
+  <script src="http://localhost/CI_306_linked_em_Production/assets/js/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+  <!--<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script> -->
+ 
+  
+  <script src="http://localhost/CI_306_linked_em_Production//assets/js/jquery-1.7.1.min.js"></script>)
+  <script src="http://localhost/CI_306_linked_em_Production//assets/js/bootstrap.min.js"></script>
+  
+  <!--<script src="http://localhost/CI_306_linked_em_Production//node_modules/socket.io/node_modules/socket.io-client/socket.io.js"></script>-->
+  
+  <!--<script src="http://localhost/CI_306_linked_em_Production//assets/js/socket.js"></script> -->
+  <!--<script src="http://localhost/CI_306_linked_em_Production//assets/js/main.js"></script> -->
+  
+    <style>
+    body {
+      padding-top: 60px;
+      padding-bottom: 40px;
+    }
+    </style>
+</head>
+<body>
+	<div class="navbar navbar-fixed-top">
+	  <div class="navbar-inner">
+	    <div class="container">
+	      <a class="brand">Linked Emails Project</a>
+	      <ul class="nav">
+	        <li >
+	          <a href="http://localhost/CI_306_linked_em_Production/index.php/admin/main">DashBoard</a>
+	        </li>
+                <li >
+	          <a href="http://localhost/CI_306_linked_em_Production/index.php/admin/products">Products</a>
+	        </li>
+	        <li >
+	          <a href="http://localhost/CI_306_linked_em_Production/index.php/admin/manufacturers/">Manufacturers</a>
+	        </li>
+                <li class="dropdown">
+	          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Emails <b class="caret"></b></a>
+	          <ul class="dropdown-menu">
+	            <li>
+	              <a href="http://localhost/CI_306_linked_em_Production/index.php/admin/Emails">Email Add,Edit,Delete</a>
+	            </li>
+                    <li>
+	              <a href="http://localhost/CI_306_linked_em_Production/index.php/admin/Owner">Owner Add,Edit,Delete</a>
+	            </li>
+                    <li>
+	              <a href="http://localhost/CI_306_linked_em_Production/index.php/admin/Source">Source Add,Edit,Delete</a>
+	            </li>
+	          </ul>
+	        </li>
+                <li class="dropdown">
+	          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Companies <b class="caret"></b></a>
+	          <ul class="dropdown-menu">
+	            <li>
+	              <a href="http://localhost/CI_306_linked_em_Production/index.php/admin/Companies">Company Add,Edit,Delete</a>
+	            </li>
+                    <li>
+	              <a href="http://localhost/CI_306_linked_em_Production/index.php/admin/Category">Category Add,Edit,Delete</a>
+	            </li>
+                    <li>
+	              <a href="http://localhost/CI_306_linked_em_Production/index.php/admin/Source">... Add,Edit,Delete</a>
+	            </li>
+	          </ul>
+	        </li>
+	        <li class="dropdown">
+	          <a href="#" class="dropdown-toggle" data-toggle="dropdown">System <b class="caret"></b></a>
+	          <ul class="dropdown-menu">
+	            <li>
+	              <a href="http://localhost/CI_306_linked_em_Production/admin/logout">Logout</a>
+	            </li>
+	          </ul>
+	        </li>
+	      </ul>
+	    </div>
+	  </div>
+	</div>	
+    
+    
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-3 col-md-2 sidebar">
+          <ul class="nav nav-sidebar">
+            <li class="active"><a href="http://localhost/CI_306_linked_em_Production/index.php/admin/main">Overview <span class="sr-only">(current)</span></a></li>
+            <li><a href="#">Reports</a></li>
+            <li><a href="http://localhost/CI_306_linked_em_Production/index.php/admin/Mailer/show">Mailer</a></li>
+            <li><a href="http://localhost/CI_306_linked_em_Production/index.php/admin/Mailer/mailfixedjob">Scheduled Mail Jobs</a></li>
+            <li><a href="http://localhost/CI_306_linked_em_Production/index.php/admin/Mailer/cronm/1/mailer/8/gmail/UI">Cron Scheduler</a></li>
+            <li><a href="http://localhost/CI_306_linked_em_Production/index.php/admin/Emails/cron_backup/false">Cron Backup</a></li>
+            <li><a href="http://localhost/CI_306_linked_em_Production/index.php/admin/export/show">Exports</a></li>
+          </ul>
+          <ul class="nav nav-sidebar">
+            <li><a href="">Nav item</a></li>
+            <li><a href="">Nav item again</a></li>
+            <li><a href="">One more nav</a></li>
+            <li><a href="http://localhost/CI_306_linked_em_Production/index.php/admin/Statistics/">Statistics</a></li>
+            <li><a href="http://localhost/CI_306_linked_em_Production/index.php/admin/Owner/">Owners</a></li>
+          </ul>
+          <ul class="nav nav-sidebar">
+            <li><a href="http://localhost/CI_306_linked_em_Production/index.php/admin/Emails/">Emails</a></li>
+            <li><a href="http://localhost/CI_306_linked_em_Production/index.php/admin/upload/show">Uploads</a></li>
+            <li><a href="http://localhost/CI_306_linked_em_Production/index.php/admin/upload/">Upload Files</a></li>
+          </ul>
+        </div>
+       
+        </div>  
+       </div>
+
+    <div class="container top">
+
+      <ul class="breadcrumb">
+        <li>
+          <a href="http://localhost/CI_306_linked_em_Production/admin">
+            Admin_mailer          </a> 
+          <span class="divider">/</span>
+        </li>
+        <li class="active">
+          Cron_mail          
+        </li>
+        
+      </ul>
+
+      <div class="page-header users-header">
+        <h2>
+          Cron_mail              <br/>
+             
+              <a  href="http://localhost/CI_306_linked_em_Production/admin/Mailer/sendmail" class="btn btn-success">Send Email</a>
+              <div class="divider"/>
+              <a  href="http://localhost/CI_306_linked_em_Production/admin/Mailer/sendmailattach" class="btn btn-success">Send Email with Attachment</a>
+              <br/>
+          
+        </h2>
+      </div>
+      
+      <div class="row">
+        <div class="span12 columns">
+          <div class="well">
+          
+          </div>
+             <table class="table table-striped table-bordered table-condensed">
+            <thead>
+              <tr>
+                <th class="header">email_v_count</th>
+                <th class="yellow header headerSortDown">email_nv_count</th>
+                <th class="green header">email_merged_count</th>
+                <th class="red header">email_to_mailer_count</th>
+                <th class="red header">email_sent_count</th>
+                <th class="red header">emails_sent_earlier</th>
+                <th class="red header">emails_scheduled_next_run</th>
+                <th class="red header">N/A</th>
+      
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>50</td><td>0</td><td>50</td><td>130</td><td>130</td><td>3</td><td>3750</td><td>N/A</td></tr>      
+            </tbody>
+           </table> 
+            
+            <table class="table table-striped table-bordered table-condensed">
+             <thead>
+              <tr>
+                <th class="header">Debugging Info</th>
+              </tr>
+              <tr>
+                <th class="header">Email ID</th>
+                <th class="header">Debug Info</th>   
+              </tr>
+            </thead>
+            <tbody>
+               <tr><td>2229</td><td><pre>
+
+</pre></td></tr><tr><td>2204</td><td><pre>
+
+</pre></td></tr><tr><td>2196</td><td><pre>
+
+</pre></td></tr><tr><td>2188</td><td><pre>
+
+</pre></td></tr><tr><td>2094</td><td><pre>
+
+</pre></td></tr><tr><td>1855</td><td><pre>
+
+</pre></td></tr><tr><td>1842</td><td><pre>
+
+</pre></td></tr><tr><td>1812</td><td><pre>
+
+</pre></td></tr><tr><td>1752</td><td><pre>
+
+</pre></td></tr><tr><td>1750</td><td><pre>
+
+</pre></td></tr><tr><td>1645</td><td><pre>
+
+</pre></td></tr><tr><td>1617</td><td><pre>
+
+</pre></td></tr><tr><td>1496</td><td><pre>
+
+</pre></td></tr>   
+            </tbody>
+          </table>
+    
+          
+          <table class="table table-striped table-bordered table-condensed">
+          <thead>
+              <tr>
+                <th class="header">Email ID</th>
+                <th class="header">Email sent</th>   
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>2229</td><td>rasheed@napco.co.om</td></tr><tr><td>84652</td><td>info@cpa.gov.eg</td></tr><tr><td>84654</td><td>info@eeca.gov.eg</td></tr><tr><td>84674</td><td>info@moee.gov.eg</td></tr><tr><td>84675</td><td>info@moj.gov.eg</td></tr><tr><td>84678</td><td>info@ntra.gov.eg</td></tr><tr><td>84679</td><td>info@salestax.gov.eg</td></tr><tr><td>84685</td><td>info@tra.gov.eg</td></tr><tr><td>84706</td><td>jetsinfo@mcit.gov.eg</td></tr><tr><td>84718</td><td>kandil@mwri.gov.eg</td></tr><tr><td>2204</td><td>joop.castelijns@pdo.co.om</td></tr><tr><td>84724</td><td>kkasim@mcit.gov.eg</td></tr><tr><td>84727</td><td>latif@nwp.gov.eg</td></tr><tr><td>84729</td><td>libr@mwri.gov.eg</td></tr><tr><td>84738</td><td>madiha_m@mwri.gov.eg</td></tr><tr><td>84741</td><td>maha.saad@ebi.gov.eg</td></tr><tr><td>84749</td><td>manal@tra.gov.eg</td></tr><tr><td>84755</td><td>market_analysis@ntra.gov.eg</td></tr><tr><td>84756</td><td>marwaz@mwri.gov.eg</td></tr><tr><td>84764</td><td>me@nwp.gov.eg</td></tr><tr><td>2196</td><td>thy@pdo.co.om</td></tr><tr><td>84766</td><td>med@mwri.gov.eg</td></tr><tr><td>84772</td><td>melmegharbei@tra.gov.eg</td></tr><tr><td>84776</td><td>met@nwp.gov.eg</td></tr><tr><td>84777</td><td>mf@efsa.gov.eg</td></tr><tr><td>84782</td><td>mharty@mcit.gov.eg</td></tr><tr><td>84783</td><td>mhashem@tra.gov.eg</td></tr><tr><td>84790</td><td>minister@mwri.gov.eg</td></tr><tr><td>84795</td><td>mmoghazi@tra.gov.eg</td></tr><tr><td>84807</td><td>mohamed.elnawawy@telecomegypt.com.eg</td></tr><tr><td>2188</td><td>eb@omanlng.co.om</td></tr><tr><td>84808</td><td>mohamed.hamdy@cich.com.eg</td></tr><tr><td>84809</td><td>mohamed.refaat@i-score.com.eg</td></tr><tr><td>84810</td><td>mohamed@dataxprs.com.eg</td></tr><tr><td>84811</td><td>mohamed@mtc.com.eg</td></tr><tr><td>84812</td><td>mohamedatef@cemex.com.eg</td></tr><tr><td>84813</td><td>mohamedel-demerdash@zamilsteel.com.eg</td></tr><tr><td>84814</td><td>mohamedim@egpc.com.eg</td></tr><tr><td>84815</td><td>mohandes@access.com.eg</td></tr><tr><td>84816</td><td>mohandessin@bishara.com.eg</td></tr><tr><td>2094</td><td>bartvoet@omanlng.co.om</td></tr><tr><td>84817</td><td>mohebm@chemix.com.eg</td></tr><tr><td>84818</td><td>mohsen@nti.sci.eg</td></tr><tr><td>84819</td><td>mohyeldin@albaraka-bank.com.eg</td></tr><tr><td>84820</td><td>moi@idsc.net.eg</td></tr><tr><td>84821</td><td>mona.boutros@cemex.com.eg</td></tr><tr><td>84822</td><td>mona.mounir@cemex.com.eg</td></tr><tr><td>84823</td><td>mona@nti.sci.eg</td></tr><tr><td>84824</td><td>monashlt@tedata.net.eg</td></tr><tr><td>84825</td><td>mosjo65@click.com.eg</td></tr><tr><td>1855</td><td>samuelrajanthonysamy@omanlng.co.om</td></tr><tr><td>84826</td><td>motaleb@mwri.gov.eg</td></tr><tr><td>84827</td><td>motcas@idsc.net.eg</td></tr><tr><td>84828</td><td>mowaygen@idrc.org.eg</td></tr><tr><td>84829</td><td>mpg@click.com.eg</td></tr><tr><td>84830</td><td>ms32t@midtap.com.eg</td></tr><tr><td>84831</td><td>msaleh@idsc.net.eg</td></tr><tr><td>84832</td><td>mseaoffice@eeaa.gov.eg</td></tr><tr><td>84833</td><td>mselite@link.com.eg</td></tr><tr><td>84834</td><td>msoliman@tra.gov.eg</td></tr><tr><td>1842</td><td>squreshi@oman-gas.com.om</td></tr><tr><td>84835</td><td>mspharm@idsc.net.eg</td></tr><tr><td>84836</td><td>mtco@tedata.net.eg</td></tr><tr><td>84837</td><td>must@must.edu.eg</td></tr><tr><td>84838</td><td>mwaly@cmrdi.sci.eg</td></tr><tr><td>84839</td><td>mzhelal@tedata.net.eg</td></tr><tr><td>84840</td><td>na.mounir@cemex.com.eg</td></tr><tr><td>84841</td><td>nadalex@link.com.eg</td></tr><tr><td>84842</td><td>nadel@fgf.org.eg</td></tr><tr><td>84843</td><td>nagwash@idsc.net.eg</td></tr><tr><td>1812</td><td>asheemp@oua.co.om</td></tr><tr><td>84844</td><td>nashwa@frcu.eun.eg</td></tr><tr><td>84845</td><td>nasr@link.com.eg</td></tr><tr><td>84846</td><td>nasrcity@tedata.net.eg</td></tr><tr><td>84847</td><td>nationalfreight@tedata.net.eg</td></tr><tr><td>84848</td><td>nbllaw@interlink.com.eg</td></tr><tr><td>84849</td><td>nefmoh@tedata.net.eg</td></tr><tr><td>84850</td><td>nehal@mwri.gov.eg</td></tr><tr><td>84851</td><td>nermines@ntra.gov.eg</td></tr><tr><td>84852</td><td>neveeng@mwri.gov.eg</td></tr><tr><td>1752</td><td>iz.nabhani@pdo.co.om</td></tr><tr><td>84853</td><td>newsoft@tedata.net.eg</td></tr><tr><td>84854</td><td>nezzat@fgf.org.eg</td></tr><tr><td>84855</td><td>nfergany@idsc.net.eg</td></tr><tr><td>84856</td><td>nhusseiny@tra.gov.eg</td></tr><tr><td>84857</td><td>nibrahim@aedco.com.eg</td></tr><tr><td>84858</td><td>nnabil@erf.org.eg</td></tr><tr><td>84859</td><td>nnagy@tedata.net.eg</td></tr><tr><td>84860</td><td>noha.gamal@acu.edu.eg</td></tr><tr><td>84861</td><td>noura@nti.sci.eg</td></tr><tr><td>1750</td><td>faisal.naaman@pdo.co.om</td></tr><tr><td>84862</td><td>nre1@idsc.net.eg</td></tr><tr><td>84863</td><td>nre@idsc.net.eg</td></tr><tr><td>84864</td><td>nsaad@idsc.net.eg</td></tr><tr><td>84865</td><td>ntewfik@mcit.gov.eg</td></tr><tr><td>84866</td><td>nuca@starnet.com.eg</td></tr><tr><td>84867</td><td>numbering@tra.gov.eg</td></tr><tr><td>84868</td><td>nwali@egpc.com.eg</td></tr><tr><td>84869</td><td>oafouad@cmrdi.sci.eg</td></tr><tr><td>84870</td><td>oasran@moee.gov.eg</td></tr><tr><td>1645</td><td>abdullah.sn.mahruqi@pdo.co.om</td></tr><tr><td>84871</td><td>odredwing@link.com.eg</td></tr><tr><td>84872</td><td>oelmeligy@dataxprs.com.eg</td></tr><tr><td>84873</td><td>oibrahim@ntra.gov.eg</td></tr><tr><td>84874</td><td>oil@soficom.com.eg</td></tr><tr><td>84875</td><td>omayma.mohsen@nti.sci.eg</td></tr><tr><td>84876</td><td>omegaeng@mst1.mist.com.eg</td></tr><tr><td>84877</td><td>omegaeng@tedata.net.eg</td></tr><tr><td>84878</td><td>omohsen@nti.sci.eg</td></tr><tr><td>84879</td><td>orascomhc.ccg@gmail.eg</td></tr><tr><td>1617</td><td>maqbool.lawatia@pdo.co.om</td></tr><tr><td>84880</td><td>org_tra@suezcanal.gov.eg</td></tr><tr><td>84881</td><td>ots@amcham.org.eg</td></tr><tr><td>84882</td><td>panda@soficom.com.eg</td></tr><tr><td>84883</td><td>panmar@dataxprs.com.eg</td></tr><tr><td>84884</td><td>parepcairo@link.com.eg</td></tr><tr><td>84885</td><td>pharco@pharco.com.eg</td></tr><tr><td>84886</td><td>pharon@globalnet.com.eg</td></tr><tr><td>84887</td><td>pm@cabinet.gov.eg</td></tr><tr><td>84888</td><td>portsaid@ibramar.com.eg</td></tr><tr><td>1496</td><td>rashid.rn.jahadhmy@pdo.co.om</td></tr><tr><td>84889</td><td>posco@pyramid.com.eg</td></tr><tr><td>84890</td><td>postmaster@impactbbdo.com.eg</td></tr><tr><td>84891</td><td>pr_holdingco@egyptair.com.eg</td></tr><tr><td>84892</td><td>president@mans.edu.eg</td></tr><tr><td>84893</td><td>press1234@tedata.net.eg</td></tr><tr><td>84894</td><td>press@tourism.gov.eg</td></tr><tr><td>84895</td><td>pro1@petrojet.com.eg</td></tr><tr><td>84896</td><td>ps3@mwri.gov.eg</td></tr><tr><td>84897</td><td>ptraining@nti.sci.eg</td></tr>      
+            </tbody>
+          </table>
+            
+          <table class="table table-striped table-bordered table-condensed">
+          <thead>
+              <tr>
+                <th class="header">Email ID</th>
+                <th class="header">Email Failed</th>   
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>19971</td><td>recruitment@almaha.com.om</td></tr><tr><td>18282</td><td>recruit@mbpetroleum.co.om</td></tr><tr><td>18280</td><td>mbpsrecruitment@mbpetroleum.co.om</td></tr>      
+            </tbody>
+          </table>  
+            
+          <table class="table table-striped table-bordered table-condensed">
+          <thead>
+              <tr>
+                <th class="header">Email ID</th>
+                <th class="header">Email sent earlier</th>   
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>19971</td><td>recruitment@almaha.com.om</td></tr><tr><td>18282</td><td>recruit@mbpetroleum.co.om</td></tr><tr><td>18280</td><td>mbpsrecruitment@mbpetroleum.co.om</td></tr>      
+            </tbody>
+          </table>
+            
+          <table class="table table-striped table-bordered table-condensed">
+          <thead>
+              <tr>
+                <th class="header">Debug</th>
+                
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>2229</td></tr><tr><td>rasheed@napco.co.om</td></tr><tr><td>0</td></tr><tr><td>0</td></tr><tr><td>info@cpa.gov.eg, info@eeca.gov.eg, info@moee.gov.eg, info@moj.gov.eg, info@ntra.gov.eg, info@salestax.gov.eg, info@tra.gov.eg, jetsinfo@mcit.gov.eg, kandil@mwri.gov.eg</td></tr><tr><td>1</td></tr><tr><td>0</td><td>rasheed@napco.co.om</td><td>1</td><td>info@cpa.gov.eg</td><td>2</td><td> info@eeca.gov.eg</td><td>3</td><td> info@moee.gov.eg</td><td>4</td><td> info@moj.gov.eg</td><td>5</td><td> info@ntra.gov.eg</td><td>6</td><td> info@salestax.gov.eg</td><td>7</td><td> info@tra.gov.eg</td><td>8</td><td> jetsinfo@mcit.gov.eg</td><td>9</td><td> kandil@mwri.gov.eg</td></tr><tr></tr><tr><td>10</td></tr><tr><td><pre>
+
+</pre></td></tr><tr><td>2204</td></tr><tr><td>joop.castelijns@pdo.co.om</td></tr><tr><td>1</td></tr><tr><td>9</td></tr><tr><td>kkasim@mcit.gov.eg, latif@nwp.gov.eg, libr@mwri.gov.eg, madiha_m@mwri.gov.eg, maha.saad@ebi.gov.eg, manal@tra.gov.eg, market_analysis@ntra.gov.eg, marwaz@mwri.gov.eg, me@nwp.gov.eg</td></tr><tr><td>1</td></tr><tr><td>0</td><td>joop.castelijns@pdo.co.om</td><td>1</td><td>kkasim@mcit.gov.eg</td><td>2</td><td> latif@nwp.gov.eg</td><td>3</td><td> libr@mwri.gov.eg</td><td>4</td><td> madiha_m@mwri.gov.eg</td><td>5</td><td> maha.saad@ebi.gov.eg</td><td>6</td><td> manal@tra.gov.eg</td><td>7</td><td> market_analysis@ntra.gov.eg</td><td>8</td><td> marwaz@mwri.gov.eg</td><td>9</td><td> me@nwp.gov.eg</td></tr><tr></tr><tr><td>10</td></tr><tr><td><pre>
+
+</pre></td></tr><tr><td>2196</td></tr><tr><td>thy@pdo.co.om</td></tr><tr><td>2</td></tr><tr><td>18</td></tr><tr><td>med@mwri.gov.eg, melmegharbei@tra.gov.eg, met@nwp.gov.eg, mf@efsa.gov.eg, mharty@mcit.gov.eg, mhashem@tra.gov.eg, minister@mwri.gov.eg, mmoghazi@tra.gov.eg, mohamed.elnawawy@telecomegypt.com.eg</td></tr><tr><td>1</td></tr><tr><td>0</td><td>thy@pdo.co.om</td><td>1</td><td>med@mwri.gov.eg</td><td>2</td><td> melmegharbei@tra.gov.eg</td><td>3</td><td> met@nwp.gov.eg</td><td>4</td><td> mf@efsa.gov.eg</td><td>5</td><td> mharty@mcit.gov.eg</td><td>6</td><td> mhashem@tra.gov.eg</td><td>7</td><td> minister@mwri.gov.eg</td><td>8</td><td> mmoghazi@tra.gov.eg</td><td>9</td><td> mohamed.elnawawy@telecomegypt.com.eg</td></tr><tr></tr><tr><td>10</td></tr><tr><td><pre>
+
+</pre></td></tr><tr><td>2188</td></tr><tr><td>eb@omanlng.co.om</td></tr><tr><td>3</td></tr><tr><td>27</td></tr><tr><td>mohamed.hamdy@cich.com.eg, mohamed.refaat@i-score.com.eg, mohamed@dataxprs.com.eg, mohamed@mtc.com.eg, mohamedatef@cemex.com.eg, mohamedel-demerdash@zamilsteel.com.eg, mohamedim@egpc.com.eg, mohandes@access.com.eg, mohandessin@bishara.com.eg</td></tr><tr><td>1</td></tr><tr><td>0</td><td>eb@omanlng.co.om</td><td>1</td><td>mohamed.hamdy@cich.com.eg</td><td>2</td><td> mohamed.refaat@i-score.com.eg</td><td>3</td><td> mohamed@dataxprs.com.eg</td><td>4</td><td> mohamed@mtc.com.eg</td><td>5</td><td> mohamedatef@cemex.com.eg</td><td>6</td><td> mohamedel-demerdash@zamilsteel.com.eg</td><td>7</td><td> mohamedim@egpc.com.eg</td><td>8</td><td> mohandes@access.com.eg</td><td>9</td><td> mohandessin@bishara.com.eg</td></tr><tr></tr><tr><td>10</td></tr><tr><td><pre>
+
+</pre></td></tr><tr><td>2094</td></tr><tr><td>bartvoet@omanlng.co.om</td></tr><tr><td>4</td></tr><tr><td>36</td></tr><tr><td>mohebm@chemix.com.eg, mohsen@nti.sci.eg, mohyeldin@albaraka-bank.com.eg, moi@idsc.net.eg, mona.boutros@cemex.com.eg, mona.mounir@cemex.com.eg, mona@nti.sci.eg, monashlt@tedata.net.eg, mosjo65@click.com.eg</td></tr><tr><td>1</td></tr><tr><td>0</td><td>bartvoet@omanlng.co.om</td><td>1</td><td>mohebm@chemix.com.eg</td><td>2</td><td> mohsen@nti.sci.eg</td><td>3</td><td> mohyeldin@albaraka-bank.com.eg</td><td>4</td><td> moi@idsc.net.eg</td><td>5</td><td> mona.boutros@cemex.com.eg</td><td>6</td><td> mona.mounir@cemex.com.eg</td><td>7</td><td> mona@nti.sci.eg</td><td>8</td><td> monashlt@tedata.net.eg</td><td>9</td><td> mosjo65@click.com.eg</td></tr><tr></tr><tr><td>10</td></tr><tr><td><pre>
+
+</pre></td></tr><tr><td>1855</td></tr><tr><td>samuelrajanthonysamy@omanlng.co.om</td></tr><tr><td>5</td></tr><tr><td>45</td></tr><tr><td>motaleb@mwri.gov.eg, motcas@idsc.net.eg, mowaygen@idrc.org.eg, mpg@click.com.eg, ms32t@midtap.com.eg, msaleh@idsc.net.eg, mseaoffice@eeaa.gov.eg, mselite@link.com.eg, msoliman@tra.gov.eg</td></tr><tr><td>1</td></tr><tr><td>0</td><td>samuelrajanthonysamy@omanlng.co.om</td><td>1</td><td>motaleb@mwri.gov.eg</td><td>2</td><td> motcas@idsc.net.eg</td><td>3</td><td> mowaygen@idrc.org.eg</td><td>4</td><td> mpg@click.com.eg</td><td>5</td><td> ms32t@midtap.com.eg</td><td>6</td><td> msaleh@idsc.net.eg</td><td>7</td><td> mseaoffice@eeaa.gov.eg</td><td>8</td><td> mselite@link.com.eg</td><td>9</td><td> msoliman@tra.gov.eg</td></tr><tr></tr><tr><td>10</td></tr><tr><td><pre>
+
+</pre></td></tr><tr><td>1842</td></tr><tr><td>squreshi@oman-gas.com.om</td></tr><tr><td>6</td></tr><tr><td>54</td></tr><tr><td>mspharm@idsc.net.eg, mtco@tedata.net.eg, must@must.edu.eg, mwaly@cmrdi.sci.eg, mzhelal@tedata.net.eg, na.mounir@cemex.com.eg, nadalex@link.com.eg, nadel@fgf.org.eg, nagwash@idsc.net.eg</td></tr><tr><td>1</td></tr><tr><td>0</td><td>squreshi@oman-gas.com.om</td><td>1</td><td>mspharm@idsc.net.eg</td><td>2</td><td> mtco@tedata.net.eg</td><td>3</td><td> must@must.edu.eg</td><td>4</td><td> mwaly@cmrdi.sci.eg</td><td>5</td><td> mzhelal@tedata.net.eg</td><td>6</td><td> na.mounir@cemex.com.eg</td><td>7</td><td> nadalex@link.com.eg</td><td>8</td><td> nadel@fgf.org.eg</td><td>9</td><td> nagwash@idsc.net.eg</td></tr><tr></tr><tr><td>10</td></tr><tr><td><pre>
+
+</pre></td></tr><tr><td>1812</td></tr><tr><td>asheemp@oua.co.om</td></tr><tr><td>7</td></tr><tr><td>63</td></tr><tr><td>nashwa@frcu.eun.eg, nasr@link.com.eg, nasrcity@tedata.net.eg, nationalfreight@tedata.net.eg, nbllaw@interlink.com.eg, nefmoh@tedata.net.eg, nehal@mwri.gov.eg, nermines@ntra.gov.eg, neveeng@mwri.gov.eg</td></tr><tr><td>1</td></tr><tr><td>0</td><td>asheemp@oua.co.om</td><td>1</td><td>nashwa@frcu.eun.eg</td><td>2</td><td> nasr@link.com.eg</td><td>3</td><td> nasrcity@tedata.net.eg</td><td>4</td><td> nationalfreight@tedata.net.eg</td><td>5</td><td> nbllaw@interlink.com.eg</td><td>6</td><td> nefmoh@tedata.net.eg</td><td>7</td><td> nehal@mwri.gov.eg</td><td>8</td><td> nermines@ntra.gov.eg</td><td>9</td><td> neveeng@mwri.gov.eg</td></tr><tr></tr><tr><td>10</td></tr><tr><td><pre>
+
+</pre></td></tr><tr><td>1752</td></tr><tr><td>iz.nabhani@pdo.co.om</td></tr><tr><td>8</td></tr><tr><td>72</td></tr><tr><td>newsoft@tedata.net.eg, nezzat@fgf.org.eg, nfergany@idsc.net.eg, nhusseiny@tra.gov.eg, nibrahim@aedco.com.eg, nnabil@erf.org.eg, nnagy@tedata.net.eg, noha.gamal@acu.edu.eg, noura@nti.sci.eg</td></tr><tr><td>1</td></tr><tr><td>0</td><td>iz.nabhani@pdo.co.om</td><td>1</td><td>newsoft@tedata.net.eg</td><td>2</td><td> nezzat@fgf.org.eg</td><td>3</td><td> nfergany@idsc.net.eg</td><td>4</td><td> nhusseiny@tra.gov.eg</td><td>5</td><td> nibrahim@aedco.com.eg</td><td>6</td><td> nnabil@erf.org.eg</td><td>7</td><td> nnagy@tedata.net.eg</td><td>8</td><td> noha.gamal@acu.edu.eg</td><td>9</td><td> noura@nti.sci.eg</td></tr><tr></tr><tr><td>10</td></tr><tr><td><pre>
+
+</pre></td></tr><tr><td>1750</td></tr><tr><td>faisal.naaman@pdo.co.om</td></tr><tr><td>9</td></tr><tr><td>81</td></tr><tr><td>nre1@idsc.net.eg, nre@idsc.net.eg, nsaad@idsc.net.eg, ntewfik@mcit.gov.eg, nuca@starnet.com.eg, numbering@tra.gov.eg, nwali@egpc.com.eg, oafouad@cmrdi.sci.eg, oasran@moee.gov.eg</td></tr><tr><td>1</td></tr><tr><td>0</td><td>faisal.naaman@pdo.co.om</td><td>1</td><td>nre1@idsc.net.eg</td><td>2</td><td> nre@idsc.net.eg</td><td>3</td><td> nsaad@idsc.net.eg</td><td>4</td><td> ntewfik@mcit.gov.eg</td><td>5</td><td> nuca@starnet.com.eg</td><td>6</td><td> numbering@tra.gov.eg</td><td>7</td><td> nwali@egpc.com.eg</td><td>8</td><td> oafouad@cmrdi.sci.eg</td><td>9</td><td> oasran@moee.gov.eg</td></tr><tr></tr><tr><td>10</td></tr><tr><td><pre>
+
+</pre></td></tr><tr><td>1645</td></tr><tr><td>abdullah.sn.mahruqi@pdo.co.om</td></tr><tr><td>10</td></tr><tr><td>90</td></tr><tr><td>odredwing@link.com.eg, oelmeligy@dataxprs.com.eg, oibrahim@ntra.gov.eg, oil@soficom.com.eg, omayma.mohsen@nti.sci.eg, omegaeng@mst1.mist.com.eg, omegaeng@tedata.net.eg, omohsen@nti.sci.eg, orascomhc.ccg@gmail.eg</td></tr><tr><td>1</td></tr><tr><td>0</td><td>abdullah.sn.mahruqi@pdo.co.om</td><td>1</td><td>odredwing@link.com.eg</td><td>2</td><td> oelmeligy@dataxprs.com.eg</td><td>3</td><td> oibrahim@ntra.gov.eg</td><td>4</td><td> oil@soficom.com.eg</td><td>5</td><td> omayma.mohsen@nti.sci.eg</td><td>6</td><td> omegaeng@mst1.mist.com.eg</td><td>7</td><td> omegaeng@tedata.net.eg</td><td>8</td><td> omohsen@nti.sci.eg</td><td>9</td><td> orascomhc.ccg@gmail.eg</td></tr><tr></tr><tr><td>10</td></tr><tr><td><pre>
+
+</pre></td></tr><tr><td>1617</td></tr><tr><td>maqbool.lawatia@pdo.co.om</td></tr><tr><td>11</td></tr><tr><td>99</td></tr><tr><td>org_tra@suezcanal.gov.eg, ots@amcham.org.eg, panda@soficom.com.eg, panmar@dataxprs.com.eg, parepcairo@link.com.eg, pharco@pharco.com.eg, pharon@globalnet.com.eg, pm@cabinet.gov.eg, portsaid@ibramar.com.eg</td></tr><tr><td>1</td></tr><tr><td>0</td><td>maqbool.lawatia@pdo.co.om</td><td>1</td><td>org_tra@suezcanal.gov.eg</td><td>2</td><td> ots@amcham.org.eg</td><td>3</td><td> panda@soficom.com.eg</td><td>4</td><td> panmar@dataxprs.com.eg</td><td>5</td><td> parepcairo@link.com.eg</td><td>6</td><td> pharco@pharco.com.eg</td><td>7</td><td> pharon@globalnet.com.eg</td><td>8</td><td> pm@cabinet.gov.eg</td><td>9</td><td> portsaid@ibramar.com.eg</td></tr><tr></tr><tr><td>10</td></tr><tr><td><pre>
+
+</pre></td></tr><tr><td>1496</td></tr><tr><td>rashid.rn.jahadhmy@pdo.co.om</td></tr><tr><td>12</td></tr><tr><td>108</td></tr><tr><td>posco@pyramid.com.eg, postmaster@impactbbdo.com.eg, pr_holdingco@egyptair.com.eg, president@mans.edu.eg, press1234@tedata.net.eg, press@tourism.gov.eg, pro1@petrojet.com.eg, ps3@mwri.gov.eg, ptraining@nti.sci.eg</td></tr><tr><td>1</td></tr><tr><td>0</td><td>rashid.rn.jahadhmy@pdo.co.om</td><td>1</td><td>posco@pyramid.com.eg</td><td>2</td><td> postmaster@impactbbdo.com.eg</td><td>3</td><td> pr_holdingco@egyptair.com.eg</td><td>4</td><td> president@mans.edu.eg</td><td>5</td><td> press1234@tedata.net.eg</td><td>6</td><td> press@tourism.gov.eg</td><td>7</td><td> pro1@petrojet.com.eg</td><td>8</td><td> ps3@mwri.gov.eg</td><td>9</td><td> ptraining@nti.sci.eg</td></tr><tr></tr><tr><td>10</td></tr><tr><td><pre>
+
+</pre></td></tr>      
+            </tbody>
+          </table>        
+            
+      </div>
+    </div>
+	<div id="footer">
+		<hr>
+		<div class="inner">
+			<div class="container">
+				<p class="right"><a href="#">Back to top</a></p>
+				<p>
+				</p>
+			</div>
+		</div>
+	</div>
+	
+</body>
+</html>

@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>
+<html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>
+<html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>
+<html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Linked Emails Project</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width">
+
+  <link href="http://localhost/CI_306_linked_em/assets/css/admin/global.css" rel="stylesheet" type="text/css">
+  
+   <!--<link rel="stylesheet" href="/assets/css/bootstrap-responsive.min.css">-->
+
+  <script src="http://localhost/CI_306_linked_em/assets/js/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+  <!--<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script> -->
+ 
+  
+  <script src="http://localhost/CI_306_linked_em//assets/js/jquery-1.7.1.min.js"></script>)
+  <script src="http://localhost/CI_306_linked_em//assets/js/bootstrap.min.js"></script>
+  
+  <!--<script src="http://localhost/CI_306_linked_em//node_modules/socket.io/node_modules/socket.io-client/socket.io.js"></script>-->
+  
+  <!--<script src="http://localhost/CI_306_linked_em//assets/js/socket.js"></script> -->
+  <!--<script src="http://localhost/CI_306_linked_em//assets/js/main.js"></script> -->
+  
+    <style>
+    body {
+      padding-top: 60px;
+      padding-bottom: 40px;
+    }
+    </style>
+</head>
+<body>
+	<div class="navbar navbar-fixed-top">
+	  <div class="navbar-inner">
+	    <div class="container">
+	      <a class="brand">Linked Emails Project</a>
+	      <ul class="nav">
+	        <li >
+	          <a href="http://localhost/CI_306_linked_em/index.php/admin/main">DashBoard</a>
+	        </li>
+                <li >
+	          <a href="http://localhost/CI_306_linked_em/index.php/admin/products">Products</a>
+	        </li>
+	        <li >
+	          <a href="http://localhost/CI_306_linked_em/index.php/admin/manufacturers/">Manufacturers</a>
+	        </li>
+                <li class="dropdown">
+	          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Emails <b class="caret"></b></a>
+	          <ul class="dropdown-menu">
+	            <li>
+	              <a href="http://localhost/CI_306_linked_em/index.php/admin/Emails">Email Add,Edit,Delete</a>
+	            </li>
+                    <li>
+	              <a href="http://localhost/CI_306_linked_em/index.php/admin/Owner">Owner Add,Edit,Delete</a>
+	            </li>
+                    <li>
+	              <a href="http://localhost/CI_306_linked_em/index.php/admin/Source">Source Add,Edit,Delete</a>
+	            </li>
+	          </ul>
+	        </li>
+                <li class="dropdown">
+	          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Companies <b class="caret"></b></a>
+	          <ul class="dropdown-menu">
+	            <li>
+	              <a href="http://localhost/CI_306_linked_em/index.php/admin/Companies">Company Add,Edit,Delete</a>
+	            </li>
+                    <li>
+	              <a href="http://localhost/CI_306_linked_em/index.php/admin/Category">Category Add,Edit,Delete</a>
+	            </li>
+                    <li>
+	              <a href="http://localhost/CI_306_linked_em/index.php/admin/Source">... Add,Edit,Delete</a>
+	            </li>
+	          </ul>
+	        </li>
+	        <li class="dropdown">
+	          <a href="#" class="dropdown-toggle" data-toggle="dropdown">System <b class="caret"></b></a>
+	          <ul class="dropdown-menu">
+	            <li>
+	              <a href="http://localhost/CI_306_linked_em/admin/logout">Logout</a>
+	            </li>
+	          </ul>
+	        </li>
+	      </ul>
+	    </div>
+	  </div>
+	</div>	
+    
+    
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-3 col-md-2 sidebar">
+          <ul class="nav nav-sidebar">
+            <li class="active"><a href="http://localhost/CI_306_linked_em/index.php/admin/main">Overview <span class="sr-only">(current)</span></a></li>
+            <li><a href="#">Reports</a></li>
+            <li><a href="http://localhost/CI_306_linked_em/index.php/admin/Mailer/show">Mailer</a></li>
+            <li><a href="http://localhost/CI_306_linked_em/index.php/admin/Mailer/mailfixedjob">Scheduled Mail Jobs</a></li>
+            <li><a href="http://localhost/CI_306_linked_em/index.php/admin/Mailer/crontest/1/mailer/2/gmail/UI">Cron Scheduler</a></li>
+            <li><a href="http://localhost/CI_306_linked_em/index.php/admin/Emails/cron_backup/false">Cron Backup</a></li>
+            <li><a href="http://localhost/CI_306_linked_em/index.php/admin/export/show">Exports</a></li>
+          </ul>
+          <ul class="nav nav-sidebar">
+            <li><a href="">Nav item</a></li>
+            <li><a href="">Nav item again</a></li>
+            <li><a href="">One more nav</a></li>
+            <li><a href="http://localhost/CI_306_linked_em/index.php/admin/Statistics/">Statistics</a></li>
+            <li><a href="http://localhost/CI_306_linked_em/index.php/admin/Owner/">Owners</a></li>
+          </ul>
+          <ul class="nav nav-sidebar">
+            <li><a href="http://localhost/CI_306_linked_em/index.php/admin/Emails/">Emails</a></li>
+            <li><a href="http://localhost/CI_306_linked_em/index.php/admin/upload/show">Uploads</a></li>
+            <li><a href="http://localhost/CI_306_linked_em/index.php/admin/upload/">Upload Files</a></li>
+          </ul>
+        </div>
+       
+        </div>  
+       </div>
+
+    <div class="container top">
+
+      <ul class="breadcrumb">
+        <li>
+          <a href="http://localhost/CI_306_linked_em/index.php/admin">
+            Admin_mailer          </a> 
+          <span class="divider">/</span>
+        </li>
+        <li class="active">
+          Cron_mail          
+        </li>
+        
+      </ul>
+
+      <div class="page-header users-header">
+        <h2>
+          Cron_mail              <br/>
+             
+              <a  href="http://localhost/CI_306_linked_em/index.php/admin/Mailer/sendmail" class="btn btn-success">Send Email</a>
+              <div class="divider"/>
+              <a  href="http://localhost/CI_306_linked_em/index.php/admin/Mailer/sendmailattach" class="btn btn-success">Send Email with Attachment</a>
+              <br/>
+          
+        </h2>
+      </div>
+      
+      <div class="row">
+        <div class="span12 columns">
+          <div class="well">
+          
+          </div>
+             <table class="table table-striped table-bordered table-condensed">
+            <thead>
+              <tr>
+                <th class="header">email_v_count</th>
+                <th class="yellow header headerSortDown">email_nv_count</th>
+                <th class="green header">email_merged_count</th>
+                <th class="red header">email_to_mailer_count</th>
+                <th class="red header">email_sent_count</th>
+                <th class="red header">emails_sent_earlier</th>
+                <th class="red header">emails_scheduled_next_run</th>
+                <th class="red header">N/A</th>
+      
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>50</td><td>0</td><td>50</td><td>58</td><td>130</td><td>3</td><td>60754</td><td>N/A</td></tr>      
+            </tbody>
+           </table> 
+            
+            <table class="table table-striped table-bordered table-condensed">
+             <thead>
+              <tr>
+                <th class="header">Debugging Info</th>
+              </tr>
+              <tr>
+                <th class="header">Email ID</th>
+                <th class="header">Debug Info</th>   
+              </tr>
+            </thead>
+            <tbody>
+               <tr><td>11441</td><td><pre>
+
+</pre></td></tr><tr><td>11440</td><td><pre>
+
+</pre></td></tr><tr><td>11381</td><td><pre>
+
+</pre></td></tr><tr><td>11342</td><td><pre>
+
+</pre></td></tr><tr><td>11335</td><td><pre>
+
+</pre></td></tr><tr><td>11334</td><td><pre>
+
+</pre></td></tr><tr><td>11168</td><td><pre>
+
+</pre></td></tr><tr><td>11144</td><td><pre>
+
+</pre></td></tr><tr><td>11134</td><td><pre>
+
+</pre></td></tr><tr><td>11125</td><td><pre>
+
+</pre></td></tr><tr><td>11109</td><td><pre>
+
+</pre></td></tr><tr><td>11088</td><td><pre>
+
+</pre></td></tr><tr><td>11068</td><td><pre>
+
+</pre></td></tr>   
+            </tbody>
+          </table>
+    
+          
+          <table class="table table-striped table-bordered table-condensed">
+          <thead>
+              <tr>
+                <th class="header">Email ID</th>
+                <th class="header">Email sent</th>   
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>11441</td><td>john.fagan@toco.com.om</td></tr><tr><td>16445</td><td>ig@eim.ae</td></tr><tr><td>16444</td><td>idecorco@eim.ae</td></tr><tr><td>16443</td><td>hydam@eim.ae</td></tr><tr><td>16442</td><td>hotpack@eim.ae</td></tr><tr><td>16441</td><td>horizonc@eim.ae</td></tr><tr><td>16440</td><td>hmriyash@eim.ae</td></tr><tr><td>16439</td><td>hkintl@eim.ae</td></tr><tr><td>16438</td><td>hite@eim.ae</td></tr><tr><td>16437</td><td>hisyshr@eim.ae</td></tr><tr><td>11440</td><td>john.sajan@toco.com.om</td></tr><tr><td>16436</td><td>hetrdg@eim.ae</td></tr><tr><td>16435</td><td>hassan30@eim.ae</td></tr><tr><td>16434</td><td>haktrans@eim.ae</td></tr><tr><td>16433</td><td>habbaigroup@eim.ae</td></tr><tr><td>16432</td><td>habbai99@eim.ae</td></tr><tr><td>16431</td><td>gupta@eim.ae</td></tr><tr><td>16430</td><td>gulfsafety@eim.ae</td></tr><tr><td>16429</td><td>gulfengr@eim.ae</td></tr><tr><td>16428</td><td>gulfco@eim.ae</td></tr><tr><td>11381</td><td>humaidalbahlooli@omanlng.co.om</td></tr><tr><td>16427</td><td>gulf_eng@eim.ae</td></tr><tr><td>16426</td><td>gres@eim.ae</td></tr><tr><td>16425</td><td>goodjobs@eim.ae</td></tr><tr><td>16424</td><td>goapollo@eim.ae</td></tr><tr><td>16423</td><td>gmotor@eim.ae</td></tr><tr><td>16422</td><td>gmcajman@eim.ae</td></tr><tr><td>16421</td><td>glotrust@eim.ae</td></tr><tr><td>16420</td><td>ginnys@eim.ae</td></tr><tr><td>16419</td><td>ghwasa@eim.ae</td></tr><tr><td>11342</td><td>HenkRiepema@omanlng.co.om</td></tr><tr><td>16418</td><td>ghice@eim.ae</td></tr><tr><td>16417</td><td>ghasan@eim.ae</td></tr><tr><td>16416</td><td>ggs@eim.ae</td></tr><tr><td>16415</td><td>gdac@eim.ae</td></tr><tr><td>16414</td><td>gaschool@eim.ae</td></tr><tr><td>16413</td><td>galaxypi@eim.ae</td></tr><tr><td>16412</td><td>fujcem82@eim.ae</td></tr><tr><td>16411</td><td>fstidubai@eim.ae</td></tr><tr><td>16410</td><td>fnsafuj@eim.ae</td></tr><tr><td>11335</td><td>hamood.al-harty@shell.co.om</td></tr><tr><td>11334</td><td>hamood@dapeco.com.om</td></tr><tr><td>11168</td><td>bhandary@mbpetroleum.co.om</td></tr><tr><td>11144</td><td>ancmnt@omantel.net.om</td></tr><tr><td>11134</td><td>tnet@omantel.net.om</td></tr><tr><td>11125</td><td>arun@napco.co.om</td></tr><tr><td>11109</td><td>rew.bowes@pdo.co.om</td></tr><tr><td>11088</td><td>peter.rubeck@nawras.com.om</td></tr><tr><td>11068</td><td>ali.harasi@pdo.co.om</td></tr>      
+            </tbody>
+          </table>
+            
+          <table class="table table-striped table-bordered table-condensed">
+          <thead>
+              <tr>
+                <th class="header">Email ID</th>
+                <th class="header">Email Failed</th>   
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>19971</td><td>recruitment@almaha.com.om</td></tr><tr><td>18282</td><td>recruit@mbpetroleum.co.om</td></tr><tr><td>18280</td><td>mbpsrecruitment@mbpetroleum.co.om</td></tr>      
+            </tbody>
+          </table>  
+            
+          <table class="table table-striped table-bordered table-condensed">
+          <thead>
+              <tr>
+                <th class="header">Email ID</th>
+                <th class="header">Email sent earlier</th>   
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>19971</td><td>recruitment@almaha.com.om</td></tr><tr><td>18282</td><td>recruit@mbpetroleum.co.om</td></tr><tr><td>18280</td><td>mbpsrecruitment@mbpetroleum.co.om</td></tr>      
+            </tbody>
+          </table>     
+            
+      </div>
+    </div>
+	<div id="footer">
+		<hr>
+		<div class="inner">
+			<div class="container">
+				<p class="right"><a href="#">Back to top</a></p>
+				<p>
+				</p>
+			</div>
+		</div>
+	</div>
+	
+</body>
+</html>

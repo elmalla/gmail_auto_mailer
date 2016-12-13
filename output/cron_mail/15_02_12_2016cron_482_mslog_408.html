@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>
+<html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>
+<html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>
+<html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Linked Emails Project</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width">
+
+  <link href="http://localhost/CI_306_linked_em_Production/assets/css/admin/global.css" rel="stylesheet" type="text/css">
+  
+   <!--<link rel="stylesheet" href="/assets/css/bootstrap-responsive.min.css">-->
+
+  <script src="http://localhost/CI_306_linked_em_Production/assets/js/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+  <!--<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script> -->
+ 
+  
+  <script src="http://localhost/CI_306_linked_em_Production//assets/js/jquery-1.7.1.min.js"></script>)
+  <script src="http://localhost/CI_306_linked_em_Production//assets/js/bootstrap.min.js"></script>
+  
+  <!--<script src="http://localhost/CI_306_linked_em_Production//node_modules/socket.io/node_modules/socket.io-client/socket.io.js"></script>-->
+  
+  <!--<script src="http://localhost/CI_306_linked_em_Production//assets/js/socket.js"></script> -->
+  <!--<script src="http://localhost/CI_306_linked_em_Production//assets/js/main.js"></script> -->
+  
+    <style>
+    body {
+      padding-top: 60px;
+      padding-bottom: 40px;
+    }
+    </style>
+</head>
+<body>
+	<div class="navbar navbar-fixed-top">
+	  <div class="navbar-inner">
+	    <div class="container">
+	      <a class="brand">Linked Emails Project</a>
+	      <ul class="nav">
+	        <li >
+	          <a href="http://localhost/CI_306_linked_em_Production/index.php/admin/main">DashBoard</a>
+	        </li>
+                <li >
+	          <a href="http://localhost/CI_306_linked_em_Production/index.php/admin/products">Products</a>
+	        </li>
+	        <li >
+	          <a href="http://localhost/CI_306_linked_em_Production/index.php/admin/manufacturers/">Manufacturers</a>
+	        </li>
+                <li class="dropdown">
+	          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Emails <b class="caret"></b></a>
+	          <ul class="dropdown-menu">
+	            <li>
+	              <a href="http://localhost/CI_306_linked_em_Production/index.php/admin/Emails">Email Add,Edit,Delete</a>
+	            </li>
+                    <li>
+	              <a href="http://localhost/CI_306_linked_em_Production/index.php/admin/Owner">Owner Add,Edit,Delete</a>
+	            </li>
+                    <li>
+	              <a href="http://localhost/CI_306_linked_em_Production/index.php/admin/Source">Source Add,Edit,Delete</a>
+	            </li>
+	          </ul>
+	        </li>
+                <li class="dropdown">
+	          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Companies <b class="caret"></b></a>
+	          <ul class="dropdown-menu">
+	            <li>
+	              <a href="http://localhost/CI_306_linked_em_Production/index.php/admin/Companies">Company Add,Edit,Delete</a>
+	            </li>
+                    <li>
+	              <a href="http://localhost/CI_306_linked_em_Production/index.php/admin/Category">Category Add,Edit,Delete</a>
+	            </li>
+                    <li>
+	              <a href="http://localhost/CI_306_linked_em_Production/index.php/admin/Source">... Add,Edit,Delete</a>
+	            </li>
+	          </ul>
+	        </li>
+	        <li class="dropdown">
+	          <a href="#" class="dropdown-toggle" data-toggle="dropdown">System <b class="caret"></b></a>
+	          <ul class="dropdown-menu">
+	            <li>
+	              <a href="http://localhost/CI_306_linked_em_Production/admin/logout">Logout</a>
+	            </li>
+	          </ul>
+	        </li>
+	      </ul>
+	    </div>
+	  </div>
+	</div>	
+    
+    
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-3 col-md-2 sidebar">
+          <ul class="nav nav-sidebar">
+            <li class="active"><a href="http://localhost/CI_306_linked_em_Production/index.php/admin/main">Overview <span class="sr-only">(current)</span></a></li>
+            <li><a href="#">Reports</a></li>
+            <li><a href="http://localhost/CI_306_linked_em_Production/index.php/admin/Mailer/show">Mailer</a></li>
+            <li><a href="http://localhost/CI_306_linked_em_Production/index.php/admin/Mailer/mailfixedjob">Scheduled Mail Jobs</a></li>
+            <li><a href="http://localhost/CI_306_linked_em_Production/index.php/admin/Mailer/cronm/1/mailer/8/gmail/UI">Cron Scheduler</a></li>
+            <li><a href="http://localhost/CI_306_linked_em_Production/index.php/admin/Emails/cron_backup/false">Cron Backup</a></li>
+            <li><a href="http://localhost/CI_306_linked_em_Production/index.php/admin/export/show">Exports</a></li>
+          </ul>
+          <ul class="nav nav-sidebar">
+            <li><a href="">Nav item</a></li>
+            <li><a href="">Nav item again</a></li>
+            <li><a href="">One more nav</a></li>
+            <li><a href="http://localhost/CI_306_linked_em_Production/index.php/admin/Statistics/">Statistics</a></li>
+            <li><a href="http://localhost/CI_306_linked_em_Production/index.php/admin/Owner/">Owners</a></li>
+          </ul>
+          <ul class="nav nav-sidebar">
+            <li><a href="http://localhost/CI_306_linked_em_Production/index.php/admin/Emails/">Emails</a></li>
+            <li><a href="http://localhost/CI_306_linked_em_Production/index.php/admin/upload/show">Uploads</a></li>
+            <li><a href="http://localhost/CI_306_linked_em_Production/index.php/admin/upload/">Upload Files</a></li>
+          </ul>
+        </div>
+       
+        </div>  
+       </div>
+
+    <div class="container top">
+
+      <ul class="breadcrumb">
+        <li>
+          <a href="http://localhost/CI_306_linked_em_Production/admin">
+            Admin_mailer          </a> 
+          <span class="divider">/</span>
+        </li>
+        <li class="active">
+          Cron_mail          
+        </li>
+        
+      </ul>
+
+      <div class="page-header users-header">
+        <h2>
+          Cron_mail              <br/>
+             
+              <a  href="http://localhost/CI_306_linked_em_Production/admin/Mailer/sendmail" class="btn btn-success">Send Email</a>
+              <div class="divider"/>
+              <a  href="http://localhost/CI_306_linked_em_Production/admin/Mailer/sendmailattach" class="btn btn-success">Send Email with Attachment</a>
+              <br/>
+          
+        </h2>
+      </div>
+      
+      <div class="row">
+        <div class="span12 columns">
+          <div class="well">
+          
+          </div>
+             <table class="table table-striped table-bordered table-condensed">
+            <thead>
+              <tr>
+                <th class="header">email_v_count</th>
+                <th class="yellow header headerSortDown">email_nv_count</th>
+                <th class="green header">email_merged_count</th>
+                <th class="red header">email_to_mailer_count</th>
+                <th class="red header">email_sent_count</th>
+                <th class="red header">emails_sent_earlier</th>
+                <th class="red header">emails_scheduled_next_run</th>
+                <th class="red header">N/A</th>
+      
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>50</td><td>0</td><td>50</td><td>130</td><td>130</td><td>0</td><td>3984</td><td>N/A</td></tr>      
+            </tbody>
+           </table> 
+            
+            <table class="table table-striped table-bordered table-condensed">
+             <thead>
+              <tr>
+                <th class="header">Debugging Info</th>
+              </tr>
+              <tr>
+                <th class="header">Email ID</th>
+                <th class="header">Debug Info</th>   
+              </tr>
+            </thead>
+            <tbody>
+               <tr><td>35951</td><td><pre>
+
+</pre></td></tr><tr><td>48354</td><td><pre>
+
+</pre></td></tr><tr><td>48355</td><td><pre>
+
+</pre></td></tr><tr><td>48356</td><td><pre>
+
+</pre></td></tr><tr><td>48362</td><td><pre>
+
+</pre></td></tr><tr><td>48368</td><td><pre>
+
+</pre></td></tr><tr><td>48374</td><td><pre>
+
+</pre></td></tr><tr><td>48375</td><td><pre>
+
+</pre></td></tr><tr><td>48381</td><td><pre>
+
+</pre></td></tr><tr><td>48396</td><td><pre>
+
+</pre></td></tr><tr><td>48397</td><td><pre>
+
+</pre></td></tr><tr><td>48398</td><td><pre>
+
+</pre></td></tr><tr><td>48399</td><td><pre>
+
+</pre></td></tr>   
+            </tbody>
+          </table>
+    
+          
+          <table class="table table-striped table-bordered table-condensed">
+          <thead>
+              <tr>
+                <th class="header">Email ID</th>
+                <th class="header">Email sent</th>   
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>35951</td><td>yalemadi@mei.gov.qa</td></tr><tr><td>25055</td><td>urugemb@idsc.gov.eg</td></tr><tr><td>25054</td><td>to@idsc.gov.eg</td></tr><tr><td>25053</td><td>tkamel@idsc.gov.eg</td></tr><tr><td>25052</td><td>theosem@idsc.gov.eg</td></tr><tr><td>25051</td><td>svri@idsc.gov.eg</td></tr><tr><td>25050</td><td>srpah@idsc.gov.eg</td></tr><tr><td>25049</td><td>rtu@idsc.gov.eg</td></tr><tr><td>25048</td><td>primemin@idsc.gov.eg</td></tr><tr><td>25047</td><td>nhegazy@idsc.gov.eg</td></tr><tr><td>48354</td><td>info@mmaa.gov.qa</td></tr><tr><td>25046</td><td>nasco@idsc.gov.eg</td></tr><tr><td>25045</td><td>mot@idsc.gov.eg</td></tr><tr><td>25044</td><td>mojeb@idsc.gov.eg</td></tr><tr><td>25043</td><td>moi@idsc.gov.eg</td></tr><tr><td>25042</td><td>moi1@idsc.gov.eg</td></tr><tr><td>25041</td><td>moh@idsc.gov.eg</td></tr><tr><td>25040</td><td>mmpisscc@idsc.gov.eg</td></tr><tr><td>25039</td><td>min@idsc.gov.eg</td></tr><tr><td>25038</td><td>memphis@idsc.gov.eg</td></tr><tr><td>48355</td><td>info@scfa.gov.qa</td></tr><tr><td>25037</td><td>mculture@idsc.gov.eg</td></tr><tr><td>25036</td><td>ma@idsc.gov.eg</td></tr><tr><td>25035</td><td>kafrshiekh@idsc.gov.eg</td></tr><tr><td>25034</td><td>hondemb@idsc.gov.eg</td></tr><tr><td>25033</td><td>hbadran@idsc.gov.eg</td></tr><tr><td>25032</td><td>gem1@idsc.gov.eg</td></tr><tr><td>25031</td><td>gafi@idsc.gov.eg</td></tr><tr><td>25030</td><td>feind@idsc.gov.eg</td></tr><tr><td>25029</td><td>egyptair@idsc.gov.eg</td></tr><tr><td>48356</td><td>itoperation@see.gov.qa</td></tr><tr><td>25028</td><td>egyptair.egyptair@idsc.gov.eg</td></tr><tr><td>25027</td><td>eeaa@idsc.gov.eg</td></tr><tr><td>25026</td><td>ecm@idsc.gov.eg</td></tr><tr><td>25025</td><td>cop@idsc.gov.eg</td></tr><tr><td>25024</td><td>ckc@idsc.gov.eg</td></tr><tr><td>25023</td><td>cida@idsc.gov.eg</td></tr><tr><td>25022</td><td>britcoun@idsc.gov.eg</td></tr><tr><td>25021</td><td>armenemb@idsc.gov.eg</td></tr><tr><td>25020</td><td>alcotexa@idsc.gov.eg</td></tr><tr><td>48362</td><td>rpsd@sec.gov.qa</td></tr><tr><td>25019</td><td>agibapet@idsc.gov.eg</td></tr><tr><td>25018</td><td>aapso@idsc.gov.eg</td></tr><tr><td>20659</td><td>info@egsma.gov.eg</td></tr><tr><td>20658</td><td>bidround@egsma.gov.eg</td></tr><tr><td>20657</td><td>hussein_h@egsma.gov.eg</td></tr><tr><td>11118</td><td>hytham@ntra.gov.eg</td></tr><tr><td>9733</td><td>kbarakah@ntra.gov.eg</td></tr><tr><td>9678</td><td>itawfik@tra.gov.eg</td></tr><tr><td>9677</td><td>wmohamed@tra.gov.eg</td></tr><tr><td>48368</td><td>awqaf@awqaf.gov.qa</td></tr><tr><td>9676</td><td>ahefnawy@tra.gov.eg</td></tr><tr><td>9518</td><td>ba@mwri.gov.eg</td></tr><tr><td>9516</td><td>ayezzat@mcit.gov.eg</td></tr><tr><td>9515</td><td>darwish@mcit.gov.eg</td></tr><tr><td>9475</td><td>rwilliam@mcit.gov.eg</td></tr><tr><td>9474</td><td>nmohamed@mcit.gov.eg</td></tr><tr><td>9473</td><td>besmat@mcit.gov.eg</td></tr><tr><td>9472</td><td>a@mcit.gov.eg</td></tr><tr><td>9471</td><td>hwahab@mcit.gov.eg</td></tr><tr><td>48374</td><td>careers@ict.gov.qa</td></tr><tr><td>9470</td><td>fmohamed@mcit.gov.eg</td></tr><tr><td>9469</td><td>asihemy@mcit.gov.eg</td></tr><tr><td>8573</td><td>Ahmed@idsc.gov.eg</td></tr><tr><td>4397</td><td>envqlty@eeaa.gov.eg</td></tr><tr><td>2300</td><td>aoihq@idsc.gov.eg</td></tr><tr><td>608</td><td>tech_services@egsma.gov.eg</td></tr><tr><td>35751</td><td>ayahia@mcit.gov.eg</td></tr><tr><td>84213</td><td>a.yehya@mwri.gov.eg</td></tr><tr><td>84227</td><td>abouzeid@mwri.gov.eg</td></tr><tr><td>48375</td><td>careers@islam.gov.qa</td></tr><tr><td>84232</td><td>abuzeid@mwri.gov.eg</td></tr><tr><td>84250</td><td>aemam@mwri.gov.eg</td></tr><tr><td>84264</td><td>ahmed.salah@mcit.gov.eg</td></tr><tr><td>84269</td><td>ahmedm@mwri.gov.eg</td></tr><tr><td>84290</td><td>alxchrm@emdb.gov.eg</td></tr><tr><td>84292</td><td>alxsite@emdb.gov.eg</td></tr><tr><td>84308</td><td>amsaid@mcit.gov.eg</td></tr><tr><td>84327</td><td>asharaf@ntra.gov.eg</td></tr><tr><td>84330</td><td>ashraf@nwp.gov.eg</td></tr><tr><td>48381</td><td>customerservice@mlsa.gov.qa</td></tr><tr><td>84339</td><td>ayounis@moee.gov.eg</td></tr><tr><td>84342</td><td>bahaa@mwri.gov.eg</td></tr><tr><td>84345</td><td>balaghat@moee.gov.eg</td></tr><tr><td>84361</td><td>cairogov@idsc.net.eg</td></tr><tr><td>84371</td><td>cccomplaints@ntra.gov.eg</td></tr><tr><td>84372</td><td>cccomplaints@tra.gov.eg</td></tr><tr><td>84391</td><td>chris@tra.gov.eg</td></tr><tr><td>84429</td><td>diaa@mwri.gov.eg</td></tr><tr><td>84437</td><td>dr.guinena@ntra.gov.eg</td></tr><tr><td>48396</td><td>ibp@moi.gov.qa</td></tr><tr><td>84447</td><td>eazzouz@tra.gov.eg</td></tr><tr><td>84448</td><td>ebahgat@mcit.gov.eg</td></tr><tr><td>84454</td><td>eeaa@eeaa.gov.eg</td></tr><tr><td>84456</td><td>eg.emb_kiev@mfa.gov.eg</td></tr><tr><td>84457</td><td>eg.emb_london@mfa.gov.eg</td></tr><tr><td>84460</td><td>egov@mcit.gov.eg</td></tr><tr><td>84472</td><td>ejobs@ad.gov.eg</td></tr><tr><td>84474</td><td>elatfy@mwri.gov.eg</td></tr><tr><td>84477</td><td>elcc@mcit.gov.eg</td></tr><tr><td>48397</td><td>info@awqaf.gov.qa</td></tr><tr><td>84478</td><td>elccportal@mcit.gov.eg</td></tr><tr><td>84489</td><td>emb_kiev@mfa.gov.eg</td></tr><tr><td>84490</td><td>embassy.bucharest@mfa.gov.eg</td></tr><tr><td>84491</td><td>embassy.oslo@mfa.gov.eg</td></tr><tr><td>84492</td><td>embassy.tirana@mfa.gov.eg</td></tr><tr><td>84495</td><td>emisr@tra.gov.eg</td></tr><tr><td>84505</td><td>engmmkader@moee.gov.eg</td></tr><tr><td>84517</td><td>eservices@tra.gov.eg</td></tr><tr><td>84521</td><td>essam@mwri.gov.eg</td></tr><tr><td>48398</td><td>info@fcc.gov.qa</td></tr><tr><td>84522</td><td>essamk@mwri.gov.eg</td></tr><tr><td>84533</td><td>fdigham@ntra.gov.eg</td></tr><tr><td>84534</td><td>fdigham@tra.gov.eg</td></tr><tr><td>84546</td><td>fsaleh@mcit.gov.eg</td></tr><tr><td>84564</td><td>gmoussa@ad.gov.eg</td></tr><tr><td>84568</td><td>gov_q@moe.gov.eg</td></tr><tr><td>84569</td><td>govegbahaa@mwri.gov.eg</td></tr><tr><td>84571</td><td>gvictor@tra.gov.eg</td></tr><tr><td>84572</td><td>h.zaazou@tourism.gov.eg</td></tr><tr><td>48399</td><td>info@ict.gov.qa</td></tr><tr><td>84573</td><td>habdelmaoula@tra.gov.eg</td></tr><tr><td>84584</td><td>hbaraka@mcit.gov.eg</td></tr><tr><td>84591</td><td>heshamelbadawy@mcit.gov.eg</td></tr><tr><td>84602</td><td>hotelsgsr16@tra.gov.eg</td></tr><tr><td>84627</td><td>hshakra@mcit.gov.eg</td></tr><tr><td>84630</td><td>hyazed@ntra.gov.eg</td></tr><tr><td>84637</td><td>icdlcomplaint@mcit.gov.eg</td></tr><tr><td>84641</td><td>ihamdy@ntra.gov.eg</td></tr><tr><td>84642</td><td>ihamdy@tra.gov.eg</td></tr>      
+            </tbody>
+          </table>
+            
+          <table class="table table-striped table-bordered table-condensed">
+          <thead>
+              <tr>
+                <th class="header">Email ID</th>
+                <th class="header">Email Failed</th>   
+              </tr>
+            </thead>
+            <tbody>
+                    
+            </tbody>
+          </table>  
+            
+          <table class="table table-striped table-bordered table-condensed">
+          <thead>
+              <tr>
+                <th class="header">Email ID</th>
+                <th class="header">Email sent earlier</th>   
+              </tr>
+            </thead>
+            <tbody>
+                    
+            </tbody>
+          </table>
+            
+          <table class="table table-striped table-bordered table-condensed">
+          <thead>
+              <tr>
+                <th class="header">Debug</th>
+                
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>35951</td></tr><tr><td>yalemadi@mei.gov.qa</td></tr><tr><td>0</td></tr><tr><td>0</td></tr><tr><td>urugemb@idsc.gov.eg, to@idsc.gov.eg, tkamel@idsc.gov.eg, theosem@idsc.gov.eg, svri@idsc.gov.eg, srpah@idsc.gov.eg, rtu@idsc.gov.eg, primemin@idsc.gov.eg, nhegazy@idsc.gov.eg</td></tr><tr><td>1</td></tr><tr><td>0</td><td>yalemadi@mei.gov.qa</td><td>1</td><td>urugemb@idsc.gov.eg</td><td>2</td><td> to@idsc.gov.eg</td><td>3</td><td> tkamel@idsc.gov.eg</td><td>4</td><td> theosem@idsc.gov.eg</td><td>5</td><td> svri@idsc.gov.eg</td><td>6</td><td> srpah@idsc.gov.eg</td><td>7</td><td> rtu@idsc.gov.eg</td><td>8</td><td> primemin@idsc.gov.eg</td><td>9</td><td> nhegazy@idsc.gov.eg</td></tr><tr></tr><tr><td>10</td></tr><tr><td><pre>
+
+</pre></td></tr><tr><td>48354</td></tr><tr><td>info@mmaa.gov.qa</td></tr><tr><td>1</td></tr><tr><td>9</td></tr><tr><td>nasco@idsc.gov.eg, mot@idsc.gov.eg, mojeb@idsc.gov.eg, moi@idsc.gov.eg, moi1@idsc.gov.eg, moh@idsc.gov.eg, mmpisscc@idsc.gov.eg, min@idsc.gov.eg, memphis@idsc.gov.eg</td></tr><tr><td>1</td></tr><tr><td>0</td><td>info@mmaa.gov.qa</td><td>1</td><td>nasco@idsc.gov.eg</td><td>2</td><td> mot@idsc.gov.eg</td><td>3</td><td> mojeb@idsc.gov.eg</td><td>4</td><td> moi@idsc.gov.eg</td><td>5</td><td> moi1@idsc.gov.eg</td><td>6</td><td> moh@idsc.gov.eg</td><td>7</td><td> mmpisscc@idsc.gov.eg</td><td>8</td><td> min@idsc.gov.eg</td><td>9</td><td> memphis@idsc.gov.eg</td></tr><tr></tr><tr><td>10</td></tr><tr><td><pre>
+
+</pre></td></tr><tr><td>48355</td></tr><tr><td>info@scfa.gov.qa</td></tr><tr><td>2</td></tr><tr><td>18</td></tr><tr><td>mculture@idsc.gov.eg, ma@idsc.gov.eg, kafrshiekh@idsc.gov.eg, hondemb@idsc.gov.eg, hbadran@idsc.gov.eg, gem1@idsc.gov.eg, gafi@idsc.gov.eg, feind@idsc.gov.eg, egyptair@idsc.gov.eg</td></tr><tr><td>1</td></tr><tr><td>0</td><td>info@scfa.gov.qa</td><td>1</td><td>mculture@idsc.gov.eg</td><td>2</td><td> ma@idsc.gov.eg</td><td>3</td><td> kafrshiekh@idsc.gov.eg</td><td>4</td><td> hondemb@idsc.gov.eg</td><td>5</td><td> hbadran@idsc.gov.eg</td><td>6</td><td> gem1@idsc.gov.eg</td><td>7</td><td> gafi@idsc.gov.eg</td><td>8</td><td> feind@idsc.gov.eg</td><td>9</td><td> egyptair@idsc.gov.eg</td></tr><tr></tr><tr><td>10</td></tr><tr><td><pre>
+
+</pre></td></tr><tr><td>48356</td></tr><tr><td>itoperation@see.gov.qa</td></tr><tr><td>3</td></tr><tr><td>27</td></tr><tr><td>egyptair.egyptair@idsc.gov.eg, eeaa@idsc.gov.eg, ecm@idsc.gov.eg, cop@idsc.gov.eg, ckc@idsc.gov.eg, cida@idsc.gov.eg, britcoun@idsc.gov.eg, armenemb@idsc.gov.eg, alcotexa@idsc.gov.eg</td></tr><tr><td>1</td></tr><tr><td>0</td><td>itoperation@see.gov.qa</td><td>1</td><td>egyptair.egyptair@idsc.gov.eg</td><td>2</td><td> eeaa@idsc.gov.eg</td><td>3</td><td> ecm@idsc.gov.eg</td><td>4</td><td> cop@idsc.gov.eg</td><td>5</td><td> ckc@idsc.gov.eg</td><td>6</td><td> cida@idsc.gov.eg</td><td>7</td><td> britcoun@idsc.gov.eg</td><td>8</td><td> armenemb@idsc.gov.eg</td><td>9</td><td> alcotexa@idsc.gov.eg</td></tr><tr></tr><tr><td>10</td></tr><tr><td><pre>
+
+</pre></td></tr><tr><td>48362</td></tr><tr><td>rpsd@sec.gov.qa</td></tr><tr><td>4</td></tr><tr><td>36</td></tr><tr><td>agibapet@idsc.gov.eg, aapso@idsc.gov.eg, info@egsma.gov.eg, bidround@egsma.gov.eg, hussein_h@egsma.gov.eg, hytham@ntra.gov.eg, kbarakah@ntra.gov.eg, itawfik@tra.gov.eg, wmohamed@tra.gov.eg</td></tr><tr><td>1</td></tr><tr><td>0</td><td>rpsd@sec.gov.qa</td><td>1</td><td>agibapet@idsc.gov.eg</td><td>2</td><td> aapso@idsc.gov.eg</td><td>3</td><td> info@egsma.gov.eg</td><td>4</td><td> bidround@egsma.gov.eg</td><td>5</td><td> hussein_h@egsma.gov.eg</td><td>6</td><td> hytham@ntra.gov.eg</td><td>7</td><td> kbarakah@ntra.gov.eg</td><td>8</td><td> itawfik@tra.gov.eg</td><td>9</td><td> wmohamed@tra.gov.eg</td></tr><tr></tr><tr><td>10</td></tr><tr><td><pre>
+
+</pre></td></tr><tr><td>48368</td></tr><tr><td>awqaf@awqaf.gov.qa</td></tr><tr><td>5</td></tr><tr><td>45</td></tr><tr><td>ahefnawy@tra.gov.eg, ba@mwri.gov.eg, ayezzat@mcit.gov.eg, darwish@mcit.gov.eg, rwilliam@mcit.gov.eg, nmohamed@mcit.gov.eg, besmat@mcit.gov.eg, a@mcit.gov.eg, hwahab@mcit.gov.eg</td></tr><tr><td>1</td></tr><tr><td>0</td><td>awqaf@awqaf.gov.qa</td><td>1</td><td>ahefnawy@tra.gov.eg</td><td>2</td><td> ba@mwri.gov.eg</td><td>3</td><td> ayezzat@mcit.gov.eg</td><td>4</td><td> darwish@mcit.gov.eg</td><td>5</td><td> rwilliam@mcit.gov.eg</td><td>6</td><td> nmohamed@mcit.gov.eg</td><td>7</td><td> besmat@mcit.gov.eg</td><td>8</td><td> a@mcit.gov.eg</td><td>9</td><td> hwahab@mcit.gov.eg</td></tr><tr></tr><tr><td>10</td></tr><tr><td><pre>
+
+</pre></td></tr><tr><td>48374</td></tr><tr><td>careers@ict.gov.qa</td></tr><tr><td>6</td></tr><tr><td>54</td></tr><tr><td>fmohamed@mcit.gov.eg, asihemy@mcit.gov.eg, Ahmed@idsc.gov.eg, envqlty@eeaa.gov.eg, aoihq@idsc.gov.eg, tech_services@egsma.gov.eg, ayahia@mcit.gov.eg, a.yehya@mwri.gov.eg, abouzeid@mwri.gov.eg</td></tr><tr><td>1</td></tr><tr><td>0</td><td>careers@ict.gov.qa</td><td>1</td><td>fmohamed@mcit.gov.eg</td><td>2</td><td> asihemy@mcit.gov.eg</td><td>3</td><td> Ahmed@idsc.gov.eg</td><td>4</td><td> envqlty@eeaa.gov.eg</td><td>5</td><td> aoihq@idsc.gov.eg</td><td>6</td><td> tech_services@egsma.gov.eg</td><td>7</td><td> ayahia@mcit.gov.eg</td><td>8</td><td> a.yehya@mwri.gov.eg</td><td>9</td><td> abouzeid@mwri.gov.eg</td></tr><tr></tr><tr><td>10</td></tr><tr><td><pre>
+
+</pre></td></tr><tr><td>48375</td></tr><tr><td>careers@islam.gov.qa</td></tr><tr><td>7</td></tr><tr><td>63</td></tr><tr><td>abuzeid@mwri.gov.eg, aemam@mwri.gov.eg, ahmed.salah@mcit.gov.eg, ahmedm@mwri.gov.eg, alxchrm@emdb.gov.eg, alxsite@emdb.gov.eg, amsaid@mcit.gov.eg, asharaf@ntra.gov.eg, ashraf@nwp.gov.eg</td></tr><tr><td>1</td></tr><tr><td>0</td><td>careers@islam.gov.qa</td><td>1</td><td>abuzeid@mwri.gov.eg</td><td>2</td><td> aemam@mwri.gov.eg</td><td>3</td><td> ahmed.salah@mcit.gov.eg</td><td>4</td><td> ahmedm@mwri.gov.eg</td><td>5</td><td> alxchrm@emdb.gov.eg</td><td>6</td><td> alxsite@emdb.gov.eg</td><td>7</td><td> amsaid@mcit.gov.eg</td><td>8</td><td> asharaf@ntra.gov.eg</td><td>9</td><td> ashraf@nwp.gov.eg</td></tr><tr></tr><tr><td>10</td></tr><tr><td><pre>
+
+</pre></td></tr><tr><td>48381</td></tr><tr><td>customerservice@mlsa.gov.qa</td></tr><tr><td>8</td></tr><tr><td>72</td></tr><tr><td>ayounis@moee.gov.eg, bahaa@mwri.gov.eg, balaghat@moee.gov.eg, cairogov@idsc.net.eg, cccomplaints@ntra.gov.eg, cccomplaints@tra.gov.eg, chris@tra.gov.eg, diaa@mwri.gov.eg, dr.guinena@ntra.gov.eg</td></tr><tr><td>1</td></tr><tr><td>0</td><td>customerservice@mlsa.gov.qa</td><td>1</td><td>ayounis@moee.gov.eg</td><td>2</td><td> bahaa@mwri.gov.eg</td><td>3</td><td> balaghat@moee.gov.eg</td><td>4</td><td> cairogov@idsc.net.eg</td><td>5</td><td> cccomplaints@ntra.gov.eg</td><td>6</td><td> cccomplaints@tra.gov.eg</td><td>7</td><td> chris@tra.gov.eg</td><td>8</td><td> diaa@mwri.gov.eg</td><td>9</td><td> dr.guinena@ntra.gov.eg</td></tr><tr></tr><tr><td>10</td></tr><tr><td><pre>
+
+</pre></td></tr><tr><td>48396</td></tr><tr><td>ibp@moi.gov.qa</td></tr><tr><td>9</td></tr><tr><td>81</td></tr><tr><td>eazzouz@tra.gov.eg, ebahgat@mcit.gov.eg, eeaa@eeaa.gov.eg, eg.emb_kiev@mfa.gov.eg, eg.emb_london@mfa.gov.eg, egov@mcit.gov.eg, ejobs@ad.gov.eg, elatfy@mwri.gov.eg, elcc@mcit.gov.eg</td></tr><tr><td>1</td></tr><tr><td>0</td><td>ibp@moi.gov.qa</td><td>1</td><td>eazzouz@tra.gov.eg</td><td>2</td><td> ebahgat@mcit.gov.eg</td><td>3</td><td> eeaa@eeaa.gov.eg</td><td>4</td><td> eg.emb_kiev@mfa.gov.eg</td><td>5</td><td> eg.emb_london@mfa.gov.eg</td><td>6</td><td> egov@mcit.gov.eg</td><td>7</td><td> ejobs@ad.gov.eg</td><td>8</td><td> elatfy@mwri.gov.eg</td><td>9</td><td> elcc@mcit.gov.eg</td></tr><tr></tr><tr><td>10</td></tr><tr><td><pre>
+
+</pre></td></tr><tr><td>48397</td></tr><tr><td>info@awqaf.gov.qa</td></tr><tr><td>10</td></tr><tr><td>90</td></tr><tr><td>elccportal@mcit.gov.eg, emb_kiev@mfa.gov.eg, embassy.bucharest@mfa.gov.eg, embassy.oslo@mfa.gov.eg, embassy.tirana@mfa.gov.eg, emisr@tra.gov.eg, engmmkader@moee.gov.eg, eservices@tra.gov.eg, essam@mwri.gov.eg</td></tr><tr><td>1</td></tr><tr><td>0</td><td>info@awqaf.gov.qa</td><td>1</td><td>elccportal@mcit.gov.eg</td><td>2</td><td> emb_kiev@mfa.gov.eg</td><td>3</td><td> embassy.bucharest@mfa.gov.eg</td><td>4</td><td> embassy.oslo@mfa.gov.eg</td><td>5</td><td> embassy.tirana@mfa.gov.eg</td><td>6</td><td> emisr@tra.gov.eg</td><td>7</td><td> engmmkader@moee.gov.eg</td><td>8</td><td> eservices@tra.gov.eg</td><td>9</td><td> essam@mwri.gov.eg</td></tr><tr></tr><tr><td>10</td></tr><tr><td><pre>
+
+</pre></td></tr><tr><td>48398</td></tr><tr><td>info@fcc.gov.qa</td></tr><tr><td>11</td></tr><tr><td>99</td></tr><tr><td>essamk@mwri.gov.eg, fdigham@ntra.gov.eg, fdigham@tra.gov.eg, fsaleh@mcit.gov.eg, gmoussa@ad.gov.eg, gov_q@moe.gov.eg, govegbahaa@mwri.gov.eg, gvictor@tra.gov.eg, h.zaazou@tourism.gov.eg</td></tr><tr><td>1</td></tr><tr><td>0</td><td>info@fcc.gov.qa</td><td>1</td><td>essamk@mwri.gov.eg</td><td>2</td><td> fdigham@ntra.gov.eg</td><td>3</td><td> fdigham@tra.gov.eg</td><td>4</td><td> fsaleh@mcit.gov.eg</td><td>5</td><td> gmoussa@ad.gov.eg</td><td>6</td><td> gov_q@moe.gov.eg</td><td>7</td><td> govegbahaa@mwri.gov.eg</td><td>8</td><td> gvictor@tra.gov.eg</td><td>9</td><td> h.zaazou@tourism.gov.eg</td></tr><tr></tr><tr><td>10</td></tr><tr><td><pre>
+
+</pre></td></tr><tr><td>48399</td></tr><tr><td>info@ict.gov.qa</td></tr><tr><td>12</td></tr><tr><td>108</td></tr><tr><td>habdelmaoula@tra.gov.eg, hbaraka@mcit.gov.eg, heshamelbadawy@mcit.gov.eg, hotelsgsr16@tra.gov.eg, hshakra@mcit.gov.eg, hyazed@ntra.gov.eg, icdlcomplaint@mcit.gov.eg, ihamdy@ntra.gov.eg, ihamdy@tra.gov.eg</td></tr><tr><td>1</td></tr><tr><td>0</td><td>info@ict.gov.qa</td><td>1</td><td>habdelmaoula@tra.gov.eg</td><td>2</td><td> hbaraka@mcit.gov.eg</td><td>3</td><td> heshamelbadawy@mcit.gov.eg</td><td>4</td><td> hotelsgsr16@tra.gov.eg</td><td>5</td><td> hshakra@mcit.gov.eg</td><td>6</td><td> hyazed@ntra.gov.eg</td><td>7</td><td> icdlcomplaint@mcit.gov.eg</td><td>8</td><td> ihamdy@ntra.gov.eg</td><td>9</td><td> ihamdy@tra.gov.eg</td></tr><tr></tr><tr><td>10</td></tr><tr><td><pre>
+
+</pre></td></tr>      
+            </tbody>
+          </table>        
+            
+      </div>
+    </div>
+	<div id="footer">
+		<hr>
+		<div class="inner">
+			<div class="container">
+				<p class="right"><a href="#">Back to top</a></p>
+				<p>
+				</p>
+			</div>
+		</div>
+	</div>
+	
+</body>
+</html>

@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>
+<html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>
+<html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>
+<html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Linked Emails Project</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width">
+
+  <link href="http://localhost/CI_306_linked_em_Production/assets/css/admin/global.css" rel="stylesheet" type="text/css">
+  
+   <!--<link rel="stylesheet" href="/assets/css/bootstrap-responsive.min.css">-->
+
+  <script src="http://localhost/CI_306_linked_em_Production/assets/js/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+  <!--<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script> -->
+ 
+  
+  <script src="http://localhost/CI_306_linked_em_Production//assets/js/jquery-1.7.1.min.js"></script>)
+  <script src="http://localhost/CI_306_linked_em_Production//assets/js/bootstrap.min.js"></script>
+  
+  <!--<script src="http://localhost/CI_306_linked_em_Production//node_modules/socket.io/node_modules/socket.io-client/socket.io.js"></script>-->
+  
+  <!--<script src="http://localhost/CI_306_linked_em_Production//assets/js/socket.js"></script> -->
+  <!--<script src="http://localhost/CI_306_linked_em_Production//assets/js/main.js"></script> -->
+  
+    <style>
+    body {
+      padding-top: 60px;
+      padding-bottom: 40px;
+    }
+    </style>
+</head>
+<body>
+	<div class="navbar navbar-fixed-top">
+	  <div class="navbar-inner">
+	    <div class="container">
+	      <a class="brand">Linked Emails Project</a>
+	      <ul class="nav">
+	        <li >
+	          <a href="http://localhost/CI_306_linked_em_Production/index.php/admin/main">DashBoard</a>
+	        </li>
+                <li >
+	          <a href="http://localhost/CI_306_linked_em_Production/index.php/admin/products">Products</a>
+	        </li>
+	        <li >
+	          <a href="http://localhost/CI_306_linked_em_Production/index.php/admin/manufacturers/">Manufacturers</a>
+	        </li>
+                <li class="dropdown">
+	          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Emails <b class="caret"></b></a>
+	          <ul class="dropdown-menu">
+	            <li>
+	              <a href="http://localhost/CI_306_linked_em_Production/index.php/admin/Emails">Email Add,Edit,Delete</a>
+	            </li>
+                    <li>
+	              <a href="http://localhost/CI_306_linked_em_Production/index.php/admin/Owner">Owner Add,Edit,Delete</a>
+	            </li>
+                    <li>
+	              <a href="http://localhost/CI_306_linked_em_Production/index.php/admin/Source">Source Add,Edit,Delete</a>
+	            </li>
+	          </ul>
+	        </li>
+                <li class="dropdown">
+	          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Companies <b class="caret"></b></a>
+	          <ul class="dropdown-menu">
+	            <li>
+	              <a href="http://localhost/CI_306_linked_em_Production/index.php/admin/Companies">Company Add,Edit,Delete</a>
+	            </li>
+                    <li>
+	              <a href="http://localhost/CI_306_linked_em_Production/index.php/admin/Category">Category Add,Edit,Delete</a>
+	            </li>
+                    <li>
+	              <a href="http://localhost/CI_306_linked_em_Production/index.php/admin/Source">... Add,Edit,Delete</a>
+	            </li>
+	          </ul>
+	        </li>
+	        <li class="dropdown">
+	          <a href="#" class="dropdown-toggle" data-toggle="dropdown">System <b class="caret"></b></a>
+	          <ul class="dropdown-menu">
+	            <li>
+	              <a href="http://localhost/CI_306_linked_em_Production/admin/logout">Logout</a>
+	            </li>
+	          </ul>
+	        </li>
+	      </ul>
+	    </div>
+	  </div>
+	</div>	
+    
+    
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-3 col-md-2 sidebar">
+          <ul class="nav nav-sidebar">
+            <li class="active"><a href="http://localhost/CI_306_linked_em_Production/index.php/admin/main">Overview <span class="sr-only">(current)</span></a></li>
+            <li><a href="#">Reports</a></li>
+            <li><a href="http://localhost/CI_306_linked_em_Production/index.php/admin/Mailer/show">Mailer</a></li>
+            <li><a href="http://localhost/CI_306_linked_em_Production/index.php/admin/Mailer/mailfixedjob">Scheduled Mail Jobs</a></li>
+            <li><a href="http://localhost/CI_306_linked_em_Production/index.php/admin/Mailer/cronm/1/mailer/8/gmail/UI">Cron Scheduler</a></li>
+            <li><a href="http://localhost/CI_306_linked_em_Production/index.php/admin/Emails/cron_backup/false">Cron Backup</a></li>
+            <li><a href="http://localhost/CI_306_linked_em_Production/index.php/admin/export/show">Exports</a></li>
+          </ul>
+          <ul class="nav nav-sidebar">
+            <li><a href="">Nav item</a></li>
+            <li><a href="">Nav item again</a></li>
+            <li><a href="">One more nav</a></li>
+            <li><a href="http://localhost/CI_306_linked_em_Production/index.php/admin/Statistics/">Statistics</a></li>
+            <li><a href="http://localhost/CI_306_linked_em_Production/index.php/admin/Owner/">Owners</a></li>
+          </ul>
+          <ul class="nav nav-sidebar">
+            <li><a href="http://localhost/CI_306_linked_em_Production/index.php/admin/Emails/">Emails</a></li>
+            <li><a href="http://localhost/CI_306_linked_em_Production/index.php/admin/upload/show">Uploads</a></li>
+            <li><a href="http://localhost/CI_306_linked_em_Production/index.php/admin/upload/">Upload Files</a></li>
+          </ul>
+        </div>
+       
+        </div>  
+       </div>
+
+    <div class="container top">
+
+      <ul class="breadcrumb">
+        <li>
+          <a href="http://localhost/CI_306_linked_em_Production/admin">
+            Admin_mailer          </a> 
+          <span class="divider">/</span>
+        </li>
+        <li class="active">
+          Cron_mail          
+        </li>
+        
+      </ul>
+
+      <div class="page-header users-header">
+        <h2>
+          Cron_mail              <br/>
+             
+              <a  href="http://localhost/CI_306_linked_em_Production/admin/Mailer/sendmail" class="btn btn-success">Send Email</a>
+              <div class="divider"/>
+              <a  href="http://localhost/CI_306_linked_em_Production/admin/Mailer/sendmailattach" class="btn btn-success">Send Email with Attachment</a>
+              <br/>
+          
+        </h2>
+      </div>
+      
+      <div class="row">
+        <div class="span12 columns">
+          <div class="well">
+          
+          </div>
+             <table class="table table-striped table-bordered table-condensed">
+            <thead>
+              <tr>
+                <th class="header">email_v_count</th>
+                <th class="yellow header headerSortDown">email_nv_count</th>
+                <th class="green header">email_merged_count</th>
+                <th class="red header">email_to_mailer_count</th>
+                <th class="red header">email_sent_count</th>
+                <th class="red header">emails_sent_earlier</th>
+                <th class="red header">emails_scheduled_next_run</th>
+                <th class="red header">N/A</th>
+      
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>50</td><td>0</td><td>50</td><td>60</td><td>60</td><td>0</td><td>3630</td><td>N/A</td></tr>      
+            </tbody>
+           </table> 
+            
+            <table class="table table-striped table-bordered table-condensed">
+             <thead>
+              <tr>
+                <th class="header">Debugging Info</th>
+              </tr>
+              <tr>
+                <th class="header">Email ID</th>
+                <th class="header">Debug Info</th>   
+              </tr>
+            </thead>
+            <tbody>
+               <tr><td>145463</td><td><pre>
+
+</pre></td></tr><tr><td>145464</td><td><pre>
+
+</pre></td></tr><tr><td>145465</td><td><pre>
+
+</pre></td></tr><tr><td>145466</td><td><pre>
+
+</pre></td></tr><tr><td>145467</td><td><pre>
+
+</pre></td></tr><tr><td>145468</td><td><pre>
+
+</pre></td></tr>   
+            </tbody>
+          </table>
+    
+          
+          <table class="table table-striped table-bordered table-condensed">
+          <thead>
+              <tr>
+                <th class="header">Email ID</th>
+                <th class="header">Email sent</th>   
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>145463</td><td>europadirekt@malmo.se</td></tr><tr><td>143435</td><td>info@airaqua.nl</td></tr><tr><td>143436</td><td>info@airmalta.nl</td></tr><tr><td>143437</td><td>info@airprint.nl</td></tr><tr><td>143438</td><td>info@airtrust.nl</td></tr><tr><td>143439</td><td>info@alarmwesa.nl</td></tr><tr><td>143440</td><td>info@alice-advice.nl</td></tr><tr><td>143441</td><td>info@almi.nl</td></tr><tr><td>143442</td><td>info@alumax.nl</td></tr><tr><td>143443</td><td>info@am.nl</td></tr><tr><td>145464</td><td>eva.rudolf@fonus.se</td></tr><tr><td>143444</td><td>info@amco-compressoren.nl</td></tr><tr><td>143445</td><td>info@amelandshipping.nl</td></tr><tr><td>143446</td><td>info@ammerlaanpraktijk.nl</td></tr><tr><td>143447</td><td>info@anaspec.nl</td></tr><tr><td>143448</td><td>info@annadiva.nl</td></tr><tr><td>143449</td><td>info@annavantoor.nl</td></tr><tr><td>143450</td><td>info@annefrank.nl</td></tr><tr><td>143451</td><td>info@annesolveig.nl</td></tr><tr><td>143452</td><td>info@antec.nl</td></tr><tr><td>145465</td><td>eva@recognia.se</td></tr><tr><td>143453</td><td>info@apotheekkennisbank.nl</td></tr><tr><td>143454</td><td>info@apply-advies.nl</td></tr><tr><td>143455</td><td>info@aqualaren.nl</td></tr><tr><td>143456</td><td>info@aquatuning.nl</td></tr><tr><td>143457</td><td>info@arabcom.nl</td></tr><tr><td>143458</td><td>info@armac.nl</td></tr><tr><td>143459</td><td>info@arnica.nl</td></tr><tr><td>143460</td><td>info@artdepartment.nl</td></tr><tr><td>143461</td><td>info@asro.nl</td></tr><tr><td>145466</td><td>events@sahlgrenskasciencepark.se</td></tr><tr><td>143462</td><td>info@ast.nl</td></tr><tr><td>143463</td><td>info@at-friends.nl</td></tr><tr><td>143464</td><td>info@atal.nl</td></tr><tr><td>143465</td><td>info@atasteofhome.nl</td></tr><tr><td>143466</td><td>info@atomica.nl</td></tr><tr><td>143467</td><td>info@audiomarket.nl</td></tr><tr><td>143468</td><td>info@auris.nl</td></tr><tr><td>143469</td><td>info@aurora-borealis.nl</td></tr><tr><td>143470</td><td>info@autobedrijfdelang.nl</td></tr><tr><td>145467</td><td>evereus@sr.se</td></tr><tr><td>143471</td><td>info@autoleasecenter.nl</td></tr><tr><td>143472</td><td>info@avalanche-bodywork.nl</td></tr><tr><td>143473</td><td>info@avalanchedesign.nl</td></tr><tr><td>143474</td><td>info@avalonstaffs.nl</td></tr><tr><td>143475</td><td>info@avit.nl</td></tr><tr><td>143476</td><td>info@awl.nl</td></tr><tr><td>143477</td><td>info@axihandel.nl</td></tr><tr><td>143478</td><td>info@baasovereigengeld.nl</td></tr><tr><td>143479</td><td>info@bandenbedrijf.nl</td></tr><tr><td>145468</td><td>ewa.bruce@jobs-society.se</td></tr><tr><td>143480</td><td>info@bb-roermond.nl</td></tr><tr><td>143481</td><td>info@bbthermotechniek.nl</td></tr><tr><td>143482</td><td>info@bead-box.nl</td></tr><tr><td>143483</td><td>info@beadazzled-hilversum.nl</td></tr><tr><td>143484</td><td>info@bed123.nl</td></tr><tr><td>143485</td><td>info@beeldlab.nl</td></tr><tr><td>143486</td><td>info@begeer.nl</td></tr><tr><td>143487</td><td>info@benefits-4you.nl</td></tr><tr><td>143488</td><td>info@benevers.nl</td></tr>      
+            </tbody>
+          </table>
+            
+          <table class="table table-striped table-bordered table-condensed">
+          <thead>
+              <tr>
+                <th class="header">Email ID</th>
+                <th class="header">Email Failed</th>   
+              </tr>
+            </thead>
+            <tbody>
+                    
+            </tbody>
+          </table>  
+            
+          <table class="table table-striped table-bordered table-condensed">
+          <thead>
+              <tr>
+                <th class="header">Email ID</th>
+                <th class="header">Email sent earlier</th>   
+              </tr>
+            </thead>
+            <tbody>
+                    
+            </tbody>
+          </table>
+            
+          <table class="table table-striped table-bordered table-condensed">
+          <thead>
+              <tr>
+                <th class="header">Debug</th>
+                
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>145463</td></tr><tr><td>europadirekt@malmo.se</td></tr><tr><td>0</td></tr><tr><td>0</td></tr><tr><td>info@airaqua.nl, info@airmalta.nl, info@airprint.nl, info@airtrust.nl, info@alarmwesa.nl, info@alice-advice.nl, info@almi.nl, info@alumax.nl, info@am.nl</td></tr><tr><td>1</td></tr><tr><td>0</td><td>europadirekt@malmo.se</td><td>1</td><td>info@airaqua.nl</td><td>2</td><td> info@airmalta.nl</td><td>3</td><td> info@airprint.nl</td><td>4</td><td> info@airtrust.nl</td><td>5</td><td> info@alarmwesa.nl</td><td>6</td><td> info@alice-advice.nl</td><td>7</td><td> info@almi.nl</td><td>8</td><td> info@alumax.nl</td><td>9</td><td> info@am.nl</td></tr><tr></tr><tr><td>10</td></tr><tr><td><pre>
+
+</pre></td></tr><tr><td>145464</td></tr><tr><td>eva.rudolf@fonus.se</td></tr><tr><td>1</td></tr><tr><td>9</td></tr><tr><td>info@amco-compressoren.nl, info@amelandshipping.nl, info@ammerlaanpraktijk.nl, info@anaspec.nl, info@annadiva.nl, info@annavantoor.nl, info@annefrank.nl, info@annesolveig.nl, info@antec.nl</td></tr><tr><td>1</td></tr><tr><td>0</td><td>eva.rudolf@fonus.se</td><td>1</td><td>info@amco-compressoren.nl</td><td>2</td><td> info@amelandshipping.nl</td><td>3</td><td> info@ammerlaanpraktijk.nl</td><td>4</td><td> info@anaspec.nl</td><td>5</td><td> info@annadiva.nl</td><td>6</td><td> info@annavantoor.nl</td><td>7</td><td> info@annefrank.nl</td><td>8</td><td> info@annesolveig.nl</td><td>9</td><td> info@antec.nl</td></tr><tr></tr><tr><td>10</td></tr><tr><td><pre>
+
+</pre></td></tr><tr><td>145465</td></tr><tr><td>eva@recognia.se</td></tr><tr><td>2</td></tr><tr><td>18</td></tr><tr><td>info@apotheekkennisbank.nl, info@apply-advies.nl, info@aqualaren.nl, info@aquatuning.nl, info@arabcom.nl, info@armac.nl, info@arnica.nl, info@artdepartment.nl, info@asro.nl</td></tr><tr><td>1</td></tr><tr><td>0</td><td>eva@recognia.se</td><td>1</td><td>info@apotheekkennisbank.nl</td><td>2</td><td> info@apply-advies.nl</td><td>3</td><td> info@aqualaren.nl</td><td>4</td><td> info@aquatuning.nl</td><td>5</td><td> info@arabcom.nl</td><td>6</td><td> info@armac.nl</td><td>7</td><td> info@arnica.nl</td><td>8</td><td> info@artdepartment.nl</td><td>9</td><td> info@asro.nl</td></tr><tr></tr><tr><td>10</td></tr><tr><td><pre>
+
+</pre></td></tr><tr><td>145466</td></tr><tr><td>events@sahlgrenskasciencepark.se</td></tr><tr><td>3</td></tr><tr><td>27</td></tr><tr><td>info@ast.nl, info@at-friends.nl, info@atal.nl, info@atasteofhome.nl, info@atomica.nl, info@audiomarket.nl, info@auris.nl, info@aurora-borealis.nl, info@autobedrijfdelang.nl</td></tr><tr><td>1</td></tr><tr><td>0</td><td>events@sahlgrenskasciencepark.se</td><td>1</td><td>info@ast.nl</td><td>2</td><td> info@at-friends.nl</td><td>3</td><td> info@atal.nl</td><td>4</td><td> info@atasteofhome.nl</td><td>5</td><td> info@atomica.nl</td><td>6</td><td> info@audiomarket.nl</td><td>7</td><td> info@auris.nl</td><td>8</td><td> info@aurora-borealis.nl</td><td>9</td><td> info@autobedrijfdelang.nl</td></tr><tr></tr><tr><td>10</td></tr><tr><td><pre>
+
+</pre></td></tr><tr><td>145467</td></tr><tr><td>evereus@sr.se</td></tr><tr><td>4</td></tr><tr><td>36</td></tr><tr><td>info@autoleasecenter.nl, info@avalanche-bodywork.nl, info@avalanchedesign.nl, info@avalonstaffs.nl, info@avit.nl, info@awl.nl, info@axihandel.nl, info@baasovereigengeld.nl, info@bandenbedrijf.nl</td></tr><tr><td>1</td></tr><tr><td>0</td><td>evereus@sr.se</td><td>1</td><td>info@autoleasecenter.nl</td><td>2</td><td> info@avalanche-bodywork.nl</td><td>3</td><td> info@avalanchedesign.nl</td><td>4</td><td> info@avalonstaffs.nl</td><td>5</td><td> info@avit.nl</td><td>6</td><td> info@awl.nl</td><td>7</td><td> info@axihandel.nl</td><td>8</td><td> info@baasovereigengeld.nl</td><td>9</td><td> info@bandenbedrijf.nl</td></tr><tr></tr><tr><td>10</td></tr><tr><td><pre>
+
+</pre></td></tr><tr><td>145468</td></tr><tr><td>ewa.bruce@jobs-society.se</td></tr><tr><td>5</td></tr><tr><td>45</td></tr><tr><td>info@bb-roermond.nl, info@bbthermotechniek.nl, info@bead-box.nl, info@beadazzled-hilversum.nl, info@bed123.nl, info@beeldlab.nl, info@begeer.nl, info@benefits-4you.nl, info@benevers.nl</td></tr><tr><td>1</td></tr><tr><td>0</td><td>ewa.bruce@jobs-society.se</td><td>1</td><td>info@bb-roermond.nl</td><td>2</td><td> info@bbthermotechniek.nl</td><td>3</td><td> info@bead-box.nl</td><td>4</td><td> info@beadazzled-hilversum.nl</td><td>5</td><td> info@bed123.nl</td><td>6</td><td> info@beeldlab.nl</td><td>7</td><td> info@begeer.nl</td><td>8</td><td> info@benefits-4you.nl</td><td>9</td><td> info@benevers.nl</td></tr><tr></tr><tr><td>10</td></tr><tr><td><pre>
+
+</pre></td></tr>      
+            </tbody>
+          </table>        
+            
+      </div>
+    </div>
+	<div id="footer">
+		<hr>
+		<div class="inner">
+			<div class="container">
+				<p class="right"><a href="#">Back to top</a></p>
+				<p>
+				</p>
+			</div>
+		</div>
+	</div>
+	
+</body>
+</html>

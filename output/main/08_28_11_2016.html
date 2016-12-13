@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>
+<html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>
+<html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>
+<html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Linked Emails Project</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width">
+
+  <link href="http://localhost/CI_306_linked_em_Production/assets/css/admin/global.css" rel="stylesheet" type="text/css">
+  
+   <!--<link rel="stylesheet" href="/assets/css/bootstrap-responsive.min.css">-->
+
+  <script src="http://localhost/CI_306_linked_em_Production/assets/js/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+  <!--<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script> -->
+ 
+  
+  <script src="http://localhost/CI_306_linked_em_Production//assets/js/jquery-1.7.1.min.js"></script>)
+  <script src="http://localhost/CI_306_linked_em_Production//assets/js/bootstrap.min.js"></script>
+  
+  <!--<script src="http://localhost/CI_306_linked_em_Production//node_modules/socket.io/node_modules/socket.io-client/socket.io.js"></script>-->
+  
+  <!--<script src="http://localhost/CI_306_linked_em_Production//assets/js/socket.js"></script> -->
+  <!--<script src="http://localhost/CI_306_linked_em_Production//assets/js/main.js"></script> -->
+  
+    <style>
+    body {
+      padding-top: 60px;
+      padding-bottom: 40px;
+    }
+    </style>
+</head>
+<body>
+	<div class="navbar navbar-fixed-top">
+	  <div class="navbar-inner">
+	    <div class="container">
+	      <a class="brand">Linked Emails Project</a>
+	      <ul class="nav">
+	        <li >
+	          <a href="http://localhost/CI_306_linked_em_Production/index.php/admin/main">DashBoard</a>
+	        </li>
+                <li >
+	          <a href="http://localhost/CI_306_linked_em_Production/index.php/admin/products">Products</a>
+	        </li>
+	        <li >
+	          <a href="http://localhost/CI_306_linked_em_Production/index.php/admin/manufacturers/">Manufacturers</a>
+	        </li>
+                <li class="dropdown">
+	          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Emails <b class="caret"></b></a>
+	          <ul class="dropdown-menu">
+	            <li>
+	              <a href="http://localhost/CI_306_linked_em_Production/index.php/admin/Emails">Email Add,Edit,Delete</a>
+	            </li>
+                    <li>
+	              <a href="http://localhost/CI_306_linked_em_Production/index.php/admin/Owner">Owner Add,Edit,Delete</a>
+	            </li>
+                    <li>
+	              <a href="http://localhost/CI_306_linked_em_Production/index.php/admin/Source">Source Add,Edit,Delete</a>
+	            </li>
+	          </ul>
+	        </li>
+                <li class="dropdown">
+	          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Companies <b class="caret"></b></a>
+	          <ul class="dropdown-menu">
+	            <li>
+	              <a href="http://localhost/CI_306_linked_em_Production/index.php/admin/Companies">Company Add,Edit,Delete</a>
+	            </li>
+                    <li>
+	              <a href="http://localhost/CI_306_linked_em_Production/index.php/admin/Category">Category Add,Edit,Delete</a>
+	            </li>
+                    <li>
+	              <a href="http://localhost/CI_306_linked_em_Production/index.php/admin/Source">... Add,Edit,Delete</a>
+	            </li>
+	          </ul>
+	        </li>
+	        <li class="dropdown">
+	          <a href="#" class="dropdown-toggle" data-toggle="dropdown">System <b class="caret"></b></a>
+	          <ul class="dropdown-menu">
+	            <li>
+	              <a href="http://localhost/CI_306_linked_em_Production/admin/logout">Logout</a>
+	            </li>
+	          </ul>
+	        </li>
+	      </ul>
+	    </div>
+	  </div>
+	</div>	
+    
+    
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-3 col-md-2 sidebar">
+          <ul class="nav nav-sidebar">
+            <li class="active"><a href="http://localhost/CI_306_linked_em_Production/index.php/admin/main">Overview <span class="sr-only">(current)</span></a></li>
+            <li><a href="#">Reports</a></li>
+            <li><a href="http://localhost/CI_306_linked_em_Production/index.php/admin/Mailer/show">Mailer</a></li>
+            <li><a href="http://localhost/CI_306_linked_em_Production/index.php/admin/Mailer/mailfixedjob">Scheduled Mail Jobs</a></li>
+            <li><a href="http://localhost/CI_306_linked_em_Production/index.php/admin/Mailer/crontest/1/mailer/2/gmail/UI">Cron Scheduler</a></li>
+            <li><a href="http://localhost/CI_306_linked_em_Production/index.php/admin/Emails/cron_backup/false">Cron Backup</a></li>
+            <li><a href="http://localhost/CI_306_linked_em_Production/index.php/admin/export/show">Exports</a></li>
+          </ul>
+          <ul class="nav nav-sidebar">
+            <li><a href="">Nav item</a></li>
+            <li><a href="">Nav item again</a></li>
+            <li><a href="">One more nav</a></li>
+            <li><a href="http://localhost/CI_306_linked_em_Production/index.php/admin/Statistics/">Statistics</a></li>
+            <li><a href="http://localhost/CI_306_linked_em_Production/index.php/admin/Owner/">Owners</a></li>
+          </ul>
+          <ul class="nav nav-sidebar">
+            <li><a href="http://localhost/CI_306_linked_em_Production/index.php/admin/Emails/">Emails</a></li>
+            <li><a href="http://localhost/CI_306_linked_em_Production/index.php/admin/upload/show">Uploads</a></li>
+            <li><a href="http://localhost/CI_306_linked_em_Production/index.php/admin/upload/">Upload Files</a></li>
+          </ul>
+        </div>
+       
+        </div>  
+       </div>
+
+ 
+<script type="text/javascript">
+$(document).ready(function () {
+  setInterval(auto_refresh_function, 200000);
+});
+        function auto_refresh_function() {
+          $('#ref').load('http://localhost/CI_306_linked_em_Production/index.php/admin/main');
+        }
+</script> 
+
+
+<div id="ref">
+        
+  <div class="container top">
+
+      <ul class="breadcrumb">
+        <li>
+          <a href="http://localhost/CI_306_linked_em_Production/index.php/admin">
+            Admin          </a> 
+          <span class="divider">/</span>
+        </li>
+        <li class="active">
+          Main        </li>
+      </ul>
+
+      <div class="page-header users-header">
+        <h2>
+          Main 
+          <a  href="http://localhost/CI_306_linked_em_Production/index.php/admin/main/add" class="btn btn-success">Add a new</a>
+        </h2>
+      </div>
+      
+      
+        
+          <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+          <h1 class="page-header">Dashboard</h1>
+
+         </div>
+          
+      <div class="row">
+        <div class="span12 columns">
+            <div class="well"></div>
+          
+              
+              <table class="table table-striped table-bordered table-condensed">
+            <thead>
+              <tr>
+                <th class="header">Ntv Emails Count</th>
+                <th class="yellow header headerSortDown">Companies Count</th>
+                <th class="green header">count sources</th>
+                <th class="red header">V Emails Count</th>
+                <th class="red header">Mailer log Count</th>
+                <th class="red header">count_sent_ae</th>
+                <th class="red header">Mailer schedule log count</th>
+                <th class="red header">email_sent_today</th>
+                
+                
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>29842</td><td>78028</td><td>63</td><td>247281</td><td>20515</td><td>1774</td><td>310</td>
+<div style="border:1px solid #990000;padding-left:20px;margin:0 0 10px 0;">
+
+<h4>A PHP Error was encountered</h4>
+
+<p>Severity: Notice</p>
+<p>Message:  Undefined variable: email_sent_today</p>
+<p>Filename: main/list.php</p>
+<p>Line Number: 73</p>
+
+
+	<p>Backtrace:</p>
+	
+		
+	
+		
+	
+		
+			<p style="margin-left:10px">
+			File: C:\xampp\htdocs\CI_306_Linked_Em_Production\application\views\admin\main\list.php<br />
+			Line: 73<br />
+			Function: _error_handler			</p>
+
+		
+	
+		
+	
+		
+	
+		
+			<p style="margin-left:10px">
+			File: C:\xampp\htdocs\CI_306_Linked_Em_Production\application\views\includes\template.php<br />
+			Line: 3<br />
+			Function: view			</p>
+
+		
+	
+		
+	
+		
+	
+		
+			<p style="margin-left:10px">
+			File: C:\xampp\htdocs\CI_306_Linked_Em_Production\application\controllers\admin_main.php<br />
+			Line: 254<br />
+			Function: view			</p>
+
+		
+	
+		
+			<p style="margin-left:10px">
+			File: C:\xampp\htdocs\CI_306_Linked_Em_Production\application\controllers\admin_main.php<br />
+			Line: 129<br />
+			Function: store_html			</p>
+
+		
+	
+		
+	
+		
+	
+		
+			<p style="margin-left:10px">
+			File: C:\xampp\htdocs\CI_306_Linked_Em_Production\index.php<br />
+			Line: 315<br />
+			Function: require_once			</p>
+
+		
+	
+
+</div><td></td></tr>      
+            </tbody>
+            
+            <thead>
+              <tr>
+                <th class="header">count emails no company</th>
+                <th class="yellow header headerSortDown">count_scheculed_sa</th>
+               
+                <th class="red header">count_sent_sa</th>
+                <th class="red header">count_scheculed_qa</th>
+                <th class="red header">count_sent_qa</th>
+                <th class="red header">count_scheculed_kw</th>
+                <th class="red header">count_sent_kw</th>
+                <th class="red header">count_scheculed_ae</th>
+                
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>57228</td><td>6140</td><td>1912</td><td>1429</td><td>1349</td><td>97</td><td>977</td><td>31029</td></tr>      
+            </tbody>
+          </table>
+            
+        
+
+           <table class="table table-striped table-bordered table-condensed">
+              
+                    <h2 style="text-align: center">Mailer schedule log Table</h2>
+                   
+              <thead>
+                 <tr>
+                 <th class="red header">id</th><th class="red header">cron_scheduler_id</th><th class="red header">total_scheduled_emails</th><th class="red header">emails_sent</th><th class="red header">emails_nt_sent</th><th class="red header">emails_sent_earlier</th><th class="red header">clauses</th><th class="red header">emails_scheduled_next_run</th><th class="red header">smtp_host</th><th class="red header">created_at</th><th class="red header">updated_at</th> 
+                 </tr>  
+                </thead>
+                <tbody>
+            
+                  <tr><td>322</td><td>382</td><td>300</td><td>130</td><td>0</td><td>0</td><td>%.qa,%.ae</td><td>60394</td><td>gmail</td><td>2016-11-28 05:19:06</td><td></td></tr><tr><td>323</td><td>383</td><td>300</td><td>130</td><td>0</td><td>3</td><td>%.om,%.sa</td><td>10522</td><td>gmail</td><td>2016-11-28 06:18:48</td><td></td></tr><tr><td>324</td><td>384</td><td>300</td><td>130</td><td>0</td><td>0</td><td>%.qa,%.sa</td><td>10450</td><td>gmail</td><td>2016-11-28 07:18:56</td><td></td></tr><tr><td>325</td><td>385</td><td>300</td><td>130</td><td>0</td><td>3</td><td>%.om,%.eg</td><td>3990</td><td>gmail</td><td>2016-11-28 08:19:10</td><td></td></tr>                         
+                </tbody>
+              </table>  
+            
+            <span class="divider">/</span>
+  
+            
+            <table class="table table-striped table-bordered table-condensed">
+              
+                    <h2 style="text-align: center">Cron log Table</h2>
+                   
+              <thead>
+                 <tr>
+                 <th class="red header">id</th><th class="red header">user_id</th><th class="red header">job_category</th><th class="red header">mailer_scheduler_log_id</th><th class="red header">unit_count</th><th class="red header">tiggered_by</th><th class="red header">job_started</th><th class="red header">elapsed</th><th class="red header">status</th><th class="red header">created_at</th><th class="red header">updated_at</th> 
+                 </tr>  
+                </thead>
+                <tbody>
+                    <tr>
+                  <tr><td>382</td><td>1</td><td>mailer</td><td>322</td><td>13</td><td>bat</td><td>2016-11-28 05:12:39</td><td>387</td><td></td><td>2016-11-28 05:12:39</td><td>2016-11-28 05:19:06</td></tr><tr><td>383</td><td>1</td><td>mailer</td><td>323</td><td>13</td><td>bat</td><td>2016-11-28 06:12:31</td><td>378</td><td></td><td>2016-11-28 06:12:31</td><td>2016-11-28 06:18:49</td></tr><tr><td>384</td><td>1</td><td>mailer</td><td>324</td><td>13</td><td>bat</td><td>2016-11-28 07:12:34</td><td>383</td><td></td><td>2016-11-28 07:12:34</td><td>2016-11-28 07:18:57</td></tr><tr><td>385</td><td>1</td><td>mailer</td><td>325</td><td>13</td><td>bat</td><td>2016-11-28 08:12:36</td><td>395</td><td></td><td>2016-11-28 08:12:36</td><td>2016-11-28 08:19:11</td></tr>                  </tr>       
+                </tbody>
+              </table>  
+       
+            <table class="table table-striped table-bordered table-condensed">
+                    <h2 style="text-align: center">Extraction Table</h2>    
+              <thead>
+                 <tr>
+                 <th class="red header">id</th><th class="red header">source_id</th><th class="red header">company_start_id</th><th class="red header">company_end_id</th><th class="red header">emailv_start_id</th><th class="red header">emailv_end_id</th><th class="red header">emailnv_start_id</th><th class="red header">emailnv_end_id</th><th class="red header">source_lines</th><th class="red header">company_inserts</th><th class="red header">emailv_inserts</th><th class="red header">emailnv_inserts</th><th class="red header">created_at</th><th class="red header">updated_at</th> 
+                 </tr>  
+                </thead>
+                <tbody>
+                    <tr>
+                  <tr><td>108</td><td>2</td><td>88966</td><td>15295</td><td>230700</td><td>231179</td><td>28958</td><td>29034</td><td>0</td><td>267</td><td>480</td><td>77</td><td>2016-11-27 08:54:06</td><td></td></tr><tr><td>109</td><td>62</td><td>15873</td><td>14860</td><td>231180</td><td>248719</td><td>0</td><td>0</td><td>0</td><td>4689</td><td>17540</td><td>0</td><td>2016-11-27 18:02:21</td><td></td></tr><tr><td>110</td><td>63</td><td>3238</td><td>94101</td><td>248720</td><td>248990</td><td>29035</td><td>29047</td><td>0</td><td>180</td><td>271</td><td>13</td><td>2016-11-27 23:04:47</td><td></td></tr><tr><td>111</td><td>64</td><td>3238</td><td>1662</td><td>248991</td><td>253166</td><td>29048</td><td>29781</td><td>0</td><td>898</td><td>4176</td><td>734</td><td>2016-11-28 03:17:09</td><td></td></tr>                  </tr>       
+                </tbody>
+              </table>
+            
+            
+              <table class="table table-striped table-bordered table-condensed">
+              
+                    <h2 style="text-align: center">Mailer Scheduled Table</h2>
+                   
+              <thead>
+                 <tr>
+                 <th class="red header">id</th><th class="red header">email_id</th><th class="red header">email</th><th class="red header">company_id</th><th class="red header">country</th><th class="red header">conflict_flag</th><th class="red header">sending_status</th><th class="red header">review_status</th><th class="red header">owner_id</th><th class="red header">source_id</th><th class="red header">created_at</th><th class="red header">updated_at</th> 
+                 </tr>  
+                </thead>
+                <tbody>
+            
+                  <tr><td>109402</td><td>9812</td><td>asim.zadjali@omantel.om</td><td>0</td><td>oman</td><td>0</td><td>OK</td><td></td><td>1000</td><td>1</td><td></td><td>2016-11-28 08:13:12</td></tr><tr><td>109403</td><td>9811</td><td>hassan.alzadjali@omantel.om</td><td>0</td><td>oman</td><td>0</td><td>OK</td><td></td><td>1000</td><td>1</td><td></td><td>2016-11-28 08:13:41</td></tr><tr><td>109404</td><td>9809</td><td>haider@omantel.co.om</td><td>0</td><td>oman</td><td>0</td><td>OK</td><td></td><td>1000</td><td>1</td><td></td><td>2016-11-28 08:14:12</td></tr><tr><td>109405</td><td>9808</td><td>feisalj@omantel.net.om</td><td>0</td><td>oman</td><td>0</td><td>OK</td><td></td><td>1000</td><td>1</td><td></td><td>2016-11-28 08:14:45</td></tr><tr><td>109406</td><td>9807</td><td>hamad@omantel.co.om</td><td>0</td><td>oman</td><td>0</td><td>OK</td><td></td><td>1000</td><td>1</td><td></td><td>2016-11-28 08:15:14</td></tr><tr><td>109407</td><td>9806</td><td>ansari@omantel.co.om</td><td>0</td><td>oman</td><td>0</td><td>OK</td><td></td><td>1000</td><td>1</td><td></td><td>2016-11-28 08:15:43</td></tr><tr><td>109408</td><td>9805</td><td>a.alriyami@omantel.co.om</td><td>0</td><td>oman</td><td>0</td><td>OK</td><td></td><td>1000</td><td>1</td><td></td><td>2016-11-28 08:16:13</td></tr><tr><td>109409</td><td>9804</td><td>alkindy@omantel.co.om</td><td>0</td><td>oman</td><td>0</td><td>OK</td><td></td><td>1000</td><td>1</td><td></td><td>2016-11-28 08:16:43</td></tr><tr><td>109410</td><td>9803</td><td>sami.a@omantel.co.om</td><td>0</td><td>oman</td><td>0</td><td>OK</td><td></td><td>1000</td><td>1</td><td></td><td>2016-11-28 08:17:13</td></tr><tr><td>109411</td><td>9798</td><td>ooiss@omantel.net.om</td><td>0</td><td>oman</td><td>0</td><td>OK</td><td></td><td>1000</td><td>1</td><td></td><td>2016-11-28 08:17:44</td></tr><tr><td>109412</td><td>9794</td><td>onecopr@omantel.net.om</td><td>0</td><td>oman</td><td>0</td><td>OK</td><td></td><td>1000</td><td>1</td><td></td><td>2016-11-28 08:18:12</td></tr><tr><td>109413</td><td>9793</td><td>onecgm@omantel.net.om</td><td>0</td><td>oman</td><td>0</td><td>OK</td><td></td><td>1000</td><td>1</td><td></td><td>2016-11-28 08:18:41</td></tr><tr><td>109414</td><td>9792</td><td>j@omantel.net.om</td><td>0</td><td>oman</td><td>0</td><td>OK</td><td></td><td>1000</td><td>1</td><td></td><td>2016-11-28 08:19:09</td></tr><tr><td>111848</td><td>84341</td><td>babycoca@dataxprs.com.eg</td><td>3738</td><td>Egypt</td><td>0</td><td>OK</td><td></td><td>1000</td><td>18</td><td></td><td>2016-11-28 08:13:12</td></tr><tr><td>111850</td><td>84343</td><td>bahaazag@cmrdi.sci.eg</td><td>606</td><td>UAE</td><td>0</td><td>OK</td><td></td><td>1000</td><td>18</td><td></td><td>2016-11-28 08:13:12</td></tr><tr><td>111851</td><td>84344</td><td>bahaazaghloul@cmrdi.sci.eg</td><td>606</td><td>UAE</td><td>0</td><td>OK</td><td></td><td>1000</td><td>18</td><td></td><td>2016-11-28 08:13:12</td></tr><tr><td>111853</td><td>84346</td><td>baleem@idsc.net.eg</td><td>878</td><td>Egypt</td><td>0</td><td>OK</td><td></td><td>1000</td><td>18</td><td></td><td>2016-11-28 08:13:12</td></tr><tr><td>111854</td><td>84347</td><td>banderson@ccc.com.eg</td><td>223</td><td>UAE</td><td>0</td><td>OK</td><td></td><td>1000</td><td>18</td><td></td><td>2016-11-28 08:13:12</td></tr><tr><td>111855</td><td>84348</td><td>bd@petrojet.com.eg</td><td>1783</td><td>Egypt</td><td>0</td><td>OK</td><td></td><td>1000</td><td>18</td><td></td><td>2016-11-28 08:13:12</td></tr><tr><td>111856</td><td>84349</td><td>behiraitp@idsc.net.eg</td><td>878</td><td>Egypt</td><td>0</td><td>OK</td><td></td><td>1000</td><td>18</td><td></td><td>2016-11-28 08:13:12</td></tr><tr><td>111857</td><td>84350</td><td>belal@dataxprs.com.eg</td><td>3738</td><td>Egypt</td><td>0</td><td>OK</td><td></td><td>1000</td><td>18</td><td></td><td>2016-11-28 08:13:12</td></tr><tr><td>111858</td><td>84351</td><td>benchmark@gmail.com.eg</td><td>0</td><td></td><td>0</td><td>OK</td><td></td><td>1000</td><td>18</td><td></td><td>2016-11-28 08:13:12</td></tr><tr><td>111859</td><td>84352</td><td>betamach@link.com.eg</td><td>2710</td><td>UAE</td><td>0</td><td>OK</td><td></td><td>1000</td><td>18</td><td></td><td>2016-11-28 08:13:41</td></tr><tr><td>111860</td><td>84353</td><td>bidround@egpc.com.eg</td><td>2994</td><td>Egypt</td><td>0</td><td>OK</td><td></td><td>1000</td><td>18</td><td></td><td>2016-11-28 08:13:41</td></tr><tr><td>111861</td><td>84354</td><td>bishara@bishara.com.eg</td><td>15279</td><td>egypt</td><td>0</td><td>OK</td><td></td><td>1000</td><td>18</td><td></td><td>2016-11-28 08:13:41</td></tr><tr><td>111862</td><td>84355</td><td>bms@link.com.eg</td><td>2710</td><td>UAE</td><td>0</td><td>OK</td><td></td><td>1000</td><td>18</td><td></td><td>2016-11-28 08:13:41</td></tr><tr><td>111863</td><td>84356</td><td>britconsul@dataxprs.com.eg</td><td>3738</td><td>Egypt</td><td>0</td><td>OK</td><td></td><td>1000</td><td>18</td><td></td><td>2016-11-28 08:13:41</td></tr><tr><td>111864</td><td>84357</td><td>bzorkany@click.com.eg</td><td>3328</td><td>Egypt</td><td>0</td><td>OK</td><td></td><td>1000</td><td>18</td><td></td><td>2016-11-28 08:13:41</td></tr><tr><td>111865</td><td>84358</td><td>cadbury@link.com.eg</td><td>2710</td><td>UAE</td><td>0</td><td>OK</td><td></td><td>1000</td><td>18</td><td></td><td>2016-11-28 08:13:41</td></tr><tr><td>111866</td><td>84359</td><td>caip@idsc.net.eg</td><td>878</td><td>Egypt</td><td>0</td><td>OK</td><td></td><td>1000</td><td>18</td><td></td><td>2016-11-28 08:13:41</td></tr><tr><td>111867</td><td>84360</td><td>cairocic@tedata.net.eg</td><td>2741</td><td>UAE</td><td>0</td><td>OK</td><td></td><td>1000</td><td>18</td><td></td><td>2016-11-28 08:13:41</td></tr><tr><td>111869</td><td>84362</td><td>career@cbe.org.eg</td><td>15280</td><td>egypt</td><td>0</td><td>OK</td><td></td><td>2</td><td>18</td><td></td><td>2016-11-28 08:14:12</td></tr><tr><td>111870</td><td>84363</td><td>careers@almansour.com.eg</td><td>15262</td><td>egypt</td><td>0</td><td>OK</td><td></td><td>1000</td><td>18</td><td></td><td>2016-11-28 08:14:12</td></tr><tr><td>111871</td><td>84364</td><td>careers@carrefour.com.eg</td><td>2296</td><td>UAE</td><td>0</td><td>OK</td><td></td><td>1000</td><td>18</td><td></td><td>2016-11-28 08:14:12</td></tr><tr><td>111872</td><td>84365</td><td>careers@edrak.com.eg</td><td>15281</td><td>egypt</td><td>0</td><td>OK</td><td></td><td>1000</td><td>18</td><td></td><td>2016-11-28 08:14:12</td></tr><tr><td>111873</td><td>84366</td><td>careers@makro.com.eg</td><td>15282</td><td>egypt</td><td>0</td><td>OK</td><td></td><td>1000</td><td>18</td><td></td><td>2016-11-28 08:14:12</td></tr><tr><td>111874</td><td>84367</td><td>careers@saib.com.eg</td><td>9445</td><td>egypt & ksa</td><td>0</td><td>OK</td><td></td><td>1000</td><td>18</td><td></td><td>2016-11-28 08:14:12</td></tr><tr><td>111875</td><td>84368</td><td>careers@systel.com.eg</td><td>3460</td><td>Egypt</td><td>0</td><td>OK</td><td></td><td>1000</td><td>18</td><td></td><td>2016-11-28 08:14:12</td></tr><tr><td>111876</td><td>84369</td><td>careers@teleperformance.com.eg</td><td>15283</td><td>egypt</td><td>0</td><td>OK</td><td></td><td>1000</td><td>18</td><td></td><td>2016-11-28 08:14:12</td></tr><tr><td>111877</td><td>84370</td><td>cccegypt@ccc.com.eg</td><td>223</td><td>UAE</td><td>0</td><td>OK</td><td></td><td>1000</td><td>18</td><td></td><td>2016-11-28 08:14:12</td></tr><tr><td>111880</td><td>84373</td><td>ccfcairo@link.com.eg</td><td>2710</td><td>UAE</td><td>0</td><td>OK</td><td></td><td>1000</td><td>18</td><td></td><td>2016-11-28 08:19:09</td></tr><tr><td>111881</td><td>84374</td><td>cci@idsc.net.eg</td><td>878</td><td>Egypt</td><td>0</td><td>OK</td><td></td><td>1000</td><td>18</td><td></td><td>2016-11-28 08:19:09</td></tr><tr><td>111882</td><td>84375</td><td>ccto@tedata.net.eg</td><td>2741</td><td>UAE</td><td>0</td><td>OK</td><td></td><td>1000</td><td>18</td><td></td><td>2016-11-28 08:19:09</td></tr><tr><td>111883</td><td>84376</td><td>cdc-fue@amcham.org.eg</td><td>2796</td><td>Egypt</td><td>0</td><td>OK</td><td></td><td>1000</td><td>18</td><td></td><td>2016-11-28 08:19:09</td></tr><tr><td>111884</td><td>84377</td><td>cdcalex3@dataxprs.com.eg</td><td>3738</td><td>Egypt</td><td>0</td><td>OK</td><td></td><td>1000</td><td>18</td><td></td><td>2016-11-28 08:19:09</td></tr><tr><td>111885</td><td>84378</td><td>celeg@link.com.eg</td><td>2710</td><td>UAE</td><td>0</td><td>OK</td><td></td><td>1000</td><td>18</td><td></td><td>2016-11-28 08:19:10</td></tr><tr><td>111886</td><td>84379</td><td>centech@tedata.net.eg</td><td>2741</td><td>UAE</td><td>0</td><td>OK</td><td></td><td>1000</td><td>18</td><td></td><td>2016-11-28 08:19:10</td></tr><tr><td>111887</td><td>84380</td><td>central_labs@epri.sci.eg</td><td>15285</td><td>egypt</td><td>0</td><td>OK</td><td></td><td>1000</td><td>18</td><td></td><td>2016-11-28 08:19:10</td></tr><tr><td>111888</td><td>84381</td><td>cghantous@ccc.com.eg</td><td>223</td><td>UAE</td><td>0</td><td>OK</td><td></td><td>1000</td><td>18</td><td></td><td>2016-11-28 08:19:10</td></tr>                         
+                </tbody>
+              </table>
+            
+          <div class="row placeholders">
+            <div class="col-xs-6 col-sm-3 placeholder">
+              <img src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="200" height="200" class="img-responsive" alt="Generic placeholder thumbnail">
+              <h4>Label</h4>
+              <span class="text-muted">Something else</span>
+            </div>
+            <div class="col-xs-6 col-sm-3 placeholder">
+              <img src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="200" height="200" class="img-responsive" alt="Generic placeholder thumbnail">
+              <h4>Label</h4>
+              <span class="text-muted">Something else</span>
+            </div>
+            <div class="col-xs-6 col-sm-3 placeholder">
+              <img src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="200" height="200" class="img-responsive" alt="Generic placeholder thumbnail">
+              <h4>Label</h4>
+              <span class="text-muted">Something else</span>
+            </div>
+            <div class="col-xs-6 col-sm-3 placeholder">
+              <img src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="200" height="200" class="img-responsive" alt="Generic placeholder thumbnail">
+              <h4>Label</h4>
+              <span class="text-muted">Something else</span>
+            </div>
+          </div>
+        
+      
+
+      </div>
+    </div>
+  </div>    
+    
+	<div id="footer">
+		<hr>
+		<div class="inner">
+			<div class="container">
+				<p class="right"><a href="#">Back to top</a></p>
+				<p>
+				</p>
+			</div>
+		</div>
+	</div>
+	
+</body>
+</html>

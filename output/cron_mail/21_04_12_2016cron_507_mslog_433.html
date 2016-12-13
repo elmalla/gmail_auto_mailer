@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>
+<html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>
+<html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>
+<html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Linked Emails Project</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width">
+
+  <link href="http://localhost/CI_306_linked_em_Production/assets/css/admin/global.css" rel="stylesheet" type="text/css">
+  
+   <!--<link rel="stylesheet" href="/assets/css/bootstrap-responsive.min.css">-->
+
+  <script src="http://localhost/CI_306_linked_em_Production/assets/js/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+  <!--<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script> -->
+ 
+  
+  <script src="http://localhost/CI_306_linked_em_Production//assets/js/jquery-1.7.1.min.js"></script>)
+  <script src="http://localhost/CI_306_linked_em_Production//assets/js/bootstrap.min.js"></script>
+  
+  <!--<script src="http://localhost/CI_306_linked_em_Production//node_modules/socket.io/node_modules/socket.io-client/socket.io.js"></script>-->
+  
+  <!--<script src="http://localhost/CI_306_linked_em_Production//assets/js/socket.js"></script> -->
+  <!--<script src="http://localhost/CI_306_linked_em_Production//assets/js/main.js"></script> -->
+  
+    <style>
+    body {
+      padding-top: 60px;
+      padding-bottom: 40px;
+    }
+    </style>
+</head>
+<body>
+	<div class="navbar navbar-fixed-top">
+	  <div class="navbar-inner">
+	    <div class="container">
+	      <a class="brand">Linked Emails Project</a>
+	      <ul class="nav">
+	        <li >
+	          <a href="http://localhost/CI_306_linked_em_Production/index.php/admin/main">DashBoard</a>
+	        </li>
+                <li >
+	          <a href="http://localhost/CI_306_linked_em_Production/index.php/admin/products">Products</a>
+	        </li>
+	        <li >
+	          <a href="http://localhost/CI_306_linked_em_Production/index.php/admin/manufacturers/">Manufacturers</a>
+	        </li>
+                <li class="dropdown">
+	          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Emails <b class="caret"></b></a>
+	          <ul class="dropdown-menu">
+	            <li>
+	              <a href="http://localhost/CI_306_linked_em_Production/index.php/admin/Emails">Email Add,Edit,Delete</a>
+	            </li>
+                    <li>
+	              <a href="http://localhost/CI_306_linked_em_Production/index.php/admin/Owner">Owner Add,Edit,Delete</a>
+	            </li>
+                    <li>
+	              <a href="http://localhost/CI_306_linked_em_Production/index.php/admin/Source">Source Add,Edit,Delete</a>
+	            </li>
+	          </ul>
+	        </li>
+                <li class="dropdown">
+	          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Companies <b class="caret"></b></a>
+	          <ul class="dropdown-menu">
+	            <li>
+	              <a href="http://localhost/CI_306_linked_em_Production/index.php/admin/Companies">Company Add,Edit,Delete</a>
+	            </li>
+                    <li>
+	              <a href="http://localhost/CI_306_linked_em_Production/index.php/admin/Category">Category Add,Edit,Delete</a>
+	            </li>
+                    <li>
+	              <a href="http://localhost/CI_306_linked_em_Production/index.php/admin/Source">... Add,Edit,Delete</a>
+	            </li>
+	          </ul>
+	        </li>
+	        <li class="dropdown">
+	          <a href="#" class="dropdown-toggle" data-toggle="dropdown">System <b class="caret"></b></a>
+	          <ul class="dropdown-menu">
+	            <li>
+	              <a href="http://localhost/CI_306_linked_em_Production/admin/logout">Logout</a>
+	            </li>
+	          </ul>
+	        </li>
+	      </ul>
+	    </div>
+	  </div>
+	</div>	
+    
+    
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-3 col-md-2 sidebar">
+          <ul class="nav nav-sidebar">
+            <li class="active"><a href="http://localhost/CI_306_linked_em_Production/index.php/admin/main">Overview <span class="sr-only">(current)</span></a></li>
+            <li><a href="#">Reports</a></li>
+            <li><a href="http://localhost/CI_306_linked_em_Production/index.php/admin/Mailer/show">Mailer</a></li>
+            <li><a href="http://localhost/CI_306_linked_em_Production/index.php/admin/Mailer/mailfixedjob">Scheduled Mail Jobs</a></li>
+            <li><a href="http://localhost/CI_306_linked_em_Production/index.php/admin/Mailer/cronm/1/mailer/8/gmail/UI">Cron Scheduler</a></li>
+            <li><a href="http://localhost/CI_306_linked_em_Production/index.php/admin/Emails/cron_backup/false">Cron Backup</a></li>
+            <li><a href="http://localhost/CI_306_linked_em_Production/index.php/admin/export/show">Exports</a></li>
+          </ul>
+          <ul class="nav nav-sidebar">
+            <li><a href="">Nav item</a></li>
+            <li><a href="">Nav item again</a></li>
+            <li><a href="">One more nav</a></li>
+            <li><a href="http://localhost/CI_306_linked_em_Production/index.php/admin/Statistics/">Statistics</a></li>
+            <li><a href="http://localhost/CI_306_linked_em_Production/index.php/admin/Owner/">Owners</a></li>
+          </ul>
+          <ul class="nav nav-sidebar">
+            <li><a href="http://localhost/CI_306_linked_em_Production/index.php/admin/Emails/">Emails</a></li>
+            <li><a href="http://localhost/CI_306_linked_em_Production/index.php/admin/upload/show">Uploads</a></li>
+            <li><a href="http://localhost/CI_306_linked_em_Production/index.php/admin/upload/">Upload Files</a></li>
+          </ul>
+        </div>
+       
+        </div>  
+       </div>
+
+    <div class="container top">
+
+      <ul class="breadcrumb">
+        <li>
+          <a href="http://localhost/CI_306_linked_em_Production/admin">
+            Admin_mailer          </a> 
+          <span class="divider">/</span>
+        </li>
+        <li class="active">
+          Cron_mail          
+        </li>
+        
+      </ul>
+
+      <div class="page-header users-header">
+        <h2>
+          Cron_mail              <br/>
+             
+              <a  href="http://localhost/CI_306_linked_em_Production/admin/Mailer/sendmail" class="btn btn-success">Send Email</a>
+              <div class="divider"/>
+              <a  href="http://localhost/CI_306_linked_em_Production/admin/Mailer/sendmailattach" class="btn btn-success">Send Email with Attachment</a>
+              <br/>
+          
+        </h2>
+      </div>
+      
+      <div class="row">
+        <div class="span12 columns">
+          <div class="well">
+          
+          </div>
+             <table class="table table-striped table-bordered table-condensed">
+            <thead>
+              <tr>
+                <th class="header">email_v_count</th>
+                <th class="yellow header headerSortDown">email_nv_count</th>
+                <th class="green header">email_merged_count</th>
+                <th class="red header">email_to_mailer_count</th>
+                <th class="red header">email_sent_count</th>
+                <th class="red header">emails_sent_earlier</th>
+                <th class="red header">emails_scheduled_next_run</th>
+                <th class="red header">N/A</th>
+      
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>50</td><td>0</td><td>50</td><td>60</td><td>60</td><td>0</td><td>10226</td><td>N/A</td></tr>      
+            </tbody>
+           </table> 
+            
+            <table class="table table-striped table-bordered table-condensed">
+             <thead>
+              <tr>
+                <th class="header">Debugging Info</th>
+              </tr>
+              <tr>
+                <th class="header">Email ID</th>
+                <th class="header">Debug Info</th>   
+              </tr>
+            </thead>
+            <tbody>
+               <tr><td>82333</td><td><pre>
+
+</pre></td></tr><tr><td>82356</td><td><pre>
+
+</pre></td></tr><tr><td>82357</td><td><pre>
+
+</pre></td></tr><tr><td>82358</td><td><pre>
+
+</pre></td></tr><tr><td>82422</td><td><pre>
+
+</pre></td></tr><tr><td>82439</td><td><pre>
+
+</pre></td></tr>   
+            </tbody>
+          </table>
+    
+          
+          <table class="table table-striped table-bordered table-condensed">
+          <thead>
+              <tr>
+                <th class="header">Email ID</th>
+                <th class="header">Email sent</th>   
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>82333</td><td>abalemadi@sch.gov.qa</td></tr><tr><td>49458</td><td>naijed@digi.net.sa</td></tr><tr><td>49459</td><td>nair@almousim.com.sa</td></tr><tr><td>49460</td><td>najdyah@ae.net.sa</td></tr><tr><td>49461</td><td>najeh@arrab.com.sa</td></tr><tr><td>49462</td><td>nalshehri@elm.sa</td></tr><tr><td>49463</td><td>nanjiaw@marafiq.com.sa</td></tr><tr><td>49464</td><td>narendra@kfbgroup.com.sa</td></tr><tr><td>49465</td><td>nasban@salec.com.sa</td></tr><tr><td>49466</td><td>nasir@sabtech.com.sa</td></tr><tr><td>82356</td><td>ahmed@caa.gov.qa</td></tr><tr><td>49467</td><td>nawwabni@aramco.com.sa</td></tr><tr><td>49468</td><td>nazco@sahara.com.sa</td></tr><tr><td>49469</td><td>ncmsruh@naseej.com.sa</td></tr><tr><td>49470</td><td>netvigator.comjada@atheer.net.sa</td></tr><tr><td>49471</td><td>newindia@digi.net.sa</td></tr><tr><td>49472</td><td>nhbco@awalnet.net.sa</td></tr><tr><td>49473</td><td>nickolakism@maaden.com.sa</td></tr><tr><td>49474</td><td>nisar@hha-khobar.com.sa</td></tr><tr><td>49475</td><td>nissar@hadeed.com.sa</td></tr><tr><td>82357</td><td>aim@caa.gov.qa</td></tr><tr><td>49476</td><td>nizar@hugayet.com.sa</td></tr><tr><td>49477</td><td>nkie@awalnet.net.sa</td></tr><tr><td>49478</td><td>nora_23@anet.net.sa</td></tr><tr><td>49479</td><td>nsm@binex.com.sa</td></tr><tr><td>49480</td><td>o.aljohani@sasref.com.sa</td></tr><tr><td>49481</td><td>oakcraft@awalnet.net.sa</td></tr><tr><td>49483</td><td>obeikan@obeikan.com.sa</td></tr><tr><td>49484</td><td>ocscl@nesma.net.sa</td></tr><tr><td>49485</td><td>office@akfc.com.sa</td></tr><tr><td>82358</td><td>air.transport@caa.gov.qa</td></tr><tr><td>49486</td><td>ohumaidan@anb.com.sa</td></tr><tr><td>49487</td><td>okamal@astracom.com.sa</td></tr><tr><td>49488</td><td>okatex@sps.net.sa</td></tr><tr><td>49489</td><td>olacharif@btc.com.sa</td></tr><tr><td>49490</td><td>oma@anet.net.sa</td></tr><tr><td>49491</td><td>omahjoub@swcc.gov.sa</td></tr><tr><td>49492</td><td>omar@almultaka.com.sa</td></tr><tr><td>49493</td><td>omar@jish.com.sa</td></tr><tr><td>49494</td><td>omarmh@kfupm.edu.sa</td></tr><tr><td>82422</td><td>bsm@ict.gov.qa</td></tr><tr><td>49495</td><td>omatrajed@saudionline.com.sa</td></tr><tr><td>49496</td><td>omega@awalnet.net.sa</td></tr><tr><td>49497</td><td>omerelam@aramco.com.sa</td></tr><tr><td>49498</td><td>onaitah@momra.gov.sa</td></tr><tr><td>49499</td><td>orbit@alhussan.edu.sa</td></tr><tr><td>49500</td><td>osaid@se.com.sa</td></tr><tr><td>49501</td><td>osama@hatco.com.sa</td></tr><tr><td>49502</td><td>osamas@zamilcd.com.sa</td></tr><tr><td>49503</td><td>otaibimh@rcjubail.gov.sa</td></tr><tr><td>82439</td><td>comment@ict.gov.qa</td></tr><tr><td>49504</td><td>otf@obeikan.com.sa</td></tr><tr><td>49505</td><td>p-g-doukanaris@brc.com.sa</td></tr><tr><td>49506</td><td>pak_embassy@saudionline.com.sa</td></tr><tr><td>49507</td><td>pakembassy@saudionline.com.sa</td></tr><tr><td>49508</td><td>pararec3@ngha.med.sa</td></tr><tr><td>49509</td><td>partners@siscom.com.sa</td></tr><tr><td>49510</td><td>pcd-jed@saite.com.sa</td></tr><tr><td>49511</td><td>pcted@se.com.sa</td></tr><tr><td>49512</td><td>performanceappraisal@rezayat.com.sa</td></tr>      
+            </tbody>
+          </table>
+            
+          <table class="table table-striped table-bordered table-condensed">
+          <thead>
+              <tr>
+                <th class="header">Email ID</th>
+                <th class="header">Email Failed</th>   
+              </tr>
+            </thead>
+            <tbody>
+                    
+            </tbody>
+          </table>  
+            
+          <table class="table table-striped table-bordered table-condensed">
+          <thead>
+              <tr>
+                <th class="header">Email ID</th>
+                <th class="header">Email sent earlier</th>   
+              </tr>
+            </thead>
+            <tbody>
+                    
+            </tbody>
+          </table>
+            
+          <table class="table table-striped table-bordered table-condensed">
+          <thead>
+              <tr>
+                <th class="header">Debug</th>
+                
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>82333</td></tr><tr><td>abalemadi@sch.gov.qa</td></tr><tr><td>0</td></tr><tr><td>0</td></tr><tr><td>naijed@digi.net.sa, nair@almousim.com.sa, najdyah@ae.net.sa, najeh@arrab.com.sa, nalshehri@elm.sa, nanjiaw@marafiq.com.sa, narendra@kfbgroup.com.sa, nasban@salec.com.sa, nasir@sabtech.com.sa</td></tr><tr><td>1</td></tr><tr><td>0</td><td>abalemadi@sch.gov.qa</td><td>1</td><td>naijed@digi.net.sa</td><td>2</td><td> nair@almousim.com.sa</td><td>3</td><td> najdyah@ae.net.sa</td><td>4</td><td> najeh@arrab.com.sa</td><td>5</td><td> nalshehri@elm.sa</td><td>6</td><td> nanjiaw@marafiq.com.sa</td><td>7</td><td> narendra@kfbgroup.com.sa</td><td>8</td><td> nasban@salec.com.sa</td><td>9</td><td> nasir@sabtech.com.sa</td></tr><tr></tr><tr><td>10</td></tr><tr><td><pre>
+
+</pre></td></tr><tr><td>82356</td></tr><tr><td>ahmed@caa.gov.qa</td></tr><tr><td>1</td></tr><tr><td>9</td></tr><tr><td>nawwabni@aramco.com.sa, nazco@sahara.com.sa, ncmsruh@naseej.com.sa, netvigator.comjada@atheer.net.sa, newindia@digi.net.sa, nhbco@awalnet.net.sa, nickolakism@maaden.com.sa, nisar@hha-khobar.com.sa, nissar@hadeed.com.sa</td></tr><tr><td>1</td></tr><tr><td>0</td><td>ahmed@caa.gov.qa</td><td>1</td><td>nawwabni@aramco.com.sa</td><td>2</td><td> nazco@sahara.com.sa</td><td>3</td><td> ncmsruh@naseej.com.sa</td><td>4</td><td> netvigator.comjada@atheer.net.sa</td><td>5</td><td> newindia@digi.net.sa</td><td>6</td><td> nhbco@awalnet.net.sa</td><td>7</td><td> nickolakism@maaden.com.sa</td><td>8</td><td> nisar@hha-khobar.com.sa</td><td>9</td><td> nissar@hadeed.com.sa</td></tr><tr></tr><tr><td>10</td></tr><tr><td><pre>
+
+</pre></td></tr><tr><td>82357</td></tr><tr><td>aim@caa.gov.qa</td></tr><tr><td>2</td></tr><tr><td>18</td></tr><tr><td>nizar@hugayet.com.sa, nkie@awalnet.net.sa, nora_23@anet.net.sa, nsm@binex.com.sa, o.aljohani@sasref.com.sa, oakcraft@awalnet.net.sa, obeikan@obeikan.com.sa, ocscl@nesma.net.sa, office@akfc.com.sa</td></tr><tr><td>1</td></tr><tr><td>0</td><td>aim@caa.gov.qa</td><td>1</td><td>nizar@hugayet.com.sa</td><td>2</td><td> nkie@awalnet.net.sa</td><td>3</td><td> nora_23@anet.net.sa</td><td>4</td><td> nsm@binex.com.sa</td><td>5</td><td> o.aljohani@sasref.com.sa</td><td>6</td><td> oakcraft@awalnet.net.sa</td><td>7</td><td> obeikan@obeikan.com.sa</td><td>8</td><td> ocscl@nesma.net.sa</td><td>9</td><td> office@akfc.com.sa</td></tr><tr></tr><tr><td>10</td></tr><tr><td><pre>
+
+</pre></td></tr><tr><td>82358</td></tr><tr><td>air.transport@caa.gov.qa</td></tr><tr><td>3</td></tr><tr><td>27</td></tr><tr><td>ohumaidan@anb.com.sa, okamal@astracom.com.sa, okatex@sps.net.sa, olacharif@btc.com.sa, oma@anet.net.sa, omahjoub@swcc.gov.sa, omar@almultaka.com.sa, omar@jish.com.sa, omarmh@kfupm.edu.sa</td></tr><tr><td>1</td></tr><tr><td>0</td><td>air.transport@caa.gov.qa</td><td>1</td><td>ohumaidan@anb.com.sa</td><td>2</td><td> okamal@astracom.com.sa</td><td>3</td><td> okatex@sps.net.sa</td><td>4</td><td> olacharif@btc.com.sa</td><td>5</td><td> oma@anet.net.sa</td><td>6</td><td> omahjoub@swcc.gov.sa</td><td>7</td><td> omar@almultaka.com.sa</td><td>8</td><td> omar@jish.com.sa</td><td>9</td><td> omarmh@kfupm.edu.sa</td></tr><tr></tr><tr><td>10</td></tr><tr><td><pre>
+
+</pre></td></tr><tr><td>82422</td></tr><tr><td>bsm@ict.gov.qa</td></tr><tr><td>4</td></tr><tr><td>36</td></tr><tr><td>omatrajed@saudionline.com.sa, omega@awalnet.net.sa, omerelam@aramco.com.sa, onaitah@momra.gov.sa, orbit@alhussan.edu.sa, osaid@se.com.sa, osama@hatco.com.sa, osamas@zamilcd.com.sa, otaibimh@rcjubail.gov.sa</td></tr><tr><td>1</td></tr><tr><td>0</td><td>bsm@ict.gov.qa</td><td>1</td><td>omatrajed@saudionline.com.sa</td><td>2</td><td> omega@awalnet.net.sa</td><td>3</td><td> omerelam@aramco.com.sa</td><td>4</td><td> onaitah@momra.gov.sa</td><td>5</td><td> orbit@alhussan.edu.sa</td><td>6</td><td> osaid@se.com.sa</td><td>7</td><td> osama@hatco.com.sa</td><td>8</td><td> osamas@zamilcd.com.sa</td><td>9</td><td> otaibimh@rcjubail.gov.sa</td></tr><tr></tr><tr><td>10</td></tr><tr><td><pre>
+
+</pre></td></tr><tr><td>82439</td></tr><tr><td>comment@ict.gov.qa</td></tr><tr><td>5</td></tr><tr><td>45</td></tr><tr><td>otf@obeikan.com.sa, p-g-doukanaris@brc.com.sa, pak_embassy@saudionline.com.sa, pakembassy@saudionline.com.sa, pararec3@ngha.med.sa, partners@siscom.com.sa, pcd-jed@saite.com.sa, pcted@se.com.sa, performanceappraisal@rezayat.com.sa</td></tr><tr><td>1</td></tr><tr><td>0</td><td>comment@ict.gov.qa</td><td>1</td><td>otf@obeikan.com.sa</td><td>2</td><td> p-g-doukanaris@brc.com.sa</td><td>3</td><td> pak_embassy@saudionline.com.sa</td><td>4</td><td> pakembassy@saudionline.com.sa</td><td>5</td><td> pararec3@ngha.med.sa</td><td>6</td><td> partners@siscom.com.sa</td><td>7</td><td> pcd-jed@saite.com.sa</td><td>8</td><td> pcted@se.com.sa</td><td>9</td><td> performanceappraisal@rezayat.com.sa</td></tr><tr></tr><tr><td>10</td></tr><tr><td><pre>
+
+</pre></td></tr>      
+            </tbody>
+          </table>        
+            
+      </div>
+    </div>
+	<div id="footer">
+		<hr>
+		<div class="inner">
+			<div class="container">
+				<p class="right"><a href="#">Back to top</a></p>
+				<p>
+				</p>
+			</div>
+		</div>
+	</div>
+	
+</body>
+</html>

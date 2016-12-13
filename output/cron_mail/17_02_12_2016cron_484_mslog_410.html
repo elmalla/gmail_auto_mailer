@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>
+<html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>
+<html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>
+<html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Linked Emails Project</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width">
+
+  <link href="http://localhost/CI_306_linked_em_Production/assets/css/admin/global.css" rel="stylesheet" type="text/css">
+  
+   <!--<link rel="stylesheet" href="/assets/css/bootstrap-responsive.min.css">-->
+
+  <script src="http://localhost/CI_306_linked_em_Production/assets/js/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+  <!--<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script> -->
+ 
+  
+  <script src="http://localhost/CI_306_linked_em_Production//assets/js/jquery-1.7.1.min.js"></script>)
+  <script src="http://localhost/CI_306_linked_em_Production//assets/js/bootstrap.min.js"></script>
+  
+  <!--<script src="http://localhost/CI_306_linked_em_Production//node_modules/socket.io/node_modules/socket.io-client/socket.io.js"></script>-->
+  
+  <!--<script src="http://localhost/CI_306_linked_em_Production//assets/js/socket.js"></script> -->
+  <!--<script src="http://localhost/CI_306_linked_em_Production//assets/js/main.js"></script> -->
+  
+    <style>
+    body {
+      padding-top: 60px;
+      padding-bottom: 40px;
+    }
+    </style>
+</head>
+<body>
+	<div class="navbar navbar-fixed-top">
+	  <div class="navbar-inner">
+	    <div class="container">
+	      <a class="brand">Linked Emails Project</a>
+	      <ul class="nav">
+	        <li >
+	          <a href="http://localhost/CI_306_linked_em_Production/index.php/admin/main">DashBoard</a>
+	        </li>
+                <li >
+	          <a href="http://localhost/CI_306_linked_em_Production/index.php/admin/products">Products</a>
+	        </li>
+	        <li >
+	          <a href="http://localhost/CI_306_linked_em_Production/index.php/admin/manufacturers/">Manufacturers</a>
+	        </li>
+                <li class="dropdown">
+	          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Emails <b class="caret"></b></a>
+	          <ul class="dropdown-menu">
+	            <li>
+	              <a href="http://localhost/CI_306_linked_em_Production/index.php/admin/Emails">Email Add,Edit,Delete</a>
+	            </li>
+                    <li>
+	              <a href="http://localhost/CI_306_linked_em_Production/index.php/admin/Owner">Owner Add,Edit,Delete</a>
+	            </li>
+                    <li>
+	              <a href="http://localhost/CI_306_linked_em_Production/index.php/admin/Source">Source Add,Edit,Delete</a>
+	            </li>
+	          </ul>
+	        </li>
+                <li class="dropdown">
+	          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Companies <b class="caret"></b></a>
+	          <ul class="dropdown-menu">
+	            <li>
+	              <a href="http://localhost/CI_306_linked_em_Production/index.php/admin/Companies">Company Add,Edit,Delete</a>
+	            </li>
+                    <li>
+	              <a href="http://localhost/CI_306_linked_em_Production/index.php/admin/Category">Category Add,Edit,Delete</a>
+	            </li>
+                    <li>
+	              <a href="http://localhost/CI_306_linked_em_Production/index.php/admin/Source">... Add,Edit,Delete</a>
+	            </li>
+	          </ul>
+	        </li>
+	        <li class="dropdown">
+	          <a href="#" class="dropdown-toggle" data-toggle="dropdown">System <b class="caret"></b></a>
+	          <ul class="dropdown-menu">
+	            <li>
+	              <a href="http://localhost/CI_306_linked_em_Production/admin/logout">Logout</a>
+	            </li>
+	          </ul>
+	        </li>
+	      </ul>
+	    </div>
+	  </div>
+	</div>	
+    
+    
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-3 col-md-2 sidebar">
+          <ul class="nav nav-sidebar">
+            <li class="active"><a href="http://localhost/CI_306_linked_em_Production/index.php/admin/main">Overview <span class="sr-only">(current)</span></a></li>
+            <li><a href="#">Reports</a></li>
+            <li><a href="http://localhost/CI_306_linked_em_Production/index.php/admin/Mailer/show">Mailer</a></li>
+            <li><a href="http://localhost/CI_306_linked_em_Production/index.php/admin/Mailer/mailfixedjob">Scheduled Mail Jobs</a></li>
+            <li><a href="http://localhost/CI_306_linked_em_Production/index.php/admin/Mailer/cronm/1/mailer/8/gmail/UI">Cron Scheduler</a></li>
+            <li><a href="http://localhost/CI_306_linked_em_Production/index.php/admin/Emails/cron_backup/false">Cron Backup</a></li>
+            <li><a href="http://localhost/CI_306_linked_em_Production/index.php/admin/export/show">Exports</a></li>
+          </ul>
+          <ul class="nav nav-sidebar">
+            <li><a href="">Nav item</a></li>
+            <li><a href="">Nav item again</a></li>
+            <li><a href="">One more nav</a></li>
+            <li><a href="http://localhost/CI_306_linked_em_Production/index.php/admin/Statistics/">Statistics</a></li>
+            <li><a href="http://localhost/CI_306_linked_em_Production/index.php/admin/Owner/">Owners</a></li>
+          </ul>
+          <ul class="nav nav-sidebar">
+            <li><a href="http://localhost/CI_306_linked_em_Production/index.php/admin/Emails/">Emails</a></li>
+            <li><a href="http://localhost/CI_306_linked_em_Production/index.php/admin/upload/show">Uploads</a></li>
+            <li><a href="http://localhost/CI_306_linked_em_Production/index.php/admin/upload/">Upload Files</a></li>
+          </ul>
+        </div>
+       
+        </div>  
+       </div>
+
+    <div class="container top">
+
+      <ul class="breadcrumb">
+        <li>
+          <a href="http://localhost/CI_306_linked_em_Production/admin">
+            Admin_mailer          </a> 
+          <span class="divider">/</span>
+        </li>
+        <li class="active">
+          Cron_mail          
+        </li>
+        
+      </ul>
+
+      <div class="page-header users-header">
+        <h2>
+          Cron_mail              <br/>
+             
+              <a  href="http://localhost/CI_306_linked_em_Production/admin/Mailer/sendmail" class="btn btn-success">Send Email</a>
+              <div class="divider"/>
+              <a  href="http://localhost/CI_306_linked_em_Production/admin/Mailer/sendmailattach" class="btn btn-success">Send Email with Attachment</a>
+              <br/>
+          
+        </h2>
+      </div>
+      
+      <div class="row">
+        <div class="span12 columns">
+          <div class="well">
+          
+          </div>
+             <table class="table table-striped table-bordered table-condensed">
+            <thead>
+              <tr>
+                <th class="header">email_v_count</th>
+                <th class="yellow header headerSortDown">email_nv_count</th>
+                <th class="green header">email_merged_count</th>
+                <th class="red header">email_to_mailer_count</th>
+                <th class="red header">email_sent_count</th>
+                <th class="red header">emails_sent_earlier</th>
+                <th class="red header">emails_scheduled_next_run</th>
+                <th class="red header">N/A</th>
+      
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>50</td><td>0</td><td>50</td><td>130</td><td>130</td><td>3</td><td>3516</td><td>N/A</td></tr>      
+            </tbody>
+           </table> 
+            
+            <table class="table table-striped table-bordered table-condensed">
+             <thead>
+              <tr>
+                <th class="header">Debugging Info</th>
+              </tr>
+              <tr>
+                <th class="header">Email ID</th>
+                <th class="header">Debug Info</th>   
+              </tr>
+            </thead>
+            <tbody>
+               <tr><td>1452</td><td><pre>
+
+</pre></td></tr><tr><td>1387</td><td><pre>
+
+</pre></td></tr><tr><td>1307</td><td><pre>
+
+</pre></td></tr><tr><td>1270</td><td><pre>
+
+</pre></td></tr><tr><td>1269</td><td><pre>
+
+</pre></td></tr><tr><td>1247</td><td><pre>
+
+</pre></td></tr><tr><td>1203</td><td><pre>
+
+</pre></td></tr><tr><td>1151</td><td><pre>
+
+</pre></td></tr><tr><td>1145</td><td><pre>
+
+</pre></td></tr><tr><td>1089</td><td><pre>
+
+</pre></td></tr><tr><td>1082</td><td><pre>
+
+</pre></td></tr><tr><td>1069</td><td><pre>
+
+</pre></td></tr><tr><td>1046</td><td><pre>
+
+</pre></td></tr>   
+            </tbody>
+          </table>
+    
+          
+          <table class="table table-striped table-bordered table-condensed">
+          <thead>
+              <tr>
+                <th class="header">Email ID</th>
+                <th class="header">Email sent</th>   
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>1452</td><td>othmanhassan@omanlng.co.om</td></tr><tr><td>84898</td><td>qpic@tedata.net.eg</td></tr><tr><td>84899</td><td>questions@cabinet.gov.eg</td></tr><tr><td>84900</td><td>quicks@soficom.com.eg</td></tr><tr><td>84901</td><td>rahmed@tra.gov.eg</td></tr><tr><td>84902</td><td>rami.amer@nti.sci.eg</td></tr><tr><td>84903</td><td>rami@mwri.gov.eg</td></tr><tr><td>84904</td><td>ramina@dataxprs.com.eg</td></tr><tr><td>84905</td><td>rania.abdel-wahed@eng.asu.edu.eg</td></tr><tr><td>84906</td><td>rania.aziz@edita.com.eg</td></tr><tr><td>1387</td><td>eamon.gorman@pdo.co.om</td></tr><tr><td>84907</td><td>rasha@abs.com.eg</td></tr><tr><td>84908</td><td>rawad@idsc.net.eg</td></tr><tr><td>84909</td><td>rd@tra.gov.eg</td></tr><tr><td>84910</td><td>rec@topbusiness.com.eg</td></tr><tr><td>84911</td><td>recruitment@allianz.com.eg</td></tr><tr><td>84912</td><td>recruitment@edita.com.eg</td></tr><tr><td>84913</td><td>recruitment@egyptexpress.com.eg</td></tr><tr><td>84914</td><td>recruitment@eyp.com.eg</td></tr><tr><td>84915</td><td>recruitment@psp.com.eg</td></tr><tr><td>1307</td><td>nasser.esfahani@nawras.com.om</td></tr><tr><td>84916</td><td>recruitment@tra.gov.eg</td></tr><tr><td>84917</td><td>redam@mwri.gov.eg</td></tr><tr><td>84918</td><td>reefer@dataxprs.com.eg</td></tr><tr><td>84919</td><td>research@epri.sci.eg</td></tr><tr><td>84920</td><td>retailproit@gmail.eg</td></tr><tr><td>84921</td><td>rgohary@impactbbdo.com.eg</td></tr><tr><td>84922</td><td>rmasoud@aresco.com.eg</td></tr><tr><td>84923</td><td>rmohamedy@cmrdi.sci.eg</td></tr><tr><td>84924</td><td>rnada@erf.org.eg</td></tr><tr><td>1270</td><td>mike.j.dyson@pdo.co.om</td></tr><tr><td>84925</td><td>ruemeg@tedata.net.eg</td></tr><tr><td>84926</td><td>rymag@globalnet.com.eg</td></tr><tr><td>84927</td><td>s.mohey@topbusiness.com.eg</td></tr><tr><td>84928</td><td>saadco@starnet.com.eg</td></tr><tr><td>84929</td><td>saadkhodir@cmrdi.sci.eg</td></tr><tr><td>84930</td><td>sacerau@idsc.net.eg</td></tr><tr><td>84931</td><td>safwat@mwri.gov.eg</td></tr><tr><td>84932</td><td>saharsayed@idsc.net.eg</td></tr><tr><td>84933</td><td>sales@avit.com.eg</td></tr><tr><td>1269</td><td>a@oman-gas.com.om</td></tr><tr><td>84934</td><td>sales@dataxprs.com.eg</td></tr><tr><td>84935</td><td>sales@pharmex.com.eg</td></tr><tr><td>84936</td><td>sales@speednet.com.eg</td></tr><tr><td>84937</td><td>sales@startup.net.eg</td></tr><tr><td>84938</td><td>salesadmin@abs.com.eg</td></tr><tr><td>84939</td><td>sali@sgc.com.eg</td></tr><tr><td>84940</td><td>salma@mcit.gov.eg</td></tr><tr><td>84941</td><td>samars@tra.gov.eg</td></tr><tr><td>84942</td><td>samia48@globalnet.com.eg</td></tr><tr><td>1247</td><td>WimDeNobel@Omanlng.co.om</td></tr><tr><td>84943</td><td>sammantrading@tedata.net.eg</td></tr><tr><td>84944</td><td>samoral@globalnet.com.eg</td></tr><tr><td>84945</td><td>santex@dataxprs.com.eg</td></tr><tr><td>84946</td><td>sbadawy@mans.eun.eg</td></tr><tr><td>84947</td><td>sbadr@nti.sci.eg</td></tr><tr><td>84948</td><td>sbranch@petrojet.com.eg</td></tr><tr><td>84949</td><td>sccourt@idsc.net.eg</td></tr><tr><td>84950</td><td>scholzer@link.com.eg</td></tr><tr><td>84951</td><td>sciit@tedata.net.eg</td></tr><tr><td>1203</td><td>nigel@omanlng.co.om</td></tr><tr><td>84952</td><td>secretary@cmrdi.sci.eg</td></tr><tr><td>84953</td><td>senior@tedata.net.eg</td></tr><tr><td>84954</td><td>serious@tedata.net.eg</td></tr><tr><td>84955</td><td>sewedy@click.com.eg</td></tr><tr><td>84956</td><td>sf_pics@link.com.eg</td></tr><tr><td>84957</td><td>sg@mailer.datum.com.eg</td></tr><tr><td>84958</td><td>sgalal@tedata.net.eg</td></tr><tr><td>84959</td><td>sgi@sakkara.com.eg</td></tr><tr><td>84960</td><td>shafisci@link.com.eg</td></tr><tr><td>1151</td><td>ni@pdo.co.om</td></tr><tr><td>84961</td><td>shashem@mcit.gov.eg</td></tr><tr><td>84962</td><td>shawki@mtc.com.eg</td></tr><tr><td>84963</td><td>sherbini@mcit.gov.eg</td></tr><tr><td>84964</td><td>sherbini@nti.sci.eg</td></tr><tr><td>84965</td><td>sherif.me@egpc.com.eg</td></tr><tr><td>84966</td><td>sheriftoulan@idfta.com.eg</td></tr><tr><td>84967</td><td>sherine@pharco.com.eg</td></tr><tr><td>84968</td><td>shimaam@cmrdi.sci.eg</td></tr><tr><td>84969</td><td>sicep@tedata.net.eg</td></tr><tr><td>1145</td><td>balushi.ali@pdo.co.om</td></tr><tr><td>84970</td><td>sinai@starnet.com.eg</td></tr><tr><td>84971</td><td>sinaigs@idsc.net.eg</td></tr><tr><td>84972</td><td>siyassa@ahram.org.eg</td></tr><tr><td>84973</td><td>sjoekes@idrc.org.eg</td></tr><tr><td>84974</td><td>skamel@idrc.org.eg</td></tr><tr><td>84975</td><td>sleem@tedata.net.eg</td></tr><tr><td>84976</td><td>slim@mailer.datum.com.eg</td></tr><tr><td>84977</td><td>smahmoud@idsc.net.eg</td></tr><tr><td>84978</td><td>smostafa@idsc.net.eg</td></tr><tr><td>1089</td><td>aziz.amri@oman-gas.com.om</td></tr><tr><td>84979</td><td>sodecosp@tedata.net.eg</td></tr><tr><td>84980</td><td>sohaggov@idsc.net.eg</td></tr><tr><td>84981</td><td>soheir.zaki@telecomegypt.com.eg</td></tr><tr><td>84982</td><td>solimco@idsc.net.eg</td></tr><tr><td>84983</td><td>soman@tedata.net.eg</td></tr><tr><td>84984</td><td>someuser@arabcom.com.eg</td></tr><tr><td>84985</td><td>sosman@mld.gov.eg</td></tr><tr><td>84986</td><td>southafr@idsc.net.eg</td></tr><tr><td>84987</td><td>space@link.com.eg</td></tr><tr><td>1082</td><td>mohammed.ma.ambusaidi@pdo.co.om</td></tr><tr><td>84988</td><td>space@starnet.com.eg</td></tr><tr><td>84989</td><td>ss21@click.com.eg</td></tr><tr><td>84990</td><td>stalaatmo@dataxprs.com.eg</td></tr><tr><td>84991</td><td>stdelec@click.com.eg</td></tr><tr><td>84992</td><td>studies@amcham.org.eg</td></tr><tr><td>84993</td><td>stylish@tedata.net.eg</td></tr><tr><td>84994</td><td>subsea@globalnet.com.eg</td></tr><tr><td>84995</td><td>summertraining@tra.gov.eg</td></tr><tr><td>84996</td><td>support@dataxprs.com.eg</td></tr><tr><td>1069</td><td>saleh.SHS.tamimi@pdo.co.om</td></tr><tr><td>84997</td><td>systel@systel.com.eg</td></tr><tr><td>84998</td><td>tahamattar@cmrdi.sci.eg</td></tr><tr><td>84999</td><td>talaatmostafa@tmg.com.eg</td></tr><tr><td>85000</td><td>tamer.elkhorazaty@guc.edu.eg</td></tr><tr><td>85001</td><td>tamer.s.ahmed@cu.edu.eg</td></tr><tr><td>85002</td><td>tantatp@idsc.net.eg</td></tr><tr><td>85003</td><td>tarazi@tedata.net.eg</td></tr><tr><td>85004</td><td>targetsports@tedata.net.eg</td></tr><tr><td>85005</td><td>tattia@tra.gov.eg</td></tr><tr><td>1046</td><td>a.ras.riyamy@pdo.co.om</td></tr><tr><td>85006</td><td>tayeb@tedata.net.eg</td></tr><tr><td>85007</td><td>tbahig@rochem.com.eg</td></tr><tr><td>85008</td><td>teb@idsc.net.eg</td></tr><tr><td>85009</td><td>technicalsupport@abs.com.eg</td></tr><tr><td>85010</td><td>teeba1@tedata.net.eg</td></tr><tr><td>85011</td><td>test_benz@gna.mercedes-benz.com.eg</td></tr><tr><td>85012</td><td>tharwat.gamil@cemex.com.eg</td></tr><tr><td>85013</td><td>timbregy@globalnet.com.eg</td></tr><tr><td>85014</td><td>tims@idsc.net.eg</td></tr>      
+            </tbody>
+          </table>
+            
+          <table class="table table-striped table-bordered table-condensed">
+          <thead>
+              <tr>
+                <th class="header">Email ID</th>
+                <th class="header">Email Failed</th>   
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>19971</td><td>recruitment@almaha.com.om</td></tr><tr><td>18282</td><td>recruit@mbpetroleum.co.om</td></tr><tr><td>18280</td><td>mbpsrecruitment@mbpetroleum.co.om</td></tr>      
+            </tbody>
+          </table>  
+            
+          <table class="table table-striped table-bordered table-condensed">
+          <thead>
+              <tr>
+                <th class="header">Email ID</th>
+                <th class="header">Email sent earlier</th>   
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>19971</td><td>recruitment@almaha.com.om</td></tr><tr><td>18282</td><td>recruit@mbpetroleum.co.om</td></tr><tr><td>18280</td><td>mbpsrecruitment@mbpetroleum.co.om</td></tr>      
+            </tbody>
+          </table>
+            
+          <table class="table table-striped table-bordered table-condensed">
+          <thead>
+              <tr>
+                <th class="header">Debug</th>
+                
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>1452</td></tr><tr><td>othmanhassan@omanlng.co.om</td></tr><tr><td>0</td></tr><tr><td>0</td></tr><tr><td>qpic@tedata.net.eg, questions@cabinet.gov.eg, quicks@soficom.com.eg, rahmed@tra.gov.eg, rami.amer@nti.sci.eg, rami@mwri.gov.eg, ramina@dataxprs.com.eg, rania.abdel-wahed@eng.asu.edu.eg, rania.aziz@edita.com.eg</td></tr><tr><td>1</td></tr><tr><td>0</td><td>othmanhassan@omanlng.co.om</td><td>1</td><td>qpic@tedata.net.eg</td><td>2</td><td> questions@cabinet.gov.eg</td><td>3</td><td> quicks@soficom.com.eg</td><td>4</td><td> rahmed@tra.gov.eg</td><td>5</td><td> rami.amer@nti.sci.eg</td><td>6</td><td> rami@mwri.gov.eg</td><td>7</td><td> ramina@dataxprs.com.eg</td><td>8</td><td> rania.abdel-wahed@eng.asu.edu.eg</td><td>9</td><td> rania.aziz@edita.com.eg</td></tr><tr></tr><tr><td>10</td></tr><tr><td><pre>
+
+</pre></td></tr><tr><td>1387</td></tr><tr><td>eamon.gorman@pdo.co.om</td></tr><tr><td>1</td></tr><tr><td>9</td></tr><tr><td>rasha@abs.com.eg, rawad@idsc.net.eg, rd@tra.gov.eg, rec@topbusiness.com.eg, recruitment@allianz.com.eg, recruitment@edita.com.eg, recruitment@egyptexpress.com.eg, recruitment@eyp.com.eg, recruitment@psp.com.eg</td></tr><tr><td>1</td></tr><tr><td>0</td><td>eamon.gorman@pdo.co.om</td><td>1</td><td>rasha@abs.com.eg</td><td>2</td><td> rawad@idsc.net.eg</td><td>3</td><td> rd@tra.gov.eg</td><td>4</td><td> rec@topbusiness.com.eg</td><td>5</td><td> recruitment@allianz.com.eg</td><td>6</td><td> recruitment@edita.com.eg</td><td>7</td><td> recruitment@egyptexpress.com.eg</td><td>8</td><td> recruitment@eyp.com.eg</td><td>9</td><td> recruitment@psp.com.eg</td></tr><tr></tr><tr><td>10</td></tr><tr><td><pre>
+
+</pre></td></tr><tr><td>1307</td></tr><tr><td>nasser.esfahani@nawras.com.om</td></tr><tr><td>2</td></tr><tr><td>18</td></tr><tr><td>recruitment@tra.gov.eg, redam@mwri.gov.eg, reefer@dataxprs.com.eg, research@epri.sci.eg, retailproit@gmail.eg, rgohary@impactbbdo.com.eg, rmasoud@aresco.com.eg, rmohamedy@cmrdi.sci.eg, rnada@erf.org.eg</td></tr><tr><td>1</td></tr><tr><td>0</td><td>nasser.esfahani@nawras.com.om</td><td>1</td><td>recruitment@tra.gov.eg</td><td>2</td><td> redam@mwri.gov.eg</td><td>3</td><td> reefer@dataxprs.com.eg</td><td>4</td><td> research@epri.sci.eg</td><td>5</td><td> retailproit@gmail.eg</td><td>6</td><td> rgohary@impactbbdo.com.eg</td><td>7</td><td> rmasoud@aresco.com.eg</td><td>8</td><td> rmohamedy@cmrdi.sci.eg</td><td>9</td><td> rnada@erf.org.eg</td></tr><tr></tr><tr><td>10</td></tr><tr><td><pre>
+
+</pre></td></tr><tr><td>1270</td></tr><tr><td>mike.j.dyson@pdo.co.om</td></tr><tr><td>3</td></tr><tr><td>27</td></tr><tr><td>ruemeg@tedata.net.eg, rymag@globalnet.com.eg, s.mohey@topbusiness.com.eg, saadco@starnet.com.eg, saadkhodir@cmrdi.sci.eg, sacerau@idsc.net.eg, safwat@mwri.gov.eg, saharsayed@idsc.net.eg, sales@avit.com.eg</td></tr><tr><td>1</td></tr><tr><td>0</td><td>mike.j.dyson@pdo.co.om</td><td>1</td><td>ruemeg@tedata.net.eg</td><td>2</td><td> rymag@globalnet.com.eg</td><td>3</td><td> s.mohey@topbusiness.com.eg</td><td>4</td><td> saadco@starnet.com.eg</td><td>5</td><td> saadkhodir@cmrdi.sci.eg</td><td>6</td><td> sacerau@idsc.net.eg</td><td>7</td><td> safwat@mwri.gov.eg</td><td>8</td><td> saharsayed@idsc.net.eg</td><td>9</td><td> sales@avit.com.eg</td></tr><tr></tr><tr><td>10</td></tr><tr><td><pre>
+
+</pre></td></tr><tr><td>1269</td></tr><tr><td>a@oman-gas.com.om</td></tr><tr><td>4</td></tr><tr><td>36</td></tr><tr><td>sales@dataxprs.com.eg, sales@pharmex.com.eg, sales@speednet.com.eg, sales@startup.net.eg, salesadmin@abs.com.eg, sali@sgc.com.eg, salma@mcit.gov.eg, samars@tra.gov.eg, samia48@globalnet.com.eg</td></tr><tr><td>1</td></tr><tr><td>0</td><td>a@oman-gas.com.om</td><td>1</td><td>sales@dataxprs.com.eg</td><td>2</td><td> sales@pharmex.com.eg</td><td>3</td><td> sales@speednet.com.eg</td><td>4</td><td> sales@startup.net.eg</td><td>5</td><td> salesadmin@abs.com.eg</td><td>6</td><td> sali@sgc.com.eg</td><td>7</td><td> salma@mcit.gov.eg</td><td>8</td><td> samars@tra.gov.eg</td><td>9</td><td> samia48@globalnet.com.eg</td></tr><tr></tr><tr><td>10</td></tr><tr><td><pre>
+
+</pre></td></tr><tr><td>1247</td></tr><tr><td>WimDeNobel@Omanlng.co.om</td></tr><tr><td>5</td></tr><tr><td>45</td></tr><tr><td>sammantrading@tedata.net.eg, samoral@globalnet.com.eg, santex@dataxprs.com.eg, sbadawy@mans.eun.eg, sbadr@nti.sci.eg, sbranch@petrojet.com.eg, sccourt@idsc.net.eg, scholzer@link.com.eg, sciit@tedata.net.eg</td></tr><tr><td>1</td></tr><tr><td>0</td><td>WimDeNobel@Omanlng.co.om</td><td>1</td><td>sammantrading@tedata.net.eg</td><td>2</td><td> samoral@globalnet.com.eg</td><td>3</td><td> santex@dataxprs.com.eg</td><td>4</td><td> sbadawy@mans.eun.eg</td><td>5</td><td> sbadr@nti.sci.eg</td><td>6</td><td> sbranch@petrojet.com.eg</td><td>7</td><td> sccourt@idsc.net.eg</td><td>8</td><td> scholzer@link.com.eg</td><td>9</td><td> sciit@tedata.net.eg</td></tr><tr></tr><tr><td>10</td></tr><tr><td><pre>
+
+</pre></td></tr><tr><td>1203</td></tr><tr><td>nigel@omanlng.co.om</td></tr><tr><td>6</td></tr><tr><td>54</td></tr><tr><td>secretary@cmrdi.sci.eg, senior@tedata.net.eg, serious@tedata.net.eg, sewedy@click.com.eg, sf_pics@link.com.eg, sg@mailer.datum.com.eg, sgalal@tedata.net.eg, sgi@sakkara.com.eg, shafisci@link.com.eg</td></tr><tr><td>1</td></tr><tr><td>0</td><td>nigel@omanlng.co.om</td><td>1</td><td>secretary@cmrdi.sci.eg</td><td>2</td><td> senior@tedata.net.eg</td><td>3</td><td> serious@tedata.net.eg</td><td>4</td><td> sewedy@click.com.eg</td><td>5</td><td> sf_pics@link.com.eg</td><td>6</td><td> sg@mailer.datum.com.eg</td><td>7</td><td> sgalal@tedata.net.eg</td><td>8</td><td> sgi@sakkara.com.eg</td><td>9</td><td> shafisci@link.com.eg</td></tr><tr></tr><tr><td>10</td></tr><tr><td><pre>
+
+</pre></td></tr><tr><td>1151</td></tr><tr><td>ni@pdo.co.om</td></tr><tr><td>7</td></tr><tr><td>63</td></tr><tr><td>shashem@mcit.gov.eg, shawki@mtc.com.eg, sherbini@mcit.gov.eg, sherbini@nti.sci.eg, sherif.me@egpc.com.eg, sheriftoulan@idfta.com.eg, sherine@pharco.com.eg, shimaam@cmrdi.sci.eg, sicep@tedata.net.eg</td></tr><tr><td>1</td></tr><tr><td>0</td><td>ni@pdo.co.om</td><td>1</td><td>shashem@mcit.gov.eg</td><td>2</td><td> shawki@mtc.com.eg</td><td>3</td><td> sherbini@mcit.gov.eg</td><td>4</td><td> sherbini@nti.sci.eg</td><td>5</td><td> sherif.me@egpc.com.eg</td><td>6</td><td> sheriftoulan@idfta.com.eg</td><td>7</td><td> sherine@pharco.com.eg</td><td>8</td><td> shimaam@cmrdi.sci.eg</td><td>9</td><td> sicep@tedata.net.eg</td></tr><tr></tr><tr><td>10</td></tr><tr><td><pre>
+
+</pre></td></tr><tr><td>1145</td></tr><tr><td>balushi.ali@pdo.co.om</td></tr><tr><td>8</td></tr><tr><td>72</td></tr><tr><td>sinai@starnet.com.eg, sinaigs@idsc.net.eg, siyassa@ahram.org.eg, sjoekes@idrc.org.eg, skamel@idrc.org.eg, sleem@tedata.net.eg, slim@mailer.datum.com.eg, smahmoud@idsc.net.eg, smostafa@idsc.net.eg</td></tr><tr><td>1</td></tr><tr><td>0</td><td>balushi.ali@pdo.co.om</td><td>1</td><td>sinai@starnet.com.eg</td><td>2</td><td> sinaigs@idsc.net.eg</td><td>3</td><td> siyassa@ahram.org.eg</td><td>4</td><td> sjoekes@idrc.org.eg</td><td>5</td><td> skamel@idrc.org.eg</td><td>6</td><td> sleem@tedata.net.eg</td><td>7</td><td> slim@mailer.datum.com.eg</td><td>8</td><td> smahmoud@idsc.net.eg</td><td>9</td><td> smostafa@idsc.net.eg</td></tr><tr></tr><tr><td>10</td></tr><tr><td><pre>
+
+</pre></td></tr><tr><td>1089</td></tr><tr><td>aziz.amri@oman-gas.com.om</td></tr><tr><td>9</td></tr><tr><td>81</td></tr><tr><td>sodecosp@tedata.net.eg, sohaggov@idsc.net.eg, soheir.zaki@telecomegypt.com.eg, solimco@idsc.net.eg, soman@tedata.net.eg, someuser@arabcom.com.eg, sosman@mld.gov.eg, southafr@idsc.net.eg, space@link.com.eg</td></tr><tr><td>1</td></tr><tr><td>0</td><td>aziz.amri@oman-gas.com.om</td><td>1</td><td>sodecosp@tedata.net.eg</td><td>2</td><td> sohaggov@idsc.net.eg</td><td>3</td><td> soheir.zaki@telecomegypt.com.eg</td><td>4</td><td> solimco@idsc.net.eg</td><td>5</td><td> soman@tedata.net.eg</td><td>6</td><td> someuser@arabcom.com.eg</td><td>7</td><td> sosman@mld.gov.eg</td><td>8</td><td> southafr@idsc.net.eg</td><td>9</td><td> space@link.com.eg</td></tr><tr></tr><tr><td>10</td></tr><tr><td><pre>
+
+</pre></td></tr><tr><td>1082</td></tr><tr><td>mohammed.ma.ambusaidi@pdo.co.om</td></tr><tr><td>10</td></tr><tr><td>90</td></tr><tr><td>space@starnet.com.eg, ss21@click.com.eg, stalaatmo@dataxprs.com.eg, stdelec@click.com.eg, studies@amcham.org.eg, stylish@tedata.net.eg, subsea@globalnet.com.eg, summertraining@tra.gov.eg, support@dataxprs.com.eg</td></tr><tr><td>1</td></tr><tr><td>0</td><td>mohammed.ma.ambusaidi@pdo.co.om</td><td>1</td><td>space@starnet.com.eg</td><td>2</td><td> ss21@click.com.eg</td><td>3</td><td> stalaatmo@dataxprs.com.eg</td><td>4</td><td> stdelec@click.com.eg</td><td>5</td><td> studies@amcham.org.eg</td><td>6</td><td> stylish@tedata.net.eg</td><td>7</td><td> subsea@globalnet.com.eg</td><td>8</td><td> summertraining@tra.gov.eg</td><td>9</td><td> support@dataxprs.com.eg</td></tr><tr></tr><tr><td>10</td></tr><tr><td><pre>
+
+</pre></td></tr><tr><td>1069</td></tr><tr><td>saleh.SHS.tamimi@pdo.co.om</td></tr><tr><td>11</td></tr><tr><td>99</td></tr><tr><td>systel@systel.com.eg, tahamattar@cmrdi.sci.eg, talaatmostafa@tmg.com.eg, tamer.elkhorazaty@guc.edu.eg, tamer.s.ahmed@cu.edu.eg, tantatp@idsc.net.eg, tarazi@tedata.net.eg, targetsports@tedata.net.eg, tattia@tra.gov.eg</td></tr><tr><td>1</td></tr><tr><td>0</td><td>saleh.SHS.tamimi@pdo.co.om</td><td>1</td><td>systel@systel.com.eg</td><td>2</td><td> tahamattar@cmrdi.sci.eg</td><td>3</td><td> talaatmostafa@tmg.com.eg</td><td>4</td><td> tamer.elkhorazaty@guc.edu.eg</td><td>5</td><td> tamer.s.ahmed@cu.edu.eg</td><td>6</td><td> tantatp@idsc.net.eg</td><td>7</td><td> tarazi@tedata.net.eg</td><td>8</td><td> targetsports@tedata.net.eg</td><td>9</td><td> tattia@tra.gov.eg</td></tr><tr></tr><tr><td>10</td></tr><tr><td><pre>
+
+</pre></td></tr><tr><td>1046</td></tr><tr><td>a.ras.riyamy@pdo.co.om</td></tr><tr><td>12</td></tr><tr><td>108</td></tr><tr><td>tayeb@tedata.net.eg, tbahig@rochem.com.eg, teb@idsc.net.eg, technicalsupport@abs.com.eg, teeba1@tedata.net.eg, test_benz@gna.mercedes-benz.com.eg, tharwat.gamil@cemex.com.eg, timbregy@globalnet.com.eg, tims@idsc.net.eg</td></tr><tr><td>1</td></tr><tr><td>0</td><td>a.ras.riyamy@pdo.co.om</td><td>1</td><td>tayeb@tedata.net.eg</td><td>2</td><td> tbahig@rochem.com.eg</td><td>3</td><td> teb@idsc.net.eg</td><td>4</td><td> technicalsupport@abs.com.eg</td><td>5</td><td> teeba1@tedata.net.eg</td><td>6</td><td> test_benz@gna.mercedes-benz.com.eg</td><td>7</td><td> tharwat.gamil@cemex.com.eg</td><td>8</td><td> timbregy@globalnet.com.eg</td><td>9</td><td> tims@idsc.net.eg</td></tr><tr></tr><tr><td>10</td></tr><tr><td><pre>
+
+</pre></td></tr>      
+            </tbody>
+          </table>        
+            
+      </div>
+    </div>
+	<div id="footer">
+		<hr>
+		<div class="inner">
+			<div class="container">
+				<p class="right"><a href="#">Back to top</a></p>
+				<p>
+				</p>
+			</div>
+		</div>
+	</div>
+	
+</body>
+</html>

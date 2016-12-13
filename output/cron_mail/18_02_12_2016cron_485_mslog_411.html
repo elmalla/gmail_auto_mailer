@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>
+<html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>
+<html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>
+<html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Linked Emails Project</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width">
+
+  <link href="http://localhost/CI_306_linked_em_Production/assets/css/admin/global.css" rel="stylesheet" type="text/css">
+  
+   <!--<link rel="stylesheet" href="/assets/css/bootstrap-responsive.min.css">-->
+
+  <script src="http://localhost/CI_306_linked_em_Production/assets/js/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+  <!--<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script> -->
+ 
+  
+  <script src="http://localhost/CI_306_linked_em_Production//assets/js/jquery-1.7.1.min.js"></script>)
+  <script src="http://localhost/CI_306_linked_em_Production//assets/js/bootstrap.min.js"></script>
+  
+  <!--<script src="http://localhost/CI_306_linked_em_Production//node_modules/socket.io/node_modules/socket.io-client/socket.io.js"></script>-->
+  
+  <!--<script src="http://localhost/CI_306_linked_em_Production//assets/js/socket.js"></script> -->
+  <!--<script src="http://localhost/CI_306_linked_em_Production//assets/js/main.js"></script> -->
+  
+    <style>
+    body {
+      padding-top: 60px;
+      padding-bottom: 40px;
+    }
+    </style>
+</head>
+<body>
+	<div class="navbar navbar-fixed-top">
+	  <div class="navbar-inner">
+	    <div class="container">
+	      <a class="brand">Linked Emails Project</a>
+	      <ul class="nav">
+	        <li >
+	          <a href="http://localhost/CI_306_linked_em_Production/index.php/admin/main">DashBoard</a>
+	        </li>
+                <li >
+	          <a href="http://localhost/CI_306_linked_em_Production/index.php/admin/products">Products</a>
+	        </li>
+	        <li >
+	          <a href="http://localhost/CI_306_linked_em_Production/index.php/admin/manufacturers/">Manufacturers</a>
+	        </li>
+                <li class="dropdown">
+	          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Emails <b class="caret"></b></a>
+	          <ul class="dropdown-menu">
+	            <li>
+	              <a href="http://localhost/CI_306_linked_em_Production/index.php/admin/Emails">Email Add,Edit,Delete</a>
+	            </li>
+                    <li>
+	              <a href="http://localhost/CI_306_linked_em_Production/index.php/admin/Owner">Owner Add,Edit,Delete</a>
+	            </li>
+                    <li>
+	              <a href="http://localhost/CI_306_linked_em_Production/index.php/admin/Source">Source Add,Edit,Delete</a>
+	            </li>
+	          </ul>
+	        </li>
+                <li class="dropdown">
+	          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Companies <b class="caret"></b></a>
+	          <ul class="dropdown-menu">
+	            <li>
+	              <a href="http://localhost/CI_306_linked_em_Production/index.php/admin/Companies">Company Add,Edit,Delete</a>
+	            </li>
+                    <li>
+	              <a href="http://localhost/CI_306_linked_em_Production/index.php/admin/Category">Category Add,Edit,Delete</a>
+	            </li>
+                    <li>
+	              <a href="http://localhost/CI_306_linked_em_Production/index.php/admin/Source">... Add,Edit,Delete</a>
+	            </li>
+	          </ul>
+	        </li>
+	        <li class="dropdown">
+	          <a href="#" class="dropdown-toggle" data-toggle="dropdown">System <b class="caret"></b></a>
+	          <ul class="dropdown-menu">
+	            <li>
+	              <a href="http://localhost/CI_306_linked_em_Production/admin/logout">Logout</a>
+	            </li>
+	          </ul>
+	        </li>
+	      </ul>
+	    </div>
+	  </div>
+	</div>	
+    
+    
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-3 col-md-2 sidebar">
+          <ul class="nav nav-sidebar">
+            <li class="active"><a href="http://localhost/CI_306_linked_em_Production/index.php/admin/main">Overview <span class="sr-only">(current)</span></a></li>
+            <li><a href="#">Reports</a></li>
+            <li><a href="http://localhost/CI_306_linked_em_Production/index.php/admin/Mailer/show">Mailer</a></li>
+            <li><a href="http://localhost/CI_306_linked_em_Production/index.php/admin/Mailer/mailfixedjob">Scheduled Mail Jobs</a></li>
+            <li><a href="http://localhost/CI_306_linked_em_Production/index.php/admin/Mailer/cronm/1/mailer/8/gmail/UI">Cron Scheduler</a></li>
+            <li><a href="http://localhost/CI_306_linked_em_Production/index.php/admin/Emails/cron_backup/false">Cron Backup</a></li>
+            <li><a href="http://localhost/CI_306_linked_em_Production/index.php/admin/export/show">Exports</a></li>
+          </ul>
+          <ul class="nav nav-sidebar">
+            <li><a href="">Nav item</a></li>
+            <li><a href="">Nav item again</a></li>
+            <li><a href="">One more nav</a></li>
+            <li><a href="http://localhost/CI_306_linked_em_Production/index.php/admin/Statistics/">Statistics</a></li>
+            <li><a href="http://localhost/CI_306_linked_em_Production/index.php/admin/Owner/">Owners</a></li>
+          </ul>
+          <ul class="nav nav-sidebar">
+            <li><a href="http://localhost/CI_306_linked_em_Production/index.php/admin/Emails/">Emails</a></li>
+            <li><a href="http://localhost/CI_306_linked_em_Production/index.php/admin/upload/show">Uploads</a></li>
+            <li><a href="http://localhost/CI_306_linked_em_Production/index.php/admin/upload/">Upload Files</a></li>
+          </ul>
+        </div>
+       
+        </div>  
+       </div>
+
+    <div class="container top">
+
+      <ul class="breadcrumb">
+        <li>
+          <a href="http://localhost/CI_306_linked_em_Production/admin">
+            Admin_mailer          </a> 
+          <span class="divider">/</span>
+        </li>
+        <li class="active">
+          Cron_mail          
+        </li>
+        
+      </ul>
+
+      <div class="page-header users-header">
+        <h2>
+          Cron_mail              <br/>
+             
+              <a  href="http://localhost/CI_306_linked_em_Production/admin/Mailer/sendmail" class="btn btn-success">Send Email</a>
+              <div class="divider"/>
+              <a  href="http://localhost/CI_306_linked_em_Production/admin/Mailer/sendmailattach" class="btn btn-success">Send Email with Attachment</a>
+              <br/>
+          
+        </h2>
+      </div>
+      
+      <div class="row">
+        <div class="span12 columns">
+          <div class="well">
+          
+          </div>
+             <table class="table table-striped table-bordered table-condensed">
+            <thead>
+              <tr>
+                <th class="header">email_v_count</th>
+                <th class="yellow header headerSortDown">email_nv_count</th>
+                <th class="green header">email_merged_count</th>
+                <th class="red header">email_to_mailer_count</th>
+                <th class="red header">email_sent_count</th>
+                <th class="red header">emails_sent_earlier</th>
+                <th class="red header">emails_scheduled_next_run</th>
+                <th class="red header">N/A</th>
+      
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>50</td><td>0</td><td>50</td><td>130</td><td>130</td><td>0</td><td>10822</td><td>N/A</td></tr>      
+            </tbody>
+           </table> 
+            
+            <table class="table table-striped table-bordered table-condensed">
+             <thead>
+              <tr>
+                <th class="header">Debugging Info</th>
+              </tr>
+              <tr>
+                <th class="header">Email ID</th>
+                <th class="header">Debug Info</th>   
+              </tr>
+            </thead>
+            <tbody>
+               <tr><td>48400</td><td><pre>
+
+</pre></td></tr><tr><td>48402</td><td><pre>
+
+</pre></td></tr><tr><td>48406</td><td><pre>
+
+</pre></td></tr><tr><td>48410</td><td><pre>
+
+</pre></td></tr><tr><td>48413</td><td><pre>
+
+</pre></td></tr><tr><td>48415</td><td><pre>
+
+</pre></td></tr><tr><td>48416</td><td><pre>
+
+</pre></td></tr><tr><td>48419</td><td><pre>
+
+</pre></td></tr><tr><td>48430</td><td><pre>
+
+</pre></td></tr><tr><td>48434</td><td><pre>
+
+</pre></td></tr><tr><td>48435</td><td><pre>
+
+</pre></td></tr><tr><td>48436</td><td><pre>
+
+</pre></td></tr><tr><td>82327</td><td><pre>
+
+</pre></td></tr>   
+            </tbody>
+          </table>
+    
+          
+          <table class="table table-striped table-bordered table-condensed">
+          <thead>
+              <tr>
+                <th class="header">Email ID</th>
+                <th class="header">Email sent</th>   
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>48400</td><td>info@moj.gov.qa</td></tr><tr><td>49103</td><td>info@banjer.com.sa</td></tr><tr><td>49104</td><td>info@bayanat.com.sa</td></tr><tr><td>49105</td><td>info@bioglass.com.sa</td></tr><tr><td>49106</td><td>info@bpsarabia.com.sa</td></tr><tr><td>49107</td><td>info@bravo-power.com.sa</td></tr><tr><td>49108</td><td>info@centria.com.sa</td></tr><tr><td>49109</td><td>info@cgs.com.sa</td></tr><tr><td>49110</td><td>info@cma.org.sa</td></tr><tr><td>49111</td><td>info@commerce.gov.sa</td></tr><tr><td>48402</td><td>info@pp.gov.qa</td></tr><tr><td>49112</td><td>info@contraco.com.sa</td></tr><tr><td>49113</td><td>info@coolcare.com.sa</td></tr><tr><td>49114</td><td>info@defco.com.sa</td></tr><tr><td>49115</td><td>info@durratarriyadh.com.sa</td></tr><tr><td>49116</td><td>info@econcepts.com.sa</td></tr><tr><td>49117</td><td>info@elseif.com.sa</td></tr><tr><td>49118</td><td>info@etiman.com.sa</td></tr><tr><td>49119</td><td>info@feker.sa</td></tr><tr><td>49120</td><td>info@fouz.com.sa</td></tr><tr><td>48406</td><td>info@sec.gov.qa</td></tr><tr><td>49121</td><td>info@gasco.com.sa</td></tr><tr><td>49122</td><td>info@gisf.com.sa</td></tr><tr><td>49123</td><td>info@gulfpack.com.sa</td></tr><tr><td>49124</td><td>info@halwani.com.sa</td></tr><tr><td>49125</td><td>info@ict.sa</td></tr><tr><td>49126</td><td>info@ikhtebar.com.sa</td></tr><tr><td>49127</td><td>info@imkan.com.sa</td></tr><tr><td>49128</td><td>info@imsc.com.sa</td></tr><tr><td>49129</td><td>info@inmapallets.com.sa</td></tr><tr><td>48410</td><td>media@qaca.gov.qa</td></tr><tr><td>49130</td><td>info@inmatrading.com.sa</td></tr><tr><td>49131</td><td>info@insurancehouse.com.sa</td></tr><tr><td>49132</td><td>info@ips.com.sa</td></tr><tr><td>49133</td><td>info@itc.net.sa</td></tr><tr><td>49134</td><td>info@kaasco.com.sa</td></tr><tr><td>49135</td><td>info@kfmc.gov.sa</td></tr><tr><td>49136</td><td>info@kfupm.edu.sa</td></tr><tr><td>49137</td><td>info@khaldi.sa</td></tr><tr><td>49138</td><td>info@kiko.com.sa</td></tr><tr><td>48413</td><td>ppc@planning.gov.qa</td></tr><tr><td>49139</td><td>info@marafiq.com.sa</td></tr><tr><td>49140</td><td>info@marco.sa</td></tr><tr><td>49141</td><td>info@medadco.com.sa</td></tr><tr><td>49142</td><td>info@medisys.com.sa</td></tr><tr><td>49143</td><td>info@minaret.com.sa</td></tr><tr><td>49144</td><td>info@mmk.com.sa</td></tr><tr><td>49145</td><td>info@mobeed.com.sa</td></tr><tr><td>49146</td><td>info@mofa.gov.sa</td></tr><tr><td>49147</td><td>info@momra.gov.sa</td></tr><tr><td>48415</td><td>pru@mec.gov.qa</td></tr><tr><td>49148</td><td>info@mopm.gov.sa</td></tr><tr><td>49149</td><td>info@mscc.com.sa</td></tr><tr><td>49150</td><td>info@msg.com.sa</td></tr><tr><td>49151</td><td>info@mts.com.sa</td></tr><tr><td>49152</td><td>info@nadec.com.sa</td></tr><tr><td>49153</td><td>info@natcom.com.sa</td></tr><tr><td>49154</td><td>info@nbcc.com.sa</td></tr><tr><td>49155</td><td>info@nic.com.sa</td></tr><tr><td>49156</td><td>info@okam.com.sa</td></tr><tr><td>48416</td><td>qatar-jobs@sab.gov.qa</td></tr><tr><td>49157</td><td>info@olayan.sa</td></tr><tr><td>49158</td><td>info@ord.com.sa</td></tr><tr><td>49159</td><td>info@organic.sa</td></tr><tr><td>49160</td><td>info@panda.com.sa</td></tr><tr><td>49161</td><td>info@planning.gov.sa</td></tr><tr><td>49162</td><td>info@plastico.com.sa</td></tr><tr><td>49163</td><td>info@porsche.com.sa</td></tr><tr><td>49164</td><td>info@qcc.org.sa</td></tr><tr><td>49165</td><td>info@rafal.com.sa</td></tr><tr><td>48419</td><td>qcmp@sjc.gov.qa</td></tr><tr><td>49166</td><td>info@refco.com.sa</td></tr><tr><td>49167</td><td>info@saad.com.sa</td></tr><tr><td>49168</td><td>info@saasco.com.sa</td></tr><tr><td>49169</td><td>info@sabtech.com.sa</td></tr><tr><td>49170</td><td>info@saib.com.sa</td></tr><tr><td>49171</td><td>info@saic.com.sa</td></tr><tr><td>49172</td><td>info@samaco.sa</td></tr><tr><td>49173</td><td>info@sara-holding.com.sa</td></tr><tr><td>49174</td><td>info@saudi.net.sa</td></tr><tr><td>48430</td><td>sjc@sjc.gov.qa</td></tr><tr><td>49175</td><td>info@saudilabs.com.sa</td></tr><tr><td>49176</td><td>info@scp.com.sa</td></tr><tr><td>49177</td><td>info@sct.gov.sa</td></tr><tr><td>49178</td><td>info@secutronic.com.sa</td></tr><tr><td>49179</td><td>info@setra.com.sa</td></tr><tr><td>49180</td><td>info@sharqiah.gov.sa</td></tr><tr><td>49181</td><td>info@shift-technology.com.sa</td></tr><tr><td>49182</td><td>info@siig.com.sa</td></tr><tr><td>49183</td><td>info@sipc.com.sa</td></tr><tr><td>48434</td><td>webmaster@mofa.gov.qa</td></tr><tr><td>49184</td><td>info@sipco.net.sa</td></tr><tr><td>49185</td><td>info@siscom.com.sa</td></tr><tr><td>49186</td><td>info@solution.sa</td></tr><tr><td>49187</td><td>info@stats.gov.sa</td></tr><tr><td>49188</td><td>info@supplygate.com.sa</td></tr><tr><td>49189</td><td>info@tech.com.sa</td></tr><tr><td>49190</td><td>info@techpro.com.sa</td></tr><tr><td>49191</td><td>info@tetratech.com.sa</td></tr><tr><td>49192</td><td>info@ucic.com.sa</td></tr><tr><td>48435</td><td>webmaster@planning.gov.qa</td></tr><tr><td>49193</td><td>info@unitedproperties.com.sa</td></tr><tr><td>49194</td><td>info@univest.com.sa</td></tr><tr><td>49195</td><td>info@uniworld.com.sa</td></tr><tr><td>49196</td><td>info@vertigo.com.sa</td></tr><tr><td>49197</td><td>info@watanpac.com.sa</td></tr><tr><td>49198</td><td>info@wathrah.com.sa</td></tr><tr><td>49199</td><td>infoakech@gdtc.com.sa</td></tr><tr><td>49200</td><td>infos@sisco.com.sa</td></tr><tr><td>49201</td><td>inma@inmalumber.com.sa</td></tr><tr><td>48436</td><td>webmaster@qcb.gov.qa</td></tr><tr><td>49202</td><td>inquiries@algosaibi.com.sa</td></tr><tr><td>49203</td><td>ins@anb.com.sa</td></tr><tr><td>49204</td><td>intrecmed1@ngha.med.sa</td></tr><tr><td>49205</td><td>intrecmedl@ngha.med.sa</td></tr><tr><td>49206</td><td>investment@rcjubail.gov.sa</td></tr><tr><td>49207</td><td>ipc@atheer.net.sa</td></tr><tr><td>49208</td><td>ird@rcjubail.gov.sa</td></tr><tr><td>49209</td><td>isd@attc.com.sa</td></tr><tr><td>49210</td><td>istrator@fle.com.sa</td></tr><tr><td>82327</td><td>aasulaiti@mosa.gov.qa</td></tr><tr><td>49211</td><td>istrator@fsa.com.sa</td></tr><tr><td>49212</td><td>istrator@fursan.com.sa</td></tr><tr><td>49213</td><td>istrator@gandeel.com.sa</td></tr><tr><td>49214</td><td>istrator@gdtc.com.sa</td></tr><tr><td>49215</td><td>istrator@gentec.com.sa</td></tr><tr><td>49216</td><td>istrator@gess.com.sa</td></tr><tr><td>49217</td><td>istrator@gifted.org.sa</td></tr><tr><td>49218</td><td>istrator@girgas.com.sa</td></tr><tr><td>49219</td><td>istrator@gtcl.com.sa</td></tr>      
+            </tbody>
+          </table>
+            
+          <table class="table table-striped table-bordered table-condensed">
+          <thead>
+              <tr>
+                <th class="header">Email ID</th>
+                <th class="header">Email Failed</th>   
+              </tr>
+            </thead>
+            <tbody>
+                    
+            </tbody>
+          </table>  
+            
+          <table class="table table-striped table-bordered table-condensed">
+          <thead>
+              <tr>
+                <th class="header">Email ID</th>
+                <th class="header">Email sent earlier</th>   
+              </tr>
+            </thead>
+            <tbody>
+                    
+            </tbody>
+          </table>
+            
+          <table class="table table-striped table-bordered table-condensed">
+          <thead>
+              <tr>
+                <th class="header">Debug</th>
+                
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>48400</td></tr><tr><td>info@moj.gov.qa</td></tr><tr><td>0</td></tr><tr><td>0</td></tr><tr><td>info@banjer.com.sa, info@bayanat.com.sa, info@bioglass.com.sa, info@bpsarabia.com.sa, info@bravo-power.com.sa, info@centria.com.sa, info@cgs.com.sa, info@cma.org.sa, info@commerce.gov.sa</td></tr><tr><td>1</td></tr><tr><td>0</td><td>info@moj.gov.qa</td><td>1</td><td>info@banjer.com.sa</td><td>2</td><td> info@bayanat.com.sa</td><td>3</td><td> info@bioglass.com.sa</td><td>4</td><td> info@bpsarabia.com.sa</td><td>5</td><td> info@bravo-power.com.sa</td><td>6</td><td> info@centria.com.sa</td><td>7</td><td> info@cgs.com.sa</td><td>8</td><td> info@cma.org.sa</td><td>9</td><td> info@commerce.gov.sa</td></tr><tr></tr><tr><td>10</td></tr><tr><td><pre>
+
+</pre></td></tr><tr><td>48402</td></tr><tr><td>info@pp.gov.qa</td></tr><tr><td>1</td></tr><tr><td>9</td></tr><tr><td>info@contraco.com.sa, info@coolcare.com.sa, info@defco.com.sa, info@durratarriyadh.com.sa, info@econcepts.com.sa, info@elseif.com.sa, info@etiman.com.sa, info@feker.sa, info@fouz.com.sa</td></tr><tr><td>1</td></tr><tr><td>0</td><td>info@pp.gov.qa</td><td>1</td><td>info@contraco.com.sa</td><td>2</td><td> info@coolcare.com.sa</td><td>3</td><td> info@defco.com.sa</td><td>4</td><td> info@durratarriyadh.com.sa</td><td>5</td><td> info@econcepts.com.sa</td><td>6</td><td> info@elseif.com.sa</td><td>7</td><td> info@etiman.com.sa</td><td>8</td><td> info@feker.sa</td><td>9</td><td> info@fouz.com.sa</td></tr><tr></tr><tr><td>10</td></tr><tr><td><pre>
+
+</pre></td></tr><tr><td>48406</td></tr><tr><td>info@sec.gov.qa</td></tr><tr><td>2</td></tr><tr><td>18</td></tr><tr><td>info@gasco.com.sa, info@gisf.com.sa, info@gulfpack.com.sa, info@halwani.com.sa, info@ict.sa, info@ikhtebar.com.sa, info@imkan.com.sa, info@imsc.com.sa, info@inmapallets.com.sa</td></tr><tr><td>1</td></tr><tr><td>0</td><td>info@sec.gov.qa</td><td>1</td><td>info@gasco.com.sa</td><td>2</td><td> info@gisf.com.sa</td><td>3</td><td> info@gulfpack.com.sa</td><td>4</td><td> info@halwani.com.sa</td><td>5</td><td> info@ict.sa</td><td>6</td><td> info@ikhtebar.com.sa</td><td>7</td><td> info@imkan.com.sa</td><td>8</td><td> info@imsc.com.sa</td><td>9</td><td> info@inmapallets.com.sa</td></tr><tr></tr><tr><td>10</td></tr><tr><td><pre>
+
+</pre></td></tr><tr><td>48410</td></tr><tr><td>media@qaca.gov.qa</td></tr><tr><td>3</td></tr><tr><td>27</td></tr><tr><td>info@inmatrading.com.sa, info@insurancehouse.com.sa, info@ips.com.sa, info@itc.net.sa, info@kaasco.com.sa, info@kfmc.gov.sa, info@kfupm.edu.sa, info@khaldi.sa, info@kiko.com.sa</td></tr><tr><td>1</td></tr><tr><td>0</td><td>media@qaca.gov.qa</td><td>1</td><td>info@inmatrading.com.sa</td><td>2</td><td> info@insurancehouse.com.sa</td><td>3</td><td> info@ips.com.sa</td><td>4</td><td> info@itc.net.sa</td><td>5</td><td> info@kaasco.com.sa</td><td>6</td><td> info@kfmc.gov.sa</td><td>7</td><td> info@kfupm.edu.sa</td><td>8</td><td> info@khaldi.sa</td><td>9</td><td> info@kiko.com.sa</td></tr><tr></tr><tr><td>10</td></tr><tr><td><pre>
+
+</pre></td></tr><tr><td>48413</td></tr><tr><td>ppc@planning.gov.qa</td></tr><tr><td>4</td></tr><tr><td>36</td></tr><tr><td>info@marafiq.com.sa, info@marco.sa, info@medadco.com.sa, info@medisys.com.sa, info@minaret.com.sa, info@mmk.com.sa, info@mobeed.com.sa, info@mofa.gov.sa, info@momra.gov.sa</td></tr><tr><td>1</td></tr><tr><td>0</td><td>ppc@planning.gov.qa</td><td>1</td><td>info@marafiq.com.sa</td><td>2</td><td> info@marco.sa</td><td>3</td><td> info@medadco.com.sa</td><td>4</td><td> info@medisys.com.sa</td><td>5</td><td> info@minaret.com.sa</td><td>6</td><td> info@mmk.com.sa</td><td>7</td><td> info@mobeed.com.sa</td><td>8</td><td> info@mofa.gov.sa</td><td>9</td><td> info@momra.gov.sa</td></tr><tr></tr><tr><td>10</td></tr><tr><td><pre>
+
+</pre></td></tr><tr><td>48415</td></tr><tr><td>pru@mec.gov.qa</td></tr><tr><td>5</td></tr><tr><td>45</td></tr><tr><td>info@mopm.gov.sa, info@mscc.com.sa, info@msg.com.sa, info@mts.com.sa, info@nadec.com.sa, info@natcom.com.sa, info@nbcc.com.sa, info@nic.com.sa, info@okam.com.sa</td></tr><tr><td>1</td></tr><tr><td>0</td><td>pru@mec.gov.qa</td><td>1</td><td>info@mopm.gov.sa</td><td>2</td><td> info@mscc.com.sa</td><td>3</td><td> info@msg.com.sa</td><td>4</td><td> info@mts.com.sa</td><td>5</td><td> info@nadec.com.sa</td><td>6</td><td> info@natcom.com.sa</td><td>7</td><td> info@nbcc.com.sa</td><td>8</td><td> info@nic.com.sa</td><td>9</td><td> info@okam.com.sa</td></tr><tr></tr><tr><td>10</td></tr><tr><td><pre>
+
+</pre></td></tr><tr><td>48416</td></tr><tr><td>qatar-jobs@sab.gov.qa</td></tr><tr><td>6</td></tr><tr><td>54</td></tr><tr><td>info@olayan.sa, info@ord.com.sa, info@organic.sa, info@panda.com.sa, info@planning.gov.sa, info@plastico.com.sa, info@porsche.com.sa, info@qcc.org.sa, info@rafal.com.sa</td></tr><tr><td>1</td></tr><tr><td>0</td><td>qatar-jobs@sab.gov.qa</td><td>1</td><td>info@olayan.sa</td><td>2</td><td> info@ord.com.sa</td><td>3</td><td> info@organic.sa</td><td>4</td><td> info@panda.com.sa</td><td>5</td><td> info@planning.gov.sa</td><td>6</td><td> info@plastico.com.sa</td><td>7</td><td> info@porsche.com.sa</td><td>8</td><td> info@qcc.org.sa</td><td>9</td><td> info@rafal.com.sa</td></tr><tr></tr><tr><td>10</td></tr><tr><td><pre>
+
+</pre></td></tr><tr><td>48419</td></tr><tr><td>qcmp@sjc.gov.qa</td></tr><tr><td>7</td></tr><tr><td>63</td></tr><tr><td>info@refco.com.sa, info@saad.com.sa, info@saasco.com.sa, info@sabtech.com.sa, info@saib.com.sa, info@saic.com.sa, info@samaco.sa, info@sara-holding.com.sa, info@saudi.net.sa</td></tr><tr><td>1</td></tr><tr><td>0</td><td>qcmp@sjc.gov.qa</td><td>1</td><td>info@refco.com.sa</td><td>2</td><td> info@saad.com.sa</td><td>3</td><td> info@saasco.com.sa</td><td>4</td><td> info@sabtech.com.sa</td><td>5</td><td> info@saib.com.sa</td><td>6</td><td> info@saic.com.sa</td><td>7</td><td> info@samaco.sa</td><td>8</td><td> info@sara-holding.com.sa</td><td>9</td><td> info@saudi.net.sa</td></tr><tr></tr><tr><td>10</td></tr><tr><td><pre>
+
+</pre></td></tr><tr><td>48430</td></tr><tr><td>sjc@sjc.gov.qa</td></tr><tr><td>8</td></tr><tr><td>72</td></tr><tr><td>info@saudilabs.com.sa, info@scp.com.sa, info@sct.gov.sa, info@secutronic.com.sa, info@setra.com.sa, info@sharqiah.gov.sa, info@shift-technology.com.sa, info@siig.com.sa, info@sipc.com.sa</td></tr><tr><td>1</td></tr><tr><td>0</td><td>sjc@sjc.gov.qa</td><td>1</td><td>info@saudilabs.com.sa</td><td>2</td><td> info@scp.com.sa</td><td>3</td><td> info@sct.gov.sa</td><td>4</td><td> info@secutronic.com.sa</td><td>5</td><td> info@setra.com.sa</td><td>6</td><td> info@sharqiah.gov.sa</td><td>7</td><td> info@shift-technology.com.sa</td><td>8</td><td> info@siig.com.sa</td><td>9</td><td> info@sipc.com.sa</td></tr><tr></tr><tr><td>10</td></tr><tr><td><pre>
+
+</pre></td></tr><tr><td>48434</td></tr><tr><td>webmaster@mofa.gov.qa</td></tr><tr><td>9</td></tr><tr><td>81</td></tr><tr><td>info@sipco.net.sa, info@siscom.com.sa, info@solution.sa, info@stats.gov.sa, info@supplygate.com.sa, info@tech.com.sa, info@techpro.com.sa, info@tetratech.com.sa, info@ucic.com.sa</td></tr><tr><td>1</td></tr><tr><td>0</td><td>webmaster@mofa.gov.qa</td><td>1</td><td>info@sipco.net.sa</td><td>2</td><td> info@siscom.com.sa</td><td>3</td><td> info@solution.sa</td><td>4</td><td> info@stats.gov.sa</td><td>5</td><td> info@supplygate.com.sa</td><td>6</td><td> info@tech.com.sa</td><td>7</td><td> info@techpro.com.sa</td><td>8</td><td> info@tetratech.com.sa</td><td>9</td><td> info@ucic.com.sa</td></tr><tr></tr><tr><td>10</td></tr><tr><td><pre>
+
+</pre></td></tr><tr><td>48435</td></tr><tr><td>webmaster@planning.gov.qa</td></tr><tr><td>10</td></tr><tr><td>90</td></tr><tr><td>info@unitedproperties.com.sa, info@univest.com.sa, info@uniworld.com.sa, info@vertigo.com.sa, info@watanpac.com.sa, info@wathrah.com.sa, infoakech@gdtc.com.sa, infos@sisco.com.sa, inma@inmalumber.com.sa</td></tr><tr><td>1</td></tr><tr><td>0</td><td>webmaster@planning.gov.qa</td><td>1</td><td>info@unitedproperties.com.sa</td><td>2</td><td> info@univest.com.sa</td><td>3</td><td> info@uniworld.com.sa</td><td>4</td><td> info@vertigo.com.sa</td><td>5</td><td> info@watanpac.com.sa</td><td>6</td><td> info@wathrah.com.sa</td><td>7</td><td> infoakech@gdtc.com.sa</td><td>8</td><td> infos@sisco.com.sa</td><td>9</td><td> inma@inmalumber.com.sa</td></tr><tr></tr><tr><td>10</td></tr><tr><td><pre>
+
+</pre></td></tr><tr><td>48436</td></tr><tr><td>webmaster@qcb.gov.qa</td></tr><tr><td>11</td></tr><tr><td>99</td></tr><tr><td>inquiries@algosaibi.com.sa, ins@anb.com.sa, intrecmed1@ngha.med.sa, intrecmedl@ngha.med.sa, investment@rcjubail.gov.sa, ipc@atheer.net.sa, ird@rcjubail.gov.sa, isd@attc.com.sa, istrator@fle.com.sa</td></tr><tr><td>1</td></tr><tr><td>0</td><td>webmaster@qcb.gov.qa</td><td>1</td><td>inquiries@algosaibi.com.sa</td><td>2</td><td> ins@anb.com.sa</td><td>3</td><td> intrecmed1@ngha.med.sa</td><td>4</td><td> intrecmedl@ngha.med.sa</td><td>5</td><td> investment@rcjubail.gov.sa</td><td>6</td><td> ipc@atheer.net.sa</td><td>7</td><td> ird@rcjubail.gov.sa</td><td>8</td><td> isd@attc.com.sa</td><td>9</td><td> istrator@fle.com.sa</td></tr><tr></tr><tr><td>10</td></tr><tr><td><pre>
+
+</pre></td></tr><tr><td>82327</td></tr><tr><td>aasulaiti@mosa.gov.qa</td></tr><tr><td>12</td></tr><tr><td>108</td></tr><tr><td>istrator@fsa.com.sa, istrator@fursan.com.sa, istrator@gandeel.com.sa, istrator@gdtc.com.sa, istrator@gentec.com.sa, istrator@gess.com.sa, istrator@gifted.org.sa, istrator@girgas.com.sa, istrator@gtcl.com.sa</td></tr><tr><td>1</td></tr><tr><td>0</td><td>aasulaiti@mosa.gov.qa</td><td>1</td><td>istrator@fsa.com.sa</td><td>2</td><td> istrator@fursan.com.sa</td><td>3</td><td> istrator@gandeel.com.sa</td><td>4</td><td> istrator@gdtc.com.sa</td><td>5</td><td> istrator@gentec.com.sa</td><td>6</td><td> istrator@gess.com.sa</td><td>7</td><td> istrator@gifted.org.sa</td><td>8</td><td> istrator@girgas.com.sa</td><td>9</td><td> istrator@gtcl.com.sa</td></tr><tr></tr><tr><td>10</td></tr><tr><td><pre>
+
+</pre></td></tr>      
+            </tbody>
+          </table>        
+            
+      </div>
+    </div>
+	<div id="footer">
+		<hr>
+		<div class="inner">
+			<div class="container">
+				<p class="right"><a href="#">Back to top</a></p>
+				<p>
+				</p>
+			</div>
+		</div>
+	</div>
+	
+</body>
+</html>

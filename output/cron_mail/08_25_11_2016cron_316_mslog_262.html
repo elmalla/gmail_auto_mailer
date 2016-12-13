@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>
+<html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>
+<html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>
+<html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Linked Emails Project</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width">
+
+  <link href="http://localhost/CI_306_linked_em/assets/css/admin/global.css" rel="stylesheet" type="text/css">
+  
+   <!--<link rel="stylesheet" href="/assets/css/bootstrap-responsive.min.css">-->
+
+  <script src="http://localhost/CI_306_linked_em/assets/js/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+  <!--<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script> -->
+ 
+  
+  <script src="http://localhost/CI_306_linked_em//assets/js/jquery-1.7.1.min.js"></script>)
+  <script src="http://localhost/CI_306_linked_em//assets/js/bootstrap.min.js"></script>
+  
+  <!--<script src="http://localhost/CI_306_linked_em//node_modules/socket.io/node_modules/socket.io-client/socket.io.js"></script>-->
+  
+  <!--<script src="http://localhost/CI_306_linked_em//assets/js/socket.js"></script> -->
+  <!--<script src="http://localhost/CI_306_linked_em//assets/js/main.js"></script> -->
+  
+    <style>
+    body {
+      padding-top: 60px;
+      padding-bottom: 40px;
+    }
+    </style>
+</head>
+<body>
+	<div class="navbar navbar-fixed-top">
+	  <div class="navbar-inner">
+	    <div class="container">
+	      <a class="brand">Linked Emails Project</a>
+	      <ul class="nav">
+	        <li >
+	          <a href="http://localhost/CI_306_linked_em/index.php/admin/main">DashBoard</a>
+	        </li>
+                <li >
+	          <a href="http://localhost/CI_306_linked_em/index.php/admin/products">Products</a>
+	        </li>
+	        <li >
+	          <a href="http://localhost/CI_306_linked_em/index.php/admin/manufacturers/">Manufacturers</a>
+	        </li>
+                <li class="dropdown">
+	          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Emails <b class="caret"></b></a>
+	          <ul class="dropdown-menu">
+	            <li>
+	              <a href="http://localhost/CI_306_linked_em/index.php/admin/Emails">Email Add,Edit,Delete</a>
+	            </li>
+                    <li>
+	              <a href="http://localhost/CI_306_linked_em/index.php/admin/Owner">Owner Add,Edit,Delete</a>
+	            </li>
+                    <li>
+	              <a href="http://localhost/CI_306_linked_em/index.php/admin/Source">Source Add,Edit,Delete</a>
+	            </li>
+	          </ul>
+	        </li>
+                <li class="dropdown">
+	          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Companies <b class="caret"></b></a>
+	          <ul class="dropdown-menu">
+	            <li>
+	              <a href="http://localhost/CI_306_linked_em/index.php/admin/Companies">Company Add,Edit,Delete</a>
+	            </li>
+                    <li>
+	              <a href="http://localhost/CI_306_linked_em/index.php/admin/Category">Category Add,Edit,Delete</a>
+	            </li>
+                    <li>
+	              <a href="http://localhost/CI_306_linked_em/index.php/admin/Source">... Add,Edit,Delete</a>
+	            </li>
+	          </ul>
+	        </li>
+	        <li class="dropdown">
+	          <a href="#" class="dropdown-toggle" data-toggle="dropdown">System <b class="caret"></b></a>
+	          <ul class="dropdown-menu">
+	            <li>
+	              <a href="http://localhost/CI_306_linked_em/admin/logout">Logout</a>
+	            </li>
+	          </ul>
+	        </li>
+	      </ul>
+	    </div>
+	  </div>
+	</div>	
+    
+    
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-3 col-md-2 sidebar">
+          <ul class="nav nav-sidebar">
+            <li class="active"><a href="http://localhost/CI_306_linked_em/index.php/admin/main">Overview <span class="sr-only">(current)</span></a></li>
+            <li><a href="#">Reports</a></li>
+            <li><a href="http://localhost/CI_306_linked_em/index.php/admin/Mailer/show">Mailer</a></li>
+            <li><a href="http://localhost/CI_306_linked_em/index.php/admin/Mailer/mailfixedjob">Scheduled Mail Jobs</a></li>
+            <li><a href="http://localhost/CI_306_linked_em/index.php/admin/Mailer/cronm/1/mailer/3/gmail/UI">Cron Scheduler</a></li>
+            <li><a href="http://localhost/CI_306_linked_em/index.php/admin/export/show">Exports</a></li>
+          </ul>
+          <ul class="nav nav-sidebar">
+            <li><a href="">Nav item</a></li>
+            <li><a href="">Nav item again</a></li>
+            <li><a href="">One more nav</a></li>
+            <li><a href="http://localhost/CI_306_linked_em/index.php/admin/Statistics/">Statistics</a></li>
+            <li><a href="http://localhost/CI_306_linked_em/index.php/admin/Owner/">Owners</a></li>
+          </ul>
+          <ul class="nav nav-sidebar">
+            <li><a href="http://localhost/CI_306_linked_em/index.php/admin/Emails/">Emails</a></li>
+            <li><a href="http://localhost/CI_306_linked_em/index.php/admin/upload/show">Uploads</a></li>
+            <li><a href="http://localhost/CI_306_linked_em/index.php/admin/upload/">Upload Files</a></li>
+          </ul>
+        </div>
+       
+        </div>  
+       </div>
+
+    <div class="container top">
+
+      <ul class="breadcrumb">
+        <li>
+          <a href="http://localhost/CI_306_linked_em/index.php/admin">
+            Admin_mailer          </a> 
+          <span class="divider">/</span>
+        </li>
+        <li class="active">
+          Cron_mail          
+        </li>
+        
+      </ul>
+
+      <div class="page-header users-header">
+        <h2>
+          Cron_mail              <br/>
+             
+              <a  href="http://localhost/CI_306_linked_em/index.php/admin/Mailer/sendmail" class="btn btn-success">Send Email</a>
+              <div class="divider"/>
+              <a  href="http://localhost/CI_306_linked_em/index.php/admin/Mailer/sendmailattach" class="btn btn-success">Send Email with Attachment</a>
+              <br/>
+          
+        </h2>
+      </div>
+      
+      <div class="row">
+        <div class="span12 columns">
+          <div class="well">
+          
+          </div>
+             <table class="table table-striped table-bordered table-condensed">
+            <thead>
+              <tr>
+                <th class="header">email_v_count</th>
+                <th class="yellow header headerSortDown">email_nv_count</th>
+                <th class="green header">email_merged_count</th>
+                <th class="red header">email_to_mailer_count</th>
+                <th class="red header">email_sent_count</th>
+                <th class="red header">emails_sent_earlier</th>
+                <th class="red header">emails_scheduled_next_run</th>
+                <th class="red header">N/A</th>
+      
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>50</td><td>0</td><td>50</td><td>19</td><td>55</td><td>1</td><td>61401</td><td>N/A</td></tr>      
+            </tbody>
+           </table> 
+            
+            <table class="table table-striped table-bordered table-condensed">
+             <thead>
+              <tr>
+                <th class="header">Debugging Info</th>
+              </tr>
+              <tr>
+                <th class="header">Email ID</th>
+                <th class="header">Debug Info</th>   
+              </tr>
+            </thead>
+            <tbody>
+               <tr><td>21493</td><td><pre>
+
+</pre></td></tr><tr><td>21492</td><td>SMTP Error: data not accepted.SMTP server error: DATA command failed Detail: Daily user sending quota exceeded. l67sm11219256wmf.0 - gsmtp
+ SMTP code: 550 Additional SMTP info: 5.4.5<br /><pre>
+
+</pre></td></tr><tr><td>21415</td><td>SMTP Error: data not accepted.SMTP server error: DATA command failed Detail: Daily user sending quota exceeded. l67sm11219256wmf.0 - gsmtp
+ SMTP code: 550 Additional SMTP info: 5.4.5<br /><pre>
+
+</pre></td></tr><tr><td>21345</td><td><pre>
+
+</pre></td></tr><tr><td>21344</td><td><pre>
+
+</pre></td></tr><tr><td>21343</td><td><pre>
+
+</pre></td></tr><tr><td>21342</td><td><pre>
+
+</pre></td></tr><tr><td>21341</td><td>SMTP Error: data not accepted.SMTP server error: DATA command failed Detail: Daily user sending quota exceeded. b15sm11575513wma.5 - gsmtp
+ SMTP code: 550 Additional SMTP info: 5.4.5<br /><pre>
+
+</pre></td></tr><tr><td>21340</td><td>SMTP Error: data not accepted.SMTP server error: DATA command failed Detail: Daily user sending quota exceeded. b15sm11575513wma.5 - gsmtp
+ SMTP code: 550 Additional SMTP info: 5.4.5<br /><pre>
+
+</pre></td></tr><tr><td>21314</td><td>SMTP Error: data not accepted.SMTP server error: DATA command failed Detail: Daily user sending quota exceeded. b15sm11575513wma.5 - gsmtp
+ SMTP code: 550 Additional SMTP info: 5.4.5<br /><pre>
+
+</pre></td></tr><tr><td>21313</td><td>SMTP Error: data not accepted.SMTP server error: DATA command failed Detail: Daily user sending quota exceeded. b15sm11575513wma.5 - gsmtp
+ SMTP code: 550 Additional SMTP info: 5.4.5<br /><pre>
+
+</pre></td></tr><tr><td>21111</td><td>SMTP Error: data not accepted.SMTP server error: DATA command failed Detail: Daily user sending quota exceeded. b15sm11575513wma.5 - gsmtp
+ SMTP code: 550 Additional SMTP info: 5.4.5<br /><pre>
+
+</pre></td></tr><tr><td>19972</td><td>SMTP Error: data not accepted.SMTP server error: DATA command failed Detail: Daily user sending quota exceeded. b15sm11575513wma.5 - gsmtp
+ SMTP code: 550 Additional SMTP info: 5.4.5<br /><pre>
+
+</pre></td></tr><tr><td>19970</td><td>SMTP Error: data not accepted.SMTP server error: DATA command failed Detail: Daily user sending quota exceeded. b15sm11575513wma.5 - gsmtp
+ SMTP code: 550 Additional SMTP info: 5.4.5<br /><pre>
+
+</pre></td></tr><tr><td>19969</td><td>SMTP Error: data not accepted.SMTP server error: DATA command failed Detail: Daily user sending quota exceeded. b15sm11575513wma.5 - gsmtp
+ SMTP code: 550 Additional SMTP info: 5.4.5<br /><pre>
+
+</pre></td></tr><tr><td>19968</td><td>SMTP Error: data not accepted.SMTP server error: DATA command failed Detail: Daily user sending quota exceeded. b15sm11575513wma.5 - gsmtp
+ SMTP code: 550 Additional SMTP info: 5.4.5<br /><pre>
+
+</pre></td></tr><tr><td>19967</td><td>SMTP Error: data not accepted.SMTP server error: DATA command failed Detail: Daily user sending quota exceeded. b15sm11575513wma.5 - gsmtp
+ SMTP code: 550 Additional SMTP info: 5.4.5<br /><pre>
+
+</pre></td></tr><tr><td>19966</td><td>SMTP Error: data not accepted.SMTP server error: DATA command failed Detail: Daily user sending quota exceeded. b15sm11575513wma.5 - gsmtp
+ SMTP code: 550 Additional SMTP info: 5.4.5<br /><pre>
+
+</pre></td></tr><tr><td>19965</td><td>SMTP Error: data not accepted.SMTP server error: DATA command failed Detail: Daily user sending quota exceeded. b15sm11575513wma.5 - gsmtp
+ SMTP code: 550 Additional SMTP info: 5.4.5<br /><pre>
+
+</pre></td></tr><tr><td>19415</td><td>SMTP Error: data not accepted.SMTP server error: DATA command failed Detail: Daily user sending quota exceeded. b15sm11575513wma.5 - gsmtp
+ SMTP code: 550 Additional SMTP info: 5.4.5<br /><pre>
+
+</pre></td></tr><tr><td>19414</td><td>SMTP Error: data not accepted.SMTP server error: DATA command failed Detail: Daily user sending quota exceeded. b15sm11575513wma.5 - gsmtp
+ SMTP code: 550 Additional SMTP info: 5.4.5<br /><pre>
+
+</pre></td></tr><tr><td>19413</td><td>SMTP Error: data not accepted.SMTP server error: DATA command failed Detail: Daily user sending quota exceeded. b15sm11575513wma.5 - gsmtp
+ SMTP code: 550 Additional SMTP info: 5.4.5<br /><pre>
+
+</pre></td></tr><tr><td>19412</td><td>SMTP Error: data not accepted.SMTP server error: DATA command failed Detail: Daily user sending quota exceeded. b15sm11575513wma.5 - gsmtp
+ SMTP code: 550 Additional SMTP info: 5.4.5<br /><pre>
+
+</pre></td></tr><tr><td>19411</td><td>SMTP Error: data not accepted.SMTP server error: DATA command failed Detail: Daily user sending quota exceeded. b15sm11575513wma.5 - gsmtp
+ SMTP code: 550 Additional SMTP info: 5.4.5<br /><pre>
+
+</pre></td></tr><tr><td>19410</td><td>SMTP Error: data not accepted.SMTP server error: DATA command failed Detail: Daily user sending quota exceeded. b15sm11575513wma.5 - gsmtp
+ SMTP code: 550 Additional SMTP info: 5.4.5<br /><pre>
+
+</pre></td></tr><tr><td>19409</td><td>SMTP Error: data not accepted.SMTP server error: DATA command failed Detail: Daily user sending quota exceeded. b15sm11575513wma.5 - gsmtp
+ SMTP code: 550 Additional SMTP info: 5.4.5<br /><pre>
+
+</pre></td></tr><tr><td>19408</td><td>SMTP Error: data not accepted.SMTP server error: DATA command failed Detail: Daily user sending quota exceeded. b15sm11575513wma.5 - gsmtp
+ SMTP code: 550 Additional SMTP info: 5.4.5<br /><pre>
+
+</pre></td></tr><tr><td>19407</td><td>SMTP Error: data not accepted.SMTP server error: DATA command failed Detail: Daily user sending quota exceeded. b15sm11575513wma.5 - gsmtp
+ SMTP code: 550 Additional SMTP info: 5.4.5<br /><pre>
+
+</pre></td></tr><tr><td>19406</td><td>SMTP Error: data not accepted.SMTP server error: DATA command failed Detail: Daily user sending quota exceeded. b15sm11575513wma.5 - gsmtp
+ SMTP code: 550 Additional SMTP info: 5.4.5<br /><pre>
+
+</pre></td></tr><tr><td>19405</td><td>SMTP Error: data not accepted.SMTP server error: DATA command failed Detail: Daily user sending quota exceeded. b15sm11575513wma.5 - gsmtp
+ SMTP code: 550 Additional SMTP info: 5.4.5<br /><pre>
+
+</pre></td></tr><tr><td>19404</td><td>SMTP Error: data not accepted.SMTP server error: DATA command failed Detail: Daily user sending quota exceeded. b15sm11575513wma.5 - gsmtp
+ SMTP code: 550 Additional SMTP info: 5.4.5<br /><pre>
+
+</pre></td></tr><tr><td>19403</td><td>SMTP Error: data not accepted.SMTP server error: DATA command failed Detail: Daily user sending quota exceeded. b15sm11575513wma.5 - gsmtp
+ SMTP code: 550 Additional SMTP info: 5.4.5<br /><pre>
+
+</pre></td></tr><tr><td>19402</td><td>SMTP Error: data not accepted.SMTP server error: DATA command failed Detail: Daily user sending quota exceeded. b15sm11575513wma.5 - gsmtp
+ SMTP code: 550 Additional SMTP info: 5.4.5<br /><pre>
+
+</pre></td></tr><tr><td>19401</td><td>SMTP Error: data not accepted.SMTP server error: DATA command failed Detail: Daily user sending quota exceeded. b15sm11575513wma.5 - gsmtp
+ SMTP code: 550 Additional SMTP info: 5.4.5<br /><pre>
+
+</pre></td></tr><tr><td>19400</td><td>SMTP Error: data not accepted.SMTP server error: DATA command failed Detail: Daily user sending quota exceeded. b15sm11575513wma.5 - gsmtp
+ SMTP code: 550 Additional SMTP info: 5.4.5<br /><pre>
+
+</pre></td></tr><tr><td>19399</td><td>SMTP Error: data not accepted.SMTP server error: DATA command failed Detail: Daily user sending quota exceeded. b15sm11575513wma.5 - gsmtp
+ SMTP code: 550 Additional SMTP info: 5.4.5<br /><pre>
+
+</pre></td></tr><tr><td>19398</td><td>SMTP Error: data not accepted.SMTP server error: DATA command failed Detail: Daily user sending quota exceeded. b15sm11575513wma.5 - gsmtp
+ SMTP code: 550 Additional SMTP info: 5.4.5<br /><pre>
+
+</pre></td></tr><tr><td>19397</td><td>SMTP Error: data not accepted.SMTP server error: DATA command failed Detail: Daily user sending quota exceeded. b15sm11575513wma.5 - gsmtp
+ SMTP code: 550 Additional SMTP info: 5.4.5<br /><pre>
+
+</pre></td></tr><tr><td>19396</td><td>SMTP Error: data not accepted.SMTP server error: DATA command failed Detail: Daily user sending quota exceeded. b15sm11575513wma.5 - gsmtp
+ SMTP code: 550 Additional SMTP info: 5.4.5<br /><pre>
+
+</pre></td></tr><tr><td>19395</td><td>SMTP Error: data not accepted.SMTP server error: DATA command failed Detail: Daily user sending quota exceeded. b15sm11575513wma.5 - gsmtp
+ SMTP code: 550 Additional SMTP info: 5.4.5<br /><pre>
+
+</pre></td></tr><tr><td>18612</td><td>SMTP Error: data not accepted.SMTP server error: DATA command failed Detail: Daily user sending quota exceeded. b15sm11575513wma.5 - gsmtp
+ SMTP code: 550 Additional SMTP info: 5.4.5<br /><pre>
+
+</pre></td></tr><tr><td>18611</td><td>SMTP Error: data not accepted.SMTP server error: DATA command failed Detail: Daily user sending quota exceeded. b15sm11575513wma.5 - gsmtp
+ SMTP code: 550 Additional SMTP info: 5.4.5<br /><pre>
+
+</pre></td></tr><tr><td>18610</td><td>SMTP Error: data not accepted.SMTP server error: DATA command failed Detail: Daily user sending quota exceeded. b15sm11575513wma.5 - gsmtp
+ SMTP code: 550 Additional SMTP info: 5.4.5<br /><pre>
+
+</pre></td></tr><tr><td>18609</td><td>SMTP Error: data not accepted.SMTP server error: DATA command failed Detail: Daily user sending quota exceeded. b15sm11575513wma.5 - gsmtp
+ SMTP code: 550 Additional SMTP info: 5.4.5<br /><pre>
+
+</pre></td></tr><tr><td>18608</td><td>SMTP Error: data not accepted.SMTP server error: DATA command failed Detail: Daily user sending quota exceeded. b15sm11575513wma.5 - gsmtp
+ SMTP code: 550 Additional SMTP info: 5.4.5<br /><pre>
+
+</pre></td></tr><tr><td>18607</td><td>SMTP Error: data not accepted.SMTP server error: DATA command failed Detail: Daily user sending quota exceeded. b15sm11575513wma.5 - gsmtp
+ SMTP code: 550 Additional SMTP info: 5.4.5<br /><pre>
+
+</pre></td></tr><tr><td>18606</td><td>SMTP Error: data not accepted.SMTP server error: DATA command failed Detail: Daily user sending quota exceeded. b15sm11575513wma.5 - gsmtp
+ SMTP code: 550 Additional SMTP info: 5.4.5<br /><pre>
+
+</pre></td></tr><tr><td>18605</td><td>SMTP Error: data not accepted.SMTP server error: DATA command failed Detail: Daily user sending quota exceeded. b15sm11575513wma.5 - gsmtp
+ SMTP code: 550 Additional SMTP info: 5.4.5<br /><pre>
+
+</pre></td></tr><tr><td>18604</td><td>SMTP Error: data not accepted.SMTP server error: DATA command failed Detail: Daily user sending quota exceeded. b15sm11575513wma.5 - gsmtp
+ SMTP code: 550 Additional SMTP info: 5.4.5<br /><pre>
+
+</pre></td></tr>   
+            </tbody>
+          </table>
+    
+          
+          <table class="table table-striped table-bordered table-condensed">
+          <thead>
+              <tr>
+                <th class="header">Email ID</th>
+                <th class="header">Email sent</th>   
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>21493</td><td>hilal.mahrooqi@dapeco.com.om</td></tr><tr><td>18202</td><td>ayadm@adma.ae</td></tr><tr><td>18201</td><td>ashar.zaheer@adma.ae</td></tr><tr><td>18200</td><td>asaad@adma.ae</td></tr><tr><td>18199</td><td>arheantoro@adma.ae</td></tr><tr><td>18198</td><td>alfarisi@adma.ae</td></tr><tr><td>18197</td><td>admin@adma.ae</td></tr><tr><td>18196</td><td>admamagazine@adma.ae</td></tr><tr><td>18195</td><td>thens@adma.ae</td></tr><tr><td>18194</td><td>040653@adma.ae</td></tr><tr><td>18193</td><td>000902@adma.ae</td></tr><tr><td>21345</td><td>to@qalhatlng.co.om</td></tr><tr><td>18134</td><td>rbrouwer@adco.ae</td></tr><tr><td>18133</td><td>philip.thomas@adco.ae</td></tr><tr><td>18132</td><td>muahmad@adco.ae</td></tr><tr><td>18131</td><td>mslamet@adco.ae</td></tr><tr><td>18130</td><td>mshakeel@adco.ae</td></tr><tr><td>18129</td><td>mhasnain@adco.ae</td></tr><tr><td>18128</td><td>mhamouda@adco.ae</td></tr><tr><td>18127</td><td>mashraf@adco.ae</td></tr><tr><td>18126</td><td>malnajja@adco.ae</td></tr><tr><td>18125</td><td>mabubaker@adco.ae</td></tr><tr><td>21344</td><td>saifalharthy@qalhatlng.co.om</td></tr><tr><td>21343</td><td>mahaalfadhil@qalhatlng.co.om</td></tr><tr><td>21342</td><td>khalidalmassan@qalhatlng.co.om</td></tr>      
+            </tbody>
+          </table>
+            
+          <table class="table table-striped table-bordered table-condensed">
+          <thead>
+              <tr>
+                <th class="header">Email ID</th>
+                <th class="header">Email Failed</th>   
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>21492</td><td>abdulrahman.sheibani@dapeco.com.om</td></tr><tr><td>21415</td><td>to@nawras.com.om</td></tr><tr><td>21341</td><td>info@qalhatlng.co.om</td></tr><tr><td>21340</td><td>qlng-cq@qalhatlng.co.om</td></tr><tr><td>21314</td><td>to@oman-gas.com.om</td></tr><tr><td>21313</td><td>info@oman-gas.com.om</td></tr><tr><td>21111</td><td>0096824610390sankara@almaha.com.om</td></tr><tr><td>19972</td><td>to@almaha.com.om</td></tr><tr><td>19971</td><td>recruitment@almaha.com.om</td></tr><tr><td>19970</td><td>r@almaha.com.om</td></tr><tr><td>19969</td><td>cs@almaha.com.om</td></tr><tr><td>19968</td><td>balak@almaha.com.om</td></tr><tr><td>19967</td><td>almaha@almaha.com.om</td></tr><tr><td>19966</td><td>nasser@almaha.com.om</td></tr><tr><td>19965</td><td>fahmi.jabry@almaha.com.om</td></tr><tr><td>19415</td><td>yedisman@pdo.co.om</td></tr><tr><td>19414</td><td>webmaster@pdo.co.om</td></tr><tr><td>19413</td><td>valve.category.tender@pdo.co.om</td></tr><tr><td>19412</td><td>to@pdo.co.om</td></tr><tr><td>19411</td><td>lekhwair_al_huwaisah_campaign@pdo.co.om</td></tr><tr><td>19410</td><td>jafer.hoti@pdo.co.om</td></tr><tr><td>19409</td><td>integrity@pdo.co.om</td></tr><tr><td>19408</td><td>heru.setiawan@pdo.co.om</td></tr><tr><td>19407</td><td>brett.young@pdo.co.om</td></tr><tr><td>19406</td><td>zamzam.nurzaman@pdo.co.om</td></tr><tr><td>19405</td><td>tritjahyanti.suharso@pdo.co.om</td></tr><tr><td>19404</td><td>saif.sk.busaidy@pdo.co.om</td></tr><tr><td>19403</td><td>ridwan.syah@pdo.co.om</td></tr><tr><td>19402</td><td>permanentvendorreq@pdo.co.om</td></tr><tr><td>19401</td><td>michele.mc.claps@pdo.co.om</td></tr><tr><td>19400</td><td>junaid.m.ghulam@pdo.co.om</td></tr><tr><td>19399</td><td>fahad.fr.raidan@pdo.co.om</td></tr><tr><td>19398</td><td>david.de.sargeant@pdo.co.om</td></tr><tr><td>19397</td><td>aida.kindi@pdo.co.om</td></tr><tr><td>19396</td><td>abla.ahm.naamani@pdo.co.om</td></tr><tr><td>19395</td><td>abdullah.aa.sinawi@pdo.co.om</td></tr><tr><td>18612</td><td>weighing@mhd.co.om</td></tr><tr><td>18611</td><td>to@mhd.co.om</td></tr><tr><td>18610</td><td>sos@mhd.co.om</td></tr><tr><td>18609</td><td>pbmd@mhd.co.om</td></tr><tr><td>18608</td><td>najeeb@mhd.co.om</td></tr><tr><td>18607</td><td>info@mhd.co.om</td></tr><tr><td>18606</td><td>hro@mhd.co.om</td></tr><tr><td>18605</td><td>gases@mhd.co.om</td></tr><tr><td>18604</td><td>eservice@mhd.co.om</td></tr>      
+            </tbody>
+          </table>  
+            
+          <table class="table table-striped table-bordered table-condensed">
+          <thead>
+              <tr>
+                <th class="header">Email ID</th>
+                <th class="header">Email sent earlier</th>   
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>19971</td><td>recruitment@almaha.com.om</td></tr>      
+            </tbody>
+          </table>     
+            
+      </div>
+    </div>
+	<div id="footer">
+		<hr>
+		<div class="inner">
+			<div class="container">
+				<p class="right"><a href="#">Back to top</a></p>
+				<p>
+				</p>
+			</div>
+		</div>
+	</div>
+	
+</body>
+</html>

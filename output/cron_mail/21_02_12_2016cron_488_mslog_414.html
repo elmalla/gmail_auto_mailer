@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>
+<html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>
+<html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>
+<html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Linked Emails Project</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width">
+
+  <link href="http://localhost/CI_306_linked_em_Production/assets/css/admin/global.css" rel="stylesheet" type="text/css">
+  
+   <!--<link rel="stylesheet" href="/assets/css/bootstrap-responsive.min.css">-->
+
+  <script src="http://localhost/CI_306_linked_em_Production/assets/js/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+  <!--<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script> -->
+ 
+  
+  <script src="http://localhost/CI_306_linked_em_Production//assets/js/jquery-1.7.1.min.js"></script>)
+  <script src="http://localhost/CI_306_linked_em_Production//assets/js/bootstrap.min.js"></script>
+  
+  <!--<script src="http://localhost/CI_306_linked_em_Production//node_modules/socket.io/node_modules/socket.io-client/socket.io.js"></script>-->
+  
+  <!--<script src="http://localhost/CI_306_linked_em_Production//assets/js/socket.js"></script> -->
+  <!--<script src="http://localhost/CI_306_linked_em_Production//assets/js/main.js"></script> -->
+  
+    <style>
+    body {
+      padding-top: 60px;
+      padding-bottom: 40px;
+    }
+    </style>
+</head>
+<body>
+	<div class="navbar navbar-fixed-top">
+	  <div class="navbar-inner">
+	    <div class="container">
+	      <a class="brand">Linked Emails Project</a>
+	      <ul class="nav">
+	        <li >
+	          <a href="http://localhost/CI_306_linked_em_Production/index.php/admin/main">DashBoard</a>
+	        </li>
+                <li >
+	          <a href="http://localhost/CI_306_linked_em_Production/index.php/admin/products">Products</a>
+	        </li>
+	        <li >
+	          <a href="http://localhost/CI_306_linked_em_Production/index.php/admin/manufacturers/">Manufacturers</a>
+	        </li>
+                <li class="dropdown">
+	          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Emails <b class="caret"></b></a>
+	          <ul class="dropdown-menu">
+	            <li>
+	              <a href="http://localhost/CI_306_linked_em_Production/index.php/admin/Emails">Email Add,Edit,Delete</a>
+	            </li>
+                    <li>
+	              <a href="http://localhost/CI_306_linked_em_Production/index.php/admin/Owner">Owner Add,Edit,Delete</a>
+	            </li>
+                    <li>
+	              <a href="http://localhost/CI_306_linked_em_Production/index.php/admin/Source">Source Add,Edit,Delete</a>
+	            </li>
+	          </ul>
+	        </li>
+                <li class="dropdown">
+	          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Companies <b class="caret"></b></a>
+	          <ul class="dropdown-menu">
+	            <li>
+	              <a href="http://localhost/CI_306_linked_em_Production/index.php/admin/Companies">Company Add,Edit,Delete</a>
+	            </li>
+                    <li>
+	              <a href="http://localhost/CI_306_linked_em_Production/index.php/admin/Category">Category Add,Edit,Delete</a>
+	            </li>
+                    <li>
+	              <a href="http://localhost/CI_306_linked_em_Production/index.php/admin/Source">... Add,Edit,Delete</a>
+	            </li>
+	          </ul>
+	        </li>
+	        <li class="dropdown">
+	          <a href="#" class="dropdown-toggle" data-toggle="dropdown">System <b class="caret"></b></a>
+	          <ul class="dropdown-menu">
+	            <li>
+	              <a href="http://localhost/CI_306_linked_em_Production/admin/logout">Logout</a>
+	            </li>
+	          </ul>
+	        </li>
+	      </ul>
+	    </div>
+	  </div>
+	</div>	
+    
+    
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-3 col-md-2 sidebar">
+          <ul class="nav nav-sidebar">
+            <li class="active"><a href="http://localhost/CI_306_linked_em_Production/index.php/admin/main">Overview <span class="sr-only">(current)</span></a></li>
+            <li><a href="#">Reports</a></li>
+            <li><a href="http://localhost/CI_306_linked_em_Production/index.php/admin/Mailer/show">Mailer</a></li>
+            <li><a href="http://localhost/CI_306_linked_em_Production/index.php/admin/Mailer/mailfixedjob">Scheduled Mail Jobs</a></li>
+            <li><a href="http://localhost/CI_306_linked_em_Production/index.php/admin/Mailer/cronm/1/mailer/8/gmail/UI">Cron Scheduler</a></li>
+            <li><a href="http://localhost/CI_306_linked_em_Production/index.php/admin/Emails/cron_backup/false">Cron Backup</a></li>
+            <li><a href="http://localhost/CI_306_linked_em_Production/index.php/admin/export/show">Exports</a></li>
+          </ul>
+          <ul class="nav nav-sidebar">
+            <li><a href="">Nav item</a></li>
+            <li><a href="">Nav item again</a></li>
+            <li><a href="">One more nav</a></li>
+            <li><a href="http://localhost/CI_306_linked_em_Production/index.php/admin/Statistics/">Statistics</a></li>
+            <li><a href="http://localhost/CI_306_linked_em_Production/index.php/admin/Owner/">Owners</a></li>
+          </ul>
+          <ul class="nav nav-sidebar">
+            <li><a href="http://localhost/CI_306_linked_em_Production/index.php/admin/Emails/">Emails</a></li>
+            <li><a href="http://localhost/CI_306_linked_em_Production/index.php/admin/upload/show">Uploads</a></li>
+            <li><a href="http://localhost/CI_306_linked_em_Production/index.php/admin/upload/">Upload Files</a></li>
+          </ul>
+        </div>
+       
+        </div>  
+       </div>
+
+    <div class="container top">
+
+      <ul class="breadcrumb">
+        <li>
+          <a href="http://localhost/CI_306_linked_em_Production/admin">
+            Admin_mailer          </a> 
+          <span class="divider">/</span>
+        </li>
+        <li class="active">
+          Cron_mail          
+        </li>
+        
+      </ul>
+
+      <div class="page-header users-header">
+        <h2>
+          Cron_mail              <br/>
+             
+              <a  href="http://localhost/CI_306_linked_em_Production/admin/Mailer/sendmail" class="btn btn-success">Send Email</a>
+              <div class="divider"/>
+              <a  href="http://localhost/CI_306_linked_em_Production/admin/Mailer/sendmailattach" class="btn btn-success">Send Email with Attachment</a>
+              <br/>
+          
+        </h2>
+      </div>
+      
+      <div class="row">
+        <div class="span12 columns">
+          <div class="well">
+          
+          </div>
+             <table class="table table-striped table-bordered table-condensed">
+            <thead>
+              <tr>
+                <th class="header">email_v_count</th>
+                <th class="yellow header headerSortDown">email_nv_count</th>
+                <th class="green header">email_merged_count</th>
+                <th class="red header">email_to_mailer_count</th>
+                <th class="red header">email_sent_count</th>
+                <th class="red header">emails_sent_earlier</th>
+                <th class="red header">emails_scheduled_next_run</th>
+                <th class="red header">N/A</th>
+      
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>50</td><td>0</td><td>50</td><td>130</td><td>130</td><td>3</td><td>61082</td><td>N/A</td></tr>      
+            </tbody>
+           </table> 
+            
+            <table class="table table-striped table-bordered table-condensed">
+             <thead>
+              <tr>
+                <th class="header">Debugging Info</th>
+              </tr>
+              <tr>
+                <th class="header">Email ID</th>
+                <th class="header">Debug Info</th>   
+              </tr>
+            </thead>
+            <tbody>
+               <tr><td>610</td><td><pre>
+
+</pre></td></tr><tr><td>520</td><td><pre>
+
+</pre></td></tr><tr><td>514</td><td><pre>
+
+</pre></td></tr><tr><td>480</td><td><pre>
+
+</pre></td></tr><tr><td>464</td><td><pre>
+
+</pre></td></tr><tr><td>428</td><td><pre>
+
+</pre></td></tr><tr><td>416</td><td><pre>
+
+</pre></td></tr><tr><td>401</td><td><pre>
+
+</pre></td></tr><tr><td>392</td><td><pre>
+
+</pre></td></tr><tr><td>287</td><td><pre>
+
+</pre></td></tr><tr><td>240</td><td><pre>
+
+</pre></td></tr><tr><td>25994</td><td><pre>
+
+</pre></td></tr><tr><td>25995</td><td><pre>
+
+</pre></td></tr>   
+            </tbody>
+          </table>
+    
+          
+          <table class="table table-striped table-bordered table-condensed">
+          <thead>
+              <tr>
+                <th class="header">Email ID</th>
+                <th class="header">Email sent</th>   
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>610</td><td>Khaled.Abdelmola@pdo.co.om</td></tr><tr><td>11238</td><td>sheg@osborne-engineering.ae</td></tr><tr><td>11230</td><td>andragan@energoad.ae</td></tr><tr><td>11229</td><td>gsalkathiri@adwea.gov.ae</td></tr><tr><td>11220</td><td>mitriy@wellington.ae</td></tr><tr><td>11216</td><td>dennis.clark@seot.ae</td></tr><tr><td>11214</td><td>dawood.ozair@alfuttaim.ae</td></tr><tr><td>11209</td><td>david@gioc.ae</td></tr><tr><td>11206</td><td>davidc@transco.ae</td></tr><tr><td>11204</td><td>is.clark@seot.ae</td></tr><tr><td>520</td><td>a.hadhramy@pdo.co.om</td></tr><tr><td>11179</td><td>boy@ajmanport.gov.ae</td></tr><tr><td>11175</td><td>bobby@alhasoun.ae</td></tr><tr><td>11157</td><td>bc_plant@eim.ae</td></tr><tr><td>11151</td><td>azadpm@eim.ae</td></tr><tr><td>11122</td><td>aschoudhary@arabianpower.ae</td></tr><tr><td>11121</td><td>arnstein.haughbragen@jotundxb.ae</td></tr><tr><td>11090</td><td>snurulaman@arabianpower.ae</td></tr><tr><td>11077</td><td>ali.sadraie@midubai.ae</td></tr><tr><td>11067</td><td>ali.awazi@dewa.gov.ae</td></tr><tr><td>514</td><td>stanleyjamesirvine@omanlng.co.om</td></tr><tr><td>11058</td><td>napolpak@emirates.net.ae</td></tr><tr><td>11046</td><td>m.alhammadi@fewa.gov.ae</td></tr><tr><td>10866</td><td>a.khoory@bpc.ae</td></tr><tr><td>10862</td><td>l@penguineng.ae</td></tr><tr><td>10850</td><td>jyoti.harish@dodsaldxb.ae</td></tr><tr><td>10848</td><td>sprakash@mde.ae</td></tr><tr><td>10837</td><td>navendran@serveu.ae</td></tr><tr><td>10828</td><td>m_koyama@adoc.ae</td></tr><tr><td>10814</td><td>graham.macmillan@petrofac.ae</td></tr><tr><td>480</td><td>salimr@almaha.com.om</td></tr><tr><td>10812</td><td>alharam@zadco.ae</td></tr><tr><td>10800</td><td>amin@tapco.ae</td></tr><tr><td>10798</td><td>ajarwan@zadco.ae</td></tr><tr><td>10789</td><td>iri@zadco.ae</td></tr><tr><td>10788</td><td>nasser@zadco.ae</td></tr><tr><td>10783</td><td>skikuchi@zadco.ae</td></tr><tr><td>10775</td><td>swaynbaz@emirates.net.ae</td></tr><tr><td>10769</td><td>wesco@emirates.net.ae</td></tr><tr><td>10754</td><td>wasitps@emirates.net.ae</td></tr><tr><td>464</td><td>saif.al.sumry@pdo.co.om</td></tr><tr><td>10750</td><td>wadeadam@emirates.net.ae</td></tr><tr><td>10746</td><td>fred@verger-delporte.ae</td></tr><tr><td>10743</td><td>van_dijk@emirates.net.ae</td></tr><tr><td>10740</td><td>ey@upc.ae</td></tr><tr><td>10724</td><td>tamas@emirates.net.ae</td></tr><tr><td>10723</td><td>sbarreno@ucfpro.ae</td></tr><tr><td>10720</td><td>n.raju@uab.ae</td></tr><tr><td>10716</td><td>juanchos@up.ae</td></tr><tr><td>10715</td><td>s@up.ae</td></tr><tr><td>428</td><td>ashid.jalhmy@pdo.co.om</td></tr><tr><td>10714</td><td>co@emirates.net.ae</td></tr><tr><td>10713</td><td>cuniasce@emirates.net.ae</td></tr><tr><td>10712</td><td>uccrak@emirates.net.ae</td></tr><tr><td>10694</td><td>itshome@eim.ae</td></tr><tr><td>10692</td><td>tripp@eim.ae</td></tr><tr><td>10691</td><td>nagaraj@tgemdubai.ae</td></tr><tr><td>10688</td><td>ar@tgemdubai.ae</td></tr><tr><td>10686</td><td>ojha@tgemdubai.ae</td></tr><tr><td>10649</td><td>graciasm@thermo.ae</td></tr><tr><td>416</td><td>norman.millar@pdo.co.om</td></tr><tr><td>10630</td><td>nisreen.awada@tra.ae</td></tr><tr><td>10619</td><td>audius.peter@irp.ae</td></tr><tr><td>10617</td><td>teament@emirates.net.ae</td></tr><tr><td>10612</td><td>chatat@emirates.net.ae</td></tr><tr><td>10611</td><td>feddah@tanmia.org.ae</td></tr><tr><td>10610</td><td>omar@tanmia.org.ae</td></tr><tr><td>10595</td><td>aliwahab@tabarak.ae</td></tr><tr><td>10578</td><td>jean@sybase.ae</td></tr><tr><td>10567</td><td>trong@emirates.net.ae</td></tr><tr><td>401</td><td>mawali@pdo.co.om</td></tr><tr><td>10559</td><td>smijali@emirates.net.ae</td></tr><tr><td>10549</td><td>atul@spinneys.ae</td></tr><tr><td>10513</td><td>tihal.naji@sme.ae</td></tr><tr><td>10512</td><td>ali.alshafar@sme.ae</td></tr><tr><td>10498</td><td>aleksandar.hajman@siemens.co.ae</td></tr><tr><td>10488</td><td>ochrun@scipco.ae</td></tr><tr><td>10469</td><td>jports@eim.ae</td></tr><tr><td>10468</td><td>imran@sharjahoxygen.ae</td></tr><tr><td>10467</td><td>sor@emirates.net.ae</td></tr><tr><td>392</td><td>raju@omanlng.co.om</td></tr><tr><td>10466</td><td>97165581152@sharjahairport.ae</td></tr><tr><td>10465</td><td>trng@sharjahairport.ae</td></tr><tr><td>10458</td><td>parkmal5@emirates.net.ae</td></tr><tr><td>10454</td><td>johnsonj@serveu.ae</td></tr><tr><td>10453</td><td>canillasg@serveu.ae</td></tr><tr><td>10452</td><td>thairy@serveu.ae</td></tr><tr><td>10451</td><td>Phillip.Challenor@serco.ae</td></tr><tr><td>10450</td><td>aktan@giscoauh.ae</td></tr><tr><td>10440</td><td>seatronix@emirates.net.ae</td></tr><tr><td>287</td><td>khodaiji@mhd.co.om</td></tr><tr><td>10223</td><td>sahari02@eim.ae</td></tr><tr><td>10187</td><td>snsauh@emirates.net.ae</td></tr><tr><td>10180</td><td>rmjmdxb@emirates.net.ae</td></tr><tr><td>10179</td><td>if.bajo@rta.ae</td></tr><tr><td>10171</td><td>rimalad@emirates.net.ae</td></tr><tr><td>10165</td><td>remco@emirates.net.ae</td></tr><tr><td>10126</td><td>rkcwcmt@emirates.net.ae</td></tr><tr><td>10125</td><td>vivek@rakcc.ae</td></tr><tr><td>10123</td><td>rajesh.khanna@hct.ac.ae</td></tr><tr><td>240</td><td>ibrahimamri@mbpetroleum.co.om</td></tr><tr><td>10122</td><td>ta.bomma@hct.ac.ae</td></tr><tr><td>10121</td><td>rakiftz@emirates.net.ae</td></tr><tr><td>10118</td><td>info@rakbank.ae</td></tr><tr><td>9980</td><td>pureices@emirates.net.ae</td></tr><tr><td>9973</td><td>promis@emirates.net.ae</td></tr><tr><td>9970</td><td>shaban@protech.ae</td></tr><tr><td>9969</td><td>it@pt.ae</td></tr><tr><td>9967</td><td>pnc@emirates.net.ae</td></tr><tr><td>9964</td><td>comar@emirates.net.ae</td></tr><tr><td>25994</td><td>ab-alzadjali@mog.gov.om</td></tr><tr><td>9963</td><td>nagla.elmfaire@istithmar.ae</td></tr><tr><td>9959</td><td>eng_pof@fujairahport.ae</td></tr><tr><td>9958</td><td>spm_pof@emirates.net.ae</td></tr><tr><td>9957</td><td>nazek.sabbagh@dpa.ae</td></tr><tr><td>9956</td><td>afzal.kareem@dpa.ae</td></tr><tr><td>9954</td><td>ppcpaint@emirates.net.ae</td></tr><tr><td>9952</td><td>ivert@pls.ae</td></tr><tr><td>9914</td><td>petroman@emirates.net.ae</td></tr><tr><td>9890</td><td>kyriakos@petrofac.co.ae</td></tr><tr><td>25995</td><td>ab_alzadjali@mog.gov.om</td></tr><tr><td>9889</td><td>dayanand.adyanthaya@petrofac.ae</td></tr><tr><td>9888</td><td>madu.soodanan@petrofac.ae</td></tr><tr><td>9887</td><td>son@petrofac.ae</td></tr><tr><td>9876</td><td>pepco@emirates.net.ae</td></tr><tr><td>9875</td><td>c.thomas@penspen.ae</td></tr><tr><td>9874</td><td>a.jackson@penspen.ae</td></tr><tr><td>9848</td><td>satish.engdept@pacteng.ae</td></tr><tr><td>9844</td><td>arupgulf@emirates.net.ae</td></tr><tr><td>9842</td><td>ois@emirates.net.ae</td></tr>      
+            </tbody>
+          </table>
+            
+          <table class="table table-striped table-bordered table-condensed">
+          <thead>
+              <tr>
+                <th class="header">Email ID</th>
+                <th class="header">Email Failed</th>   
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>19971</td><td>recruitment@almaha.com.om</td></tr><tr><td>18282</td><td>recruit@mbpetroleum.co.om</td></tr><tr><td>18280</td><td>mbpsrecruitment@mbpetroleum.co.om</td></tr>      
+            </tbody>
+          </table>  
+            
+          <table class="table table-striped table-bordered table-condensed">
+          <thead>
+              <tr>
+                <th class="header">Email ID</th>
+                <th class="header">Email sent earlier</th>   
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>19971</td><td>recruitment@almaha.com.om</td></tr><tr><td>18282</td><td>recruit@mbpetroleum.co.om</td></tr><tr><td>18280</td><td>mbpsrecruitment@mbpetroleum.co.om</td></tr>      
+            </tbody>
+          </table>
+            
+          <table class="table table-striped table-bordered table-condensed">
+          <thead>
+              <tr>
+                <th class="header">Debug</th>
+                
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>610</td></tr><tr><td>Khaled.Abdelmola@pdo.co.om</td></tr><tr><td>0</td></tr><tr><td>0</td></tr><tr><td>sheg@osborne-engineering.ae, andragan@energoad.ae, gsalkathiri@adwea.gov.ae, mitriy@wellington.ae, dennis.clark@seot.ae, dawood.ozair@alfuttaim.ae, david@gioc.ae, davidc@transco.ae, is.clark@seot.ae</td></tr><tr><td>1</td></tr><tr><td>0</td><td>Khaled.Abdelmola@pdo.co.om</td><td>1</td><td>sheg@osborne-engineering.ae</td><td>2</td><td> andragan@energoad.ae</td><td>3</td><td> gsalkathiri@adwea.gov.ae</td><td>4</td><td> mitriy@wellington.ae</td><td>5</td><td> dennis.clark@seot.ae</td><td>6</td><td> dawood.ozair@alfuttaim.ae</td><td>7</td><td> david@gioc.ae</td><td>8</td><td> davidc@transco.ae</td><td>9</td><td> is.clark@seot.ae</td></tr><tr></tr><tr><td>10</td></tr><tr><td><pre>
+
+</pre></td></tr><tr><td>520</td></tr><tr><td>a.hadhramy@pdo.co.om</td></tr><tr><td>1</td></tr><tr><td>9</td></tr><tr><td>boy@ajmanport.gov.ae, bobby@alhasoun.ae, bc_plant@eim.ae, azadpm@eim.ae, aschoudhary@arabianpower.ae, arnstein.haughbragen@jotundxb.ae, snurulaman@arabianpower.ae, ali.sadraie@midubai.ae, ali.awazi@dewa.gov.ae</td></tr><tr><td>1</td></tr><tr><td>0</td><td>a.hadhramy@pdo.co.om</td><td>1</td><td>boy@ajmanport.gov.ae</td><td>2</td><td> bobby@alhasoun.ae</td><td>3</td><td> bc_plant@eim.ae</td><td>4</td><td> azadpm@eim.ae</td><td>5</td><td> aschoudhary@arabianpower.ae</td><td>6</td><td> arnstein.haughbragen@jotundxb.ae</td><td>7</td><td> snurulaman@arabianpower.ae</td><td>8</td><td> ali.sadraie@midubai.ae</td><td>9</td><td> ali.awazi@dewa.gov.ae</td></tr><tr></tr><tr><td>10</td></tr><tr><td><pre>
+
+</pre></td></tr><tr><td>514</td></tr><tr><td>stanleyjamesirvine@omanlng.co.om</td></tr><tr><td>2</td></tr><tr><td>18</td></tr><tr><td>napolpak@emirates.net.ae, m.alhammadi@fewa.gov.ae, a.khoory@bpc.ae, l@penguineng.ae, jyoti.harish@dodsaldxb.ae, sprakash@mde.ae, navendran@serveu.ae, m_koyama@adoc.ae, graham.macmillan@petrofac.ae</td></tr><tr><td>1</td></tr><tr><td>0</td><td>stanleyjamesirvine@omanlng.co.om</td><td>1</td><td>napolpak@emirates.net.ae</td><td>2</td><td> m.alhammadi@fewa.gov.ae</td><td>3</td><td> a.khoory@bpc.ae</td><td>4</td><td> l@penguineng.ae</td><td>5</td><td> jyoti.harish@dodsaldxb.ae</td><td>6</td><td> sprakash@mde.ae</td><td>7</td><td> navendran@serveu.ae</td><td>8</td><td> m_koyama@adoc.ae</td><td>9</td><td> graham.macmillan@petrofac.ae</td></tr><tr></tr><tr><td>10</td></tr><tr><td><pre>
+
+</pre></td></tr><tr><td>480</td></tr><tr><td>salimr@almaha.com.om</td></tr><tr><td>3</td></tr><tr><td>27</td></tr><tr><td>alharam@zadco.ae, amin@tapco.ae, ajarwan@zadco.ae, iri@zadco.ae, nasser@zadco.ae, skikuchi@zadco.ae, swaynbaz@emirates.net.ae, wesco@emirates.net.ae, wasitps@emirates.net.ae</td></tr><tr><td>1</td></tr><tr><td>0</td><td>salimr@almaha.com.om</td><td>1</td><td>alharam@zadco.ae</td><td>2</td><td> amin@tapco.ae</td><td>3</td><td> ajarwan@zadco.ae</td><td>4</td><td> iri@zadco.ae</td><td>5</td><td> nasser@zadco.ae</td><td>6</td><td> skikuchi@zadco.ae</td><td>7</td><td> swaynbaz@emirates.net.ae</td><td>8</td><td> wesco@emirates.net.ae</td><td>9</td><td> wasitps@emirates.net.ae</td></tr><tr></tr><tr><td>10</td></tr><tr><td><pre>
+
+</pre></td></tr><tr><td>464</td></tr><tr><td>saif.al.sumry@pdo.co.om</td></tr><tr><td>4</td></tr><tr><td>36</td></tr><tr><td>wadeadam@emirates.net.ae, fred@verger-delporte.ae, van_dijk@emirates.net.ae, ey@upc.ae, tamas@emirates.net.ae, sbarreno@ucfpro.ae, n.raju@uab.ae, juanchos@up.ae, s@up.ae</td></tr><tr><td>1</td></tr><tr><td>0</td><td>saif.al.sumry@pdo.co.om</td><td>1</td><td>wadeadam@emirates.net.ae</td><td>2</td><td> fred@verger-delporte.ae</td><td>3</td><td> van_dijk@emirates.net.ae</td><td>4</td><td> ey@upc.ae</td><td>5</td><td> tamas@emirates.net.ae</td><td>6</td><td> sbarreno@ucfpro.ae</td><td>7</td><td> n.raju@uab.ae</td><td>8</td><td> juanchos@up.ae</td><td>9</td><td> s@up.ae</td></tr><tr></tr><tr><td>10</td></tr><tr><td><pre>
+
+</pre></td></tr><tr><td>428</td></tr><tr><td>ashid.jalhmy@pdo.co.om</td></tr><tr><td>5</td></tr><tr><td>45</td></tr><tr><td>co@emirates.net.ae, cuniasce@emirates.net.ae, uccrak@emirates.net.ae, itshome@eim.ae, tripp@eim.ae, nagaraj@tgemdubai.ae, ar@tgemdubai.ae, ojha@tgemdubai.ae, graciasm@thermo.ae</td></tr><tr><td>1</td></tr><tr><td>0</td><td>ashid.jalhmy@pdo.co.om</td><td>1</td><td>co@emirates.net.ae</td><td>2</td><td> cuniasce@emirates.net.ae</td><td>3</td><td> uccrak@emirates.net.ae</td><td>4</td><td> itshome@eim.ae</td><td>5</td><td> tripp@eim.ae</td><td>6</td><td> nagaraj@tgemdubai.ae</td><td>7</td><td> ar@tgemdubai.ae</td><td>8</td><td> ojha@tgemdubai.ae</td><td>9</td><td> graciasm@thermo.ae</td></tr><tr></tr><tr><td>10</td></tr><tr><td><pre>
+
+</pre></td></tr><tr><td>416</td></tr><tr><td>norman.millar@pdo.co.om</td></tr><tr><td>6</td></tr><tr><td>54</td></tr><tr><td>nisreen.awada@tra.ae, audius.peter@irp.ae, teament@emirates.net.ae, chatat@emirates.net.ae, feddah@tanmia.org.ae, omar@tanmia.org.ae, aliwahab@tabarak.ae, jean@sybase.ae, trong@emirates.net.ae</td></tr><tr><td>1</td></tr><tr><td>0</td><td>norman.millar@pdo.co.om</td><td>1</td><td>nisreen.awada@tra.ae</td><td>2</td><td> audius.peter@irp.ae</td><td>3</td><td> teament@emirates.net.ae</td><td>4</td><td> chatat@emirates.net.ae</td><td>5</td><td> feddah@tanmia.org.ae</td><td>6</td><td> omar@tanmia.org.ae</td><td>7</td><td> aliwahab@tabarak.ae</td><td>8</td><td> jean@sybase.ae</td><td>9</td><td> trong@emirates.net.ae</td></tr><tr></tr><tr><td>10</td></tr><tr><td><pre>
+
+</pre></td></tr><tr><td>401</td></tr><tr><td>mawali@pdo.co.om</td></tr><tr><td>7</td></tr><tr><td>63</td></tr><tr><td>smijali@emirates.net.ae, atul@spinneys.ae, tihal.naji@sme.ae, ali.alshafar@sme.ae, aleksandar.hajman@siemens.co.ae, ochrun@scipco.ae, jports@eim.ae, imran@sharjahoxygen.ae, sor@emirates.net.ae</td></tr><tr><td>1</td></tr><tr><td>0</td><td>mawali@pdo.co.om</td><td>1</td><td>smijali@emirates.net.ae</td><td>2</td><td> atul@spinneys.ae</td><td>3</td><td> tihal.naji@sme.ae</td><td>4</td><td> ali.alshafar@sme.ae</td><td>5</td><td> aleksandar.hajman@siemens.co.ae</td><td>6</td><td> ochrun@scipco.ae</td><td>7</td><td> jports@eim.ae</td><td>8</td><td> imran@sharjahoxygen.ae</td><td>9</td><td> sor@emirates.net.ae</td></tr><tr></tr><tr><td>10</td></tr><tr><td><pre>
+
+</pre></td></tr><tr><td>392</td></tr><tr><td>raju@omanlng.co.om</td></tr><tr><td>8</td></tr><tr><td>72</td></tr><tr><td>97165581152@sharjahairport.ae, trng@sharjahairport.ae, parkmal5@emirates.net.ae, johnsonj@serveu.ae, canillasg@serveu.ae, thairy@serveu.ae, Phillip.Challenor@serco.ae, aktan@giscoauh.ae, seatronix@emirates.net.ae</td></tr><tr><td>1</td></tr><tr><td>0</td><td>raju@omanlng.co.om</td><td>1</td><td>97165581152@sharjahairport.ae</td><td>2</td><td> trng@sharjahairport.ae</td><td>3</td><td> parkmal5@emirates.net.ae</td><td>4</td><td> johnsonj@serveu.ae</td><td>5</td><td> canillasg@serveu.ae</td><td>6</td><td> thairy@serveu.ae</td><td>7</td><td> Phillip.Challenor@serco.ae</td><td>8</td><td> aktan@giscoauh.ae</td><td>9</td><td> seatronix@emirates.net.ae</td></tr><tr></tr><tr><td>10</td></tr><tr><td><pre>
+
+</pre></td></tr><tr><td>287</td></tr><tr><td>khodaiji@mhd.co.om</td></tr><tr><td>9</td></tr><tr><td>81</td></tr><tr><td>sahari02@eim.ae, snsauh@emirates.net.ae, rmjmdxb@emirates.net.ae, if.bajo@rta.ae, rimalad@emirates.net.ae, remco@emirates.net.ae, rkcwcmt@emirates.net.ae, vivek@rakcc.ae, rajesh.khanna@hct.ac.ae</td></tr><tr><td>1</td></tr><tr><td>0</td><td>khodaiji@mhd.co.om</td><td>1</td><td>sahari02@eim.ae</td><td>2</td><td> snsauh@emirates.net.ae</td><td>3</td><td> rmjmdxb@emirates.net.ae</td><td>4</td><td> if.bajo@rta.ae</td><td>5</td><td> rimalad@emirates.net.ae</td><td>6</td><td> remco@emirates.net.ae</td><td>7</td><td> rkcwcmt@emirates.net.ae</td><td>8</td><td> vivek@rakcc.ae</td><td>9</td><td> rajesh.khanna@hct.ac.ae</td></tr><tr></tr><tr><td>10</td></tr><tr><td><pre>
+
+</pre></td></tr><tr><td>240</td></tr><tr><td>ibrahimamri@mbpetroleum.co.om</td></tr><tr><td>10</td></tr><tr><td>90</td></tr><tr><td>ta.bomma@hct.ac.ae, rakiftz@emirates.net.ae, info@rakbank.ae, pureices@emirates.net.ae, promis@emirates.net.ae, shaban@protech.ae, it@pt.ae, pnc@emirates.net.ae, comar@emirates.net.ae</td></tr><tr><td>1</td></tr><tr><td>0</td><td>ibrahimamri@mbpetroleum.co.om</td><td>1</td><td>ta.bomma@hct.ac.ae</td><td>2</td><td> rakiftz@emirates.net.ae</td><td>3</td><td> info@rakbank.ae</td><td>4</td><td> pureices@emirates.net.ae</td><td>5</td><td> promis@emirates.net.ae</td><td>6</td><td> shaban@protech.ae</td><td>7</td><td> it@pt.ae</td><td>8</td><td> pnc@emirates.net.ae</td><td>9</td><td> comar@emirates.net.ae</td></tr><tr></tr><tr><td>10</td></tr><tr><td><pre>
+
+</pre></td></tr><tr><td>25994</td></tr><tr><td>ab-alzadjali@mog.gov.om</td></tr><tr><td>11</td></tr><tr><td>99</td></tr><tr><td>nagla.elmfaire@istithmar.ae, eng_pof@fujairahport.ae, spm_pof@emirates.net.ae, nazek.sabbagh@dpa.ae, afzal.kareem@dpa.ae, ppcpaint@emirates.net.ae, ivert@pls.ae, petroman@emirates.net.ae, kyriakos@petrofac.co.ae</td></tr><tr><td>1</td></tr><tr><td>0</td><td>ab-alzadjali@mog.gov.om</td><td>1</td><td>nagla.elmfaire@istithmar.ae</td><td>2</td><td> eng_pof@fujairahport.ae</td><td>3</td><td> spm_pof@emirates.net.ae</td><td>4</td><td> nazek.sabbagh@dpa.ae</td><td>5</td><td> afzal.kareem@dpa.ae</td><td>6</td><td> ppcpaint@emirates.net.ae</td><td>7</td><td> ivert@pls.ae</td><td>8</td><td> petroman@emirates.net.ae</td><td>9</td><td> kyriakos@petrofac.co.ae</td></tr><tr></tr><tr><td>10</td></tr><tr><td><pre>
+
+</pre></td></tr><tr><td>25995</td></tr><tr><td>ab_alzadjali@mog.gov.om</td></tr><tr><td>12</td></tr><tr><td>108</td></tr><tr><td>dayanand.adyanthaya@petrofac.ae, madu.soodanan@petrofac.ae, son@petrofac.ae, pepco@emirates.net.ae, c.thomas@penspen.ae, a.jackson@penspen.ae, satish.engdept@pacteng.ae, arupgulf@emirates.net.ae, ois@emirates.net.ae</td></tr><tr><td>1</td></tr><tr><td>0</td><td>ab_alzadjali@mog.gov.om</td><td>1</td><td>dayanand.adyanthaya@petrofac.ae</td><td>2</td><td> madu.soodanan@petrofac.ae</td><td>3</td><td> son@petrofac.ae</td><td>4</td><td> pepco@emirates.net.ae</td><td>5</td><td> c.thomas@penspen.ae</td><td>6</td><td> a.jackson@penspen.ae</td><td>7</td><td> satish.engdept@pacteng.ae</td><td>8</td><td> arupgulf@emirates.net.ae</td><td>9</td><td> ois@emirates.net.ae</td></tr><tr></tr><tr><td>10</td></tr><tr><td><pre>
+
+</pre></td></tr>      
+            </tbody>
+          </table>        
+            
+      </div>
+    </div>
+	<div id="footer">
+		<hr>
+		<div class="inner">
+			<div class="container">
+				<p class="right"><a href="#">Back to top</a></p>
+				<p>
+				</p>
+			</div>
+		</div>
+	</div>
+	
+</body>
+</html>

@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>
+<html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>
+<html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>
+<html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Linked Emails Project</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width">
+
+  <link href="http://localhost/CI_306_linked_em_Production/assets/css/admin/global.css" rel="stylesheet" type="text/css">
+  
+   <!--<link rel="stylesheet" href="/assets/css/bootstrap-responsive.min.css">-->
+
+  <script src="http://localhost/CI_306_linked_em_Production/assets/js/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+  <!--<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script> -->
+ 
+  
+  <script src="http://localhost/CI_306_linked_em_Production//assets/js/jquery-1.7.1.min.js"></script>)
+  <script src="http://localhost/CI_306_linked_em_Production//assets/js/bootstrap.min.js"></script>
+  
+  <!--<script src="http://localhost/CI_306_linked_em_Production//node_modules/socket.io/node_modules/socket.io-client/socket.io.js"></script>-->
+  
+  <!--<script src="http://localhost/CI_306_linked_em_Production//assets/js/socket.js"></script> -->
+  <!--<script src="http://localhost/CI_306_linked_em_Production//assets/js/main.js"></script> -->
+  
+    <style>
+    body {
+      padding-top: 60px;
+      padding-bottom: 40px;
+    }
+    </style>
+</head>
+<body>
+	<div class="navbar navbar-fixed-top">
+	  <div class="navbar-inner">
+	    <div class="container">
+	      <a class="brand">Linked Emails Project</a>
+	      <ul class="nav">
+	        <li >
+	          <a href="http://localhost/CI_306_linked_em_Production/index.php/admin/main">DashBoard</a>
+	        </li>
+                <li >
+	          <a href="http://localhost/CI_306_linked_em_Production/index.php/admin/products">Products</a>
+	        </li>
+	        <li >
+	          <a href="http://localhost/CI_306_linked_em_Production/index.php/admin/manufacturers/">Manufacturers</a>
+	        </li>
+                <li class="dropdown">
+	          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Emails <b class="caret"></b></a>
+	          <ul class="dropdown-menu">
+	            <li>
+	              <a href="http://localhost/CI_306_linked_em_Production/index.php/admin/Emails">Email Add,Edit,Delete</a>
+	            </li>
+                    <li>
+	              <a href="http://localhost/CI_306_linked_em_Production/index.php/admin/Owner">Owner Add,Edit,Delete</a>
+	            </li>
+                    <li>
+	              <a href="http://localhost/CI_306_linked_em_Production/index.php/admin/Source">Source Add,Edit,Delete</a>
+	            </li>
+	          </ul>
+	        </li>
+                <li class="dropdown">
+	          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Companies <b class="caret"></b></a>
+	          <ul class="dropdown-menu">
+	            <li>
+	              <a href="http://localhost/CI_306_linked_em_Production/index.php/admin/Companies">Company Add,Edit,Delete</a>
+	            </li>
+                    <li>
+	              <a href="http://localhost/CI_306_linked_em_Production/index.php/admin/Category">Category Add,Edit,Delete</a>
+	            </li>
+                    <li>
+	              <a href="http://localhost/CI_306_linked_em_Production/index.php/admin/Source">... Add,Edit,Delete</a>
+	            </li>
+	          </ul>
+	        </li>
+	        <li class="dropdown">
+	          <a href="#" class="dropdown-toggle" data-toggle="dropdown">System <b class="caret"></b></a>
+	          <ul class="dropdown-menu">
+	            <li>
+	              <a href="http://localhost/CI_306_linked_em_Production/admin/logout">Logout</a>
+	            </li>
+	          </ul>
+	        </li>
+	      </ul>
+	    </div>
+	  </div>
+	</div>	
+    
+    
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-3 col-md-2 sidebar">
+          <ul class="nav nav-sidebar">
+            <li class="active"><a href="http://localhost/CI_306_linked_em_Production/index.php/admin/main">Overview <span class="sr-only">(current)</span></a></li>
+            <li><a href="#">Reports</a></li>
+            <li><a href="http://localhost/CI_306_linked_em_Production/index.php/admin/Mailer/show">Mailer</a></li>
+            <li><a href="http://localhost/CI_306_linked_em_Production/index.php/admin/Mailer/mailfixedjob">Scheduled Mail Jobs</a></li>
+            <li><a href="http://localhost/CI_306_linked_em_Production/index.php/admin/Mailer/cronm/1/mailer/8/gmail/UI">Cron Scheduler</a></li>
+            <li><a href="http://localhost/CI_306_linked_em_Production/index.php/admin/Emails/cron_backup/false">Cron Backup</a></li>
+            <li><a href="http://localhost/CI_306_linked_em_Production/index.php/admin/export/show">Exports</a></li>
+          </ul>
+          <ul class="nav nav-sidebar">
+            <li><a href="">Nav item</a></li>
+            <li><a href="">Nav item again</a></li>
+            <li><a href="">One more nav</a></li>
+            <li><a href="http://localhost/CI_306_linked_em_Production/index.php/admin/Statistics/">Statistics</a></li>
+            <li><a href="http://localhost/CI_306_linked_em_Production/index.php/admin/Owner/">Owners</a></li>
+          </ul>
+          <ul class="nav nav-sidebar">
+            <li><a href="http://localhost/CI_306_linked_em_Production/index.php/admin/Emails/">Emails</a></li>
+            <li><a href="http://localhost/CI_306_linked_em_Production/index.php/admin/upload/show">Uploads</a></li>
+            <li><a href="http://localhost/CI_306_linked_em_Production/index.php/admin/upload/">Upload Files</a></li>
+          </ul>
+        </div>
+       
+        </div>  
+       </div>
+
+    <div class="container top">
+
+      <ul class="breadcrumb">
+        <li>
+          <a href="http://localhost/CI_306_linked_em_Production/admin">
+            Admin_mailer          </a> 
+          <span class="divider">/</span>
+        </li>
+        <li class="active">
+          Cron_mail          
+        </li>
+        
+      </ul>
+
+      <div class="page-header users-header">
+        <h2>
+          Cron_mail              <br/>
+             
+              <a  href="http://localhost/CI_306_linked_em_Production/admin/Mailer/sendmail" class="btn btn-success">Send Email</a>
+              <div class="divider"/>
+              <a  href="http://localhost/CI_306_linked_em_Production/admin/Mailer/sendmailattach" class="btn btn-success">Send Email with Attachment</a>
+              <br/>
+          
+        </h2>
+      </div>
+      
+      <div class="row">
+        <div class="span12 columns">
+          <div class="well">
+          
+          </div>
+             <table class="table table-striped table-bordered table-condensed">
+            <thead>
+              <tr>
+                <th class="header">email_v_count</th>
+                <th class="yellow header headerSortDown">email_nv_count</th>
+                <th class="green header">email_merged_count</th>
+                <th class="red header">email_to_mailer_count</th>
+                <th class="red header">email_sent_count</th>
+                <th class="red header">emails_sent_earlier</th>
+                <th class="red header">emails_scheduled_next_run</th>
+                <th class="red header">N/A</th>
+      
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>50</td><td>0</td><td>50</td><td>90</td><td>90</td><td>0</td><td>3762</td><td>N/A</td></tr>      
+            </tbody>
+           </table> 
+            
+            <table class="table table-striped table-bordered table-condensed">
+             <thead>
+              <tr>
+                <th class="header">Debugging Info</th>
+              </tr>
+              <tr>
+                <th class="header">Email ID</th>
+                <th class="header">Debug Info</th>   
+              </tr>
+            </thead>
+            <tbody>
+               <tr><td>138342</td><td><pre>
+
+</pre></td></tr><tr><td>138343</td><td><pre>
+
+</pre></td></tr><tr><td>138344</td><td><pre>
+
+</pre></td></tr><tr><td>138345</td><td><pre>
+
+</pre></td></tr><tr><td>138346</td><td><pre>
+
+</pre></td></tr><tr><td>138347</td><td><pre>
+
+</pre></td></tr><tr><td>138348</td><td><pre>
+
+</pre></td></tr><tr><td>138349</td><td><pre>
+
+</pre></td></tr><tr><td>138350</td><td><pre>
+
+</pre></td></tr><tr><td>138351</td><td>SMTP Error: data not accepted.SMTP server error: DATA END command failed<br /><pre>
+
+</pre></td></tr><tr><td>138352</td><td>SMTP connect() failed. https://github.com/PHPMailer/PHPMailer/wiki/Troubleshooting<br /><pre>
+
+</pre></td></tr><tr><td>138353</td><td>SMTP connect() failed. https://github.com/PHPMailer/PHPMailer/wiki/Troubleshooting<br /><pre>
+
+</pre></td></tr><tr><td>138354</td><td>SMTP connect() failed. https://github.com/PHPMailer/PHPMailer/wiki/Troubleshooting<br /><pre>
+
+</pre></td></tr><tr><td>138355</td><td>SMTP connect() failed. https://github.com/PHPMailer/PHPMailer/wiki/Troubleshooting<br /><pre>
+
+</pre></td></tr><tr><td>138356</td><td>SMTP connect() failed. https://github.com/PHPMailer/PHPMailer/wiki/Troubleshooting<br /><pre>
+
+</pre></td></tr><tr><td>138357</td><td>SMTP connect() failed. https://github.com/PHPMailer/PHPMailer/wiki/Troubleshooting<br /><pre>
+
+</pre></td></tr><tr><td>138358</td><td>SMTP connect() failed. https://github.com/PHPMailer/PHPMailer/wiki/Troubleshooting<br /><pre>
+
+</pre></td></tr><tr><td>138359</td><td>SMTP connect() failed. https://github.com/PHPMailer/PHPMailer/wiki/Troubleshooting<br /><pre>
+
+</pre></td></tr><tr><td>138360</td><td>SMTP connect() failed. https://github.com/PHPMailer/PHPMailer/wiki/Troubleshooting<br /><pre>
+
+</pre></td></tr><tr><td>138361</td><td>SMTP connect() failed. https://github.com/PHPMailer/PHPMailer/wiki/Troubleshooting<br /><pre>
+
+</pre></td></tr><tr><td>138362</td><td>SMTP connect() failed. https://github.com/PHPMailer/PHPMailer/wiki/Troubleshooting<br /><pre>
+
+</pre></td></tr><tr><td>138363</td><td>SMTP connect() failed. https://github.com/PHPMailer/PHPMailer/wiki/Troubleshooting<br /><pre>
+
+</pre></td></tr><tr><td>138364</td><td>SMTP connect() failed. https://github.com/PHPMailer/PHPMailer/wiki/Troubleshooting<br /><pre>
+
+</pre></td></tr><tr><td>138365</td><td>SMTP connect() failed. https://github.com/PHPMailer/PHPMailer/wiki/Troubleshooting<br /><pre>
+
+</pre></td></tr>   
+            </tbody>
+          </table>
+    
+          
+          <table class="table table-striped table-bordered table-condensed">
+          <thead>
+              <tr>
+                <th class="header">Email ID</th>
+                <th class="header">Email sent</th>   
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>138342</td><td>info@cornet.be</td></tr><tr><td>143354</td><td>hans.deruiter@planet.nl</td></tr><tr><td>143355</td><td>hans.kleinschiphorst@theater.hku.nl</td></tr><tr><td>143356</td><td>hans.meeske@holland-innovative.nl</td></tr><tr><td>143357</td><td>hans.sommer@planet.nl</td></tr><tr><td>143358</td><td>hans.willemsen@rabobank.nl</td></tr><tr><td>143359</td><td>harmen.van.der.kooij@portico.nl</td></tr><tr><td>143360</td><td>harold@informatie-advies.nl</td></tr><tr><td>143361</td><td>havemoer@worldonline.nl</td></tr><tr><td>143362</td><td>hbodewes@knmg.nl</td></tr><tr><td>138343</td><td>info@crea-star.be</td></tr><tr><td>143363</td><td>hbogaert@marin.nl</td></tr><tr><td>143364</td><td>hderksen@sci.kun.nl</td></tr><tr><td>143365</td><td>health@holland-innovative.nl</td></tr><tr><td>143366</td><td>hecka.j.r.heck@uu.nl</td></tr><tr><td>143367</td><td>hello@tmrw.nl</td></tr><tr><td>143368</td><td>helmut-wija-dijksman@zonnet.nl</td></tr><tr><td>143369</td><td>helpdesk@hardware.nl</td></tr><tr><td>143370</td><td>helpdesk@sharecare.nl</td></tr><tr><td>143371</td><td>henk.a.bos@hetnet.nl</td></tr><tr><td>138344</td><td>info@cv-entertainment.be</td></tr><tr><td>143372</td><td>henk.lammers@rabobank.nl</td></tr><tr><td>143373</td><td>henk.zoutenbier@planet.nl</td></tr><tr><td>143374</td><td>henkens@nidi.nl</td></tr><tr><td>143375</td><td>henkentia@home.nl</td></tr><tr><td>143376</td><td>henkentineke@home.nl</td></tr><tr><td>143377</td><td>hermangeers@planet.nl</td></tr><tr><td>143378</td><td>hfwdbrtd@buzzworks.nl</td></tr><tr><td>143379</td><td>hkpool@link.nl</td></tr><tr><td>143380</td><td>hlohstro@science.uva.nl</td></tr><tr><td>138345</td><td>info@cyrano.be</td></tr><tr><td>143381</td><td>hmt@hmt.nl</td></tr><tr><td>143382</td><td>hoeksma@flux-rs.nl</td></tr><tr><td>143383</td><td>hooft@nonius.nl</td></tr><tr><td>143384</td><td>hpux-admin@dutchworks.nl</td></tr><tr><td>143385</td><td>hq@redcross.nl</td></tr><tr><td>143386</td><td>hrm.nwt@rabobank.nl</td></tr><tr><td>143387</td><td>hrm@holland-innovative.nl</td></tr><tr><td>143388</td><td>hrm@remotion.nl</td></tr><tr><td>143389</td><td>hspijker@planet.nl</td></tr><tr><td>138346</td><td>info@dada.be</td></tr><tr><td>143390</td><td>huang@chinashipping.nl</td></tr><tr><td>143391</td><td>huisartspraktijksteenbank@planet.nl</td></tr><tr><td>143392</td><td>huren@autohurenopcuracao.nl</td></tr><tr><td>143393</td><td>i.de.jong@everest.nl</td></tr><tr><td>143394</td><td>i.g.m.m.niemegeers@tudelft.nl</td></tr><tr><td>143395</td><td>i.van.arkel@bb.leidenuniv.nl</td></tr><tr><td>143396</td><td>iberends@xs4all.nl</td></tr><tr><td>143397</td><td>ifm-international@hr.nl</td></tr><tr><td>143398</td><td>imj.van.noordwijk@kneppelhout.nl</td></tr><tr><td>138347</td><td>info@darwin.be</td></tr><tr><td>143399</td><td>incasso@rabobank.nl</td></tr><tr><td>143400</td><td>info.bollenstreek@rabobank.nl</td></tr><tr><td>143401</td><td>info.lvcm@rabobank.nl</td></tr><tr><td>143402</td><td>info@013.nl</td></tr><tr><td>143403</td><td>info@0800autolease.nl</td></tr><tr><td>143404</td><td>info@1001inventions.nl</td></tr><tr><td>143405</td><td>info@100p.nl</td></tr><tr><td>143406</td><td>info@112brabant.nl</td></tr><tr><td>143407</td><td>info@112groningen.nl</td></tr><tr><td>138348</td><td>info@decode.be</td></tr><tr><td>143408</td><td>info@112vandaag.nl</td></tr><tr><td>143409</td><td>info@113online.nl</td></tr><tr><td>143410</td><td>info@11x17.nl</td></tr><tr><td>143411</td><td>info@123inkt.nl</td></tr><tr><td>143412</td><td>info@123schoon.nl</td></tr><tr><td>143413</td><td>info@2bflex.nl</td></tr><tr><td>143414</td><td>info@4itprofessionals.nl</td></tr><tr><td>143415</td><td>info@4tune.nl</td></tr><tr><td>143416</td><td>info@59design.nl</td></tr><tr><td>138349</td><td>info@delektro.be</td></tr><tr><td>143417</td><td>info@77lubricants.nl</td></tr><tr><td>143418</td><td>info@aadvise.nl</td></tr><tr><td>143419</td><td>info@aartsplastics.nl</td></tr><tr><td>143420</td><td>info@abelforte.nl</td></tr><tr><td>143421</td><td>info@abn.nl</td></tr><tr><td>143422</td><td>info@abnamro.nl</td></tr><tr><td>143423</td><td>info@abortusinformatie.nl</td></tr><tr><td>143424</td><td>info@absurdist.nl</td></tr><tr><td>143425</td><td>info@accolades.nl</td></tr><tr><td>138350</td><td>info@deltareizen.be</td></tr><tr><td>143426</td><td>info@actuac.nl</td></tr><tr><td>143427</td><td>info@adexadvice.nl</td></tr><tr><td>143428</td><td>info@advaita-advies.nl</td></tr><tr><td>143429</td><td>info@advice-fm.nl</td></tr><tr><td>143430</td><td>info@adviceassurantien.nl</td></tr><tr><td>143431</td><td>info@advicemakelaardij.nl</td></tr><tr><td>143432</td><td>info@advise-ms.nl</td></tr><tr><td>143433</td><td>info@agility-mudis.nl</td></tr><tr><td>143434</td><td>info@agrosolutions.nl</td></tr>      
+            </tbody>
+          </table>
+            
+          <table class="table table-striped table-bordered table-condensed">
+          <thead>
+              <tr>
+                <th class="header">Email ID</th>
+                <th class="header">Email Failed</th>   
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>138351</td><td>info@deltatransport.be</td></tr><tr><td>143435</td><td>info@airaqua.nl</td></tr><tr><td>143436</td><td>info@airmalta.nl</td></tr><tr><td>143437</td><td>info@airprint.nl</td></tr><tr><td>143438</td><td>info@airtrust.nl</td></tr><tr><td>143439</td><td>info@alarmwesa.nl</td></tr><tr><td>143440</td><td>info@alice-advice.nl</td></tr><tr><td>143441</td><td>info@almi.nl</td></tr><tr><td>143442</td><td>info@alumax.nl</td></tr><tr><td>143443</td><td>info@am.nl</td></tr><tr><td>138352</td><td>info@demaco.be</td></tr><tr><td>138353</td><td>info@demeibloem.be</td></tr><tr><td>138354</td><td>info@dynamo.be</td></tr><tr><td>138355</td><td>info@ecospeed.be</td></tr><tr><td>138356</td><td>info@ecosys.be</td></tr><tr><td>138357</td><td>info@emergent.be</td></tr><tr><td>138358</td><td>info@energie-consulent.be</td></tr><tr><td>138359</td><td>info@enersol.be</td></tr><tr><td>138360</td><td>info@envitec.be</td></tr><tr><td>138361</td><td>info@eternit.be</td></tr><tr><td>138362</td><td>info@eurocampers.be</td></tr><tr><td>138363</td><td>info@eventix.be</td></tr><tr><td>138364</td><td>info@everest-tax.be</td></tr><tr><td>138365</td><td>info@evolution.be</td></tr>      
+            </tbody>
+          </table>  
+            
+          <table class="table table-striped table-bordered table-condensed">
+          <thead>
+              <tr>
+                <th class="header">Email ID</th>
+                <th class="header">Email sent earlier</th>   
+              </tr>
+            </thead>
+            <tbody>
+                    
+            </tbody>
+          </table>
+            
+          <table class="table table-striped table-bordered table-condensed">
+          <thead>
+              <tr>
+                <th class="header">Debug</th>
+                
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>138342</td></tr><tr><td>info@cornet.be</td></tr><tr><td>0</td></tr><tr><td>0</td></tr><tr><td>hans.deruiter@planet.nl, hans.kleinschiphorst@theater.hku.nl, hans.meeske@holland-innovative.nl, hans.sommer@planet.nl, hans.willemsen@rabobank.nl, harmen.van.der.kooij@portico.nl, harold@informatie-advies.nl, havemoer@worldonline.nl, hbodewes@knmg.nl</td></tr><tr><td>1</td></tr><tr><td>0</td><td>info@cornet.be</td><td>1</td><td>hans.deruiter@planet.nl</td><td>2</td><td> hans.kleinschiphorst@theater.hku.nl</td><td>3</td><td> hans.meeske@holland-innovative.nl</td><td>4</td><td> hans.sommer@planet.nl</td><td>5</td><td> hans.willemsen@rabobank.nl</td><td>6</td><td> harmen.van.der.kooij@portico.nl</td><td>7</td><td> harold@informatie-advies.nl</td><td>8</td><td> havemoer@worldonline.nl</td><td>9</td><td> hbodewes@knmg.nl</td></tr><tr></tr><tr><td>10</td></tr><tr><td><pre>
+
+</pre></td></tr><tr><td>138343</td></tr><tr><td>info@crea-star.be</td></tr><tr><td>1</td></tr><tr><td>9</td></tr><tr><td>hbogaert@marin.nl, hderksen@sci.kun.nl, health@holland-innovative.nl, hecka.j.r.heck@uu.nl, hello@tmrw.nl, helmut-wija-dijksman@zonnet.nl, helpdesk@hardware.nl, helpdesk@sharecare.nl, henk.a.bos@hetnet.nl</td></tr><tr><td>1</td></tr><tr><td>0</td><td>info@crea-star.be</td><td>1</td><td>hbogaert@marin.nl</td><td>2</td><td> hderksen@sci.kun.nl</td><td>3</td><td> health@holland-innovative.nl</td><td>4</td><td> hecka.j.r.heck@uu.nl</td><td>5</td><td> hello@tmrw.nl</td><td>6</td><td> helmut-wija-dijksman@zonnet.nl</td><td>7</td><td> helpdesk@hardware.nl</td><td>8</td><td> helpdesk@sharecare.nl</td><td>9</td><td> henk.a.bos@hetnet.nl</td></tr><tr></tr><tr><td>10</td></tr><tr><td><pre>
+
+</pre></td></tr><tr><td>138344</td></tr><tr><td>info@cv-entertainment.be</td></tr><tr><td>2</td></tr><tr><td>18</td></tr><tr><td>henk.lammers@rabobank.nl, henk.zoutenbier@planet.nl, henkens@nidi.nl, henkentia@home.nl, henkentineke@home.nl, hermangeers@planet.nl, hfwdbrtd@buzzworks.nl, hkpool@link.nl, hlohstro@science.uva.nl</td></tr><tr><td>1</td></tr><tr><td>0</td><td>info@cv-entertainment.be</td><td>1</td><td>henk.lammers@rabobank.nl</td><td>2</td><td> henk.zoutenbier@planet.nl</td><td>3</td><td> henkens@nidi.nl</td><td>4</td><td> henkentia@home.nl</td><td>5</td><td> henkentineke@home.nl</td><td>6</td><td> hermangeers@planet.nl</td><td>7</td><td> hfwdbrtd@buzzworks.nl</td><td>8</td><td> hkpool@link.nl</td><td>9</td><td> hlohstro@science.uva.nl</td></tr><tr></tr><tr><td>10</td></tr><tr><td><pre>
+
+</pre></td></tr><tr><td>138345</td></tr><tr><td>info@cyrano.be</td></tr><tr><td>3</td></tr><tr><td>27</td></tr><tr><td>hmt@hmt.nl, hoeksma@flux-rs.nl, hooft@nonius.nl, hpux-admin@dutchworks.nl, hq@redcross.nl, hrm.nwt@rabobank.nl, hrm@holland-innovative.nl, hrm@remotion.nl, hspijker@planet.nl</td></tr><tr><td>1</td></tr><tr><td>0</td><td>info@cyrano.be</td><td>1</td><td>hmt@hmt.nl</td><td>2</td><td> hoeksma@flux-rs.nl</td><td>3</td><td> hooft@nonius.nl</td><td>4</td><td> hpux-admin@dutchworks.nl</td><td>5</td><td> hq@redcross.nl</td><td>6</td><td> hrm.nwt@rabobank.nl</td><td>7</td><td> hrm@holland-innovative.nl</td><td>8</td><td> hrm@remotion.nl</td><td>9</td><td> hspijker@planet.nl</td></tr><tr></tr><tr><td>10</td></tr><tr><td><pre>
+
+</pre></td></tr><tr><td>138346</td></tr><tr><td>info@dada.be</td></tr><tr><td>4</td></tr><tr><td>36</td></tr><tr><td>huang@chinashipping.nl, huisartspraktijksteenbank@planet.nl, huren@autohurenopcuracao.nl, i.de.jong@everest.nl, i.g.m.m.niemegeers@tudelft.nl, i.van.arkel@bb.leidenuniv.nl, iberends@xs4all.nl, ifm-international@hr.nl, imj.van.noordwijk@kneppelhout.nl</td></tr><tr><td>1</td></tr><tr><td>0</td><td>info@dada.be</td><td>1</td><td>huang@chinashipping.nl</td><td>2</td><td> huisartspraktijksteenbank@planet.nl</td><td>3</td><td> huren@autohurenopcuracao.nl</td><td>4</td><td> i.de.jong@everest.nl</td><td>5</td><td> i.g.m.m.niemegeers@tudelft.nl</td><td>6</td><td> i.van.arkel@bb.leidenuniv.nl</td><td>7</td><td> iberends@xs4all.nl</td><td>8</td><td> ifm-international@hr.nl</td><td>9</td><td> imj.van.noordwijk@kneppelhout.nl</td></tr><tr></tr><tr><td>10</td></tr><tr><td><pre>
+
+</pre></td></tr><tr><td>138347</td></tr><tr><td>info@darwin.be</td></tr><tr><td>5</td></tr><tr><td>45</td></tr><tr><td>incasso@rabobank.nl, info.bollenstreek@rabobank.nl, info.lvcm@rabobank.nl, info@013.nl, info@0800autolease.nl, info@1001inventions.nl, info@100p.nl, info@112brabant.nl, info@112groningen.nl</td></tr><tr><td>1</td></tr><tr><td>0</td><td>info@darwin.be</td><td>1</td><td>incasso@rabobank.nl</td><td>2</td><td> info.bollenstreek@rabobank.nl</td><td>3</td><td> info.lvcm@rabobank.nl</td><td>4</td><td> info@013.nl</td><td>5</td><td> info@0800autolease.nl</td><td>6</td><td> info@1001inventions.nl</td><td>7</td><td> info@100p.nl</td><td>8</td><td> info@112brabant.nl</td><td>9</td><td> info@112groningen.nl</td></tr><tr></tr><tr><td>10</td></tr><tr><td><pre>
+
+</pre></td></tr><tr><td>138348</td></tr><tr><td>info@decode.be</td></tr><tr><td>6</td></tr><tr><td>54</td></tr><tr><td>info@112vandaag.nl, info@113online.nl, info@11x17.nl, info@123inkt.nl, info@123schoon.nl, info@2bflex.nl, info@4itprofessionals.nl, info@4tune.nl, info@59design.nl</td></tr><tr><td>1</td></tr><tr><td>0</td><td>info@decode.be</td><td>1</td><td>info@112vandaag.nl</td><td>2</td><td> info@113online.nl</td><td>3</td><td> info@11x17.nl</td><td>4</td><td> info@123inkt.nl</td><td>5</td><td> info@123schoon.nl</td><td>6</td><td> info@2bflex.nl</td><td>7</td><td> info@4itprofessionals.nl</td><td>8</td><td> info@4tune.nl</td><td>9</td><td> info@59design.nl</td></tr><tr></tr><tr><td>10</td></tr><tr><td><pre>
+
+</pre></td></tr><tr><td>138349</td></tr><tr><td>info@delektro.be</td></tr><tr><td>7</td></tr><tr><td>63</td></tr><tr><td>info@77lubricants.nl, info@aadvise.nl, info@aartsplastics.nl, info@abelforte.nl, info@abn.nl, info@abnamro.nl, info@abortusinformatie.nl, info@absurdist.nl, info@accolades.nl</td></tr><tr><td>1</td></tr><tr><td>0</td><td>info@delektro.be</td><td>1</td><td>info@77lubricants.nl</td><td>2</td><td> info@aadvise.nl</td><td>3</td><td> info@aartsplastics.nl</td><td>4</td><td> info@abelforte.nl</td><td>5</td><td> info@abn.nl</td><td>6</td><td> info@abnamro.nl</td><td>7</td><td> info@abortusinformatie.nl</td><td>8</td><td> info@absurdist.nl</td><td>9</td><td> info@accolades.nl</td></tr><tr></tr><tr><td>10</td></tr><tr><td><pre>
+
+</pre></td></tr><tr><td>138350</td></tr><tr><td>info@deltareizen.be</td></tr><tr><td>8</td></tr><tr><td>72</td></tr><tr><td>info@actuac.nl, info@adexadvice.nl, info@advaita-advies.nl, info@advice-fm.nl, info@adviceassurantien.nl, info@advicemakelaardij.nl, info@advise-ms.nl, info@agility-mudis.nl, info@agrosolutions.nl</td></tr><tr><td>1</td></tr><tr><td>0</td><td>info@deltareizen.be</td><td>1</td><td>info@actuac.nl</td><td>2</td><td> info@adexadvice.nl</td><td>3</td><td> info@advaita-advies.nl</td><td>4</td><td> info@advice-fm.nl</td><td>5</td><td> info@adviceassurantien.nl</td><td>6</td><td> info@advicemakelaardij.nl</td><td>7</td><td> info@advise-ms.nl</td><td>8</td><td> info@agility-mudis.nl</td><td>9</td><td> info@agrosolutions.nl</td></tr><tr></tr><tr><td>10</td></tr><tr><td><pre>
+
+</pre></td></tr><tr><td>138351</td></tr><tr><td>info@deltatransport.be</td></tr><tr><td>9</td></tr><tr><td>81</td></tr><tr><td>info@airaqua.nl, info@airmalta.nl, info@airprint.nl, info@airtrust.nl, info@alarmwesa.nl, info@alice-advice.nl, info@almi.nl, info@alumax.nl, info@am.nl</td></tr><tr><td></td></tr><tr></tr><tr><td>0</td><td>info@deltatransport.be</td><td>1</td><td>info@airaqua.nl</td><td>2</td><td> info@airmalta.nl</td><td>3</td><td> info@airprint.nl</td><td>4</td><td> info@airtrust.nl</td><td>5</td><td> info@alarmwesa.nl</td><td>6</td><td> info@alice-advice.nl</td><td>7</td><td> info@almi.nl</td><td>8</td><td> info@alumax.nl</td><td>9</td><td> info@am.nl</td></tr><tr><td>0</td></tr><tr><td>SMTP Error: data not accepted.SMTP server error: DATA END command failed<br /><pre>
+
+</pre></td></tr><tr><td>138352</td></tr><tr><td>info@demaco.be</td></tr><tr><td>9</td></tr><tr><td>81</td></tr><tr><td>info@airaqua.nl, info@airmalta.nl, info@airprint.nl, info@airtrust.nl, info@alarmwesa.nl, info@alice-advice.nl, info@almi.nl, info@alumax.nl, info@am.nl</td></tr><tr><td></td></tr><tr></tr><tr><td>0</td><td>info@demaco.be</td><td>1</td><td>info@airaqua.nl</td><td>2</td><td> info@airmalta.nl</td><td>3</td><td> info@airprint.nl</td><td>4</td><td> info@airtrust.nl</td><td>5</td><td> info@alarmwesa.nl</td><td>6</td><td> info@alice-advice.nl</td><td>7</td><td> info@almi.nl</td><td>8</td><td> info@alumax.nl</td><td>9</td><td> info@am.nl</td></tr><tr><td>0</td></tr><tr><td>SMTP connect() failed. https://github.com/PHPMailer/PHPMailer/wiki/Troubleshooting<br /><pre>
+
+</pre></td></tr><tr><td>138353</td></tr><tr><td>info@demeibloem.be</td></tr><tr><td>9</td></tr><tr><td>81</td></tr><tr><td>info@airaqua.nl, info@airmalta.nl, info@airprint.nl, info@airtrust.nl, info@alarmwesa.nl, info@alice-advice.nl, info@almi.nl, info@alumax.nl, info@am.nl</td></tr><tr><td></td></tr><tr></tr><tr><td>0</td><td>info@demeibloem.be</td><td>1</td><td>info@airaqua.nl</td><td>2</td><td> info@airmalta.nl</td><td>3</td><td> info@airprint.nl</td><td>4</td><td> info@airtrust.nl</td><td>5</td><td> info@alarmwesa.nl</td><td>6</td><td> info@alice-advice.nl</td><td>7</td><td> info@almi.nl</td><td>8</td><td> info@alumax.nl</td><td>9</td><td> info@am.nl</td></tr><tr><td>0</td></tr><tr><td>SMTP connect() failed. https://github.com/PHPMailer/PHPMailer/wiki/Troubleshooting<br /><pre>
+
+</pre></td></tr><tr><td>138354</td></tr><tr><td>info@dynamo.be</td></tr><tr><td>9</td></tr><tr><td>81</td></tr><tr><td>info@airaqua.nl, info@airmalta.nl, info@airprint.nl, info@airtrust.nl, info@alarmwesa.nl, info@alice-advice.nl, info@almi.nl, info@alumax.nl, info@am.nl</td></tr><tr><td></td></tr><tr></tr><tr><td>0</td><td>info@dynamo.be</td><td>1</td><td>info@airaqua.nl</td><td>2</td><td> info@airmalta.nl</td><td>3</td><td> info@airprint.nl</td><td>4</td><td> info@airtrust.nl</td><td>5</td><td> info@alarmwesa.nl</td><td>6</td><td> info@alice-advice.nl</td><td>7</td><td> info@almi.nl</td><td>8</td><td> info@alumax.nl</td><td>9</td><td> info@am.nl</td></tr><tr><td>0</td></tr><tr><td>SMTP connect() failed. https://github.com/PHPMailer/PHPMailer/wiki/Troubleshooting<br /><pre>
+
+</pre></td></tr><tr><td>138355</td></tr><tr><td>info@ecospeed.be</td></tr><tr><td>9</td></tr><tr><td>81</td></tr><tr><td>info@airaqua.nl, info@airmalta.nl, info@airprint.nl, info@airtrust.nl, info@alarmwesa.nl, info@alice-advice.nl, info@almi.nl, info@alumax.nl, info@am.nl</td></tr><tr><td></td></tr><tr></tr><tr><td>0</td><td>info@ecospeed.be</td><td>1</td><td>info@airaqua.nl</td><td>2</td><td> info@airmalta.nl</td><td>3</td><td> info@airprint.nl</td><td>4</td><td> info@airtrust.nl</td><td>5</td><td> info@alarmwesa.nl</td><td>6</td><td> info@alice-advice.nl</td><td>7</td><td> info@almi.nl</td><td>8</td><td> info@alumax.nl</td><td>9</td><td> info@am.nl</td></tr><tr><td>0</td></tr><tr><td>SMTP connect() failed. https://github.com/PHPMailer/PHPMailer/wiki/Troubleshooting<br /><pre>
+
+</pre></td></tr><tr><td>138356</td></tr><tr><td>info@ecosys.be</td></tr><tr><td>9</td></tr><tr><td>81</td></tr><tr><td>info@airaqua.nl, info@airmalta.nl, info@airprint.nl, info@airtrust.nl, info@alarmwesa.nl, info@alice-advice.nl, info@almi.nl, info@alumax.nl, info@am.nl</td></tr><tr><td></td></tr><tr></tr><tr><td>0</td><td>info@ecosys.be</td><td>1</td><td>info@airaqua.nl</td><td>2</td><td> info@airmalta.nl</td><td>3</td><td> info@airprint.nl</td><td>4</td><td> info@airtrust.nl</td><td>5</td><td> info@alarmwesa.nl</td><td>6</td><td> info@alice-advice.nl</td><td>7</td><td> info@almi.nl</td><td>8</td><td> info@alumax.nl</td><td>9</td><td> info@am.nl</td></tr><tr><td>0</td></tr><tr><td>SMTP connect() failed. https://github.com/PHPMailer/PHPMailer/wiki/Troubleshooting<br /><pre>
+
+</pre></td></tr><tr><td>138357</td></tr><tr><td>info@emergent.be</td></tr><tr><td>9</td></tr><tr><td>81</td></tr><tr><td>info@airaqua.nl, info@airmalta.nl, info@airprint.nl, info@airtrust.nl, info@alarmwesa.nl, info@alice-advice.nl, info@almi.nl, info@alumax.nl, info@am.nl</td></tr><tr><td></td></tr><tr></tr><tr><td>0</td><td>info@emergent.be</td><td>1</td><td>info@airaqua.nl</td><td>2</td><td> info@airmalta.nl</td><td>3</td><td> info@airprint.nl</td><td>4</td><td> info@airtrust.nl</td><td>5</td><td> info@alarmwesa.nl</td><td>6</td><td> info@alice-advice.nl</td><td>7</td><td> info@almi.nl</td><td>8</td><td> info@alumax.nl</td><td>9</td><td> info@am.nl</td></tr><tr><td>0</td></tr><tr><td>SMTP connect() failed. https://github.com/PHPMailer/PHPMailer/wiki/Troubleshooting<br /><pre>
+
+</pre></td></tr><tr><td>138358</td></tr><tr><td>info@energie-consulent.be</td></tr><tr><td>9</td></tr><tr><td>81</td></tr><tr><td>info@airaqua.nl, info@airmalta.nl, info@airprint.nl, info@airtrust.nl, info@alarmwesa.nl, info@alice-advice.nl, info@almi.nl, info@alumax.nl, info@am.nl</td></tr><tr><td></td></tr><tr></tr><tr><td>0</td><td>info@energie-consulent.be</td><td>1</td><td>info@airaqua.nl</td><td>2</td><td> info@airmalta.nl</td><td>3</td><td> info@airprint.nl</td><td>4</td><td> info@airtrust.nl</td><td>5</td><td> info@alarmwesa.nl</td><td>6</td><td> info@alice-advice.nl</td><td>7</td><td> info@almi.nl</td><td>8</td><td> info@alumax.nl</td><td>9</td><td> info@am.nl</td></tr><tr><td>0</td></tr><tr><td>SMTP connect() failed. https://github.com/PHPMailer/PHPMailer/wiki/Troubleshooting<br /><pre>
+
+</pre></td></tr><tr><td>138359</td></tr><tr><td>info@enersol.be</td></tr><tr><td>9</td></tr><tr><td>81</td></tr><tr><td>info@airaqua.nl, info@airmalta.nl, info@airprint.nl, info@airtrust.nl, info@alarmwesa.nl, info@alice-advice.nl, info@almi.nl, info@alumax.nl, info@am.nl</td></tr><tr><td></td></tr><tr></tr><tr><td>0</td><td>info@enersol.be</td><td>1</td><td>info@airaqua.nl</td><td>2</td><td> info@airmalta.nl</td><td>3</td><td> info@airprint.nl</td><td>4</td><td> info@airtrust.nl</td><td>5</td><td> info@alarmwesa.nl</td><td>6</td><td> info@alice-advice.nl</td><td>7</td><td> info@almi.nl</td><td>8</td><td> info@alumax.nl</td><td>9</td><td> info@am.nl</td></tr><tr><td>0</td></tr><tr><td>SMTP connect() failed. https://github.com/PHPMailer/PHPMailer/wiki/Troubleshooting<br /><pre>
+
+</pre></td></tr><tr><td>138360</td></tr><tr><td>info@envitec.be</td></tr><tr><td>9</td></tr><tr><td>81</td></tr><tr><td>info@airaqua.nl, info@airmalta.nl, info@airprint.nl, info@airtrust.nl, info@alarmwesa.nl, info@alice-advice.nl, info@almi.nl, info@alumax.nl, info@am.nl</td></tr><tr><td></td></tr><tr></tr><tr><td>0</td><td>info@envitec.be</td><td>1</td><td>info@airaqua.nl</td><td>2</td><td> info@airmalta.nl</td><td>3</td><td> info@airprint.nl</td><td>4</td><td> info@airtrust.nl</td><td>5</td><td> info@alarmwesa.nl</td><td>6</td><td> info@alice-advice.nl</td><td>7</td><td> info@almi.nl</td><td>8</td><td> info@alumax.nl</td><td>9</td><td> info@am.nl</td></tr><tr><td>0</td></tr><tr><td>SMTP connect() failed. https://github.com/PHPMailer/PHPMailer/wiki/Troubleshooting<br /><pre>
+
+</pre></td></tr><tr><td>138361</td></tr><tr><td>info@eternit.be</td></tr><tr><td>9</td></tr><tr><td>81</td></tr><tr><td>info@airaqua.nl, info@airmalta.nl, info@airprint.nl, info@airtrust.nl, info@alarmwesa.nl, info@alice-advice.nl, info@almi.nl, info@alumax.nl, info@am.nl</td></tr><tr><td></td></tr><tr></tr><tr><td>0</td><td>info@eternit.be</td><td>1</td><td>info@airaqua.nl</td><td>2</td><td> info@airmalta.nl</td><td>3</td><td> info@airprint.nl</td><td>4</td><td> info@airtrust.nl</td><td>5</td><td> info@alarmwesa.nl</td><td>6</td><td> info@alice-advice.nl</td><td>7</td><td> info@almi.nl</td><td>8</td><td> info@alumax.nl</td><td>9</td><td> info@am.nl</td></tr><tr><td>0</td></tr><tr><td>SMTP connect() failed. https://github.com/PHPMailer/PHPMailer/wiki/Troubleshooting<br /><pre>
+
+</pre></td></tr><tr><td>138362</td></tr><tr><td>info@eurocampers.be</td></tr><tr><td>9</td></tr><tr><td>81</td></tr><tr><td>info@airaqua.nl, info@airmalta.nl, info@airprint.nl, info@airtrust.nl, info@alarmwesa.nl, info@alice-advice.nl, info@almi.nl, info@alumax.nl, info@am.nl</td></tr><tr><td></td></tr><tr></tr><tr><td>0</td><td>info@eurocampers.be</td><td>1</td><td>info@airaqua.nl</td><td>2</td><td> info@airmalta.nl</td><td>3</td><td> info@airprint.nl</td><td>4</td><td> info@airtrust.nl</td><td>5</td><td> info@alarmwesa.nl</td><td>6</td><td> info@alice-advice.nl</td><td>7</td><td> info@almi.nl</td><td>8</td><td> info@alumax.nl</td><td>9</td><td> info@am.nl</td></tr><tr><td>0</td></tr><tr><td>SMTP connect() failed. https://github.com/PHPMailer/PHPMailer/wiki/Troubleshooting<br /><pre>
+
+</pre></td></tr><tr><td>138363</td></tr><tr><td>info@eventix.be</td></tr><tr><td>9</td></tr><tr><td>81</td></tr><tr><td>info@airaqua.nl, info@airmalta.nl, info@airprint.nl, info@airtrust.nl, info@alarmwesa.nl, info@alice-advice.nl, info@almi.nl, info@alumax.nl, info@am.nl</td></tr><tr><td></td></tr><tr></tr><tr><td>0</td><td>info@eventix.be</td><td>1</td><td>info@airaqua.nl</td><td>2</td><td> info@airmalta.nl</td><td>3</td><td> info@airprint.nl</td><td>4</td><td> info@airtrust.nl</td><td>5</td><td> info@alarmwesa.nl</td><td>6</td><td> info@alice-advice.nl</td><td>7</td><td> info@almi.nl</td><td>8</td><td> info@alumax.nl</td><td>9</td><td> info@am.nl</td></tr><tr><td>0</td></tr><tr><td>SMTP connect() failed. https://github.com/PHPMailer/PHPMailer/wiki/Troubleshooting<br /><pre>
+
+</pre></td></tr><tr><td>138364</td></tr><tr><td>info@everest-tax.be</td></tr><tr><td>9</td></tr><tr><td>81</td></tr><tr><td>info@airaqua.nl, info@airmalta.nl, info@airprint.nl, info@airtrust.nl, info@alarmwesa.nl, info@alice-advice.nl, info@almi.nl, info@alumax.nl, info@am.nl</td></tr><tr><td></td></tr><tr></tr><tr><td>0</td><td>info@everest-tax.be</td><td>1</td><td>info@airaqua.nl</td><td>2</td><td> info@airmalta.nl</td><td>3</td><td> info@airprint.nl</td><td>4</td><td> info@airtrust.nl</td><td>5</td><td> info@alarmwesa.nl</td><td>6</td><td> info@alice-advice.nl</td><td>7</td><td> info@almi.nl</td><td>8</td><td> info@alumax.nl</td><td>9</td><td> info@am.nl</td></tr><tr><td>0</td></tr><tr><td>SMTP connect() failed. https://github.com/PHPMailer/PHPMailer/wiki/Troubleshooting<br /><pre>
+
+</pre></td></tr><tr><td>138365</td></tr><tr><td>info@evolution.be</td></tr><tr><td>9</td></tr><tr><td>81</td></tr><tr><td>info@airaqua.nl, info@airmalta.nl, info@airprint.nl, info@airtrust.nl, info@alarmwesa.nl, info@alice-advice.nl, info@almi.nl, info@alumax.nl, info@am.nl</td></tr><tr><td></td></tr><tr></tr><tr><td>0</td><td>info@evolution.be</td><td>1</td><td>info@airaqua.nl</td><td>2</td><td> info@airmalta.nl</td><td>3</td><td> info@airprint.nl</td><td>4</td><td> info@airtrust.nl</td><td>5</td><td> info@alarmwesa.nl</td><td>6</td><td> info@alice-advice.nl</td><td>7</td><td> info@almi.nl</td><td>8</td><td> info@alumax.nl</td><td>9</td><td> info@am.nl</td></tr><tr><td>0</td></tr><tr><td>SMTP connect() failed. https://github.com/PHPMailer/PHPMailer/wiki/Troubleshooting<br /><pre>
+
+</pre></td></tr>      
+            </tbody>
+          </table>        
+            
+      </div>
+    </div>
+	<div id="footer">
+		<hr>
+		<div class="inner">
+			<div class="container">
+				<p class="right"><a href="#">Back to top</a></p>
+				<p>
+				</p>
+			</div>
+		</div>
+	</div>
+	
+</body>
+</html>

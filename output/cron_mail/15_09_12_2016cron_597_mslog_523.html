@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>
+<html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>
+<html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>
+<html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Linked Emails Project</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width">
+
+  <link href="http://localhost/CI_306_linked_em_Production/assets/css/admin/global.css" rel="stylesheet" type="text/css">
+  
+   <!--<link rel="stylesheet" href="/assets/css/bootstrap-responsive.min.css">-->
+
+  <script src="http://localhost/CI_306_linked_em_Production/assets/js/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+  <!--<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script> -->
+ 
+  
+  <script src="http://localhost/CI_306_linked_em_Production//assets/js/jquery-1.7.1.min.js"></script>)
+  <script src="http://localhost/CI_306_linked_em_Production//assets/js/bootstrap.min.js"></script>
+  
+  <!--<script src="http://localhost/CI_306_linked_em_Production//node_modules/socket.io/node_modules/socket.io-client/socket.io.js"></script>-->
+  
+  <!--<script src="http://localhost/CI_306_linked_em_Production//assets/js/socket.js"></script> -->
+  <!--<script src="http://localhost/CI_306_linked_em_Production//assets/js/main.js"></script> -->
+  
+    <style>
+    body {
+      padding-top: 60px;
+      padding-bottom: 40px;
+    }
+    </style>
+</head>
+<body>
+	<div class="navbar navbar-fixed-top">
+	  <div class="navbar-inner">
+	    <div class="container">
+	      <a class="brand">Linked Emails Project</a>
+	      <ul class="nav">
+	        <li >
+	          <a href="http://localhost/CI_306_linked_em_Production/index.php/admin/main">DashBoard</a>
+	        </li>
+                <li >
+	          <a href="http://localhost/CI_306_linked_em_Production/index.php/admin/products">Products</a>
+	        </li>
+	        <li >
+	          <a href="http://localhost/CI_306_linked_em_Production/index.php/admin/manufacturers/">Manufacturers</a>
+	        </li>
+                <li class="dropdown">
+	          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Emails <b class="caret"></b></a>
+	          <ul class="dropdown-menu">
+	            <li>
+	              <a href="http://localhost/CI_306_linked_em_Production/index.php/admin/Emails">Email Add,Edit,Delete</a>
+	            </li>
+                    <li>
+	              <a href="http://localhost/CI_306_linked_em_Production/index.php/admin/Owner">Owner Add,Edit,Delete</a>
+	            </li>
+                    <li>
+	              <a href="http://localhost/CI_306_linked_em_Production/index.php/admin/Source">Source Add,Edit,Delete</a>
+	            </li>
+	          </ul>
+	        </li>
+                <li class="dropdown">
+	          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Companies <b class="caret"></b></a>
+	          <ul class="dropdown-menu">
+	            <li>
+	              <a href="http://localhost/CI_306_linked_em_Production/index.php/admin/Companies">Company Add,Edit,Delete</a>
+	            </li>
+                    <li>
+	              <a href="http://localhost/CI_306_linked_em_Production/index.php/admin/Category">Category Add,Edit,Delete</a>
+	            </li>
+                    <li>
+	              <a href="http://localhost/CI_306_linked_em_Production/index.php/admin/Source">... Add,Edit,Delete</a>
+	            </li>
+	          </ul>
+	        </li>
+	        <li class="dropdown">
+	          <a href="#" class="dropdown-toggle" data-toggle="dropdown">System <b class="caret"></b></a>
+	          <ul class="dropdown-menu">
+	            <li>
+	              <a href="http://localhost/CI_306_linked_em_Production/admin/logout">Logout</a>
+	            </li>
+	          </ul>
+	        </li>
+	      </ul>
+	    </div>
+	  </div>
+	</div>	
+    
+    
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-3 col-md-2 sidebar">
+          <ul class="nav nav-sidebar">
+            <li class="active"><a href="http://localhost/CI_306_linked_em_Production/index.php/admin/main">Overview <span class="sr-only">(current)</span></a></li>
+            <li><a href="#">Reports</a></li>
+            <li><a href="http://localhost/CI_306_linked_em_Production/index.php/admin/Mailer/show">Mailer</a></li>
+            <li><a href="http://localhost/CI_306_linked_em_Production/index.php/admin/Mailer/mailfixedjob">Scheduled Mail Jobs</a></li>
+            <li><a href="http://localhost/CI_306_linked_em_Production/index.php/admin/Mailer/cronm/1/mailer/8/gmail/UI">Cron Scheduler</a></li>
+            <li><a href="http://localhost/CI_306_linked_em_Production/index.php/admin/Emails/cron_backup/false">Cron Backup</a></li>
+            <li><a href="http://localhost/CI_306_linked_em_Production/index.php/admin/export/show">Exports</a></li>
+          </ul>
+          <ul class="nav nav-sidebar">
+            <li><a href="">Nav item</a></li>
+            <li><a href="">Nav item again</a></li>
+            <li><a href="">One more nav</a></li>
+            <li><a href="http://localhost/CI_306_linked_em_Production/index.php/admin/Statistics/">Statistics</a></li>
+            <li><a href="http://localhost/CI_306_linked_em_Production/index.php/admin/Owner/">Owners</a></li>
+          </ul>
+          <ul class="nav nav-sidebar">
+            <li><a href="http://localhost/CI_306_linked_em_Production/index.php/admin/Emails/">Emails</a></li>
+            <li><a href="http://localhost/CI_306_linked_em_Production/index.php/admin/upload/show">Uploads</a></li>
+            <li><a href="http://localhost/CI_306_linked_em_Production/index.php/admin/upload/">Upload Files</a></li>
+          </ul>
+        </div>
+       
+        </div>  
+       </div>
+
+    <div class="container top">
+
+      <ul class="breadcrumb">
+        <li>
+          <a href="http://localhost/CI_306_linked_em_Production/admin">
+            Admin_mailer          </a> 
+          <span class="divider">/</span>
+        </li>
+        <li class="active">
+          Cron_mail          
+        </li>
+        
+      </ul>
+
+      <div class="page-header users-header">
+        <h2>
+          Cron_mail              <br/>
+             
+              <a  href="http://localhost/CI_306_linked_em_Production/admin/Mailer/sendmail" class="btn btn-success">Send Email</a>
+              <div class="divider"/>
+              <a  href="http://localhost/CI_306_linked_em_Production/admin/Mailer/sendmailattach" class="btn btn-success">Send Email with Attachment</a>
+              <br/>
+          
+        </h2>
+      </div>
+      
+      <div class="row">
+        <div class="span12 columns">
+          <div class="well">
+          
+          </div>
+             <table class="table table-striped table-bordered table-condensed">
+            <thead>
+              <tr>
+                <th class="header">email_v_count</th>
+                <th class="yellow header headerSortDown">email_nv_count</th>
+                <th class="green header">email_merged_count</th>
+                <th class="red header">email_to_mailer_count</th>
+                <th class="red header">email_sent_count</th>
+                <th class="red header">emails_sent_earlier</th>
+                <th class="red header">emails_scheduled_next_run</th>
+                <th class="red header">N/A</th>
+      
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>50</td><td>0</td><td>50</td><td>20</td><td>20</td><td>0</td><td>33504</td><td>N/A</td></tr>      
+            </tbody>
+           </table> 
+            
+            <table class="table table-striped table-bordered table-condensed">
+             <thead>
+              <tr>
+                <th class="header">Debugging Info</th>
+              </tr>
+              <tr>
+                <th class="header">Email ID</th>
+                <th class="header">Debug Info</th>   
+              </tr>
+            </thead>
+            <tbody>
+               <tr><td>145507</td><td><pre>
+
+</pre></td></tr><tr><td>145508</td><td><pre>
+
+</pre></td></tr><tr><td>145509</td><td><pre>
+
+</pre></td></tr><tr><td>145510</td><td><pre>
+
+</pre></td></tr>   
+            </tbody>
+          </table>
+    
+          
+          <table class="table table-striped table-bordered table-condensed">
+          <thead>
+              <tr>
+                <th class="header">Email ID</th>
+                <th class="header">Email sent</th>   
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>145507</td><td>helen.hakansson@imm.ki.se</td></tr><tr><td>104920</td><td>admin@stjohnskingston.co.uk</td></tr><tr><td>104921</td><td>admin@symetra.co.uk</td></tr><tr><td>104922</td><td>admin@system-people.co.uk</td></tr><tr><td>104923</td><td>admin@tech-it-easy.co.uk</td></tr><tr><td>145508</td><td>helena@compost.se</td></tr><tr><td>104924</td><td>admin@telephone-exchange.co.uk</td></tr><tr><td>104925</td><td>admin@therobertsontrust.org.uk</td></tr><tr><td>104926</td><td>admin@thorverton-ce-primary.devon.sch.uk</td></tr><tr><td>104927</td><td>admin@thurgo.co.uk</td></tr><tr><td>145509</td><td>helena@jovial.se</td></tr><tr><td>104928</td><td>admin@triptych-design.co.uk</td></tr><tr><td>104929</td><td>admin@uplowman-primary.devon.sch.uk</td></tr><tr><td>104930</td><td>admin@venues.org.uk</td></tr><tr><td>104931</td><td>admin@vickersjoinery.co.uk</td></tr><tr><td>145510</td><td>helena@zirconmedia.se</td></tr><tr><td>104932</td><td>admin@vonabt.co.uk</td></tr><tr><td>104933</td><td>admin@west-hill-primary.devon.sch.uk</td></tr><tr><td>104934</td><td>admin@westdeanpc.org.uk</td></tr><tr><td>104935</td><td>admin@whitchurch-primary.devon.sch.uk</td></tr>      
+            </tbody>
+          </table>
+            
+          <table class="table table-striped table-bordered table-condensed">
+          <thead>
+              <tr>
+                <th class="header">Email ID</th>
+                <th class="header">Email Failed</th>   
+              </tr>
+            </thead>
+            <tbody>
+                    
+            </tbody>
+          </table>  
+            
+          <table class="table table-striped table-bordered table-condensed">
+          <thead>
+              <tr>
+                <th class="header">Email ID</th>
+                <th class="header">Email sent earlier</th>   
+              </tr>
+            </thead>
+            <tbody>
+                    
+            </tbody>
+          </table>
+            
+          <table class="table table-striped table-bordered table-condensed">
+          <thead>
+              <tr>
+                <th class="header">Debug</th>
+                
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>145507</td></tr><tr><td>helen.hakansson@imm.ki.se</td></tr><tr><td>0</td></tr><tr><td>0</td></tr><tr><td>admin@stjohnskingston.co.uk, admin@symetra.co.uk, admin@system-people.co.uk, admin@tech-it-easy.co.uk</td></tr><tr><td>1</td></tr><tr><td>0</td><td>helen.hakansson@imm.ki.se</td><td>1</td><td>admin@stjohnskingston.co.uk</td><td>2</td><td> admin@symetra.co.uk</td><td>3</td><td> admin@system-people.co.uk</td><td>4</td><td> admin@tech-it-easy.co.uk</td></tr><tr></tr><tr><td>5</td></tr><tr><td><pre>
+
+</pre></td></tr><tr><td>145508</td></tr><tr><td>helena@compost.se</td></tr><tr><td>1</td></tr><tr><td>4</td></tr><tr><td>admin@telephone-exchange.co.uk, admin@therobertsontrust.org.uk, admin@thorverton-ce-primary.devon.sch.uk, admin@thurgo.co.uk</td></tr><tr><td>1</td></tr><tr><td>0</td><td>helena@compost.se</td><td>1</td><td>admin@telephone-exchange.co.uk</td><td>2</td><td> admin@therobertsontrust.org.uk</td><td>3</td><td> admin@thorverton-ce-primary.devon.sch.uk</td><td>4</td><td> admin@thurgo.co.uk</td></tr><tr></tr><tr><td>5</td></tr><tr><td><pre>
+
+</pre></td></tr><tr><td>145509</td></tr><tr><td>helena@jovial.se</td></tr><tr><td>2</td></tr><tr><td>8</td></tr><tr><td>admin@triptych-design.co.uk, admin@uplowman-primary.devon.sch.uk, admin@venues.org.uk, admin@vickersjoinery.co.uk</td></tr><tr><td>1</td></tr><tr><td>0</td><td>helena@jovial.se</td><td>1</td><td>admin@triptych-design.co.uk</td><td>2</td><td> admin@uplowman-primary.devon.sch.uk</td><td>3</td><td> admin@venues.org.uk</td><td>4</td><td> admin@vickersjoinery.co.uk</td></tr><tr></tr><tr><td>5</td></tr><tr><td><pre>
+
+</pre></td></tr><tr><td>145510</td></tr><tr><td>helena@zirconmedia.se</td></tr><tr><td>3</td></tr><tr><td>12</td></tr><tr><td>admin@vonabt.co.uk, admin@west-hill-primary.devon.sch.uk, admin@westdeanpc.org.uk, admin@whitchurch-primary.devon.sch.uk</td></tr><tr><td>1</td></tr><tr><td>0</td><td>helena@zirconmedia.se</td><td>1</td><td>admin@vonabt.co.uk</td><td>2</td><td> admin@west-hill-primary.devon.sch.uk</td><td>3</td><td> admin@westdeanpc.org.uk</td><td>4</td><td> admin@whitchurch-primary.devon.sch.uk</td></tr><tr></tr><tr><td>5</td></tr><tr><td><pre>
+
+</pre></td></tr>      
+            </tbody>
+          </table>        
+            
+      </div>
+    </div>
+	<div id="footer">
+		<hr>
+		<div class="inner">
+			<div class="container">
+				<p class="right"><a href="#">Back to top</a></p>
+				<p>
+				</p>
+			</div>
+		</div>
+	</div>
+	
+</body>
+</html>

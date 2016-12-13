@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>
+<html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>
+<html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>
+<html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Linked Emails Project</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width">
+
+  <link href="http://localhost/CI_306_linked_em_Production/assets/css/admin/global.css" rel="stylesheet" type="text/css">
+  
+   <!--<link rel="stylesheet" href="/assets/css/bootstrap-responsive.min.css">-->
+
+  <script src="http://localhost/CI_306_linked_em_Production/assets/js/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+  <!--<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script> -->
+ 
+  
+  <script src="http://localhost/CI_306_linked_em_Production//assets/js/jquery-1.7.1.min.js"></script>)
+  <script src="http://localhost/CI_306_linked_em_Production//assets/js/bootstrap.min.js"></script>
+  
+  <!--<script src="http://localhost/CI_306_linked_em_Production//node_modules/socket.io/node_modules/socket.io-client/socket.io.js"></script>-->
+  
+  <!--<script src="http://localhost/CI_306_linked_em_Production//assets/js/socket.js"></script> -->
+  <!--<script src="http://localhost/CI_306_linked_em_Production//assets/js/main.js"></script> -->
+  
+    <style>
+    body {
+      padding-top: 60px;
+      padding-bottom: 40px;
+    }
+    </style>
+</head>
+<body>
+	<div class="navbar navbar-fixed-top">
+	  <div class="navbar-inner">
+	    <div class="container">
+	      <a class="brand">Linked Emails Project</a>
+	      <ul class="nav">
+	        <li >
+	          <a href="http://localhost/CI_306_linked_em_Production/index.php/admin/main">DashBoard</a>
+	        </li>
+                <li >
+	          <a href="http://localhost/CI_306_linked_em_Production/index.php/admin/products">Products</a>
+	        </li>
+	        <li >
+	          <a href="http://localhost/CI_306_linked_em_Production/index.php/admin/manufacturers/">Manufacturers</a>
+	        </li>
+                <li class="dropdown">
+	          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Emails <b class="caret"></b></a>
+	          <ul class="dropdown-menu">
+	            <li>
+	              <a href="http://localhost/CI_306_linked_em_Production/index.php/admin/Emails">Email Add,Edit,Delete</a>
+	            </li>
+                    <li>
+	              <a href="http://localhost/CI_306_linked_em_Production/index.php/admin/Owner">Owner Add,Edit,Delete</a>
+	            </li>
+                    <li>
+	              <a href="http://localhost/CI_306_linked_em_Production/index.php/admin/Source">Source Add,Edit,Delete</a>
+	            </li>
+	          </ul>
+	        </li>
+                <li class="dropdown">
+	          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Companies <b class="caret"></b></a>
+	          <ul class="dropdown-menu">
+	            <li>
+	              <a href="http://localhost/CI_306_linked_em_Production/index.php/admin/Companies">Company Add,Edit,Delete</a>
+	            </li>
+                    <li>
+	              <a href="http://localhost/CI_306_linked_em_Production/index.php/admin/Category">Category Add,Edit,Delete</a>
+	            </li>
+                    <li>
+	              <a href="http://localhost/CI_306_linked_em_Production/index.php/admin/Source">... Add,Edit,Delete</a>
+	            </li>
+	          </ul>
+	        </li>
+	        <li class="dropdown">
+	          <a href="#" class="dropdown-toggle" data-toggle="dropdown">System <b class="caret"></b></a>
+	          <ul class="dropdown-menu">
+	            <li>
+	              <a href="http://localhost/CI_306_linked_em_Production/admin/logout">Logout</a>
+	            </li>
+	          </ul>
+	        </li>
+	      </ul>
+	    </div>
+	  </div>
+	</div>	
+    
+    
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-3 col-md-2 sidebar">
+          <ul class="nav nav-sidebar">
+            <li class="active"><a href="http://localhost/CI_306_linked_em_Production/index.php/admin/main">Overview <span class="sr-only">(current)</span></a></li>
+            <li><a href="#">Reports</a></li>
+            <li><a href="http://localhost/CI_306_linked_em_Production/index.php/admin/Mailer/show">Mailer</a></li>
+            <li><a href="http://localhost/CI_306_linked_em_Production/index.php/admin/Mailer/mailfixedjob">Scheduled Mail Jobs</a></li>
+            <li><a href="http://localhost/CI_306_linked_em_Production/index.php/admin/Mailer/cronm/1/mailer/8/gmail/UI">Cron Scheduler</a></li>
+            <li><a href="http://localhost/CI_306_linked_em_Production/index.php/admin/Emails/cron_backup/false">Cron Backup</a></li>
+            <li><a href="http://localhost/CI_306_linked_em_Production/index.php/admin/export/show">Exports</a></li>
+          </ul>
+          <ul class="nav nav-sidebar">
+            <li><a href="">Nav item</a></li>
+            <li><a href="">Nav item again</a></li>
+            <li><a href="">One more nav</a></li>
+            <li><a href="http://localhost/CI_306_linked_em_Production/index.php/admin/Statistics/">Statistics</a></li>
+            <li><a href="http://localhost/CI_306_linked_em_Production/index.php/admin/Owner/">Owners</a></li>
+          </ul>
+          <ul class="nav nav-sidebar">
+            <li><a href="http://localhost/CI_306_linked_em_Production/index.php/admin/Emails/">Emails</a></li>
+            <li><a href="http://localhost/CI_306_linked_em_Production/index.php/admin/upload/show">Uploads</a></li>
+            <li><a href="http://localhost/CI_306_linked_em_Production/index.php/admin/upload/">Upload Files</a></li>
+          </ul>
+        </div>
+       
+        </div>  
+       </div>
+
+    <div class="container top">
+
+      <ul class="breadcrumb">
+        <li>
+          <a href="http://localhost/CI_306_linked_em_Production/admin">
+            Admin_mailer          </a> 
+          <span class="divider">/</span>
+        </li>
+        <li class="active">
+          Cron_mail          
+        </li>
+        
+      </ul>
+
+      <div class="page-header users-header">
+        <h2>
+          Cron_mail              <br/>
+             
+              <a  href="http://localhost/CI_306_linked_em_Production/admin/Mailer/sendmail" class="btn btn-success">Send Email</a>
+              <div class="divider"/>
+              <a  href="http://localhost/CI_306_linked_em_Production/admin/Mailer/sendmailattach" class="btn btn-success">Send Email with Attachment</a>
+              <br/>
+          
+        </h2>
+      </div>
+      
+      <div class="row">
+        <div class="span12 columns">
+          <div class="well">
+          
+          </div>
+             <table class="table table-striped table-bordered table-condensed">
+            <thead>
+              <tr>
+                <th class="header">email_v_count</th>
+                <th class="yellow header headerSortDown">email_nv_count</th>
+                <th class="green header">email_merged_count</th>
+                <th class="red header">email_to_mailer_count</th>
+                <th class="red header">email_sent_count</th>
+                <th class="red header">emails_sent_earlier</th>
+                <th class="red header">emails_scheduled_next_run</th>
+                <th class="red header">N/A</th>
+      
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>12</td><td>0</td><td>12</td><td>60</td><td>60</td><td>0</td><td>10010</td><td>N/A</td></tr>      
+            </tbody>
+           </table> 
+            
+            <table class="table table-striped table-bordered table-condensed">
+             <thead>
+              <tr>
+                <th class="header">Debugging Info</th>
+              </tr>
+              <tr>
+                <th class="header">Email ID</th>
+                <th class="header">Debug Info</th>   
+              </tr>
+            </thead>
+            <tbody>
+               <tr><td>82180</td><td><pre>
+
+</pre></td></tr><tr><td>82182</td><td><pre>
+
+</pre></td></tr><tr><td>82191</td><td><pre>
+
+</pre></td></tr><tr><td>82252</td><td><pre>
+
+</pre></td></tr><tr><td>82267</td><td><pre>
+
+</pre></td></tr><tr><td>82270</td><td><pre>
+
+</pre></td></tr>   
+            </tbody>
+          </table>
+    
+          
+          <table class="table table-striped table-bordered table-condensed">
+          <thead>
+              <tr>
+                <th class="header">Email ID</th>
+                <th class="header">Email sent</th>   
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>82180</td><td>gdare@cbk.gov.kw</td></tr><tr><td>49582</td><td>restech@restech.com.sa</td></tr><tr><td>49583</td><td>retail@alrajhibank.com.sa</td></tr><tr><td>49584</td><td>rhjamalallail@effat.edu.sa</td></tr><tr><td>49585</td><td>rhussain@panda.com.sa</td></tr><tr><td>49586</td><td>riyadh@albonian.com.sa</td></tr><tr><td>49587</td><td>riyadh@magrabi.com.sa</td></tr><tr><td>49588</td><td>riyadh@sipc.com.sa</td></tr><tr><td>49589</td><td>riyadh@tomas.com.sa</td></tr><tr><td>49590</td><td>riyadhoffice@nrc.com.sa</td></tr><tr><td>82182</td><td>hrazzouqi@cbk.gov.kw</td></tr><tr><td>49591</td><td>rkumar@alessa.com.sa</td></tr><tr><td>49592</td><td>rocamoram@rcjubail.gov.sa</td></tr><tr><td>49593</td><td>roshan@secutronic.com.sa</td></tr><tr><td>49594</td><td>rtcc@rtcc.com.sa</td></tr><tr><td>49595</td><td>rtclcomkho@rezayat.com.sa</td></tr><tr><td>49597</td><td>ruscons@anet.net.sa</td></tr><tr><td>49598</td><td>rusmmail@awalnet.net.sa</td></tr><tr><td>49599</td><td>ryd_mng@okam.com.sa</td></tr><tr><td>49600</td><td>s.sardar@sasref.com.sa</td></tr><tr><td>82191</td><td>trainingdev@cbk.gov.kw</td></tr><tr><td>49601</td><td>saad@aesarabia.com.sa</td></tr><tr><td>49602</td><td>saadya@aec.com.sa</td></tr><tr><td>49603</td><td>saawy_kh@atheer.net.sa</td></tr><tr><td>49604</td><td>sadath@atco.com.sa</td></tr><tr><td>49605</td><td>saempsb_webmaster@aramco.com.sa</td></tr><tr><td>49606</td><td>safi@saudiorix.com.sa</td></tr><tr><td>49607</td><td>saiban@kfupm.edu.sa</td></tr><tr><td>49608</td><td>sajeesh@almutawa.com.sa</td></tr><tr><td>49609</td><td>sakir@awalnet.net.sa</td></tr><tr><td>82252</td><td>eid@kmun.gov.kw</td></tr><tr><td>49610</td><td>salabbad@kacst.edu.sa</td></tr><tr><td>49611</td><td>salah@okam.com.sa</td></tr><tr><td>49612</td><td>salam@atc.com.sa</td></tr><tr><td>49613</td><td>salarifi@ksu.edu.sa</td></tr><tr><td>49614</td><td>saleas0h@aramco.com.sa</td></tr><tr><td>49615</td><td>saleem.akhtar@inmatrading.com.sa</td></tr><tr><td>49616</td><td>saleh_khan@aesarabia.com.sa</td></tr><tr><td>49617</td><td>sales3@uniworld.com.sa</td></tr><tr><td>49618</td><td>sales@alfoadia.com.sa</td></tr><tr><td>82267</td><td>haroon@cbk.gov.kw</td></tr><tr><td>49619</td><td>sales@aloudatravel.com.sa</td></tr><tr><td>49620</td><td>sales@alqasabi.com.sa</td></tr><tr><td>49621</td><td>sales@alwahda-express.com.sa</td></tr><tr><td>49622</td><td>sales@amco.com.sa</td></tr><tr><td>49623</td><td>sales@arabian-homes.com.sa</td></tr><tr><td>49624</td><td>sales@arcom.com.sa</td></tr><tr><td>49625</td><td>sales@btalsaudia.com.sa</td></tr><tr><td>49626</td><td>sales@digi.net.sa</td></tr><tr><td>49627</td><td>sales@fuchs.com.sa</td></tr><tr><td>82270</td><td>tourism-kw@media.gov.kw</td></tr><tr><td>49628</td><td>sales@memco.com.sa</td></tr><tr><td>49629</td><td>sales@pes.com.sa</td></tr><tr><td>49630</td><td>sales@sidco.com.sa</td></tr><tr><td>49631</td><td>sales@sri.com.sa</td></tr><tr><td>49632</td><td>sales@ssci.com.sa</td></tr><tr><td>49633</td><td>sales@technogroup.com.sa</td></tr><tr><td>49634</td><td>sales@unicoil.com.sa</td></tr><tr><td>49635</td><td>sales@zamilcd.com.sa</td></tr><tr><td>49636</td><td>sales_dept@npc.com.sa</td></tr>      
+            </tbody>
+          </table>
+            
+          <table class="table table-striped table-bordered table-condensed">
+          <thead>
+              <tr>
+                <th class="header">Email ID</th>
+                <th class="header">Email Failed</th>   
+              </tr>
+            </thead>
+            <tbody>
+                    
+            </tbody>
+          </table>  
+            
+          <table class="table table-striped table-bordered table-condensed">
+          <thead>
+              <tr>
+                <th class="header">Email ID</th>
+                <th class="header">Email sent earlier</th>   
+              </tr>
+            </thead>
+            <tbody>
+                    
+            </tbody>
+          </table>
+            
+          <table class="table table-striped table-bordered table-condensed">
+          <thead>
+              <tr>
+                <th class="header">Debug</th>
+                
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>82180</td></tr><tr><td>gdare@cbk.gov.kw</td></tr><tr><td>0</td></tr><tr><td>0</td></tr><tr><td>restech@restech.com.sa, retail@alrajhibank.com.sa, rhjamalallail@effat.edu.sa, rhussain@panda.com.sa, riyadh@albonian.com.sa, riyadh@magrabi.com.sa, riyadh@sipc.com.sa, riyadh@tomas.com.sa, riyadhoffice@nrc.com.sa</td></tr><tr><td>1</td></tr><tr><td>0</td><td>gdare@cbk.gov.kw</td><td>1</td><td>restech@restech.com.sa</td><td>2</td><td> retail@alrajhibank.com.sa</td><td>3</td><td> rhjamalallail@effat.edu.sa</td><td>4</td><td> rhussain@panda.com.sa</td><td>5</td><td> riyadh@albonian.com.sa</td><td>6</td><td> riyadh@magrabi.com.sa</td><td>7</td><td> riyadh@sipc.com.sa</td><td>8</td><td> riyadh@tomas.com.sa</td><td>9</td><td> riyadhoffice@nrc.com.sa</td></tr><tr></tr><tr><td>10</td></tr><tr><td><pre>
+
+</pre></td></tr><tr><td>82182</td></tr><tr><td>hrazzouqi@cbk.gov.kw</td></tr><tr><td>1</td></tr><tr><td>9</td></tr><tr><td>rkumar@alessa.com.sa, rocamoram@rcjubail.gov.sa, roshan@secutronic.com.sa, rtcc@rtcc.com.sa, rtclcomkho@rezayat.com.sa, ruscons@anet.net.sa, rusmmail@awalnet.net.sa, ryd_mng@okam.com.sa, s.sardar@sasref.com.sa</td></tr><tr><td>1</td></tr><tr><td>0</td><td>hrazzouqi@cbk.gov.kw</td><td>1</td><td>rkumar@alessa.com.sa</td><td>2</td><td> rocamoram@rcjubail.gov.sa</td><td>3</td><td> roshan@secutronic.com.sa</td><td>4</td><td> rtcc@rtcc.com.sa</td><td>5</td><td> rtclcomkho@rezayat.com.sa</td><td>6</td><td> ruscons@anet.net.sa</td><td>7</td><td> rusmmail@awalnet.net.sa</td><td>8</td><td> ryd_mng@okam.com.sa</td><td>9</td><td> s.sardar@sasref.com.sa</td></tr><tr></tr><tr><td>10</td></tr><tr><td><pre>
+
+</pre></td></tr><tr><td>82191</td></tr><tr><td>trainingdev@cbk.gov.kw</td></tr><tr><td>2</td></tr><tr><td>18</td></tr><tr><td>saad@aesarabia.com.sa, saadya@aec.com.sa, saawy_kh@atheer.net.sa, sadath@atco.com.sa, saempsb_webmaster@aramco.com.sa, safi@saudiorix.com.sa, saiban@kfupm.edu.sa, sajeesh@almutawa.com.sa, sakir@awalnet.net.sa</td></tr><tr><td>1</td></tr><tr><td>0</td><td>trainingdev@cbk.gov.kw</td><td>1</td><td>saad@aesarabia.com.sa</td><td>2</td><td> saadya@aec.com.sa</td><td>3</td><td> saawy_kh@atheer.net.sa</td><td>4</td><td> sadath@atco.com.sa</td><td>5</td><td> saempsb_webmaster@aramco.com.sa</td><td>6</td><td> safi@saudiorix.com.sa</td><td>7</td><td> saiban@kfupm.edu.sa</td><td>8</td><td> sajeesh@almutawa.com.sa</td><td>9</td><td> sakir@awalnet.net.sa</td></tr><tr></tr><tr><td>10</td></tr><tr><td><pre>
+
+</pre></td></tr><tr><td>82252</td></tr><tr><td>eid@kmun.gov.kw</td></tr><tr><td>3</td></tr><tr><td>27</td></tr><tr><td>salabbad@kacst.edu.sa, salah@okam.com.sa, salam@atc.com.sa, salarifi@ksu.edu.sa, saleas0h@aramco.com.sa, saleem.akhtar@inmatrading.com.sa, saleh_khan@aesarabia.com.sa, sales3@uniworld.com.sa, sales@alfoadia.com.sa</td></tr><tr><td>1</td></tr><tr><td>0</td><td>eid@kmun.gov.kw</td><td>1</td><td>salabbad@kacst.edu.sa</td><td>2</td><td> salah@okam.com.sa</td><td>3</td><td> salam@atc.com.sa</td><td>4</td><td> salarifi@ksu.edu.sa</td><td>5</td><td> saleas0h@aramco.com.sa</td><td>6</td><td> saleem.akhtar@inmatrading.com.sa</td><td>7</td><td> saleh_khan@aesarabia.com.sa</td><td>8</td><td> sales3@uniworld.com.sa</td><td>9</td><td> sales@alfoadia.com.sa</td></tr><tr></tr><tr><td>10</td></tr><tr><td><pre>
+
+</pre></td></tr><tr><td>82267</td></tr><tr><td>haroon@cbk.gov.kw</td></tr><tr><td>4</td></tr><tr><td>36</td></tr><tr><td>sales@aloudatravel.com.sa, sales@alqasabi.com.sa, sales@alwahda-express.com.sa, sales@amco.com.sa, sales@arabian-homes.com.sa, sales@arcom.com.sa, sales@btalsaudia.com.sa, sales@digi.net.sa, sales@fuchs.com.sa</td></tr><tr><td>1</td></tr><tr><td>0</td><td>haroon@cbk.gov.kw</td><td>1</td><td>sales@aloudatravel.com.sa</td><td>2</td><td> sales@alqasabi.com.sa</td><td>3</td><td> sales@alwahda-express.com.sa</td><td>4</td><td> sales@amco.com.sa</td><td>5</td><td> sales@arabian-homes.com.sa</td><td>6</td><td> sales@arcom.com.sa</td><td>7</td><td> sales@btalsaudia.com.sa</td><td>8</td><td> sales@digi.net.sa</td><td>9</td><td> sales@fuchs.com.sa</td></tr><tr></tr><tr><td>10</td></tr><tr><td><pre>
+
+</pre></td></tr><tr><td>82270</td></tr><tr><td>tourism-kw@media.gov.kw</td></tr><tr><td>5</td></tr><tr><td>45</td></tr><tr><td>sales@memco.com.sa, sales@pes.com.sa, sales@sidco.com.sa, sales@sri.com.sa, sales@ssci.com.sa, sales@technogroup.com.sa, sales@unicoil.com.sa, sales@zamilcd.com.sa, sales_dept@npc.com.sa</td></tr><tr><td>1</td></tr><tr><td>0</td><td>tourism-kw@media.gov.kw</td><td>1</td><td>sales@memco.com.sa</td><td>2</td><td> sales@pes.com.sa</td><td>3</td><td> sales@sidco.com.sa</td><td>4</td><td> sales@sri.com.sa</td><td>5</td><td> sales@ssci.com.sa</td><td>6</td><td> sales@technogroup.com.sa</td><td>7</td><td> sales@unicoil.com.sa</td><td>8</td><td> sales@zamilcd.com.sa</td><td>9</td><td> sales_dept@npc.com.sa</td></tr><tr></tr><tr><td>10</td></tr><tr><td><pre>
+
+</pre></td></tr>      
+            </tbody>
+          </table>        
+            
+      </div>
+    </div>
+	<div id="footer">
+		<hr>
+		<div class="inner">
+			<div class="container">
+				<p class="right"><a href="#">Back to top</a></p>
+				<p>
+				</p>
+			</div>
+		</div>
+	</div>
+	
+</body>
+</html>
