@@ -82,7 +82,7 @@ class Admin_main extends CI_Controller {
         //$data['count_emails_source6']= $this->Emailv_model->count_rows(array('source_id'=>6));
         //$data['count_emails_source7']= $this->Emailv_model->count_rows(array('source_id'=>7));
         
-       $data['mailer_schedule_log'] =$this->Mailer_schedule_log_model->limit(4,$data['count_mailer_schedule_log']-4)->get_all();//->order_by($order_type);
+       $data['mailer_schedule_log'] =$this->Mailer_schedule_log_model->limit(20,$data['count_mailer_schedule_log']-20)->get_all();//->order_by($order_type);
        $data['cron_log'] =$this->Cron_log_model->limit(4,$data['count_cron_log']-4)->get_all();
        $data['Extraction'] =$this->Extraction_model->limit(4,$data['count_extraction']-4)->get_all();   
        

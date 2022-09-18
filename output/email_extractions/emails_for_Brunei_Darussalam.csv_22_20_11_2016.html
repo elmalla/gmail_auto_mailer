@@ -1,0 +1,1978 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>
+<html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>
+<html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>
+<html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Linked Emails Project</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width">
+
+  <link href="http://localhost/CI_306_linked_em/assets/css/admin/global.css" rel="stylesheet" type="text/css">
+  
+   <!--<link rel="stylesheet" href="/assets/css/bootstrap-responsive.min.css">-->
+
+  <script src="http://localhost/CI_306_linked_em/assets/js/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+  <!--<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script> -->
+ 
+  
+  <script src="http://localhost/CI_306_linked_em//assets/js/jquery-1.7.1.min.js"></script>)
+  <script src="http://localhost/CI_306_linked_em//assets/js/bootstrap.min.js"></script>
+  
+  <!--<script src="http://localhost/CI_306_linked_em//node_modules/socket.io/node_modules/socket.io-client/socket.io.js"></script>-->
+  
+  <!--<script src="http://localhost/CI_306_linked_em//assets/js/socket.js"></script> -->
+  <!--<script src="http://localhost/CI_306_linked_em//assets/js/main.js"></script> -->
+  
+    <style>
+    body {
+      padding-top: 60px;
+      padding-bottom: 40px;
+    }
+    </style>
+</head>
+<body>
+	<div class="navbar navbar-fixed-top">
+	  <div class="navbar-inner">
+	    <div class="container">
+	      <a class="brand">Linked Emails Project</a>
+	      <ul class="nav">
+	        <li >
+	          <a href="http://localhost/CI_306_linked_em/index.php/admin/main">DashBoard</a>
+	        </li>
+                <li >
+	          <a href="http://localhost/CI_306_linked_em/index.php/admin/products">Products</a>
+	        </li>
+	        <li >
+	          <a href="http://localhost/CI_306_linked_em/index.php/admin/manufacturers/">Manufacturers</a>
+	        </li>
+                <li class="dropdown">
+	          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Emails <b class="caret"></b></a>
+	          <ul class="dropdown-menu">
+	            <li>
+	              <a href="http://localhost/CI_306_linked_em/index.php/admin/Emails">Email Add,Edit,Delete</a>
+	            </li>
+                    <li>
+	              <a href="http://localhost/CI_306_linked_em/index.php/admin/Owner">Owner Add,Edit,Delete</a>
+	            </li>
+                    <li>
+	              <a href="http://localhost/CI_306_linked_em/index.php/admin/Source">Source Add,Edit,Delete</a>
+	            </li>
+	          </ul>
+	        </li>
+                <li class="dropdown">
+	          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Companies <b class="caret"></b></a>
+	          <ul class="dropdown-menu">
+	            <li>
+	              <a href="http://localhost/CI_306_linked_em/index.php/admin/Companies">Company Add,Edit,Delete</a>
+	            </li>
+                    <li>
+	              <a href="http://localhost/CI_306_linked_em/index.php/admin/Category">Category Add,Edit,Delete</a>
+	            </li>
+                    <li>
+	              <a href="http://localhost/CI_306_linked_em/index.php/admin/Source">... Add,Edit,Delete</a>
+	            </li>
+	          </ul>
+	        </li>
+	        <li class="dropdown">
+	          <a href="#" class="dropdown-toggle" data-toggle="dropdown">System <b class="caret"></b></a>
+	          <ul class="dropdown-menu">
+	            <li>
+	              <a href="http://localhost/CI_306_linked_em/admin/logout">Logout</a>
+	            </li>
+	          </ul>
+	        </li>
+	      </ul>
+	    </div>
+	  </div>
+	</div>	
+    
+    
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-3 col-md-2 sidebar">
+          <ul class="nav nav-sidebar">
+            <li class="active"><a href="http://localhost/CI_306_linked_em/index.php/admin/main">Overview <span class="sr-only">(current)</span></a></li>
+            <li><a href="#">Reports</a></li>
+            <li><a href="http://localhost/CI_306_linked_em/index.php/admin/Mailer/show">Mailer</a></li>
+            <li><a href="http://localhost/CI_306_linked_em/index.php/admin/Mailer/mailfixedjob">Scheduled Mail Jobs</a></li>
+            <li><a href="http://localhost/CI_306_linked_em/index.php/admin/Mailer/cronm/1/mailer/3/gmail/UI">Cron Scheduler</a></li>
+            <li><a href="http://localhost/CI_306_linked_em/index.php/admin/export/show">Exports</a></li>
+          </ul>
+          <ul class="nav nav-sidebar">
+            <li><a href="">Nav item</a></li>
+            <li><a href="">Nav item again</a></li>
+            <li><a href="">One more nav</a></li>
+            <li><a href="http://localhost/CI_306_linked_em/index.php/admin/Statistics/">Statistics</a></li>
+            <li><a href="http://localhost/CI_306_linked_em/index.php/admin/Owner/">Owners</a></li>
+          </ul>
+          <ul class="nav nav-sidebar">
+            <li><a href="http://localhost/CI_306_linked_em/index.php/admin/Emails/">Emails</a></li>
+            <li><a href="http://localhost/CI_306_linked_em/index.php/admin/upload/show">Uploads</a></li>
+            <li><a href="http://localhost/CI_306_linked_em/index.php/admin/upload/">Upload Files</a></li>
+          </ul>
+        </div>
+       
+        </div>  
+       </div>
+
+    <div class="container top">
+
+      <ul class="breadcrumb">
+        <li>
+          <a href="http://localhost/CI_306_linked_em/index.php/admin">
+            Admin          </a> 
+          <span class="divider">/</span>
+        </li>
+        <li class="active">
+          Emails          
+        </li>
+        
+      </ul>
+
+      <div class="page-header users-header">
+        <h2>
+          Emails          <br/>
+          
+          <br/>
+                
+          <a  href="http://localhost/CI_306_linked_em/index.php/admin/Emails/add" class="btn btn-success">TO be Done</a>
+        </h2>
+      </div>
+      
+      <div class="row">
+        <div class="span12 columns">
+          <div class="well">
+          
+          </div>
+             
+          
+          <table class="table table-striped table-bordered table-condensed">
+            <thead>
+              <tr>
+                <th class="header">Emails Extracted</th>
+                <th class="yellow header headerSortDown">Companies Extracted</th>
+                <th class="green header">Lines count</th>
+                <th class="red header">Empty Lines</th>
+                <th class="red header">URL updated</th>
+                <th class="red header">Companies Inserted</th>
+                <th class="red header">Emails Verified</th>
+                <th class="red header">Emails not Verified</th>
+                <th class="red header">shared_url_count</th>
+                
+                
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+<div style="border:1px solid #990000;padding-left:20px;margin:0 0 10px 0;">
+
+<h4>A PHP Error was encountered</h4>
+
+<p>Severity: Notice</p>
+<p>Message:  Undefined variable: counts</p>
+<p>Filename: ExtractEmails/result.php</p>
+<p>Line Number: 57</p>
+
+
+	<p>Backtrace:</p>
+	
+		
+	
+		
+	
+		
+			<p style="margin-left:10px">
+			File: C:\xampp\htdocs\CI_306_Linked_Em\application\views\admin\Emails\ExtractEmails\result.php<br />
+			Line: 57<br />
+			Function: _error_handler			</p>
+
+		
+	
+		
+	
+		
+	
+		
+			<p style="margin-left:10px">
+			File: C:\xampp\htdocs\CI_306_Linked_Em\application\views\includes\template.php<br />
+			Line: 3<br />
+			Function: view			</p>
+
+		
+	
+		
+	
+		
+	
+		
+			<p style="margin-left:10px">
+			File: C:\xampp\htdocs\CI_306_Linked_Em\application\controllers\admin_emails.php<br />
+			Line: 1687<br />
+			Function: view			</p>
+
+		
+	
+		
+			<p style="margin-left:10px">
+			File: C:\xampp\htdocs\CI_306_Linked_Em\application\controllers\admin_emails.php<br />
+			Line: 799<br />
+			Function: store_html			</p>
+
+		
+	
+		
+	
+		
+	
+		
+			<p style="margin-left:10px">
+			File: C:\xampp\htdocs\CI_306_Linked_Em\index.php<br />
+			Line: 315<br />
+			Function: require_once			</p>
+
+		
+	
+
+</div><td></td>
+<div style="border:1px solid #990000;padding-left:20px;margin:0 0 10px 0;">
+
+<h4>A PHP Error was encountered</h4>
+
+<p>Severity: Notice</p>
+<p>Message:  Undefined variable: companies_count</p>
+<p>Filename: ExtractEmails/result.php</p>
+<p>Line Number: 58</p>
+
+
+	<p>Backtrace:</p>
+	
+		
+	
+		
+	
+		
+			<p style="margin-left:10px">
+			File: C:\xampp\htdocs\CI_306_Linked_Em\application\views\admin\Emails\ExtractEmails\result.php<br />
+			Line: 58<br />
+			Function: _error_handler			</p>
+
+		
+	
+		
+	
+		
+	
+		
+			<p style="margin-left:10px">
+			File: C:\xampp\htdocs\CI_306_Linked_Em\application\views\includes\template.php<br />
+			Line: 3<br />
+			Function: view			</p>
+
+		
+	
+		
+	
+		
+	
+		
+			<p style="margin-left:10px">
+			File: C:\xampp\htdocs\CI_306_Linked_Em\application\controllers\admin_emails.php<br />
+			Line: 1687<br />
+			Function: view			</p>
+
+		
+	
+		
+			<p style="margin-left:10px">
+			File: C:\xampp\htdocs\CI_306_Linked_Em\application\controllers\admin_emails.php<br />
+			Line: 799<br />
+			Function: store_html			</p>
+
+		
+	
+		
+	
+		
+	
+		
+			<p style="margin-left:10px">
+			File: C:\xampp\htdocs\CI_306_Linked_Em\index.php<br />
+			Line: 315<br />
+			Function: require_once			</p>
+
+		
+	
+
+</div><td></td>
+<div style="border:1px solid #990000;padding-left:20px;margin:0 0 10px 0;">
+
+<h4>A PHP Error was encountered</h4>
+
+<p>Severity: Notice</p>
+<p>Message:  Undefined variable: counts</p>
+<p>Filename: ExtractEmails/result.php</p>
+<p>Line Number: 59</p>
+
+
+	<p>Backtrace:</p>
+	
+		
+	
+		
+	
+		
+			<p style="margin-left:10px">
+			File: C:\xampp\htdocs\CI_306_Linked_Em\application\views\admin\Emails\ExtractEmails\result.php<br />
+			Line: 59<br />
+			Function: _error_handler			</p>
+
+		
+	
+		
+	
+		
+	
+		
+			<p style="margin-left:10px">
+			File: C:\xampp\htdocs\CI_306_Linked_Em\application\views\includes\template.php<br />
+			Line: 3<br />
+			Function: view			</p>
+
+		
+	
+		
+	
+		
+	
+		
+			<p style="margin-left:10px">
+			File: C:\xampp\htdocs\CI_306_Linked_Em\application\controllers\admin_emails.php<br />
+			Line: 1687<br />
+			Function: view			</p>
+
+		
+	
+		
+			<p style="margin-left:10px">
+			File: C:\xampp\htdocs\CI_306_Linked_Em\application\controllers\admin_emails.php<br />
+			Line: 799<br />
+			Function: store_html			</p>
+
+		
+	
+		
+	
+		
+	
+		
+			<p style="margin-left:10px">
+			File: C:\xampp\htdocs\CI_306_Linked_Em\index.php<br />
+			Line: 315<br />
+			Function: require_once			</p>
+
+		
+	
+
+</div><td></td>
+<div style="border:1px solid #990000;padding-left:20px;margin:0 0 10px 0;">
+
+<h4>A PHP Error was encountered</h4>
+
+<p>Severity: Notice</p>
+<p>Message:  Undefined variable: counts</p>
+<p>Filename: ExtractEmails/result.php</p>
+<p>Line Number: 60</p>
+
+
+	<p>Backtrace:</p>
+	
+		
+	
+		
+	
+		
+			<p style="margin-left:10px">
+			File: C:\xampp\htdocs\CI_306_Linked_Em\application\views\admin\Emails\ExtractEmails\result.php<br />
+			Line: 60<br />
+			Function: _error_handler			</p>
+
+		
+	
+		
+	
+		
+	
+		
+			<p style="margin-left:10px">
+			File: C:\xampp\htdocs\CI_306_Linked_Em\application\views\includes\template.php<br />
+			Line: 3<br />
+			Function: view			</p>
+
+		
+	
+		
+	
+		
+	
+		
+			<p style="margin-left:10px">
+			File: C:\xampp\htdocs\CI_306_Linked_Em\application\controllers\admin_emails.php<br />
+			Line: 1687<br />
+			Function: view			</p>
+
+		
+	
+		
+			<p style="margin-left:10px">
+			File: C:\xampp\htdocs\CI_306_Linked_Em\application\controllers\admin_emails.php<br />
+			Line: 799<br />
+			Function: store_html			</p>
+
+		
+	
+		
+	
+		
+	
+		
+			<p style="margin-left:10px">
+			File: C:\xampp\htdocs\CI_306_Linked_Em\index.php<br />
+			Line: 315<br />
+			Function: require_once			</p>
+
+		
+	
+
+</div><td></td>
+<div style="border:1px solid #990000;padding-left:20px;margin:0 0 10px 0;">
+
+<h4>A PHP Error was encountered</h4>
+
+<p>Severity: Notice</p>
+<p>Message:  Undefined variable: counts</p>
+<p>Filename: ExtractEmails/result.php</p>
+<p>Line Number: 61</p>
+
+
+	<p>Backtrace:</p>
+	
+		
+	
+		
+	
+		
+			<p style="margin-left:10px">
+			File: C:\xampp\htdocs\CI_306_Linked_Em\application\views\admin\Emails\ExtractEmails\result.php<br />
+			Line: 61<br />
+			Function: _error_handler			</p>
+
+		
+	
+		
+	
+		
+	
+		
+			<p style="margin-left:10px">
+			File: C:\xampp\htdocs\CI_306_Linked_Em\application\views\includes\template.php<br />
+			Line: 3<br />
+			Function: view			</p>
+
+		
+	
+		
+	
+		
+	
+		
+			<p style="margin-left:10px">
+			File: C:\xampp\htdocs\CI_306_Linked_Em\application\controllers\admin_emails.php<br />
+			Line: 1687<br />
+			Function: view			</p>
+
+		
+	
+		
+			<p style="margin-left:10px">
+			File: C:\xampp\htdocs\CI_306_Linked_Em\application\controllers\admin_emails.php<br />
+			Line: 799<br />
+			Function: store_html			</p>
+
+		
+	
+		
+	
+		
+	
+		
+			<p style="margin-left:10px">
+			File: C:\xampp\htdocs\CI_306_Linked_Em\index.php<br />
+			Line: 315<br />
+			Function: require_once			</p>
+
+		
+	
+
+</div><td></td>
+<div style="border:1px solid #990000;padding-left:20px;margin:0 0 10px 0;">
+
+<h4>A PHP Error was encountered</h4>
+
+<p>Severity: Notice</p>
+<p>Message:  Undefined variable: counts</p>
+<p>Filename: ExtractEmails/result.php</p>
+<p>Line Number: 62</p>
+
+
+	<p>Backtrace:</p>
+	
+		
+	
+		
+	
+		
+			<p style="margin-left:10px">
+			File: C:\xampp\htdocs\CI_306_Linked_Em\application\views\admin\Emails\ExtractEmails\result.php<br />
+			Line: 62<br />
+			Function: _error_handler			</p>
+
+		
+	
+		
+	
+		
+	
+		
+			<p style="margin-left:10px">
+			File: C:\xampp\htdocs\CI_306_Linked_Em\application\views\includes\template.php<br />
+			Line: 3<br />
+			Function: view			</p>
+
+		
+	
+		
+	
+		
+	
+		
+			<p style="margin-left:10px">
+			File: C:\xampp\htdocs\CI_306_Linked_Em\application\controllers\admin_emails.php<br />
+			Line: 1687<br />
+			Function: view			</p>
+
+		
+	
+		
+			<p style="margin-left:10px">
+			File: C:\xampp\htdocs\CI_306_Linked_Em\application\controllers\admin_emails.php<br />
+			Line: 799<br />
+			Function: store_html			</p>
+
+		
+	
+		
+	
+		
+	
+		
+			<p style="margin-left:10px">
+			File: C:\xampp\htdocs\CI_306_Linked_Em\index.php<br />
+			Line: 315<br />
+			Function: require_once			</p>
+
+		
+	
+
+</div><td></td>
+<div style="border:1px solid #990000;padding-left:20px;margin:0 0 10px 0;">
+
+<h4>A PHP Error was encountered</h4>
+
+<p>Severity: Notice</p>
+<p>Message:  Undefined variable: counts</p>
+<p>Filename: ExtractEmails/result.php</p>
+<p>Line Number: 63</p>
+
+
+	<p>Backtrace:</p>
+	
+		
+	
+		
+	
+		
+			<p style="margin-left:10px">
+			File: C:\xampp\htdocs\CI_306_Linked_Em\application\views\admin\Emails\ExtractEmails\result.php<br />
+			Line: 63<br />
+			Function: _error_handler			</p>
+
+		
+	
+		
+	
+		
+	
+		
+			<p style="margin-left:10px">
+			File: C:\xampp\htdocs\CI_306_Linked_Em\application\views\includes\template.php<br />
+			Line: 3<br />
+			Function: view			</p>
+
+		
+	
+		
+	
+		
+	
+		
+			<p style="margin-left:10px">
+			File: C:\xampp\htdocs\CI_306_Linked_Em\application\controllers\admin_emails.php<br />
+			Line: 1687<br />
+			Function: view			</p>
+
+		
+	
+		
+			<p style="margin-left:10px">
+			File: C:\xampp\htdocs\CI_306_Linked_Em\application\controllers\admin_emails.php<br />
+			Line: 799<br />
+			Function: store_html			</p>
+
+		
+	
+		
+	
+		
+	
+		
+			<p style="margin-left:10px">
+			File: C:\xampp\htdocs\CI_306_Linked_Em\index.php<br />
+			Line: 315<br />
+			Function: require_once			</p>
+
+		
+	
+
+</div><td></td>
+<div style="border:1px solid #990000;padding-left:20px;margin:0 0 10px 0;">
+
+<h4>A PHP Error was encountered</h4>
+
+<p>Severity: Notice</p>
+<p>Message:  Undefined variable: counts</p>
+<p>Filename: ExtractEmails/result.php</p>
+<p>Line Number: 64</p>
+
+
+	<p>Backtrace:</p>
+	
+		
+	
+		
+	
+		
+			<p style="margin-left:10px">
+			File: C:\xampp\htdocs\CI_306_Linked_Em\application\views\admin\Emails\ExtractEmails\result.php<br />
+			Line: 64<br />
+			Function: _error_handler			</p>
+
+		
+	
+		
+	
+		
+	
+		
+			<p style="margin-left:10px">
+			File: C:\xampp\htdocs\CI_306_Linked_Em\application\views\includes\template.php<br />
+			Line: 3<br />
+			Function: view			</p>
+
+		
+	
+		
+	
+		
+	
+		
+			<p style="margin-left:10px">
+			File: C:\xampp\htdocs\CI_306_Linked_Em\application\controllers\admin_emails.php<br />
+			Line: 1687<br />
+			Function: view			</p>
+
+		
+	
+		
+			<p style="margin-left:10px">
+			File: C:\xampp\htdocs\CI_306_Linked_Em\application\controllers\admin_emails.php<br />
+			Line: 799<br />
+			Function: store_html			</p>
+
+		
+	
+		
+	
+		
+	
+		
+			<p style="margin-left:10px">
+			File: C:\xampp\htdocs\CI_306_Linked_Em\index.php<br />
+			Line: 315<br />
+			Function: require_once			</p>
+
+		
+	
+
+</div><td></td>
+<div style="border:1px solid #990000;padding-left:20px;margin:0 0 10px 0;">
+
+<h4>A PHP Error was encountered</h4>
+
+<p>Severity: Notice</p>
+<p>Message:  Undefined variable: counts</p>
+<p>Filename: ExtractEmails/result.php</p>
+<p>Line Number: 65</p>
+
+
+	<p>Backtrace:</p>
+	
+		
+	
+		
+	
+		
+			<p style="margin-left:10px">
+			File: C:\xampp\htdocs\CI_306_Linked_Em\application\views\admin\Emails\ExtractEmails\result.php<br />
+			Line: 65<br />
+			Function: _error_handler			</p>
+
+		
+	
+		
+	
+		
+	
+		
+			<p style="margin-left:10px">
+			File: C:\xampp\htdocs\CI_306_Linked_Em\application\views\includes\template.php<br />
+			Line: 3<br />
+			Function: view			</p>
+
+		
+	
+		
+	
+		
+	
+		
+			<p style="margin-left:10px">
+			File: C:\xampp\htdocs\CI_306_Linked_Em\application\controllers\admin_emails.php<br />
+			Line: 1687<br />
+			Function: view			</p>
+
+		
+	
+		
+			<p style="margin-left:10px">
+			File: C:\xampp\htdocs\CI_306_Linked_Em\application\controllers\admin_emails.php<br />
+			Line: 799<br />
+			Function: store_html			</p>
+
+		
+	
+		
+	
+		
+	
+		
+			<p style="margin-left:10px">
+			File: C:\xampp\htdocs\CI_306_Linked_Em\index.php<br />
+			Line: 315<br />
+			Function: require_once			</p>
+
+		
+	
+
+</div><td></td></tr>      
+            </tbody>
+            
+             <thead>
+              <tr>
+                <th class="header">Companies without URl</th>
+                <th class="yellow header headerSortDown">Companies without Emails</th>
+               
+                <th class="red header">Company Name from Email</th>
+                <th class="red header">Category Inserted</th>
+                <th class="red header">Companies not inserted</th>
+                <th class="red header">Email bad formated</th>
+                <th class="red header">Email duplicate in file</th>
+                <th class="red header">Email already in DB </th>
+                <th class="red header">free emails companies_count </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+<div style="border:1px solid #990000;padding-left:20px;margin:0 0 10px 0;">
+
+<h4>A PHP Error was encountered</h4>
+
+<p>Severity: Notice</p>
+<p>Message:  Undefined variable: counts</p>
+<p>Filename: ExtractEmails/result.php</p>
+<p>Line Number: 88</p>
+
+
+	<p>Backtrace:</p>
+	
+		
+	
+		
+	
+		
+			<p style="margin-left:10px">
+			File: C:\xampp\htdocs\CI_306_Linked_Em\application\views\admin\Emails\ExtractEmails\result.php<br />
+			Line: 88<br />
+			Function: _error_handler			</p>
+
+		
+	
+		
+	
+		
+	
+		
+			<p style="margin-left:10px">
+			File: C:\xampp\htdocs\CI_306_Linked_Em\application\views\includes\template.php<br />
+			Line: 3<br />
+			Function: view			</p>
+
+		
+	
+		
+	
+		
+	
+		
+			<p style="margin-left:10px">
+			File: C:\xampp\htdocs\CI_306_Linked_Em\application\controllers\admin_emails.php<br />
+			Line: 1687<br />
+			Function: view			</p>
+
+		
+	
+		
+			<p style="margin-left:10px">
+			File: C:\xampp\htdocs\CI_306_Linked_Em\application\controllers\admin_emails.php<br />
+			Line: 799<br />
+			Function: store_html			</p>
+
+		
+	
+		
+	
+		
+	
+		
+			<p style="margin-left:10px">
+			File: C:\xampp\htdocs\CI_306_Linked_Em\index.php<br />
+			Line: 315<br />
+			Function: require_once			</p>
+
+		
+	
+
+</div><td></td>
+<div style="border:1px solid #990000;padding-left:20px;margin:0 0 10px 0;">
+
+<h4>A PHP Error was encountered</h4>
+
+<p>Severity: Notice</p>
+<p>Message:  Undefined variable: counts</p>
+<p>Filename: ExtractEmails/result.php</p>
+<p>Line Number: 89</p>
+
+
+	<p>Backtrace:</p>
+	
+		
+	
+		
+	
+		
+			<p style="margin-left:10px">
+			File: C:\xampp\htdocs\CI_306_Linked_Em\application\views\admin\Emails\ExtractEmails\result.php<br />
+			Line: 89<br />
+			Function: _error_handler			</p>
+
+		
+	
+		
+	
+		
+	
+		
+			<p style="margin-left:10px">
+			File: C:\xampp\htdocs\CI_306_Linked_Em\application\views\includes\template.php<br />
+			Line: 3<br />
+			Function: view			</p>
+
+		
+	
+		
+	
+		
+	
+		
+			<p style="margin-left:10px">
+			File: C:\xampp\htdocs\CI_306_Linked_Em\application\controllers\admin_emails.php<br />
+			Line: 1687<br />
+			Function: view			</p>
+
+		
+	
+		
+			<p style="margin-left:10px">
+			File: C:\xampp\htdocs\CI_306_Linked_Em\application\controllers\admin_emails.php<br />
+			Line: 799<br />
+			Function: store_html			</p>
+
+		
+	
+		
+	
+		
+	
+		
+			<p style="margin-left:10px">
+			File: C:\xampp\htdocs\CI_306_Linked_Em\index.php<br />
+			Line: 315<br />
+			Function: require_once			</p>
+
+		
+	
+
+</div><td></td>
+<div style="border:1px solid #990000;padding-left:20px;margin:0 0 10px 0;">
+
+<h4>A PHP Error was encountered</h4>
+
+<p>Severity: Notice</p>
+<p>Message:  Undefined variable: counts</p>
+<p>Filename: ExtractEmails/result.php</p>
+<p>Line Number: 91</p>
+
+
+	<p>Backtrace:</p>
+	
+		
+	
+		
+	
+		
+			<p style="margin-left:10px">
+			File: C:\xampp\htdocs\CI_306_Linked_Em\application\views\admin\Emails\ExtractEmails\result.php<br />
+			Line: 91<br />
+			Function: _error_handler			</p>
+
+		
+	
+		
+	
+		
+	
+		
+			<p style="margin-left:10px">
+			File: C:\xampp\htdocs\CI_306_Linked_Em\application\views\includes\template.php<br />
+			Line: 3<br />
+			Function: view			</p>
+
+		
+	
+		
+	
+		
+	
+		
+			<p style="margin-left:10px">
+			File: C:\xampp\htdocs\CI_306_Linked_Em\application\controllers\admin_emails.php<br />
+			Line: 1687<br />
+			Function: view			</p>
+
+		
+	
+		
+			<p style="margin-left:10px">
+			File: C:\xampp\htdocs\CI_306_Linked_Em\application\controllers\admin_emails.php<br />
+			Line: 799<br />
+			Function: store_html			</p>
+
+		
+	
+		
+	
+		
+	
+		
+			<p style="margin-left:10px">
+			File: C:\xampp\htdocs\CI_306_Linked_Em\index.php<br />
+			Line: 315<br />
+			Function: require_once			</p>
+
+		
+	
+
+</div><td></td>
+<div style="border:1px solid #990000;padding-left:20px;margin:0 0 10px 0;">
+
+<h4>A PHP Error was encountered</h4>
+
+<p>Severity: Notice</p>
+<p>Message:  Undefined variable: counts</p>
+<p>Filename: ExtractEmails/result.php</p>
+<p>Line Number: 92</p>
+
+
+	<p>Backtrace:</p>
+	
+		
+	
+		
+	
+		
+			<p style="margin-left:10px">
+			File: C:\xampp\htdocs\CI_306_Linked_Em\application\views\admin\Emails\ExtractEmails\result.php<br />
+			Line: 92<br />
+			Function: _error_handler			</p>
+
+		
+	
+		
+	
+		
+	
+		
+			<p style="margin-left:10px">
+			File: C:\xampp\htdocs\CI_306_Linked_Em\application\views\includes\template.php<br />
+			Line: 3<br />
+			Function: view			</p>
+
+		
+	
+		
+	
+		
+	
+		
+			<p style="margin-left:10px">
+			File: C:\xampp\htdocs\CI_306_Linked_Em\application\controllers\admin_emails.php<br />
+			Line: 1687<br />
+			Function: view			</p>
+
+		
+	
+		
+			<p style="margin-left:10px">
+			File: C:\xampp\htdocs\CI_306_Linked_Em\application\controllers\admin_emails.php<br />
+			Line: 799<br />
+			Function: store_html			</p>
+
+		
+	
+		
+	
+		
+	
+		
+			<p style="margin-left:10px">
+			File: C:\xampp\htdocs\CI_306_Linked_Em\index.php<br />
+			Line: 315<br />
+			Function: require_once			</p>
+
+		
+	
+
+</div><td></td>
+<div style="border:1px solid #990000;padding-left:20px;margin:0 0 10px 0;">
+
+<h4>A PHP Error was encountered</h4>
+
+<p>Severity: Notice</p>
+<p>Message:  Undefined variable: counts</p>
+<p>Filename: ExtractEmails/result.php</p>
+<p>Line Number: 93</p>
+
+
+	<p>Backtrace:</p>
+	
+		
+	
+		
+	
+		
+			<p style="margin-left:10px">
+			File: C:\xampp\htdocs\CI_306_Linked_Em\application\views\admin\Emails\ExtractEmails\result.php<br />
+			Line: 93<br />
+			Function: _error_handler			</p>
+
+		
+	
+		
+	
+		
+	
+		
+			<p style="margin-left:10px">
+			File: C:\xampp\htdocs\CI_306_Linked_Em\application\views\includes\template.php<br />
+			Line: 3<br />
+			Function: view			</p>
+
+		
+	
+		
+	
+		
+	
+		
+			<p style="margin-left:10px">
+			File: C:\xampp\htdocs\CI_306_Linked_Em\application\controllers\admin_emails.php<br />
+			Line: 1687<br />
+			Function: view			</p>
+
+		
+	
+		
+			<p style="margin-left:10px">
+			File: C:\xampp\htdocs\CI_306_Linked_Em\application\controllers\admin_emails.php<br />
+			Line: 799<br />
+			Function: store_html			</p>
+
+		
+	
+		
+	
+		
+	
+		
+			<p style="margin-left:10px">
+			File: C:\xampp\htdocs\CI_306_Linked_Em\index.php<br />
+			Line: 315<br />
+			Function: require_once			</p>
+
+		
+	
+
+</div><td></td>
+<div style="border:1px solid #990000;padding-left:20px;margin:0 0 10px 0;">
+
+<h4>A PHP Error was encountered</h4>
+
+<p>Severity: Notice</p>
+<p>Message:  Undefined variable: counts</p>
+<p>Filename: ExtractEmails/result.php</p>
+<p>Line Number: 94</p>
+
+
+	<p>Backtrace:</p>
+	
+		
+	
+		
+	
+		
+			<p style="margin-left:10px">
+			File: C:\xampp\htdocs\CI_306_Linked_Em\application\views\admin\Emails\ExtractEmails\result.php<br />
+			Line: 94<br />
+			Function: _error_handler			</p>
+
+		
+	
+		
+	
+		
+	
+		
+			<p style="margin-left:10px">
+			File: C:\xampp\htdocs\CI_306_Linked_Em\application\views\includes\template.php<br />
+			Line: 3<br />
+			Function: view			</p>
+
+		
+	
+		
+	
+		
+	
+		
+			<p style="margin-left:10px">
+			File: C:\xampp\htdocs\CI_306_Linked_Em\application\controllers\admin_emails.php<br />
+			Line: 1687<br />
+			Function: view			</p>
+
+		
+	
+		
+			<p style="margin-left:10px">
+			File: C:\xampp\htdocs\CI_306_Linked_Em\application\controllers\admin_emails.php<br />
+			Line: 799<br />
+			Function: store_html			</p>
+
+		
+	
+		
+	
+		
+	
+		
+			<p style="margin-left:10px">
+			File: C:\xampp\htdocs\CI_306_Linked_Em\index.php<br />
+			Line: 315<br />
+			Function: require_once			</p>
+
+		
+	
+
+</div><td></td>
+<div style="border:1px solid #990000;padding-left:20px;margin:0 0 10px 0;">
+
+<h4>A PHP Error was encountered</h4>
+
+<p>Severity: Notice</p>
+<p>Message:  Undefined variable: counts</p>
+<p>Filename: ExtractEmails/result.php</p>
+<p>Line Number: 95</p>
+
+
+	<p>Backtrace:</p>
+	
+		
+	
+		
+	
+		
+			<p style="margin-left:10px">
+			File: C:\xampp\htdocs\CI_306_Linked_Em\application\views\admin\Emails\ExtractEmails\result.php<br />
+			Line: 95<br />
+			Function: _error_handler			</p>
+
+		
+	
+		
+	
+		
+	
+		
+			<p style="margin-left:10px">
+			File: C:\xampp\htdocs\CI_306_Linked_Em\application\views\includes\template.php<br />
+			Line: 3<br />
+			Function: view			</p>
+
+		
+	
+		
+	
+		
+	
+		
+			<p style="margin-left:10px">
+			File: C:\xampp\htdocs\CI_306_Linked_Em\application\controllers\admin_emails.php<br />
+			Line: 1687<br />
+			Function: view			</p>
+
+		
+	
+		
+			<p style="margin-left:10px">
+			File: C:\xampp\htdocs\CI_306_Linked_Em\application\controllers\admin_emails.php<br />
+			Line: 799<br />
+			Function: store_html			</p>
+
+		
+	
+		
+	
+		
+	
+		
+			<p style="margin-left:10px">
+			File: C:\xampp\htdocs\CI_306_Linked_Em\index.php<br />
+			Line: 315<br />
+			Function: require_once			</p>
+
+		
+	
+
+</div><td></td>
+<div style="border:1px solid #990000;padding-left:20px;margin:0 0 10px 0;">
+
+<h4>A PHP Error was encountered</h4>
+
+<p>Severity: Notice</p>
+<p>Message:  Undefined variable: counts</p>
+<p>Filename: ExtractEmails/result.php</p>
+<p>Line Number: 96</p>
+
+
+	<p>Backtrace:</p>
+	
+		
+	
+		
+	
+		
+			<p style="margin-left:10px">
+			File: C:\xampp\htdocs\CI_306_Linked_Em\application\views\admin\Emails\ExtractEmails\result.php<br />
+			Line: 96<br />
+			Function: _error_handler			</p>
+
+		
+	
+		
+	
+		
+	
+		
+			<p style="margin-left:10px">
+			File: C:\xampp\htdocs\CI_306_Linked_Em\application\views\includes\template.php<br />
+			Line: 3<br />
+			Function: view			</p>
+
+		
+	
+		
+	
+		
+	
+		
+			<p style="margin-left:10px">
+			File: C:\xampp\htdocs\CI_306_Linked_Em\application\controllers\admin_emails.php<br />
+			Line: 1687<br />
+			Function: view			</p>
+
+		
+	
+		
+			<p style="margin-left:10px">
+			File: C:\xampp\htdocs\CI_306_Linked_Em\application\controllers\admin_emails.php<br />
+			Line: 799<br />
+			Function: store_html			</p>
+
+		
+	
+		
+	
+		
+	
+		
+			<p style="margin-left:10px">
+			File: C:\xampp\htdocs\CI_306_Linked_Em\index.php<br />
+			Line: 315<br />
+			Function: require_once			</p>
+
+		
+	
+
+</div><td></td>
+<div style="border:1px solid #990000;padding-left:20px;margin:0 0 10px 0;">
+
+<h4>A PHP Error was encountered</h4>
+
+<p>Severity: Notice</p>
+<p>Message:  Undefined variable: counts</p>
+<p>Filename: ExtractEmails/result.php</p>
+<p>Line Number: 97</p>
+
+
+	<p>Backtrace:</p>
+	
+		
+	
+		
+	
+		
+			<p style="margin-left:10px">
+			File: C:\xampp\htdocs\CI_306_Linked_Em\application\views\admin\Emails\ExtractEmails\result.php<br />
+			Line: 97<br />
+			Function: _error_handler			</p>
+
+		
+	
+		
+	
+		
+	
+		
+			<p style="margin-left:10px">
+			File: C:\xampp\htdocs\CI_306_Linked_Em\application\views\includes\template.php<br />
+			Line: 3<br />
+			Function: view			</p>
+
+		
+	
+		
+	
+		
+	
+		
+			<p style="margin-left:10px">
+			File: C:\xampp\htdocs\CI_306_Linked_Em\application\controllers\admin_emails.php<br />
+			Line: 1687<br />
+			Function: view			</p>
+
+		
+	
+		
+			<p style="margin-left:10px">
+			File: C:\xampp\htdocs\CI_306_Linked_Em\application\controllers\admin_emails.php<br />
+			Line: 799<br />
+			Function: store_html			</p>
+
+		
+	
+		
+	
+		
+	
+		
+			<p style="margin-left:10px">
+			File: C:\xampp\htdocs\CI_306_Linked_Em\index.php<br />
+			Line: 315<br />
+			Function: require_once			</p>
+
+		
+	
+
+</div><td></td></tr>      
+            </tbody>
+          </table>
+            
+            
+          <table class="table table-striped table-bordered table-condensed">
+          <thead>
+              <tr>
+                <th class="header">Email Duplicate_in DB</th>
+                
+              </tr>
+            </thead>
+            <tbody>
+              
+<div style="border:1px solid #990000;padding-left:20px;margin:0 0 10px 0;">
+
+<h4>A PHP Error was encountered</h4>
+
+<p>Severity: Notice</p>
+<p>Message:  Undefined variable: emails_in_DB</p>
+<p>Filename: ExtractEmails/result.php</p>
+<p>Line Number: 113</p>
+
+
+	<p>Backtrace:</p>
+	
+		
+	
+		
+	
+		
+			<p style="margin-left:10px">
+			File: C:\xampp\htdocs\CI_306_Linked_Em\application\views\admin\Emails\ExtractEmails\result.php<br />
+			Line: 113<br />
+			Function: _error_handler			</p>
+
+		
+	
+		
+	
+		
+	
+		
+			<p style="margin-left:10px">
+			File: C:\xampp\htdocs\CI_306_Linked_Em\application\views\includes\template.php<br />
+			Line: 3<br />
+			Function: view			</p>
+
+		
+	
+		
+	
+		
+	
+		
+			<p style="margin-left:10px">
+			File: C:\xampp\htdocs\CI_306_Linked_Em\application\controllers\admin_emails.php<br />
+			Line: 1687<br />
+			Function: view			</p>
+
+		
+	
+		
+			<p style="margin-left:10px">
+			File: C:\xampp\htdocs\CI_306_Linked_Em\application\controllers\admin_emails.php<br />
+			Line: 799<br />
+			Function: store_html			</p>
+
+		
+	
+		
+	
+		
+	
+		
+			<p style="margin-left:10px">
+			File: C:\xampp\htdocs\CI_306_Linked_Em\index.php<br />
+			Line: 315<br />
+			Function: require_once			</p>
+
+		
+	
+
+</div>      
+            </tbody>
+          </table>  
+            
+          <table class="table table-striped table-bordered table-condensed">
+          <thead>
+              <tr>
+                <th class="header">Email Duplicate_in_file</th>
+                
+              </tr>
+            </thead>
+            <tbody>
+              
+<div style="border:1px solid #990000;padding-left:20px;margin:0 0 10px 0;">
+
+<h4>A PHP Error was encountered</h4>
+
+<p>Severity: Notice</p>
+<p>Message:  Undefined variable: emails_duplicate</p>
+<p>Filename: ExtractEmails/result.php</p>
+<p>Line Number: 135</p>
+
+
+	<p>Backtrace:</p>
+	
+		
+	
+		
+	
+		
+			<p style="margin-left:10px">
+			File: C:\xampp\htdocs\CI_306_Linked_Em\application\views\admin\Emails\ExtractEmails\result.php<br />
+			Line: 135<br />
+			Function: _error_handler			</p>
+
+		
+	
+		
+	
+		
+	
+		
+			<p style="margin-left:10px">
+			File: C:\xampp\htdocs\CI_306_Linked_Em\application\views\includes\template.php<br />
+			Line: 3<br />
+			Function: view			</p>
+
+		
+	
+		
+	
+		
+	
+		
+			<p style="margin-left:10px">
+			File: C:\xampp\htdocs\CI_306_Linked_Em\application\controllers\admin_emails.php<br />
+			Line: 1687<br />
+			Function: view			</p>
+
+		
+	
+		
+			<p style="margin-left:10px">
+			File: C:\xampp\htdocs\CI_306_Linked_Em\application\controllers\admin_emails.php<br />
+			Line: 799<br />
+			Function: store_html			</p>
+
+		
+	
+		
+	
+		
+	
+		
+			<p style="margin-left:10px">
+			File: C:\xampp\htdocs\CI_306_Linked_Em\index.php<br />
+			Line: 315<br />
+			Function: require_once			</p>
+
+		
+	
+
+</div>      
+            </tbody>
+          </table> 
+            
+          
+          <table class="table table-striped table-bordered table-condensed">
+          <thead>
+              <tr>
+                <th class="header">Email bad formated</th>
+                
+              </tr>
+            </thead>
+            <tbody>
+              
+<div style="border:1px solid #990000;padding-left:20px;margin:0 0 10px 0;">
+
+<h4>A PHP Error was encountered</h4>
+
+<p>Severity: Notice</p>
+<p>Message:  Undefined variable: bformated_emails</p>
+<p>Filename: ExtractEmails/result.php</p>
+<p>Line Number: 158</p>
+
+
+	<p>Backtrace:</p>
+	
+		
+	
+		
+	
+		
+			<p style="margin-left:10px">
+			File: C:\xampp\htdocs\CI_306_Linked_Em\application\views\admin\Emails\ExtractEmails\result.php<br />
+			Line: 158<br />
+			Function: _error_handler			</p>
+
+		
+	
+		
+	
+		
+	
+		
+			<p style="margin-left:10px">
+			File: C:\xampp\htdocs\CI_306_Linked_Em\application\views\includes\template.php<br />
+			Line: 3<br />
+			Function: view			</p>
+
+		
+	
+		
+	
+		
+	
+		
+			<p style="margin-left:10px">
+			File: C:\xampp\htdocs\CI_306_Linked_Em\application\controllers\admin_emails.php<br />
+			Line: 1687<br />
+			Function: view			</p>
+
+		
+	
+		
+			<p style="margin-left:10px">
+			File: C:\xampp\htdocs\CI_306_Linked_Em\application\controllers\admin_emails.php<br />
+			Line: 799<br />
+			Function: store_html			</p>
+
+		
+	
+		
+	
+		
+	
+		
+			<p style="margin-left:10px">
+			File: C:\xampp\htdocs\CI_306_Linked_Em\index.php<br />
+			Line: 315<br />
+			Function: require_once			</p>
+
+		
+	
+
+</div>      
+            </tbody>
+          </table>
+             
+           
+               
+            <table class="table table-striped table-bordered table-condensed">
+          <thead>
+              <tr>
+                <th class="header">email_list_no_c_id</th>
+                
+              </tr>
+            </thead>
+            <tbody>
+              
+<div style="border:1px solid #990000;padding-left:20px;margin:0 0 10px 0;">
+
+<h4>A PHP Error was encountered</h4>
+
+<p>Severity: Notice</p>
+<p>Message:  Undefined variable: email_list_no_c_id</p>
+<p>Filename: ExtractEmails/result.php</p>
+<p>Line Number: 188</p>
+
+
+	<p>Backtrace:</p>
+	
+		
+	
+		
+	
+		
+			<p style="margin-left:10px">
+			File: C:\xampp\htdocs\CI_306_Linked_Em\application\views\admin\Emails\ExtractEmails\result.php<br />
+			Line: 188<br />
+			Function: _error_handler			</p>
+
+		
+	
+		
+	
+		
+	
+		
+			<p style="margin-left:10px">
+			File: C:\xampp\htdocs\CI_306_Linked_Em\application\views\includes\template.php<br />
+			Line: 3<br />
+			Function: view			</p>
+
+		
+	
+		
+	
+		
+	
+		
+			<p style="margin-left:10px">
+			File: C:\xampp\htdocs\CI_306_Linked_Em\application\controllers\admin_emails.php<br />
+			Line: 1687<br />
+			Function: view			</p>
+
+		
+	
+		
+			<p style="margin-left:10px">
+			File: C:\xampp\htdocs\CI_306_Linked_Em\application\controllers\admin_emails.php<br />
+			Line: 799<br />
+			Function: store_html			</p>
+
+		
+	
+		
+	
+		
+	
+		
+			<p style="margin-left:10px">
+			File: C:\xampp\htdocs\CI_306_Linked_Em\index.php<br />
+			Line: 315<br />
+			Function: require_once			</p>
+
+		
+	
+
+</div>      
+            </tbody>
+          </table>
+               
+            <table class="table table-striped table-bordered table-condensed">
+          <thead>
+              <tr>
+                <th class="header">free_email_list_no_c_id</th>
+                
+              </tr>
+            </thead>
+            <tbody>
+              
+<div style="border:1px solid #990000;padding-left:20px;margin:0 0 10px 0;">
+
+<h4>A PHP Error was encountered</h4>
+
+<p>Severity: Notice</p>
+<p>Message:  Undefined variable: free_email_list_no_c_id</p>
+<p>Filename: ExtractEmails/result.php</p>
+<p>Line Number: 217</p>
+
+
+	<p>Backtrace:</p>
+	
+		
+	
+		
+	
+		
+			<p style="margin-left:10px">
+			File: C:\xampp\htdocs\CI_306_Linked_Em\application\views\admin\Emails\ExtractEmails\result.php<br />
+			Line: 217<br />
+			Function: _error_handler			</p>
+
+		
+	
+		
+	
+		
+	
+		
+			<p style="margin-left:10px">
+			File: C:\xampp\htdocs\CI_306_Linked_Em\application\views\includes\template.php<br />
+			Line: 3<br />
+			Function: view			</p>
+
+		
+	
+		
+	
+		
+	
+		
+			<p style="margin-left:10px">
+			File: C:\xampp\htdocs\CI_306_Linked_Em\application\controllers\admin_emails.php<br />
+			Line: 1687<br />
+			Function: view			</p>
+
+		
+	
+		
+			<p style="margin-left:10px">
+			File: C:\xampp\htdocs\CI_306_Linked_Em\application\controllers\admin_emails.php<br />
+			Line: 799<br />
+			Function: store_html			</p>
+
+		
+	
+		
+	
+		
+	
+		
+			<p style="margin-left:10px">
+			File: C:\xampp\htdocs\CI_306_Linked_Em\index.php<br />
+			Line: 315<br />
+			Function: require_once			</p>
+
+		
+	
+
+</div>      
+            </tbody>
+          </table>  
+          
+           <table class="table table-striped table-bordered table-condensed">
+          <thead>
+              <tr>
+                <th class="header">urls_more_than_one</th>
+                
+              </tr>
+            </thead>
+            <tbody>
+              
+<div style="border:1px solid #990000;padding-left:20px;margin:0 0 10px 0;">
+
+<h4>A PHP Error was encountered</h4>
+
+<p>Severity: Notice</p>
+<p>Message:  Undefined variable: urls_more_than_one</p>
+<p>Filename: ExtractEmails/result.php</p>
+<p>Line Number: 246</p>
+
+
+	<p>Backtrace:</p>
+	
+		
+	
+		
+	
+		
+			<p style="margin-left:10px">
+			File: C:\xampp\htdocs\CI_306_Linked_Em\application\views\admin\Emails\ExtractEmails\result.php<br />
+			Line: 246<br />
+			Function: _error_handler			</p>
+
+		
+	
+		
+	
+		
+	
+		
+			<p style="margin-left:10px">
+			File: C:\xampp\htdocs\CI_306_Linked_Em\application\views\includes\template.php<br />
+			Line: 3<br />
+			Function: view			</p>
+
+		
+	
+		
+	
+		
+	
+		
+			<p style="margin-left:10px">
+			File: C:\xampp\htdocs\CI_306_Linked_Em\application\controllers\admin_emails.php<br />
+			Line: 1687<br />
+			Function: view			</p>
+
+		
+	
+		
+			<p style="margin-left:10px">
+			File: C:\xampp\htdocs\CI_306_Linked_Em\application\controllers\admin_emails.php<br />
+			Line: 799<br />
+			Function: store_html			</p>
+
+		
+	
+		
+	
+		
+	
+		
+			<p style="margin-left:10px">
+			File: C:\xampp\htdocs\CI_306_Linked_Em\index.php<br />
+			Line: 315<br />
+			Function: require_once			</p>
+
+		
+	
+
+</div>      
+            </tbody>
+          </table>  
+            
+                  
+          <table class="table table-striped table-bordered table-condensed">
+          <thead>
+              <tr>
+                <th class="header">Errors</th>
+                
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>source id =0</td></tr><tr><td>source_id=</td></tr><tr><td>datafile_path=C:/xampp/htdocs/CI_306_Linked_Em/uploads/emails_for_Brunei_Darussalam.csv</td></tr><tr><td>mapfile_path=C:/xampp/htdocs/CI_306_Linked_Em/uploads/emails_for_Brunei_Darussalam_map.txt</td></tr><tr><td>upload_path=C:/xampp/htdocs/CI_306_Linked_Em/uploads/</td></tr>      
+            </tbody>
+          </table>        
+           
+      </div>
+    </div>
+	<div id="footer">
+		<hr>
+		<div class="inner">
+			<div class="container">
+				<p class="right"><a href="#">Back to top</a></p>
+				<p>
+				</p>
+			</div>
+		</div>
+	</div>
+	
+</body>
+</html>

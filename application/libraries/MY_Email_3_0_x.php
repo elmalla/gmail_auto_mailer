@@ -3,7 +3,7 @@
 /**
  * CodeIgniter compatible email-library powered by PHPMailer.
  *
- * @author Ivan Tcholakov <ivantcholakov@gmail.com>, 2012-2016.
+ * @author Ivan Tcholakov <ivantcholakov@gmail.com>, 2012-2017.
  * @license The MIT License (MIT), http://opensource.org/licenses/MIT
  * @link https://github.com/ivantcholakov/codeigniter-phpmailer
  *
@@ -18,16 +18,16 @@ class MY_Email extends CI_Email {
         'useragent' => 'CodeIgniter',
         'mailpath' => '/usr/sbin/sendmail',
         'protocol' => 'smtp',
-        'smtp_host' => 'node01.facesharedeu1.com',
-        'smtp_user' => 'ahmed.elmalla@linkedemails.com',
+        'smtp_host' => '',
+        'smtp_user' => '',
         'smtp_pass' => '',
-        'smtp_port' => '',
-        'smtp_timeout' => 100,
+        'smtp_port' => 465,
+        'smtp_timeout' => 5,
         'smtp_keepalive' => FALSE,
-        'smtp_crypto' => 'tls',
+        'smtp_crypto' => '',
         'wordwrap' => TRUE,
         'wrapchars' => 76,
-        'mailtype' => 'html',
+        'mailtype' => 'text',
         'charset' => 'UTF-8',
         'multipart' => 'mixed',
         'alt_message' => '',
@@ -41,11 +41,11 @@ class MY_Email extends CI_Email {
         'bcc_batch_size' => 200,
         'smtp_debug' => 0,
         'encoding' => '8bit',
-        'smtp_auto_tls' => TRUE,
-        'smtp_auth' => TRUE,
+        'smtp_auto_tls' => true,
         'smtp_conn_options' => array(),
         'dkim_domain' => '',
         'dkim_private' => '',
+        'dkim_private_string' => '',
         'dkim_selector' => '',
         'dkim_passphrase' => '',
         'dkim_identity' => '',
@@ -62,12 +62,7 @@ class MY_Email extends CI_Email {
     protected static $encodings_ci = array('8bit', '7bit');
     protected static $encodings_phpmailer = array('8bit', '7bit', 'binary', 'base64', 'quoted-printable');
 
-    //Added by Ahmed
-    //
-    //                        
-   private $fromEmail;
-   private $htmlBody = '';
-   private $textBody = '';
+
     // The Constructor ---------------------------------------------------------
 
     public function __construct($config = array()) {
@@ -77,10 +72,6 @@ class MY_Email extends CI_Email {
         $this->CI = get_instance();
         $this->CI->load->helper('email');
         $this->CI->load->helper('html');
-        
-       //Added by Ahmed,to to be corrected
-        $this->fromEmail ='Ahmed.elmalla@linkedemails.com';
-        $this->CI->load->library('Smtp_validation');
 
         if (!is_array($config)) {
             $config = array();
@@ -266,7 +257,7 @@ class MY_Email extends CI_Email {
         return $this;
     }
 
-    public function a($replyto, $name = '') {
+    public function reply_to($replyto, $name = '') {
 
         $replyto = (string) $replyto;
         $name = (string) $name;
@@ -309,12 +300,13 @@ class MY_Email extends CI_Email {
                 $this->validate_email($to);
             }
 
-            reset($names);
+            $i = 0;
 
             foreach ($to as $address) {
 
-                list($key, $name) = each($names);
-                $this->phpmailer->addAddress($address, $name);
+                $this->phpmailer->addAddress($address, $names[$i]);
+
+                $i++;
             }
 
         } else {
@@ -337,12 +329,13 @@ class MY_Email extends CI_Email {
                 $this->validate_email($cc);
             }
 
-            reset($names);
+            $i = 0;
 
             foreach ($cc as $address) {
 
-                list($key, $name) = each($names);
-                $this->phpmailer->addCC($address, $name);
+                $this->phpmailer->addCC($address, $names[$i]);
+
+                $i++;
             }
 
         } else {
@@ -365,12 +358,13 @@ class MY_Email extends CI_Email {
                 $this->validate_email($bcc);
             }
 
-            reset($names);
+            $i = 0;
 
             foreach ($bcc as $address) {
 
-                list($key, $name) = each($names);
-                $this->phpmailer->addBCC($address, $name);
+                $this->phpmailer->addBCC($address, $names[$i]);
+
+                $i++;
             }
 
         } else {
@@ -1058,7 +1052,7 @@ class MY_Email extends CI_Email {
         return $this;
     }
 
-    // PHPMailer: DKIM private key file path.
+    // PHPMailer: DKIM private key, set as a file path.
     public function set_dkim_private($value) {
 
         $value = (string) $value;
@@ -1072,6 +1066,32 @@ class MY_Email extends CI_Email {
 
         if ($this->mailer_engine == 'phpmailer') {
             $this->phpmailer->DKIM_private = $value_parsed;
+        }
+
+        if ($value != '') {
+
+            // Reset the alternative setting.
+            $this->set_dkim_private_string('');
+        }
+
+        return $this;
+    }
+
+    // PHPMailer: DKIM private key, set directly from a string.
+    public function set_dkim_private_string($value) {
+
+        $value = (string) $value;
+
+        $this->properties['dkim_private_string'] = $value;
+
+        if ($this->mailer_engine == 'phpmailer') {
+            $this->phpmailer->DKIM_private_string = $value;
+        }
+
+        if ($value != '') {
+
+            // Reset the alternative setting.
+            $this->set_dkim_private('');
         }
 
         return $this;
@@ -1202,82 +1222,6 @@ class MY_Email extends CI_Email {
         return $full_html;
     }
 
-    
-    /**
-   * Set Mail Body configuration
-   *
-   * Format email message Body, this can be an external template html file with a copy
-   * of a plain-text like template.txt or HTML/plain-text string.
-   * This method can be used by passing a template file HTML name and an associative array
-   * with the values that can be parsed into the file HTML by the key KEY_NAME found in your
-   * array to your HTML {KEY_NAME}.
-   * Other optional ways to format the mail body is available like instead of a template the
-   * param $data can be set as an array or string, but param $template_html must be equal to null
-   *
-   * @update 2014-04-01 01:46
-   * @author Adriano Rosa (http://adrianorosa.com)
-   * @param mixed  $data [array|string] that contain the values to be parsed in mail body
-   * @param string $template_html the external html template filename , OR the message as HMTL string
-   * @param string $format [HTML|TEXT]
-   * @return string
-   */
-    //TODO this function need modfication
-   public function set_Mail_Body($data, $template_html = null,$path, $format = 'HTML')
-   {
-      $TemplateFolder = $path;
-      $textBody='';
-      $htmlBody='';
-      
-      if ( !is_array($data) && $template_html == null ) {
-         if ( $format == 'TEXT' ) {
-            $this->isHTML = false;
-            return $textBody = $data;
-         }
-         return $htmlBody = $data;
-      } elseif ( is_array($data) && $template_html == null ) {
-         return $htmlBody = implode('<br>  ', $data);
-      } else {
-         $templatePath = ($TemplateFolder)
-               ? $TemplateFolder . $template_html
-               : $template_html;
-        // Support load different path to views available in CI v3.0
-         if ( defined('VIEWPATH') ) {
-            $views_path = VIEWPATH;
-         } else {
-            $views_path = APPPATH .'views/';
-         }
-         // $templatePath =$templatePath.$template_html;
-         if ( !file_exists( $templatePath ) ) {
-            log_message('error','setEmailBody() HTML template file not found: ' . $template_html);
-            return $htmlBody = 'Template ' . ($template_html) . ' not found.'; //'none template message found in: ' .$template_html;
-         } else {
-            $htmlBody = $this->CI->load->view('templates/'.$template_html, '', true);
-            //$htmlBody = $this->CI->load->view($TemplateFolder . $template_html, '', true);
-            if ( preg_match('/\.txt$/', $template_html) ) {
-               $textBody = $htmlBody;
-            } else {
-               $templateTextPath = preg_replace('/\.[html|php|htm]+$/', '.txt', $templatePath);
-               if ( file_exists( $views_path . $templateTextPath ) ) {
-                  $textBody = $this->CI->load->view($templateTextPath, '', true);
-               }
-            }
-         }
-         $data = (is_array($data)) ? $data : array($data);
-         //$data = array_merge($data, $this->TemplateOptions);
-         if ( $format == 'HTML' ) {
-            foreach ($data as $key => $value) {
-               $htmlBody = str_replace("{".$key."}", "".$value."", $htmlBody);
-               $textBody = str_replace("{".$key."}", "".$value."", $textBody);
-            }
-         } elseif ( $format == 'TEXT' ) {
-            $this->isHTML = false;
-            $textBody = @vsprintf($textBody, $data);
-         }
-         
-         return $htmlBody;
-      }
-   }
-    
 
     // Protected methods -------------------------------------------------------
 
@@ -1318,19 +1262,23 @@ class MY_Email extends CI_Email {
             return $body;
         }
 
-        // Also, a special helper function based on Markdown or Textile libraries may be used.
+        // You can implement your own helper function html_to_text().
         //
-        // An example of Markdown-based implementation, see http://milianw.de/projects/markdownify/
+        // An example of Markdownify-based implementation, see https://github.com/Elephant418/Markdownify
         //
-        // Make sure the class Markdownify_Extra is autoloaded (or simply loaded somehow).
-        // Place in MY_html_helper.php the following function.
+        // Install using Composer the following package: pixel418/markdownify
+        // Place in MY_html_helper.php the following function:
         //
         // function html_to_text($html) {
+        //
         //     static $parser;
+        //
         //     if (!isset($parser)) {
-        //         $parser = new Markdownify_Extra();
-        //         $parser->keepHTML = false;
+        //         $parser = new \Markdownify\ConverterExtra();
         //     }
+        //
+        //     $parser->setKeepHTML(false);
+        //
         //     return @ $parser->parseString($html);
         // }
         //
@@ -1386,27 +1334,19 @@ class MY_Email extends CI_Email {
 
         return $result;
     }
-
     
-    
-    //Added by Ahmed, need some more studying
-    public function verify_domain($address_to_verify='', $verbose=FALSE){
+          //Added by Ahmed, need some more studying
+    public function verify_domain($address_to_verify, $verbose=FALSE){
             //TODO:
             // must figure out ho to get config setting of codeigniter
-            $user ='';
-            $domain ='';
             $current_platform='win';
             $record = 'ANY'; # <-- Can be changed to check for other records like A records or CNAME records as well
-            if($address_to_verify != '')
-            {
-              list($user, $domain) = explode('@', $address_to_verify);
-                
+            list($user, $domain) = explode('@', $address_to_verify);
+            
                 if ($current_platform == 'win')
                     return $this->checkdnsrr_win($domain);
                 else
                     return checkdnsrr($domain, $record);
-            }else
-                return false;
 	}
                
         public function checkDomainAvailability($domain_name){
@@ -1620,5 +1560,80 @@ class MY_Email extends CI_Email {
 
           //var_dump($smtp_results);
       } 
-    
+      
+         /**
+   * Set Mail Body configuration
+   *
+   * Format email message Body, this can be an external template html file with a copy
+   * of a plain-text like template.txt or HTML/plain-text string.
+   * This method can be used by passing a template file HTML name and an associative array
+   * with the values that can be parsed into the file HTML by the key KEY_NAME found in your
+   * array to your HTML {KEY_NAME}.
+   * Other optional ways to format the mail body is available like instead of a template the
+   * param $data can be set as an array or string, but param $template_html must be equal to null
+   *
+   * @update 2014-04-01 01:46
+   * @author Adriano Rosa (http://adrianorosa.com)
+   * @param mixed  $data [array|string] that contain the values to be parsed in mail body
+   * @param string $template_html the external html template filename , OR the message as HMTL string
+   * @param string $format [HTML|TEXT]
+   * @return string
+   */
+    //TODO this function need modfication
+   public function set_Mail_Body($data, $template_html = null,$path, $format = 'HTML')
+   {
+      $TemplateFolder = $path;
+      $textBody='';
+      $htmlBody='';
+      
+      if ( !is_array($data) && $template_html == null ) {
+         if ( $format == 'TEXT' ) {
+            $this->isHTML = false;
+            return $textBody = $data;
+         }
+         return $htmlBody = $data;
+      } elseif ( is_array($data) && $template_html == null ) {
+         return $htmlBody = implode('<br>  ', $data);
+      } else {
+         $templatePath = ($TemplateFolder)
+               ? $TemplateFolder . $template_html
+               : $template_html;
+        // Support load different path to views available in CI v3.0
+         if ( defined('VIEWPATH') ) {
+            $views_path = VIEWPATH;
+         } else {
+            $views_path = APPPATH .'views/';
+         }
+         // $templatePath =$templatePath.$template_html;
+         if ( !file_exists( $templatePath ) ) {
+            log_message('error','setEmailBody() HTML template file not found: ' . $template_html);
+            return $htmlBody = 'Template ' . ($template_html) . ' not found.'; //'none template message found in: ' .$template_html;
+         } else {
+            $htmlBody = $this->CI->load->view('templates/'.$template_html, '', true);
+            //$htmlBody = $this->CI->load->view($TemplateFolder . $template_html, '', true);
+            if ( preg_match('/\.txt$/', $template_html) ) {
+               $textBody = $htmlBody;
+            } else {
+               $templateTextPath = preg_replace('/\.[html|php|htm]+$/', '.txt', $templatePath);
+               if ( file_exists( $views_path . $templateTextPath ) ) {
+                  $textBody = $this->CI->load->view($templateTextPath, '', true);
+               }
+            }
+         }
+         $data = (is_array($data)) ? $data : array($data);
+         //$data = array_merge($data, $this->TemplateOptions);
+         if ( $format == 'HTML' ) {
+            foreach ($data as $key => $value) {
+               $htmlBody = str_replace("{".$key."}", "".$value."", $htmlBody);
+               $textBody = str_replace("{".$key."}", "".$value."", $textBody);
+            }
+         } elseif ( $format == 'TEXT' ) {
+            $this->isHTML = false;
+            $textBody = @vsprintf($textBody, $data);
+         }
+         
+         return $htmlBody;
+      }
+   }
+
 }

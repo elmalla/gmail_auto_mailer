@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>
+<html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>
+<html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>
+<html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Linked Emails Project</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width">
+
+  <link href="http://localhost/CI_306_linked_em_Production/assets/css/admin/global.css" rel="stylesheet" type="text/css">
+  
+   <!--<link rel="stylesheet" href="/assets/css/bootstrap-responsive.min.css">-->
+
+  <script src="http://localhost/CI_306_linked_em_Production/assets/js/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+  <!--<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script> -->
+ 
+  
+  <script src="http://localhost/CI_306_linked_em_Production//assets/js/jquery-1.7.1.min.js"></script>)
+  <script src="http://localhost/CI_306_linked_em_Production//assets/js/bootstrap.min.js"></script>
+  
+  <!--<script src="http://localhost/CI_306_linked_em_Production//node_modules/socket.io/node_modules/socket.io-client/socket.io.js"></script>-->
+  
+  <!--<script src="http://localhost/CI_306_linked_em_Production//assets/js/socket.js"></script> -->
+  <!--<script src="http://localhost/CI_306_linked_em_Production//assets/js/main.js"></script> -->
+  
+    <style>
+    body {
+      padding-top: 60px;
+      padding-bottom: 40px;
+    }
+    </style>
+</head>
+<body>
+	<div class="navbar navbar-fixed-top">
+	  <div class="navbar-inner">
+	    <div class="container">
+	      <a class="brand">Linked Emails Project</a>
+	      <ul class="nav">
+	        <li >
+	          <a href="http://localhost/CI_306_linked_em_Production/index.php/admin/main">DashBoard</a>
+	        </li>
+                <li >
+	          <a href="http://localhost/CI_306_linked_em_Production/index.php/admin/products">Products</a>
+	        </li>
+	        <li >
+	          <a href="http://localhost/CI_306_linked_em_Production/index.php/admin/manufacturers/">Manufacturers</a>
+	        </li>
+                <li class="dropdown">
+	          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Emails <b class="caret"></b></a>
+	          <ul class="dropdown-menu">
+	            <li>
+	              <a href="http://localhost/CI_306_linked_em_Production/index.php/admin/Emails">Email Add,Edit,Delete</a>
+	            </li>
+                    <li>
+	              <a href="http://localhost/CI_306_linked_em_Production/index.php/admin/Owner">Owner Add,Edit,Delete</a>
+	            </li>
+                    <li>
+	              <a href="http://localhost/CI_306_linked_em_Production/index.php/admin/Source">Source Add,Edit,Delete</a>
+	            </li>
+	          </ul>
+	        </li>
+                <li class="dropdown">
+	          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Companies <b class="caret"></b></a>
+	          <ul class="dropdown-menu">
+	            <li>
+	              <a href="http://localhost/CI_306_linked_em_Production/index.php/admin/Companies">Company Add,Edit,Delete</a>
+	            </li>
+                    <li>
+	              <a href="http://localhost/CI_306_linked_em_Production/index.php/admin/Category">Category Add,Edit,Delete</a>
+	            </li>
+                    <li>
+	              <a href="http://localhost/CI_306_linked_em_Production/index.php/admin/Source">... Add,Edit,Delete</a>
+	            </li>
+	          </ul>
+	        </li>
+	        <li class="dropdown">
+	          <a href="#" class="dropdown-toggle" data-toggle="dropdown">System <b class="caret"></b></a>
+	          <ul class="dropdown-menu">
+	            <li>
+	              <a href="http://localhost/CI_306_linked_em_Production/admin/logout">Logout</a>
+	            </li>
+	          </ul>
+	        </li>
+	      </ul>
+	    </div>
+	  </div>
+	</div>	
+    
+    
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-3 col-md-2 sidebar">
+          <ul class="nav nav-sidebar">
+            <li class="active"><a href="http://localhost/CI_306_linked_em_Production/index.php/admin/main">Overview <span class="sr-only">(current)</span></a></li>
+            <li><a href="#">Reports</a></li>
+            <li><a href="http://localhost/CI_306_linked_em_Production/index.php/admin/Mailer/show">Mailer</a></li>
+            <li><a href="http://localhost/CI_306_linked_em_Production/index.php/admin/Mailer/mailfixedjob">Scheduled Mail Jobs</a></li>
+            <li><a href="http://localhost/CI_306_linked_em_Production/index.php/admin/Mailer/cronm/1/mailer/8/gmail/UI">Cron Scheduler</a></li>
+            <li><a href="http://localhost/CI_306_linked_em_Production/index.php/admin/Emails/cron_backup/false">Cron Backup</a></li>
+            <li><a href="http://localhost/CI_306_linked_em_Production/index.php/admin/export/show">Exports</a></li>
+          </ul>
+          <ul class="nav nav-sidebar">
+            <li><a href="">Nav item</a></li>
+            <li><a href="">Nav item again</a></li>
+            <li><a href="">One more nav</a></li>
+            <li><a href="http://localhost/CI_306_linked_em_Production/index.php/admin/Statistics/">Statistics</a></li>
+            <li><a href="http://localhost/CI_306_linked_em_Production/index.php/admin/Owner/">Owners</a></li>
+          </ul>
+          <ul class="nav nav-sidebar">
+            <li><a href="http://localhost/CI_306_linked_em_Production/index.php/admin/Emails/">Emails</a></li>
+            <li><a href="http://localhost/CI_306_linked_em_Production/index.php/admin/upload/show">Uploads</a></li>
+            <li><a href="http://localhost/CI_306_linked_em_Production/index.php/admin/upload/">Upload Files</a></li>
+          </ul>
+        </div>
+       
+        </div>  
+       </div>
+
+ 
+<script type="text/javascript">
+$(document).ready(function () {
+  setInterval(auto_refresh_function, 200000);
+});
+        function auto_refresh_function() {
+          $('#ref').load('http://localhost/CI_306_linked_em_Production/index.php/admin/main');
+        }
+</script> 
+
+
+<div id="ref">
+        
+  <div class="container top">
+
+      <ul class="breadcrumb">
+        <li>
+          <a href="http://localhost/CI_306_linked_em_Production/admin">
+            Admin          </a> 
+          <span class="divider">/</span>
+        </li>
+        <li class="active">
+          Main        </li>
+      </ul>
+
+      <div class="page-header users-header">
+        <h2>
+          Main 
+          <a  href="http://localhost/CI_306_linked_em_Production/admin/main/add" class="btn btn-success">Add a new</a>
+        </h2>
+      </div>
+      
+      
+        
+          <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+          <h1 class="page-header">Dashboard</h1>
+
+         </div>
+          
+      <div class="row">
+        <div class="span12 columns">
+            <div class="well"></div>
+          
+              
+              <table class="table table-striped table-bordered table-condensed">
+            <thead>
+              <tr>
+                <th class="header">Ntv Emails Count</th>
+                <th class="yellow header headerSortDown">Companies Count</th>
+                <th class="green header">count sources</th>
+                <th class="red header">V Emails Count</th>
+                <th class="red header">Mailer log Count</th>
+                <th class="red header">count_sent_ae</th>
+                <th class="red header">Mailer schedule log count</th>
+                <th class="red header">email_sent_today</th>
+                
+                
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>47344</td><td>91292</td><td>89</td><td>290352</td><td>65593</td><td>11043</td><td>1731</td></tr>      
+            </tbody>
+            
+            <thead>
+              <tr>
+                <th class="header">count emails no company</th>
+                <th class="yellow header headerSortDown">count_scheculed_sa</th>
+               
+                <th class="red header">count_sent_sa</th>
+                <th class="red header">count_scheculed_qa</th>
+                <th class="red header">count_sent_qa</th>
+                <th class="red header">count_scheculed_kw</th>
+                <th class="red header">count_sent_kw</th>
+                <th class="red header">count_scheculed_ae</th>
+                
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>64076</td><td>0</td><td>8052</td><td>0</td><td>2778</td><td>5</td><td>1069</td><td>21760</td></tr>      
+            </tbody>
+          </table>
+            
+        
+
+           <table class="table table-striped table-bordered table-condensed">
+              
+                    <h2 style="text-align: center">Mailer schedule log Table</h2>
+                   
+              <thead>
+                 <tr>
+                 <th class="red header">id</th><th class="red header">cron_scheduler_id</th><th class="red header">total_scheduled_emails</th><th class="red header">emails_sent</th><th class="red header">emails_nt_sent</th><th class="red header">emails_sent_earlier</th><th class="red header">clauses</th><th class="red header">debug_info</th><th class="red header">emails_scheduled_next_run</th><th class="red header">smtp_host</th><th class="red header">created_at</th><th class="red header">updated_at</th> 
+                 </tr>  
+                </thead>
+                <tbody>
+            
+                  <tr><td>1727</td><td>1804</td><td>300</td><td>0</td><td>24</td><td>0</td><td>%.ae,%.ae</td><td>SMTP connect() failed. https://github.com/PHPMailer/PHPMailer/wiki/Troubleshooting<br /><pre>
+
+</pre></td><td>43520</td><td>gmail</td><td>2017-04-01 18:07:34</td><td></td></tr><tr><td>1728</td><td>1805</td><td>300</td><td>0</td><td>24</td><td>2</td><td>%.ca,%.de</td><td>SMTP connect() failed. https://github.com/PHPMailer/PHPMailer/wiki/Troubleshooting<br /><pre>
+
+</pre></td><td>15654</td><td>gmail</td><td>2017-04-01 19:07:36</td><td></td></tr><tr><td>1729</td><td>1806</td><td>300</td><td>0</td><td>24</td><td>0</td><td>%.se,%.uk</td><td>SMTP connect() failed. https://github.com/PHPMailer/PHPMailer/wiki/Troubleshooting<br /><pre>
+
+</pre></td><td>29472</td><td>gmail</td><td>2017-04-01 21:07:39</td><td></td></tr><tr><td>1730</td><td>1807</td><td>300</td><td>0</td><td>24</td><td>0</td><td>%.eg,%.ae</td><td>SMTP connect() failed. https://github.com/PHPMailer/PHPMailer/wiki/Troubleshooting<br /><pre>
+
+</pre></td><td>43520</td><td>gmail</td><td>2017-04-01 23:07:52</td><td></td></tr><tr><td>1731</td><td>1808</td><td>300</td><td>0</td><td>22</td><td>0</td><td>%.se,%.ca</td><td>SMTP connect() failed. https://github.com/PHPMailer/PHPMailer/wiki/Troubleshooting<br /><pre>
+
+</pre></td><td>10276</td><td>gmail</td><td>2017-04-02 00:08:01</td><td></td></tr><tr><td>1732</td><td>1809</td><td>300</td><td>0</td><td>24</td><td>0</td><td>%.ae,%.ae</td><td>SMTP connect() failed. https://github.com/PHPMailer/PHPMailer/wiki/Troubleshooting<br /><pre>
+
+</pre></td><td>43520</td><td>gmail</td><td>2017-04-02 02:07:48</td><td></td></tr><tr><td>1733</td><td>1810</td><td>300</td><td>0</td><td>24</td><td>0</td><td>%.ch,%.tr</td><td>SMTP connect() failed. https://github.com/PHPMailer/PHPMailer/wiki/Troubleshooting<br /><pre>
+
+</pre></td><td>3200</td><td>gmail</td><td>2017-04-02 04:07:46</td><td></td></tr><tr><td>1734</td><td>1811</td><td>300</td><td>0</td><td>24</td><td>0</td><td>%.eg,%.ae</td><td>SMTP connect() failed. https://github.com/PHPMailer/PHPMailer/wiki/Troubleshooting<br /><pre>
+
+</pre></td><td>43520</td><td>gmail</td><td>2017-04-02 05:07:46</td><td></td></tr><tr><td>1735</td><td>1812</td><td>300</td><td>0</td><td>22</td><td>2</td><td>%.ca,%.ca</td><td>SMTP connect() failed. https://github.com/PHPMailer/PHPMailer/wiki/Troubleshooting<br /><pre>
+
+</pre></td><td>10276</td><td>gmail</td><td>2017-04-02 07:07:40</td><td></td></tr><tr><td>1736</td><td>1813</td><td>300</td><td>0</td><td>24</td><td>0</td><td>%.se,%.de</td><td>SMTP connect() failed. https://github.com/PHPMailer/PHPMailer/wiki/Troubleshooting<br /><pre>
+
+</pre></td><td>15654</td><td>gmail</td><td>2017-04-02 08:07:37</td><td></td></tr><tr><td>1737</td><td>1814</td><td>300</td><td>0</td><td>24</td><td>0</td><td>%.eg,%.eg</td><td>SMTP connect() failed. https://github.com/PHPMailer/PHPMailer/wiki/Troubleshooting<br /><pre>
+
+</pre></td><td>1256</td><td>gmail</td><td>2017-04-02 09:07:38</td><td></td></tr><tr><td>1738</td><td>1815</td><td>300</td><td>0</td><td>24</td><td>0</td><td>%.ae,%.eg</td><td>SMTP connect() failed. https://github.com/PHPMailer/PHPMailer/wiki/Troubleshooting<br /><pre>
+
+</pre></td><td>1256</td><td>gmail</td><td>2017-04-02 12:07:40</td><td></td></tr><tr><td>1739</td><td>1816</td><td>300</td><td>0</td><td>24</td><td>0</td><td>%.eg,%.eg</td><td>SMTP connect() failed. https://github.com/PHPMailer/PHPMailer/wiki/Troubleshooting<br /><pre>
+
+</pre></td><td>1256</td><td>gmail</td><td>2017-04-02 14:07:39</td><td></td></tr><tr><td>1740</td><td>1817</td><td>300</td><td>0</td><td>24</td><td>0</td><td>%.ae,%.ae</td><td>SMTP connect() failed. https://github.com/PHPMailer/PHPMailer/wiki/Troubleshooting<br /><pre>
+
+</pre></td><td>43520</td><td>gmail</td><td>2017-04-02 15:07:38</td><td></td></tr><tr><td>1741</td><td>1818</td><td>300</td><td>0</td><td>24</td><td>0</td><td>%.ae,%.ae</td><td>SMTP connect() failed. https://github.com/PHPMailer/PHPMailer/wiki/Troubleshooting<br /><pre>
+
+</pre></td><td>43520</td><td>gmail</td><td>2017-04-02 16:07:58</td><td></td></tr><tr><td>1742</td><td>1819</td><td>300</td><td>0</td><td>22</td><td>2</td><td>%.ca,%.ca</td><td>SMTP connect() failed. https://github.com/PHPMailer/PHPMailer/wiki/Troubleshooting<br /><pre>
+
+</pre></td><td>10276</td><td>gmail</td><td>2017-04-02 19:07:36</td><td></td></tr><tr><td>1743</td><td>1820</td><td>300</td><td>0</td><td>22</td><td>0</td><td>%.ch,%.ca</td><td>SMTP connect() failed. https://github.com/PHPMailer/PHPMailer/wiki/Troubleshooting<br /><pre>
+
+</pre></td><td>10276</td><td>gmail</td><td>2017-04-02 19:18:43</td><td></td></tr><tr><td>1744</td><td>1822</td><td>300</td><td>0</td><td>24</td><td>0</td><td>%.eg,%.ae</td><td>SMTP connect() failed. https://github.com/PHPMailer/PHPMailer/wiki/Troubleshooting<br /><pre>
+
+</pre></td><td>43520</td><td>gmail</td><td>2017-04-02 19:42:38</td><td></td></tr><tr><td>1745</td><td>1823</td><td>300</td><td>0</td><td>24</td><td>0</td><td>%.ae,%.eg</td><td>SMTP connect() failed. https://github.com/PHPMailer/PHPMailer/wiki/Troubleshooting<br /><pre>
+
+</pre></td><td>1256</td><td>gmail</td><td>2017-04-02 19:51:35</td><td></td></tr><tr><td>1746</td><td>1824</td><td>300</td><td>0</td><td>24</td><td>0</td><td>%.ae,%.eg</td><td>SMTP connect() failed. https://github.com/PHPMailer/PHPMailer/wiki/Troubleshooting<br /><pre>
+
+</pre></td><td>1256</td><td>gmail</td><td>2017-04-02 20:07:35</td><td></td></tr>                         
+                </tbody>
+              </table>  
+            
+            <span class="divider">/</span>
+  
+            
+            <table class="table table-striped table-bordered table-condensed">
+              
+                    <h2 style="text-align: center">Cron log Table</h2>
+                   
+              <thead>
+                 <tr>
+                 <th class="red header">id</th><th class="red header">user_id</th><th class="red header">job_category</th><th class="red header">mailer_schedule_log_id</th><th class="red header">unit_count</th><th class="red header">tiggered_by</th><th class="red header">job_started</th><th class="red header">elapsed</th><th class="red header">status</th><th class="red header">created_at</th><th class="red header">updated_at</th> 
+                 </tr>  
+                </thead>
+                <tbody>
+                    <tr>
+                  <tr><td>1821</td><td>1</td><td>mailer</td><td></td><td>8</td><td>UI</td><td>2017-04-02 19:29:34</td><td></td><td></td><td>2017-04-02 19:29:37</td><td></td></tr><tr><td>1822</td><td>1</td><td>mailer</td><td>1744</td><td>4</td><td>bat</td><td>2017-04-02 19:42:30</td><td>8</td><td></td><td>2017-04-02 19:42:30</td><td>2017-04-02 19:42:38</td></tr><tr><td>1823</td><td>1</td><td>mailer</td><td>1745</td><td>4</td><td>bat</td><td>2017-04-02 19:51:18</td><td>17</td><td></td><td>2017-04-02 19:51:18</td><td>2017-04-02 19:51:35</td></tr><tr><td>1824</td><td>1</td><td>mailer</td><td>1746</td><td>4</td><td>bat</td><td>2017-04-02 20:07:25</td><td>10</td><td></td><td>2017-04-02 20:07:25</td><td>2017-04-02 20:07:35</td></tr>                  </tr>       
+                </tbody>
+              </table>  
+       
+            <table class="table table-striped table-bordered table-condensed">
+                    <h2 style="text-align: center">Extraction Table</h2>    
+              <thead>
+                 <tr>
+                 <th class="red header">id</th><th class="red header">source_id</th><th class="red header">company_start_id</th><th class="red header">company_end_id</th><th class="red header">emailv_start_id</th><th class="red header">emailv_end_id</th><th class="red header">emailnv_start_id</th><th class="red header">emailnv_end_id</th><th class="red header">source_lines</th><th class="red header">company_inserts</th><th class="red header">emailv_inserts</th><th class="red header">emailnv_inserts</th><th class="red header">created_at</th><th class="red header">updated_at</th> 
+                 </tr>  
+                </thead>
+                <tbody>
+                    <tr>
+                  <tr><td>143</td><td>87</td><td>3238</td><td>16263</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2016-12-06 17:39:03</td><td></td></tr><tr><td>144</td><td>89</td><td>3238</td><td>108313</td><td>298413</td><td>298418</td><td>42420</td><td>47227</td><td>0</td><td>348</td><td>6</td><td>4808</td><td>2016-12-06 17:47:37</td><td></td></tr><tr><td>145</td><td>90</td><td>3015</td><td>1779</td><td>0</td><td>0</td><td>47228</td><td>51952</td><td>0</td><td>492</td><td>0</td><td>4725</td><td>2016-12-07 02:52:01</td><td></td></tr><tr><td>146</td><td>91</td><td>15158</td><td>98924</td><td>298419</td><td>298419</td><td>51953</td><td>51957</td><td>0</td><td>1</td><td>1</td><td>5</td><td>2016-12-07 05:11:25</td><td></td></tr>                  </tr>       
+                </tbody>
+              </table>
+            
+            
+              <table class="table table-striped table-bordered table-condensed">
+              
+                    <h2 style="text-align: center">Mailer Scheduled Table</h2>
+                   
+              <thead>
+                 <tr>
+                 <th class="red header">id</th><th class="red header">email_id</th><th class="red header">email</th><th class="red header">company_id</th><th class="red header">country</th><th class="red header">conflict_flag</th><th class="red header">sending_status</th><th class="red header">review_status</th><th class="red header">owner_id</th><th class="red header">source_id</th><th class="red header">created_at</th><th class="red header">updated_at</th> 
+                 </tr>  
+                </thead>
+                <tbody>
+            
+                  <tr><td>22810</td><td>59845</td><td>marketing@rivoligroup.ae</td><td>0</td><td></td><td>0</td><td>OK</td><td>0</td><td>1000</td><td>15</td><td></td><td>2017-03-30 19:08:15</td></tr><tr><td>22811</td><td>59846</td><td>boskalis@emirates.net.ae</td><td>0</td><td></td><td>0</td><td>OK</td><td>0</td><td>1000</td><td>15</td><td></td><td>2017-03-30 19:08:43</td></tr><tr><td>22812</td><td>59847</td><td>sales@rustar.ae</td><td>0</td><td></td><td>0</td><td>OK</td><td>0</td><td>1000</td><td>15</td><td></td><td>2017-03-30 19:09:14</td></tr><tr><td>22813</td><td>59848</td><td>info@skm.ae</td><td></td><td></td><td>0</td><td>OK</td><td>0</td><td>1000</td><td>15</td><td></td><td>2017-03-30 19:09:43</td></tr><tr><td>22814</td><td>59849</td><td>smka@emirates.net.ae</td><td>0</td><td></td><td>0</td><td>OK</td><td>0</td><td>1000</td><td>15</td><td></td><td>2017-03-31 06:08:11</td></tr><tr><td>22815</td><td>59850</td><td>snefauh@emirates.net.ae</td><td>0</td><td></td><td>0</td><td>OK</td><td>0</td><td>1000</td><td>15</td><td></td><td>2017-03-31 06:08:11</td></tr><tr><td>22816</td><td>59851</td><td>sahari02@emirates.net.ae</td><td>0</td><td></td><td>0</td><td>OK</td><td>0</td><td>1000</td><td>15</td><td></td><td>2017-03-31 06:08:11</td></tr><tr><td>22817</td><td>59852</td><td>satwamar@emirates.net.ae</td><td>0</td><td></td><td>0</td><td>OK</td><td>0</td><td>1000</td><td>15</td><td></td><td>2017-03-31 06:08:40</td></tr><tr><td>22818</td><td>59853</td><td>scantec@emirates.net.ae</td><td>0</td><td></td><td>0</td><td>OK</td><td>0</td><td>1000</td><td>15</td><td></td><td>2017-03-31 06:08:40</td></tr><tr><td>22819</td><td>59854</td><td>scitech@emirates.net.ae</td><td>0</td><td></td><td>0</td><td>OK</td><td>0</td><td>1000</td><td>15</td><td></td><td>2017-03-31 06:08:40</td></tr><tr><td>22820</td><td>59855</td><td>sedana@emirates.net.ae</td><td>0</td><td></td><td>0</td><td>OK</td><td>0</td><td>1000</td><td>15</td><td></td><td>2017-03-31 06:09:08</td></tr><tr><td>22821</td><td>59856</td><td>sedar@emirates.net.ae</td><td>0</td><td></td><td>0</td><td>OK</td><td>0</td><td>1000</td><td>15</td><td></td><td>2017-03-31 06:09:08</td></tr><tr><td>22822</td><td>59857</td><td>septech@emirates.net.ae</td><td>0</td><td></td><td>0</td><td>OK</td><td>0</td><td>1000</td><td>15</td><td></td><td>2017-03-31 06:09:08</td></tr><tr><td>22823</td><td>59858</td><td>sclauly@emirates.net.ae</td><td>0</td><td></td><td>0</td><td>OK</td><td>0</td><td>1000</td><td>15</td><td></td><td>2017-03-31 06:09:36</td></tr><tr><td>22824</td><td>59859</td><td>sharafgp@sharaf.ae</td><td>10022</td><td>uae</td><td>0</td><td>OK</td><td>0</td><td>1000</td><td>15</td><td></td><td>2017-03-31 06:09:36</td></tr><tr><td>22825</td><td>59860</td><td>stargrit@emirates.net.ae</td><td>0</td><td></td><td>0</td><td>OK</td><td>0</td><td>1000</td><td>15</td><td></td><td>2017-03-31 06:09:36</td></tr><tr><td>22826</td><td>59861</td><td>shcarbon@emirates.net.ae</td><td>0</td><td></td><td>0</td><td>OK</td><td>0</td><td>1000</td><td>15</td><td></td><td>2017-03-31 09:08:11</td></tr><tr><td>22827</td><td>59862</td><td>carltonh@emirates.net.ae</td><td>0</td><td></td><td>0</td><td>OK</td><td>0</td><td>1000</td><td>15</td><td></td><td>2017-03-31 09:08:39</td></tr><tr><td>22828</td><td>59863</td><td>scidcho@emirates.net.ae</td><td>0</td><td></td><td>0</td><td>OK</td><td>0</td><td>1000</td><td>15</td><td></td><td>2017-03-31 09:09:07</td></tr><tr><td>22829</td><td>59864</td><td>sewa@emirates.net.ae</td><td>0</td><td></td><td>0</td><td>OK</td><td>0</td><td>1000</td><td>15</td><td></td><td>2017-03-31 09:09:36</td></tr>                         
+                </tbody>
+              </table>
+            
+          <div class="row placeholders">
+            <div class="col-xs-6 col-sm-3 placeholder">
+              <img src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="200" height="200" class="img-responsive" alt="Generic placeholder thumbnail">
+              <h4>Label</h4>
+              <span class="text-muted">Something else</span>
+            </div>
+            <div class="col-xs-6 col-sm-3 placeholder">
+              <img src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="200" height="200" class="img-responsive" alt="Generic placeholder thumbnail">
+              <h4>Label</h4>
+              <span class="text-muted">Something else</span>
+            </div>
+            <div class="col-xs-6 col-sm-3 placeholder">
+              <img src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="200" height="200" class="img-responsive" alt="Generic placeholder thumbnail">
+              <h4>Label</h4>
+              <span class="text-muted">Something else</span>
+            </div>
+            <div class="col-xs-6 col-sm-3 placeholder">
+              <img src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="200" height="200" class="img-responsive" alt="Generic placeholder thumbnail">
+              <h4>Label</h4>
+              <span class="text-muted">Something else</span>
+            </div>
+          </div>
+        
+      
+
+      </div>
+    </div>
+  </div>    
+    
+	<div id="footer">
+		<hr>
+		<div class="inner">
+			<div class="container">
+				<p class="right"><a href="#">Back to top</a></p>
+				<p>
+				</p>
+			</div>
+		</div>
+	</div>
+	
+</body>
+</html>

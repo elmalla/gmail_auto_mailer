@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>
+<html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>
+<html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>
+<html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Linked Emails Project</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width">
+
+  <link href="http://localhost/CI_306_linked_em/assets/css/admin/global.css" rel="stylesheet" type="text/css">
+  
+   <!--<link rel="stylesheet" href="/assets/css/bootstrap-responsive.min.css">-->
+
+  <script src="http://localhost/CI_306_linked_em/assets/js/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+  <!--<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script> -->
+ 
+  
+  <script src="http://localhost/CI_306_linked_em//assets/js/jquery-1.7.1.min.js"></script>)
+  <script src="http://localhost/CI_306_linked_em//assets/js/bootstrap.min.js"></script>
+  
+  <!--<script src="http://localhost/CI_306_linked_em//node_modules/socket.io/node_modules/socket.io-client/socket.io.js"></script>-->
+  
+  <!--<script src="http://localhost/CI_306_linked_em//assets/js/socket.js"></script> -->
+  <!--<script src="http://localhost/CI_306_linked_em//assets/js/main.js"></script> -->
+  
+    <style>
+    body {
+      padding-top: 60px;
+      padding-bottom: 40px;
+    }
+    </style>
+</head>
+<body>
+	<div class="navbar navbar-fixed-top">
+	  <div class="navbar-inner">
+	    <div class="container">
+	      <a class="brand">Linked Emails Project</a>
+	      <ul class="nav">
+	        <li >
+	          <a href="http://localhost/CI_306_linked_em/index.php/admin/main">DashBoard</a>
+	        </li>
+                <li >
+	          <a href="http://localhost/CI_306_linked_em/index.php/admin/products">Products</a>
+	        </li>
+	        <li >
+	          <a href="http://localhost/CI_306_linked_em/index.php/admin/manufacturers/">Manufacturers</a>
+	        </li>
+                <li class="dropdown">
+	          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Emails <b class="caret"></b></a>
+	          <ul class="dropdown-menu">
+	            <li>
+	              <a href="http://localhost/CI_306_linked_em/index.php/admin/Emails">Email Add,Edit,Delete</a>
+	            </li>
+                    <li>
+	              <a href="http://localhost/CI_306_linked_em/index.php/admin/Owner">Owner Add,Edit,Delete</a>
+	            </li>
+                    <li>
+	              <a href="http://localhost/CI_306_linked_em/index.php/admin/Source">Source Add,Edit,Delete</a>
+	            </li>
+	          </ul>
+	        </li>
+                <li class="dropdown">
+	          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Companies <b class="caret"></b></a>
+	          <ul class="dropdown-menu">
+	            <li>
+	              <a href="http://localhost/CI_306_linked_em/index.php/admin/Companies">Company Add,Edit,Delete</a>
+	            </li>
+                    <li>
+	              <a href="http://localhost/CI_306_linked_em/index.php/admin/Category">Category Add,Edit,Delete</a>
+	            </li>
+                    <li>
+	              <a href="http://localhost/CI_306_linked_em/index.php/admin/Source">... Add,Edit,Delete</a>
+	            </li>
+	          </ul>
+	        </li>
+	        <li class="dropdown">
+	          <a href="#" class="dropdown-toggle" data-toggle="dropdown">System <b class="caret"></b></a>
+	          <ul class="dropdown-menu">
+	            <li>
+	              <a href="http://localhost/CI_306_linked_em/admin/logout">Logout</a>
+	            </li>
+	          </ul>
+	        </li>
+	      </ul>
+	    </div>
+	  </div>
+	</div>	
+    
+    
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-3 col-md-2 sidebar">
+          <ul class="nav nav-sidebar">
+            <li class="active"><a href="http://localhost/CI_306_linked_em/index.php/admin/main">Overview <span class="sr-only">(current)</span></a></li>
+            <li><a href="#">Reports</a></li>
+            <li><a href="http://localhost/CI_306_linked_em/index.php/admin/Mailer/show">Mailer</a></li>
+            <li><a href="http://localhost/CI_306_linked_em/index.php/admin/Mailer/mailfixedjob">Scheduled Mail Jobs</a></li>
+            <li><a href="http://localhost/CI_306_linked_em/index.php/admin/Mailer/cronm/1/mailer/3/gmail/UI">Cron Scheduler</a></li>
+            <li><a href="http://localhost/CI_306_linked_em/index.php/admin/export/show">Exports</a></li>
+          </ul>
+          <ul class="nav nav-sidebar">
+            <li><a href="">Nav item</a></li>
+            <li><a href="">Nav item again</a></li>
+            <li><a href="">One more nav</a></li>
+            <li><a href="http://localhost/CI_306_linked_em/index.php/admin/Statistics/">Statistics</a></li>
+            <li><a href="http://localhost/CI_306_linked_em/index.php/admin/Owner/">Owners</a></li>
+          </ul>
+          <ul class="nav nav-sidebar">
+            <li><a href="http://localhost/CI_306_linked_em/index.php/admin/Emails/">Emails</a></li>
+            <li><a href="http://localhost/CI_306_linked_em/index.php/admin/upload/show">Uploads</a></li>
+            <li><a href="http://localhost/CI_306_linked_em/index.php/admin/upload/">Upload Files</a></li>
+          </ul>
+        </div>
+       
+        </div>  
+       </div>
+
+    <div class="container top">
+
+      <ul class="breadcrumb">
+        <li>
+          <a href="http://localhost/CI_306_linked_em/index.php/admin">
+            Admin          </a> 
+          <span class="divider">/</span>
+        </li>
+        <li class="active">
+          Emails          
+        </li>
+        
+      </ul>
+
+      <div class="page-header users-header">
+        <h2>
+          Emails          <br/>
+          
+          <br/>
+                
+          <a  href="http://localhost/CI_306_linked_em/index.php/admin/Emails/add" class="btn btn-success">TO be Done</a>
+        </h2>
+      </div>
+      
+      <div class="row">
+        <div class="span12 columns">
+          <div class="well">
+          
+          </div>
+             
+          
+          <table class="table table-striped table-bordered table-condensed">
+            <thead>
+              <tr>
+                <th class="header">Emails Extracted</th>
+                <th class="yellow header headerSortDown">Companies Extracted</th>
+                <th class="green header">Lines count</th>
+                <th class="red header">Empty Lines</th>
+                <th class="red header">URL updated</th>
+                <th class="red header">Companies Inserted</th>
+                <th class="red header">Emails Verified</th>
+                <th class="red header">Emails not Verified</th>
+                <th class="red header">shared_url_count</th>
+                
+                
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>2232</td><td>130</td><td>2239</td><td>2238</td><td>0</td><td>130</td><td>1935</td><td>280</td><td>0</td></tr>      
+            </tbody>
+            
+             <thead>
+              <tr>
+                <th class="header">Companies without URl</th>
+                <th class="yellow header headerSortDown">Companies without Emails</th>
+               
+                <th class="red header">Company Name from Email</th>
+                <th class="red header">Category Inserted</th>
+                <th class="red header">Companies not inserted</th>
+                <th class="red header">Email bad formated</th>
+                <th class="red header">Email duplicate in file</th>
+                <th class="red header">Email already in DB </th>
+                <th class="red header">free emails companies_count </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>1941</td><td>6</td><td>2232</td><td>0</td><td>2103</td><td>1</td><td>0</td><td>17</td><td>0</td></tr>      
+            </tbody>
+          </table>
+            
+            
+          <table class="table table-striped table-bordered table-condensed">
+          <thead>
+              <tr>
+                <th class="header">Email Duplicate_in DB</th>
+                
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>abidin.musa@pb.com.bn</td></tr><tr><td>adzlan.hassan@pb.com.bn</td></tr><tr><td>kongthee.k.t.ho@shell.com.bn</td></tr><tr><td>maidin.b.tinggal@shell.com.bn</td></tr><tr><td>nazri.tuah@pb.com.bn</td></tr><tr><td>pb-recruitment@pb.com.bn</td></tr><tr><td>pb@pb.com.bn</td></tr><tr><td>pbrecruitment@pb.com.bn</td></tr><tr><td>razak.damit@pb.com.bn</td></tr><tr><td>reduan.yusof@pb.com.bn</td></tr><tr><td>sarah.janin@pb.com.bn</td></tr><tr><td>to@pb.com.bn</td></tr><tr><td>vincent.liew@pb.com.bn</td></tr><tr><td>kleong@ap2.com.bn</td></tr><tr><td>kula.metasan@pb.com.bn</td></tr><tr><td>lfs@brunet.bn</td></tr><tr><td>dfp2mindef@brunet.bn</td></tr>      
+            </tbody>
+          </table>  
+            
+          <table class="table table-striped table-bordered table-condensed">
+          <thead>
+              <tr>
+                <th class="header">Email Duplicate_in_file</th>
+                
+              </tr>
+            </thead>
+            <tbody>
+                    
+            </tbody>
+          </table> 
+            
+          
+          <table class="table table-striped table-bordered table-condensed">
+          <thead>
+              <tr>
+                <th class="header">Email bad formated</th>
+                
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>dk.serinah.pg..sulaiman@ibb.com.bn</td></tr>      
+            </tbody>
+          </table>
+             
+           
+               
+            <table class="table table-striped table-bordered table-condensed">
+          <thead>
+              <tr>
+                <th class="header">email_list_no_c_id</th>
+                
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>sitiaminah_abdullah@rtb.gov.bn</td></tr><tr><td>abdhalim_hjsaidi@rtb.gov.bn</td></tr><tr><td>hanifiah_ali@rtb.gov.bn</td></tr><tr><td>pgradno@rtb.gov.bn</td></tr><tr><td>abibah_ismail@rtb.gov.bn</td></tr><tr><td>ahmad_tengah@rtb.gov.bn</td></tr><tr><td>bl_lai@rtb.gov.bn</td></tr><tr><td>caroline_hong@rtb.gov.bn</td></tr><tr><td>cheong_ck@rtb.gov.bn</td></tr><tr><td>datin_zainab@rtb.gov.bn</td></tr><tr><td>helen_thu@rtb.gov.bn</td></tr><tr><td>hwyong@rtb.gov.bn</td></tr><tr><td>ibrahim@rtb.gov.bn</td></tr><tr><td>ibrahim_mohamad@rtb.gov.bn</td></tr><tr><td>ismail_kifli@rtb.gov.bn</td></tr><tr><td>khalid_mdnoor@rtb.gov.bn</td></tr><tr><td>mohd_jaafar@rtb.gov.bn</td></tr><tr><td>mohdzulkarnain@rtb.gov.bn</td></tr><tr><td>nawi_ismail@rtb.gov.bn</td></tr><tr><td>noorsiahhb@rtb.gov.bn</td></tr><tr><td>norsiah_sulaiman@rtb.gov.bn</td></tr><tr><td>rosni_hjyussof@rtb.gov.bn</td></tr><tr><td>sahrina_mislee@rtb.gov.bn</td></tr><tr><td>sitirohaya_abdhamid@rtb.gov.bn</td></tr><tr><td>sk_lim@rtb.gov.bn</td></tr><tr><td>suhaini_hab@rtb.gov.bn</td></tr><tr><td>sunny_raffar@rtb.gov.bn</td></tr><tr><td>tan_jee_meng@itss.gov.bn</td></tr><tr><td>tan_tk@rtb.gov.bn</td></tr><tr><td>tc_koh@rtb.gov.bn</td></tr><tr><td>wanharris@rtb.gov.bn</td></tr><tr><td>wchung@rtb.gov.bn</td></tr><tr><td>zulkifli_hjlaidin@rtb.gov.bn</td></tr><tr><td>hjhrohana_arsarbini@rtb.gov.bn</td></tr><tr><td>aminah_jaafar@rtb.gov.bn</td></tr><tr><td>halim_hashim@rtb.gov.bn</td></tr><tr><td>musa_salleh@rtb.gov.bn</td></tr><tr><td>ismail_rahman@rtb.gov.bn</td></tr><tr><td>salamah_abdullah@rtb.gov.bn</td></tr><tr><td>ali_hjaji@rtb.gov.bn</td></tr><tr><td>noriah_awgdamit@rtb.gov.bn</td></tr><tr><td>salamah_tengah@rtb.gov.bn</td></tr><tr><td>abdhalim_hjsaid@rtb.gov.bn</td></tr><tr><td>idris_yassin@rtb.gov.bn</td></tr><tr><td>airah.rahman@itss.gov.bn</td></tr><tr><td>hjmurni_majid@rtb.gov.bn</td></tr><tr><td>manap_hjadam@rtb.gov.bn</td></tr><tr><td>mohdsah_hjsalleh@rtb.gov.bn</td></tr><tr><td>hamdani_tengah@rtb.gov.bn</td></tr><tr><td>hanafiyah_ahmad@rtb.gov.bn</td></tr><tr><td>hjtamit_jais@rtb.gov.bn</td></tr><tr><td>ismail_mohiddin@rtb.gov.bn</td></tr><tr><td>jamelahton_hamid@rtb.gov.bn</td></tr><tr><td>malai_faridah@rtb.gov.bn</td></tr><tr><td>mohd_isa@rtb.gov.bn</td></tr><tr><td>petronilla_liew@rtb.gov.bn</td></tr><tr><td>rauyah_ahmad@rtb.gov.bn</td></tr><tr><td>rosni_hjpungut@rtb.gov.bn</td></tr><tr><td>sulaimanhjlabok@rtb.gov.bn</td></tr><tr><td>tamimi_sulaiman@rtb.gov.bn</td></tr><tr><td>yusof_abd_rahman@rtb.gov.bn</td></tr><tr><td>yusof_abdul_rahman@rtb.gov.bn</td></tr><tr><td>zaliha_ludin@rtb.gov.bn</td></tr><tr><td>kamarulazam_mohamad@rtb.gov.bn</td></tr><tr><td>mahari_razak@rtb.gov.bn</td></tr><tr><td>naserudin.tejudin@itss.gov.bn</td></tr><tr><td>rubiah_othman@itss.gov.bn</td></tr><tr><td>yatan.burut@itss.gov.bn</td></tr><tr><td>rtb.gov.bn@rtb.gov.bn</td></tr><tr><td>murad@gleneaglesjpmc.com.bn</td></tr><tr><td>zaki.mohidin@itss.gov.bn</td></tr><tr><td>saniah.sani@itss.gov.bn</td></tr><tr><td>umar_abdullah@itss.gov.bn</td></tr><tr><td>consumer@rtb.gov.bn</td></tr><tr><td>gts@rtb.gov.bn</td></tr>      
+            </tbody>
+          </table>
+               
+            <table class="table table-striped table-bordered table-condensed">
+          <thead>
+              <tr>
+                <th class="header">free_email_list_no_c_id</th>
+                
+              </tr>
+            </thead>
+            <tbody>
+                    
+            </tbody>
+          </table>  
+          
+           <table class="table table-striped table-bordered table-condensed">
+          <thead>
+              <tr>
+                <th class="header">urls_more_than_one</th>
+                
+              </tr>
+            </thead>
+            <tbody>
+                    
+            </tbody>
+          </table>  
+            
+                  
+          <table class="table table-striped table-bordered table-condensed">
+          <thead>
+              <tr>
+                <th class="header">Errors</th>
+                
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>source_id=29</td></tr><tr><td>datafile_path=C:/xampp/htdocs/CI_306_Linked_Em/uploads/emails_for_Brunei_Darussalam.csv</td></tr><tr><td>mapfile_path=C:/xampp/htdocs/CI_306_Linked_Em/uploads/emails_for_Brunei_Darussalam_map.txt</td></tr><tr><td>upload_path=C:/xampp/htdocs/CI_306_Linked_Em/uploads/</td></tr>      
+            </tbody>
+          </table>        
+           
+      </div>
+    </div>
+	<div id="footer">
+		<hr>
+		<div class="inner">
+			<div class="container">
+				<p class="right"><a href="#">Back to top</a></p>
+				<p>
+				</p>
+			</div>
+		</div>
+	</div>
+	
+</body>
+</html>

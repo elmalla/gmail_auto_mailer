@@ -41,23 +41,22 @@ class Admin_mailer extends CI_Controller {
        
        
        //Mailer_scheduled_model
-       
-       //$this->load->library('email');
+      
        $this->load->helper('common');
        
      //Default data varables
-     $this->upload_path= dirname($_SERVER["SCRIPT_FILENAME"]).'/uploads/users/AE/Technical/';
-     $this->template_path= dirname($_SERVER["SCRIPT_FILENAME"]).'/application/views/templates/';
+     $this->upload_path= dirname($_SERVER["SCRIPT_FILENAME"]).'/uploads/attachments/Technical/';
+     $this->template_path= dirname($_SERVER["SCRIPT_FILENAME"]).'/application/views/cover_letters/';
 
      $this->subject =  "Technical Engineer Resume - didn't like it ? drop m......";
-     $this->attachment_name = 'A_K_Elmalla_Technical_SAC_KSA_R1_0.pdf';
-     $this->Letter_name = 'Technical_cover_letter.txt';
+     $this->attachment_name = 'resume_1.pdf';
+     $this->Letter_name = 'Tcover_letter.txt';
      $this->template_html = 'cover_letter_4.html';
-     $this->from_email ='ahmed.elmalla@linkedemails.com';
-     $this->my_name='Ahmed Elmalla';
-     $this->reply_to ='akelmalla77@gmail.com';
-     $this->MY_NAME = "Ahmed Elmalla".'<br/>';
-     $this->HP = "H/P KSA   :(+966)531597142";
+     $this->from_email ='any@linkedemails.com';
+     $this->my_name='Your name';
+     $this->reply_to ='any@gmail.com';
+     $this->MY_NAME = "Your name".'<br/>';
+     $this->HP = "H/P   : 0060000000";
          
       $this->load->library(array('ion_auth'));
      $this->load->helper(array('language'));
@@ -129,7 +128,7 @@ class Admin_mailer extends CI_Controller {
  
  
     
-    //Scheduler
+    //cron mail ----Task schedular entrance
     public function cron_mail($user,$category,$units,$smtp,$tiggered_by='UI')
     {
         
@@ -164,6 +163,23 @@ class Admin_mailer extends CI_Controller {
         $debug_info = $mailer_log_last_row['debug_info'];
         $must_exit_flag = false;
 
+        
+        
+        //create a random time delay to
+        $delay_list =array(
+                '1'=> 'no_delay' ,
+                '2'=>'delay'
+                
+                
+                //'3'=>'Machinery'
+                //'4'=>'Latina'
+
+            );
+
+         $delay = shuffle_assoc($delay_list);
+        
+        
+        
        //$oldDate = $currentDate-(60*60);
        //$formatDate = date("Y-m-d H:i:s", $oldDate);//array('updated_at >= '=>date("Y-m-d"))
      
@@ -179,7 +195,20 @@ class Admin_mailer extends CI_Controller {
             if ($time_elapsed <(210*60) )
                 $must_exit_flag ='true';
         } 
-            
+          
+        //$delay = 'delay';
+        if (!$must_exit_flag)
+        { 
+            if ($delay == 'delay')
+            {
+                 //$this->load->library('log');
+                 $must_exit_flag ='true';
+                 log_message('info','CRON_INFO '.' cron_mail delayed on '.date('Y-m-d H:i'));
+            }else
+                 log_message('info','CRON_INFO '.' cron_mail executed on '.date('Y-m-d H:i'));
+               
+        }
+        
         if (!$must_exit_flag)
         {    
             $data_to_store =array(
@@ -221,19 +250,24 @@ class Admin_mailer extends CI_Controller {
                 '1'=>'%.se',
                 '2'=>'%.ie',
                 '3'=>'%.ch',
-                '4'=>'%.be'
+                '4'=>'%.be',
+                '5'=>'%.ca',
+                '6'=>'%.de'
                 );
 
                 $mailBcc_list =array(
-                '1'=>'%.uk',
-                '2'=>'%.de',
-                '3'=>'%.nl',
+                '1'=>'%.ca',
+                '2'=>'%.uk',
+                '3'=>'%.de',
+                //'4'=>'%.nl',
                 '4'=>'%.tr',
-                '5'=>'%.za',
-                '6'=>'%.jp'  
+                //'6'=>'%.za',
+                '5'=>'%.jp',
+                '6'=>'%.ca',
+                '7'=>'%.de',    
                 );
 
-                 $this->upload_path= dirname($_SERVER["SCRIPT_FILENAME"]).'/uploads/users/AE/General_Europe/';
+                 $this->upload_path= dirname($_SERVER["SCRIPT_FILENAME"]).'/uploads/attachments/General_Europe/';
 
                  $this->subject =  "Resume Projects - didn't like it ? drop m......";
                  $this->attachment_name = 'A_K_Elmalla_PM_SAC_EU_R1_0.pdf';
@@ -243,19 +277,22 @@ class Admin_mailer extends CI_Controller {
             {
                   $mailTo_list =array(
                     //'1'=>'%.kw',
-                    '2'=>'%.qa',
-                    '3'=>'%.om'
+                    //'1'=>'%.sa',
+                    '1'=>'%.eg',
+                     '2'=>'%.ae' 
+                    //'3'=>'%.om'  
+                      
                    );
 
                   $mailBcc_list =array(
-                    '1'=>'%.sa',
-                    '2'=>'%.ae',
-                    '3'=>'%.eg'
+                    //'1'=>'%.sa',
+                    '1'=>'%.ae',
+                    '2'=>'%.eg'
                    );
 
-                  $this->upload_path= dirname($_SERVER["SCRIPT_FILENAME"]).'/uploads/users/AE/Technical/';
+                  $this->upload_path= dirname($_SERVER["SCRIPT_FILENAME"]).'/uploads/attachments/Technical/';
                   $this->subject =  "Technical Engineer Resume - didn't like it ? drop m......";
-                  $this->attachment_name = 'A_K_Elmalla_Technical_SAC_KSA_R1_0.pdf';
+                  $this->attachment_name = 'resume_1.pdf';
                   $this->Letter_name = 'Technical_cover_letter.txt';
                 }
 
@@ -309,9 +346,9 @@ class Admin_mailer extends CI_Controller {
 
                         'subject'=>    $summary_email_subject,
                         'attachment_name'=>   $result_file,
-                        'from_email'=>  'akelmalla77@gmail.com',  //$this->from_email,
-                        'reply_to'=>    'akelmalla77@gmail.com',
-                        'emails'=>    array('0'=>'ahmed.elmalla@linkedemails.com'),
+                        'from_email'=>  'any@gmail.com',  //$this->from_email,
+                        'reply_to'=>    'any@gmail.com',
+                        'emails'=>    array('0'=>'any@linkedemails.com'),
                         'upload_path'=>    $result_path,
                         'my_name'=>'ahmed elmalla',
                         'summary'=> true    
@@ -331,7 +368,7 @@ class Admin_mailer extends CI_Controller {
         set_time_limit(30);       
       
     }
-    
+    //cron_mail
        
     
 
@@ -452,6 +489,19 @@ class Admin_mailer extends CI_Controller {
             );    
        }
        $this->email->initialize($config);
+       
+//        if ($_SERVER["HTTP_HOST"] !='www.linkedemails.com')
+//        {
+            $mail_options= array(
+                            'ssl' => array(
+                                'verify_peer' => false,
+                                'verify_peer_name' => false,
+                                'allow_self_signed' => true
+                            )
+                        );
+
+            $this->email->set_smtp_conn_options($mail_options);
+//        }
        //$this->load->library('email', $config);
        //$this->load->library('email');//, $config);
        //$this->email->set_newline("\r\n");
@@ -466,8 +516,8 @@ class Admin_mailer extends CI_Controller {
        
             // $countries=array('sa');
             $clauses = $data['mailTo_clause'].','.$data['mailBcc_clause'];
-             $main_clause = array('email LIKE'=>$data['mailTo_clause'],'sending_status'=>'','email NOT REGEXP'=> 'stc|mobily');
-             $bcc_clause = array('email LIKE'=>$data['mailBcc_clause'],'sending_status'=>'','email NOT REGEXP'=> 'stc|mobily');
+             $main_clause = array('email LIKE'=>$data['mailTo_clause'],'sending_status'=>'');
+             $bcc_clause = array('email LIKE'=>$data['mailBcc_clause'],'sending_status'=>'');
              
              $mailer_scheduled_table_count =$this->Mailer_scheduled_model->where($main_clause)->count_rows();
              $bcc_mailer_scheduled_table_count =$this->Mailer_scheduled_model->where($bcc_clause)->count_rows();
@@ -510,7 +560,7 @@ class Admin_mailer extends CI_Controller {
            $mailer_log_count = count($mailer_log_array_k_email_id);
 
         $bcc_counter =0;
-        $bcc_count_per_email = 4; 
+        $bcc_count_per_email = 3; 
         $bcc_keys =array_keys($bcc_emails_merged);
         
         foreach ($emails_merged as $id=>$email)
@@ -835,11 +885,7 @@ class Admin_mailer extends CI_Controller {
           $template_path = $data_to_function['template_path'];
           $bcc_email = $data_to_function['bcc'];
         }    
-     //$to_email ='projects@i-awcs.com';
-        //$emails = array('projects@i-awcs.com','akelmalla77@gmail.com','ahmed.elmalla@linkedemails.com');
-        //$emails1 = 'projects@i-awcs.com'.','.'akelmalla77@gmail.com'.','.'ahmed.elmalla@linkedemails.com'; 
-        //$subject = 'CV - Professional construction Manager';
-                  
+             
         
         //check first if the file exists
         if ($summary_email || file_exists($upload_path.$letter_name)) 
@@ -878,9 +924,9 @@ class Admin_mailer extends CI_Controller {
              { 
                  //for testing only
                  if ($testing_flag)
-                   $to_email = 'ahmed.elmalla@linkedemails.com';
+                   $to_email = 'any@linkedemails.com';
                   else{
-                   //$cc_email = 'ahmed.elmalla@linkedemails.com';
+                  
                   }
                  
                if (!$summary_email)
@@ -917,7 +963,7 @@ class Admin_mailer extends CI_Controller {
                           $this->email->cc($cc_email);
                       
                       if ($bcc_email)
-                          $this->email->bcc($bcc_email);//.","."ahmed.elmalla@linkedemails.com");
+                          $this->email->bcc($bcc_email);
                       
                       $this->email->subject($subject);
                       
@@ -1065,14 +1111,14 @@ class Admin_mailer extends CI_Controller {
     {
 
           //$this->load->library('email');
-          $this->email->from('ahmed.elmalla@linkedemails.com', 'Ahmed Elmalla');
-          $this->email->to('projects@i-awcs.com');
+          $this->email->from('any@linkedemails.com', 'Ahmed Elmalla');
+          $this->email->to('any@i-awcs.com');
           //$this->mail->SMTPAuth = true;
           $this->email->subject('This is my subject');
           $this->email->message('This is my message');
           
-          //$this->mail->setFrom('ahmed.elmalla@marimatic.fi', 'Ahmed');
-          $this->email->reply_to('ahmed.elmalla@marimatic.fi', 'Ahmed');
+          
+          $this->email->reply_to('any@any.fi', 'Ahmed');
           
            
             $this->email->send();
@@ -1092,8 +1138,8 @@ class Admin_mailer extends CI_Controller {
         $emails_nt_sent= array();
         
          //$to_email ='projects@i-awcs.com';
-        $emails = array('projects@i-awcs.com','akelmalla77@gmail.com','ahmed.elmalla@linkedemails.com');
-        //$emails1 = 'projects@i-awcs.com'.','.'akelmalla77@gmail.com'.','.'ahmed.elmalla@linkedemails.com'; 
+        $emails = array('any@i-awcs.com','any@gmail.com','any@linkedemails.com');
+       
         $subject = 'CV - Professional construction Manager';
                   
          $clfile_content = fread_as_array($this->upload_path.$this->Letter_name);
@@ -1157,7 +1203,7 @@ class Admin_mailer extends CI_Controller {
     {
          $this->output->enable_profiler(TRUE);
 
-         $to_email ='projects@i-awcs.com';
+         $to_email ='any@i-awcs.com';
          $subject = 'CV - Professional construction Manager';
                   
          $clfile_content = fread_as_array($upload_path.$Letter_name);
@@ -1198,16 +1244,14 @@ class Admin_mailer extends CI_Controller {
     { 
  // 
         $this->mail->isSMTP();
-        $this->mail->Host = 'ssl://dallas146.arvixeshared.com:465';
+        $this->mail->Host = 'ssl://domain email *****:465';
         $this->mail->SMTPAuth = true;
-//        $this->mail->SMTPKeepAlive = true; // SMTP connection will not close after each email sent, reduces SMTP overhead
-//        $this->mail->Port = 587;
-        $this->mail->Username = 'Ahmed.elmalla@linkedemails.com';
+        $this->mail->Username = 'any@linkedemails.com';
         $this->mail->Password = '';
          
          //old code
-          $this->mail->setFrom('ahmed.elmalla@marimatic.fi', 'Ahmed');
-          $this->mail->addReplyTo('ahmed.elmalla@marimatic.fi', 'Ahmed');
+          $this->mail->setFrom('any@domain.fi', 'Ahmed');
+          $this->mail->addReplyTo('any@domain.fi', 'Ahmed');
 
         $this->mail->Subject = $arg['subject'];//"PHPMailer Simple database mailing list test";
 

@@ -60,5 +60,7 @@ $config['ip_list'] = array(
         'home_ksa_ip'=>'95.185.198.167',
         'home_msia_ip'=>'',
         'local_ip'=>'127.0.0.1',
+        'local_ip_short'=>'::1', 
+        'mcd_ip'=>'192.168.1.100',
 );
 

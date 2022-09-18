@@ -3,12 +3,12 @@
 $config['useragent']        = 'PHPMailer';              // Mail engine switcher: 'CodeIgniter' or 'PHPMailer'
 $config['protocol']         = 'smtp';                   // 'mail', 'sendmail', or 'smtp'
 $config['mailpath']         = '/usr/sbin/sendmail';
-$config['smtp_host']        = '';
-$config['smtp_user']        = '';
-$config['smtp_pass']        = '';
-$config['smtp_port']        = 465;
+$config['smtp_host']        = 'ssl://node01.facesharedeu1.com';
+$config['smtp_user']        = 'ahmed.elmalla@linkedemails.com';
+$config['smtp_pass']        = 'ahm0203ham!!';
 $config['smtp_auth']       = true;
-$config['smtp_timeout']     = 30;                       // (in seconds)
+$config['smtp_port']        = '465';
+$config['smtp_timeout']     = 100;                       // (in seconds)
 $config['smtp_crypto']      = 'tls';                       // '' or 'tls' or 'ssl'
 $config['smtp_debug']       = 4;                        // PHPMailer's SMTP debug info level: 0 = off, 1 = commands, 2 = commands and data, 3 = as 2 plus connection status, 4 = low level data output.
 $config['smtp_auto_tls']    = true;                     // Whether to enable TLS encryption automatically if a server supports it, even if `smtp_crypto` is not set to 'tls'.
@@ -30,8 +30,16 @@ $config['encoding']         = '8bit';                   // The body encoding. Fo
 // See http://stackoverflow.com/questions/24463425/send-mail-in-phpmailer-using-dkim-keys
 // See https://github.com/PHPMailer/PHPMailer/blob/v5.2.14/test/phpmailerTest.php#L1708
 $config['dkim_domain']      = '';                       // DKIM signing domain name, for exmple 'example.com'.
-$config['dkim_private']     = '';                       // DKIM private key, set as a file path.
-$config['dkim_private_string'] = '';                    // DKIM private key, set directly from a string.
+$config['dkim_private']     = '';                       // DKIM private key file path.
 $config['dkim_selector']    = '';                       // DKIM selector.
 $config['dkim_passphrase']  = '';                       // DKIM passphrase, used if your key is encrypted.
-$config['dkim_identity']    = '';                       // DKIM Identity, usually the email address used as the source of the email.
+$config['dkim_identity']    = ''; 
+
+
+// DKIM Identity, usually the email address used as the source of the email.
+$config['mail_template_folder'] = 'templates';
+$config['mail_template_options'] = array(
+                                       'SITE_NAME' => 'Codeigniter Mail Plugin',
+                                       'SITE_LOGO' => 'http://localhost/images/logo.jpg',
+                                       'BASE_URL'  => 'http://localhost',
+                                    );

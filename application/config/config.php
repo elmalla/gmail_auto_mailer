@@ -75,7 +75,7 @@ $config['index_page'] = '';//'index.php';
 |
 | WARNING: If you set this to 'PATH_INFO', URIs will always be URL-decoded!
 */
-$config['uri_protocol']	= 'PATH_INFO';//'REQUEST_URI';
+$config['uri_protocol']	= 'PATH_INFO';
 
 /*
 |--------------------------------------------------------------------------
@@ -236,7 +236,7 @@ $config['directory_trigger'] = 'd';
 | your log files will fill up very fast.
 |
 */
-$config['log_threshold'] = 2;
+$config['log_threshold'] = 4;
 
 /*
 |--------------------------------------------------------------------------
@@ -337,7 +337,7 @@ $config['cache_query_string'] = FALSE;
 | https://codeigniter.com/user_guide/libraries/encryption.html
 |
 */
-$config['encryption_key'] = 'sdxfge!urytm!XCVTrccdgtg';
+$config['encryption_key'] = '******g';
 
 /*
 |--------------------------------------------------------------------------
